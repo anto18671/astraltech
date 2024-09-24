@@ -15,6 +15,10 @@ BODY_PARTS = [
     'Liver', 'Shoulder', 'Pelvis', 'Leg'
 ]
 
+# Check if the folder exists, then delete it
+if os.path.exists("AstralTech/"):
+    shutil.rmtree("AstralTech/")
+
 class Addon:
     def __init__(self, addon_name, label, description, market_value, additional_stats=None, part_efficiency=1.0):
         self.addon_name = addon_name.replace(" ", "_")
