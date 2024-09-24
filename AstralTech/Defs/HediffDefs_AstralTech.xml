@@ -19,6 +19,8 @@ The Astraltech Skull is a highly advanced cranial implant designed to provide su
 	<stages>
 		<li>
 			<statOffsets>
+				<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 				<PawnBeauty>4.0</PawnBeauty>
 				<SocialImpact>0.5</SocialImpact>
 				<NegotiationAbility>0.5</NegotiationAbility>
@@ -51,31 +53,31 @@ The Astraltech Brain is a pinnacle of neurotechnology, vastly expanding cognitiv
 				<NegotiationAbility>0.5</NegotiationAbility>
 				<TradePriceImprovement>0.25</TradePriceImprovement>
 				<MeleeHitChance>0.75</MeleeHitChance>
-				<ShootingAccuracyPawn>0.75</ShootingAccuracyPawn>
+				<ShootingAccuracyPawn>1.25</ShootingAccuracyPawn>
 				<GlobalLearningFactor>3.0</GlobalLearningFactor>
 				<MedicalOperationSpeed>0.2</MedicalOperationSpeed>
 				<MedicalTendSpeed>0.2</MedicalTendSpeed>
-				<MedicalTendQuality>0.4</MedicalTendQuality>
-				<MedicalSurgerySuccessChance>0.4</MedicalSurgerySuccessChance>
+				<MedicalTendQuality>0.6</MedicalTendQuality>
+				<MedicalSurgerySuccessChance>0.6</MedicalSurgerySuccessChance>
 				<MeditationFocusGain>0.8</MeditationFocusGain>
 				<ResearchSpeed>3.0</ResearchSpeed>
 			</statOffsets>
 			<capMods>
 				<li>
 					<capacity>Consciousness</capacity>
-					<postFactor>3.0</postFactor>
+					<offset>4.5</offset>
 				</li>
 				<li>
 					<capacity>Sight</capacity>
-					<postFactor>1.5</postFactor>
+					<offset>0.75</offset>
 				</li>
 				<li>
 					<capacity>Hearing</capacity>
-					<postFactor>1.5</postFactor>
+					<offset>0.75</offset>
 				</li>
 				<li>
 					<capacity>Manipulation</capacity>
-					<postFactor>1.2</postFactor>
+					<offset>0.2</offset>
 				</li>
 			</capMods>
 		</li>
@@ -102,16 +104,14 @@ The Astraltech Working Memory Augmentation drastically improves the brain's capa
 			<capMods>
 				<li>
 					<capacity>Consciousness</capacity>
-					<postFactor>1.25</postFactor>
+					<offset>0.75</offset>
 				</li>
 			</capMods>
 			<statOffsets>
+				<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
 				<GlobalLearningFactor>1.0</GlobalLearningFactor>
 				<ResearchSpeed>1.0</ResearchSpeed>
 			</statOffsets>
-			<statFactors>
-				<WorkSpeedGlobal>1.1</WorkSpeedGlobal>
-			</statFactors>
 		</li>
 	</stages>
 </HediffDef>
@@ -162,19 +162,17 @@ The Astraltech Cognitive Synchronizer tunes brainwave patterns to enhance focus 
 			<capMods>
 				<li>
 					<capacity>Consciousness</capacity>
-					<postFactor>1.2</postFactor>
+					<offset>0.5</offset>
 				</li>
 				<li>
 					<capacity>Manipulation</capacity>
-					<postFactor>1.1</postFactor>
+					<offset>0.1</offset>
 				</li>
 			</capMods>
 			<statOffsets>
+				<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
 				<GlobalLearningFactor>0.2</GlobalLearningFactor>
 			</statOffsets>
-			<statFactors>
-				<WorkSpeedGlobal>1.1</WorkSpeedGlobal>
-			</statFactors>
 		</li>
 	</stages>
 </HediffDef>
@@ -196,14 +194,18 @@ The Astraltech Rapid Thought Accelerator boosts the brain’s processing speed, 
 	</addedPartProps>
 	<stages>
 		<li>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<offset>0.5</offset>
+				</li>
+			</capMods>
 			<statOffsets>
 				<GlobalLearningFactor>0.5</GlobalLearningFactor>
-				<MeleeHitChance>0.25</MeleeHitChance>
+				<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+				<MeleeHitChance>0.4</MeleeHitChance>
 				<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
 			</statOffsets>
-			<statFactors>
-				<WorkSpeedGlobal>1.1</WorkSpeedGlobal>
-			</statFactors>
 		</li>
 	</stages>
 </HediffDef>
@@ -231,11 +233,11 @@ The Astraltech Eye is a cutting-edge bionic implant designed to vastly improve v
 			<capMods>
 				<li>
 					<capacity>Sight</capacity>
-					<postFactor>2.5</postFactor>
+					<offset>1.75</offset>
 				</li>
 				<li>
 					<capacity>Manipulation</capacity>
-					<postFactor>1.1</postFactor>
+					<offset>0.1</offset>
 				</li>
 			</capMods>
 		</li>
@@ -262,7 +264,7 @@ The Astraltech Targeting Enhancer improves the user’s ability to focus on targ
 			<capMods>
 				<li>
 					<capacity>Sight</capacity>
-					<postFactor>1.5</postFactor>
+					<offset>0.5</offset>
 				</li>
 			</capMods>
 			<statOffsets>
@@ -292,11 +294,11 @@ The Astraltech Motion Detection Module enhances the user’s ability to detect m
 			<capMods>
 				<li>
 					<capacity>Sight</capacity>
-					<postFactor>1.5</postFactor>
+					<offset>0.5</offset>
 				</li>
 				<li>
 					<capacity>Manipulation</capacity>
-					<postFactor>1.1</postFactor>
+					<offset>0.1</offset>
 				</li>
 			</capMods>
 			<statOffsets>
@@ -332,7 +334,7 @@ The Astraltech Ear is a marvel of auditory enhancement, granting its user unpara
 			<capMods>
 				<li>
 					<capacity>Hearing</capacity>
-					<postFactor>2.5</postFactor>
+					<offset>1.75</offset>
 				</li>
 			</capMods>
 		</li>
@@ -359,7 +361,7 @@ The Astraltech Sound Amplifier grants its user the ability to hear sounds from i
 			<capMods>
 				<li>
 					<capacity>Hearing</capacity>
-					<postFactor>1.4</postFactor>
+					<offset>0.4</offset>
 				</li>
 			</capMods>
 			<statOffsets>
@@ -390,7 +392,7 @@ The Astraltech Noise Filter eliminates all unwanted background noise, allowing t
 			<capMods>
 				<li>
 					<capacity>Hearing</capacity>
-					<postFactor>1.2</postFactor>
+					<offset>0.2</offset>
 				</li>
 			</capMods>
 			<statOffsets>
@@ -421,11 +423,11 @@ The Astraltech Echo Locator utilizes impossible echolocation technology, grantin
 			<capMods>
 				<li>
 					<capacity>Hearing</capacity>
-					<postFactor>1.2</postFactor>
+					<offset>0.2</offset>
 				</li>
 				<li>
 					<capacity>Sight</capacity>
-					<postFactor>1.1</postFactor>
+					<offset>0.1</offset>
 				</li>
 			</capMods>
 			<statOffsets>
@@ -460,7 +462,7 @@ The Astraltech Nose is an olfactory marvel that transcends normal sensory limits
 			<capMods>
 				<li>
 					<capacity>Breathing</capacity>
-					<postFactor>1.25</postFactor>
+					<offset>0.25</offset>
 				</li>
 			</capMods>
 		</li>
@@ -480,7 +482,7 @@ The Astraltech Jaw is a pinnacle of oral enhancement, granting its user unparall
 	<hediffClass>Hediff_AddedPart</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
-		<partEfficiency>3.5</partEfficiency>
+		<partEfficiency>1.25</partEfficiency>
 	</addedPartProps>
 	<stages>
 		<li>
@@ -512,16 +514,17 @@ The Astraltech Neck is a marvel of biomechanical engineering, offering superhuma
 	<stages>
 		<li>
 			<statOffsets>
+				<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 				<MeleeDodgeChance>0.2</MeleeDodgeChance>
 			</statOffsets>
 			<capMods>
 				<li>
 					<capacity>Manipulation</capacity>
-					<postFactor>1.1</postFactor>
+					<offset>0.1</offset>
 				</li>
 				<li>
 					<capacity>Breathing</capacity>
-					<postFactor>1.25</postFactor>
+					<offset>0.25</offset>
 				</li>
 			</capMods>
 		</li>
@@ -546,6 +549,7 @@ The Astraltech Arm represents the pinnacle of prosthetic engineering, offering s
 	<stages>
 		<li>
 			<statOffsets>
+				<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
 				<ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
 				<MedicalOperationSpeed>0.3</MedicalOperationSpeed>
 				<MedicalTendSpeed>0.3</MedicalTendSpeed>
@@ -557,7 +561,7 @@ The Astraltech Arm represents the pinnacle of prosthetic engineering, offering s
 			<capMods>
 				<li>
 					<capacity>Manipulation</capacity>
-					<postFactor>2.0</postFactor>
+					<offset>1.0</offset>
 				</li>
 			</capMods>
 		</li>
@@ -584,12 +588,12 @@ Engineered with otherworldly precision, the Astraltech Shoulder Reinforcement dr
 			<capMods>
 				<li>
 					<capacity>Manipulation</capacity>
-					<postFactor>1.3</postFactor>
+					<offset>0.3</offset>
 				</li>
 			</capMods>
-			<statFactors>
-				<MeleeDPS>1.2</MeleeDPS>
-			</statFactors>
+			<statOffsets>
+				<MeleeDPS>0.2</MeleeDPS>
+			</statOffsets>
 		</li>
 	</stages>
 </HediffDef>
@@ -617,15 +621,15 @@ The Astraltech Spine is a revolutionary bionic implant that redefines human phys
 			<capMods>
 				<li>
 					<capacity>Moving</capacity>
-					<postFactor>1.6</postFactor>
+					<offset>0.6</offset>
 				</li>
 				<li>
 					<capacity>Manipulation</capacity>
-					<postFactor>1.4</postFactor>
+					<offset>0.4</offset>
 				</li>
 				<li>
 					<capacity>Consciousness</capacity>
-					<postFactor>1.1</postFactor>
+					<offset>0.2</offset>
 				</li>
 			</capMods>
 		</li>
@@ -652,7 +656,7 @@ The Astraltech Posture Enhancer perfects the user's body alignment, eliminating 
 			<capMods>
 				<li>
 					<capacity>Manipulation</capacity>
-					<postFactor>1.1</postFactor>
+					<offset>0.1</offset>
 				</li>
 			</capMods>
 			<statOffsets>
@@ -683,7 +687,7 @@ The Astraltech Stability Module grants supernatural core stability, allowing the
 			<capMods>
 				<li>
 					<capacity>Manipulation</capacity>
-					<postFactor>1.1</postFactor>
+					<offset>0.1</offset>
 				</li>
 			</capMods>
 			<statOffsets>
@@ -713,7 +717,7 @@ The Astraltech Agility Booster elevates the user's agility to superhuman levels,
 			<capMods>
 				<li>
 					<capacity>Moving</capacity>
-					<postFactor>1.2</postFactor>
+					<offset>0.2</offset>
 				</li>
 			</capMods>
 			<statOffsets>
@@ -740,10 +744,13 @@ The Astraltech Ribcage is an impenetrable bionic implant that redefines the conc
 	</addedPartProps>
 	<stages>
 		<li>
+			<statOffsets>
+				<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			</statOffsets>
 			<capMods>
 				<li>
 					<capacity>Breathing</capacity>
-					<postFactor>1.5</postFactor>
+					<offset>0.5</offset>
 				</li>
 			</capMods>
 		</li>
@@ -767,18 +774,22 @@ The Astraltech Torso is a marvel of biotechnology that completely redefines huma
 	</addedPartProps>
 	<stages>
 		<li>
+			<statOffsets>
+				<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			</statOffsets>
 			<capMods>
 				<li>
 					<capacity>BloodPumping</capacity>
-					<postFactor>1.2</postFactor>
+					<offset>0.2</offset>
 				</li>
 				<li>
 					<capacity>Moving</capacity>
-					<postFactor>1.4</postFactor>
+					<offset>0.4</offset>
 				</li>
 				<li>
 					<capacity>Manipulation</capacity>
-					<postFactor>1.25</postFactor>
+					<offset>0.25</offset>
 				</li>
 			</capMods>
 		</li>
@@ -802,10 +813,10 @@ The Astraltech Resilience Enhancer dramatically improves the user's overall toug
 	</addedPartProps>
 	<stages>
 		<li>
-			<statFactors>
-				<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
-				<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
-			</statFactors>
+			<statOffsets>
+				<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			</statOffsets>
 		</li>
 	</stages>
 </HediffDef>
@@ -830,11 +841,11 @@ The Astraltech Core Stabilizer perfects the user's internal balance and core str
 			<capMods>
 				<li>
 					<capacity>Moving</capacity>
-					<postFactor>1.25</postFactor>
+					<offset>0.25</offset>
 				</li>
 				<li>
 					<capacity>Manipulation</capacity>
-					<postFactor>1.25</postFactor>
+					<offset>0.25</offset>
 				</li>
 			</capMods>
 		</li>
@@ -858,10 +869,10 @@ The Astraltech Durability Matrix exponentially reinforces the torso's structural
 	</addedPartProps>
 	<stages>
 		<li>
-			<statFactors>
-				<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
-				<MeleeDPS>1.1</MeleeDPS>
-			</statFactors>
+			<statOffsets>
+				<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+				<MeleeDPS>0.1</MeleeDPS>
+			</statOffsets>
 		</li>
 	</stages>
 </HediffDef>
@@ -886,11 +897,11 @@ The Astraltech Metabolic Regulator perfects the user's metabolism, optimizing en
 			<capMods>
 				<li>
 					<capacity>Moving</capacity>
-					<postFactor>1.2</postFactor>
+					<offset>0.2</offset>
 				</li>
 				<li>
 					<capacity>Consciousness</capacity>
-					<postFactor>1.1</postFactor>
+					<offset>0.1</offset>
 				</li>
 			</capMods>
 		</li>
@@ -914,11 +925,11 @@ The Astraltech Internal Shielding creates an energy barrier that absorbs and dis
 	</addedPartProps>
 	<stages>
 		<li>
-			<statFactors>
-				<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
-				<ArmorRating_Blunt>1.1</ArmorRating_Blunt>
-				<MeleeDPS>1.1</MeleeDPS>
-			</statFactors>
+			<statOffsets>
+				<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+				<MeleeDPS>0.1</MeleeDPS>
+			</statOffsets>
 		</li>
 	</stages>
 </HediffDef>
@@ -966,12 +977,10 @@ The Astraltech Skin Enhancer rejuvenates and perfects the user's skin at the cel
 	<stages>
 		<li>
 			<statOffsets>
+				<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 				<PawnBeauty>2.0</PawnBeauty>
 				<SocialImpact>0.3</SocialImpact>
 			</statOffsets>
-			<statFactors>
-				<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
-			</statFactors>
 		</li>
 	</stages>
 </HediffDef>
@@ -996,15 +1005,15 @@ The Astraltech Heart is a revolutionary cardiovascular system that transcends th
 			<capMods>
 				<li>
 					<capacity>BloodPumping</capacity>
-					<postFactor>2.5</postFactor>
+					<offset>1.5</offset>
 				</li>
 				<li>
 					<capacity>Moving</capacity>
-					<postFactor>1.2</postFactor>
+					<offset>0.2</offset>
 				</li>
 				<li>
 					<capacity>Consciousness</capacity>
-					<postFactor>1.2</postFactor>
+					<offset>0.2</offset>
 				</li>
 			</capMods>
 		</li>
@@ -1031,15 +1040,15 @@ The Astraltech Cardio Boost is an advanced addon that further enhances the heart
 			<capMods>
 				<li>
 					<capacity>BloodPumping</capacity>
-					<postFactor>1.25</postFactor>
+					<offset>0.25</offset>
 				</li>
 				<li>
 					<capacity>Moving</capacity>
-					<postFactor>1.3</postFactor>
+					<offset>0.3</offset>
 				</li>
 				<li>
 					<capacity>Consciousness</capacity>
-					<postFactor>1.1</postFactor>
+					<offset>0.1</offset>
 				</li>
 			</capMods>
 		</li>
@@ -1066,19 +1075,19 @@ The Astraltech Lung is a revolutionary respiratory enhancement that defies the l
 			<capMods>
 				<li>
 					<capacity>Breathing</capacity>
-					<postFactor>2.0</postFactor>
+					<offset>1.5</offset>
 				</li>
 				<li>
 					<capacity>BloodPumping</capacity>
-					<postFactor>1.1</postFactor>
+					<offset>0.1</offset>
 				</li>
 				<li>
 					<capacity>Moving</capacity>
-					<postFactor>1.5</postFactor>
+					<offset>0.5</offset>
 				</li>
 				<li>
 					<capacity>Consciousness</capacity>
-					<postFactor>1.05</postFactor>
+					<offset>0.05</offset>
 				</li>
 			</capMods>
 		</li>
@@ -1105,15 +1114,15 @@ The Astraltech Kidney is an unparalleled filtration system that revolutionizes t
 			<capMods>
 				<li>
 					<capacity>BloodFiltration</capacity>
-					<postFactor>2.0</postFactor>
+					<offset>1.0</offset>
 				</li>
 				<li>
 					<capacity>Consciousness</capacity>
-					<postFactor>1.05</postFactor>
+					<offset>0.05</offset>
 				</li>
 				<li>
 					<capacity>Breathing</capacity>
-					<postFactor>1.2</postFactor>
+					<offset>0.2</offset>
 				</li>
 			</capMods>
 		</li>
@@ -1140,11 +1149,11 @@ The Astraltech Liver is a marvel of biotechnology, providing unimaginable detoxi
 			<capMods>
 				<li>
 					<capacity>BloodFiltration</capacity>
-					<postFactor>3.25</postFactor>
+					<offset>2.25</offset>
 				</li>
 				<li>
 					<capacity>Consciousness</capacity>
-					<postFactor>1.1</postFactor>
+					<offset>0.1</offset>
 				</li>
 			</capMods>
 		</li>
@@ -1178,11 +1187,11 @@ The Astraltech Stomach is a revolutionary digestive system that redefines the li
 			<capMods>
 				<li>
 					<capacity>Eating</capacity>
-					<postFactor>6.0</postFactor>
+					<postFactor>1.2</postFactor>
 				</li>
 				<li>
 					<capacity>Moving</capacity>
-					<postFactor>1.75</postFactor>
+					<postFactor>1.1</postFactor>
 				</li>
 			</capMods>
 		</li>
@@ -1209,11 +1218,11 @@ The Astraltech Metabolic Optimizer pushes the stomach's capabilities to near-mag
 			<capMods>
 				<li>
 					<capacity>BloodFiltration</capacity>
-					<postFactor>1.5</postFactor>
+					<offset>0.5</offset>
 				</li>
 				<li>
 					<capacity>Consciousness</capacity>
-					<postFactor>1.05</postFactor>
+					<offset>0.05</offset>
 				</li>
 			</capMods>
 		</li>
@@ -1244,7 +1253,7 @@ The Astraltech Pelvis is a groundbreaking implant that redefines human biomechan
 			<capMods>
 				<li>
 					<capacity>Moving</capacity>
-					<postFactor>1.25</postFactor>
+					<offset>0.25</offset>
 				</li>
 			</capMods>
 		</li>
@@ -1274,7 +1283,7 @@ The Astraltech Leg is a marvel of bionic engineering that transcends human locom
 			<capMods>
 				<li>
 					<capacity>Moving</capacity>
-					<postFactor>1.8</postFactor>
+					<offset>0.8</offset>
 				</li>
 			</capMods>
 		</li>
@@ -1301,7 +1310,7 @@ The Astraltech Knee Enhancement integrates otherworldly technology to push the c
 			<capMods>
 				<li>
 					<capacity>Moving</capacity>
-					<postFactor>1.25</postFactor>
+					<offset>0.25</offset>
 				</li>
 			</capMods>
 			<statOffsets>

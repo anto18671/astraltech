@@ -332,11 +332,11 @@ class Bionic:
                 "\t\t\t<capMods>\n"
                 "\t\t\t\t<li>\n"
                 "\t\t\t\t\t<capacity>Eating</capacity>\n"
-                "\t\t\t\t\t<postFactor>6.0</postFactor>\n"
+                "\t\t\t\t\t<postFactor>1.2</postFactor>\n"
                 "\t\t\t\t</li>\n"
                 "\t\t\t\t<li>\n"
                 "\t\t\t\t\t<capacity>Moving</capacity>\n"
-                "\t\t\t\t\t<postFactor>1.75</postFactor>\n"
+                "\t\t\t\t\t<postFactor>1.1</postFactor>\n"
                 "\t\t\t\t</li>\n"
                 "\t\t\t</capMods>\n"
                 "\t\t</li>\n"
@@ -432,8 +432,8 @@ if __name__ == "__main__":
             body_part="Skull",
             replace_part=False,
             additional_stats=[
-                Stat("ArmorRating_Sharp", 1.1, stat_type='stat', mod_type='factor'),
-                Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
+                Stat("ArmorRating_Sharp", 0.1, stat_type='stat', mod_type='offset'),
+                Stat("ArmorRating_Blunt", 0.2, stat_type='stat', mod_type='offset'),
                 Stat("PawnBeauty", 4.0, stat_type='stat', mod_type='offset'),
                 Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
                 Stat("NegotiationAbility", 0.5, stat_type='stat', mod_type='offset'),
@@ -458,17 +458,17 @@ if __name__ == "__main__":
                 Stat("SocialImpact", 0.75, stat_type='stat', mod_type='offset'),
                 Stat("NegotiationAbility", 0.5, stat_type='stat', mod_type='offset'),
                 Stat("TradePriceImprovement", 0.25, stat_type='stat', mod_type='offset'),
-                Stat("Consciousness", 3.0, stat_type='capacity', mod_type='factor'),
-                Stat("Sight", 1.5, stat_type='capacity', mod_type='factor'),
-                Stat("Hearing", 1.5, stat_type='capacity', mod_type='factor'),
-                Stat("Manipulation", 1.2, stat_type='capacity', mod_type='factor'),
+                Stat("Consciousness", 4.5, stat_type='capacity', mod_type='offset'),
+                Stat("Sight", 0.75, stat_type='capacity', mod_type='offset'),
+                Stat("Hearing", 0.75, stat_type='capacity', mod_type='offset'),
+                Stat("Manipulation", 0.2, stat_type='capacity', mod_type='offset'),
                 Stat("MeleeHitChance", 0.75, stat_type='stat', mod_type='offset'),
-                Stat("ShootingAccuracyPawn", 0.75, stat_type='stat', mod_type='offset'),
+                Stat("ShootingAccuracyPawn", 1.25, stat_type='stat', mod_type='offset'),
                 Stat("GlobalLearningFactor", 3.0, stat_type='stat', mod_type='offset'),
                 Stat("MedicalOperationSpeed", 0.2, stat_type='stat', mod_type='offset'),
                 Stat("MedicalTendSpeed", 0.2, stat_type='stat', mod_type='offset'),
-                Stat("MedicalTendQuality", 0.4, stat_type='stat', mod_type='offset'),
-                Stat("MedicalSurgerySuccessChance", 0.4, stat_type='stat', mod_type='offset'),
+                Stat("MedicalTendQuality", 0.6, stat_type='stat', mod_type='offset'),
+                Stat("MedicalSurgerySuccessChance", 0.6, stat_type='stat', mod_type='offset'),
                 Stat("MeditationFocusGain", 0.8, stat_type='stat', mod_type='offset'),
                 Stat("ResearchSpeed", 3.0, stat_type='stat', mod_type='offset'),
             ],
@@ -483,8 +483,8 @@ if __name__ == "__main__":
                     ),
                     market_value=23400,
                     additional_stats=[
-                        Stat("Consciousness", 1.25, stat_type='capacity', mod_type='factor'),
-                        Stat("WorkSpeedGlobal", 1.1, stat_type='stat', mod_type='factor'),
+                        Stat("Consciousness", 0.75, stat_type='capacity', mod_type='offset'),
+                        Stat("WorkSpeedGlobal", 0.1, stat_type='stat', mod_type='offset'),
                         Stat("GlobalLearningFactor", 1.0, stat_type='stat', mod_type='offset'),
                         Stat("ResearchSpeed", 1.0, stat_type='stat', mod_type='offset'),
                     ]
@@ -514,9 +514,9 @@ if __name__ == "__main__":
                     ),
                     market_value=20800,
                     additional_stats=[
-                        Stat("Consciousness", 1.2, stat_type='capacity', mod_type='factor'),
-                        Stat("WorkSpeedGlobal", 1.1, stat_type='stat', mod_type='factor'),
-                        Stat("Manipulation", 1.1, stat_type='capacity', mod_type='factor'),
+                        Stat("Consciousness", 0.5, stat_type='capacity', mod_type='offset'),
+                        Stat("WorkSpeedGlobal", 0.1, stat_type='stat', mod_type='offset'),
+                        Stat("Manipulation", 0.1, stat_type='capacity', mod_type='offset'),
                         Stat("GlobalLearningFactor", 0.2, stat_type='stat', mod_type='offset'),
                     ]
                 ),
@@ -530,9 +530,10 @@ if __name__ == "__main__":
                     ),
                     market_value=26000,
                     additional_stats=[
+                        Stat("Consciousness", 0.5, stat_type='capacity', mod_type='offset'),
                         Stat("GlobalLearningFactor", 0.5, stat_type='stat', mod_type='offset'),
-                        Stat("WorkSpeedGlobal", 1.1, stat_type='stat', mod_type='factor'),
-                        Stat("MeleeHitChance", 0.25, stat_type='stat', mod_type='offset'),
+                        Stat("WorkSpeedGlobal", 0.1, stat_type='stat', mod_type='offset'),
+                        Stat("MeleeHitChance", 0.4, stat_type='stat', mod_type='offset'),
                         Stat("ShootingAccuracyPawn", 0.25, stat_type='stat', mod_type='offset'),
                     ]
                 ),
@@ -551,9 +552,9 @@ if __name__ == "__main__":
             mass=1,
             body_part="Eye",
             additional_stats=[
-                Stat("Sight", 2.5, stat_type='capacity', mod_type='factor'),
+                Stat("Sight", 1.75, stat_type='capacity', mod_type='offset'),
                 Stat("ShootingAccuracyPawn", 1.0, stat_type='stat', mod_type='offset'),
-                Stat("Manipulation", 1.1, stat_type='capacity', mod_type='factor'),
+                Stat("Manipulation", 0.1, stat_type='capacity', mod_type='offset'),
             ],
             compatible_addons=[
                 Addon(
@@ -565,7 +566,7 @@ if __name__ == "__main__":
                     ),
                     market_value=11700,
                     additional_stats=[
-                        Stat("Sight", 1.5, stat_type='capacity', mod_type='factor'),
+                        Stat("Sight", 0.5, stat_type='capacity', mod_type='offset'),
                         Stat("ShootingAccuracyPawn", 0.4, stat_type='stat', mod_type='offset'),
                     ]
                 ),
@@ -578,9 +579,9 @@ if __name__ == "__main__":
                     ),
                     market_value=10400,
                     additional_stats=[
-                        Stat("Sight", 1.5, stat_type='capacity', mod_type='factor'),
+                        Stat("Sight", 0.5, stat_type='capacity', mod_type='offset'),
                         Stat("MeleeHitChance", 0.8, stat_type='stat', mod_type='offset'),
-                        Stat("Manipulation", 1.1, stat_type='capacity', mod_type='factor'),
+                        Stat("Manipulation", 0.1, stat_type='capacity', mod_type='offset'),
                     ]
                 ),
             ]
@@ -598,7 +599,7 @@ if __name__ == "__main__":
             mass=0.5,
             body_part="Ear",
             additional_stats=[
-                Stat("Hearing", 2.5, stat_type='capacity', mod_type='factor'),
+                Stat("Hearing", 1.75, stat_type='capacity', mod_type='offset'),
                 Stat("ShootingAccuracyPawn", 0.2, stat_type='stat', mod_type='offset'),
                 Stat("NegotiationAbility", 0.2, stat_type='stat', mod_type='offset'),
                 Stat("SocialImpact", 0.1, stat_type='stat', mod_type='offset'),
@@ -614,7 +615,7 @@ if __name__ == "__main__":
                     ),
                     market_value=11700,
                     additional_stats=[
-                        Stat("Hearing", 1.4, stat_type='capacity', mod_type='factor'),
+                        Stat("Hearing", 0.4, stat_type='capacity', mod_type='offset'),
                         Stat("ShootingAccuracyPawn", 0.1, stat_type='stat', mod_type='offset'),
                         Stat("MeleeHitChance", 0.1, stat_type='stat', mod_type='offset'),
                     ]
@@ -628,7 +629,7 @@ if __name__ == "__main__":
                     ),
                     market_value=8450,
                     additional_stats=[
-                        Stat("Hearing", 1.2, stat_type='capacity', mod_type='factor'),
+                        Stat("Hearing", 0.2, stat_type='capacity', mod_type='offset'),
                         Stat("MeleeHitChance", 0.1, stat_type='stat', mod_type='offset'),
                         Stat("ShootingAccuracyPawn", 0.1, stat_type='stat', mod_type='offset'),
                     ]
@@ -642,8 +643,8 @@ if __name__ == "__main__":
                     ),
                     market_value=11700,
                     additional_stats=[
-                        Stat("Hearing", 1.2, stat_type='capacity', mod_type='factor'),
-                        Stat("Sight", 1.1, stat_type='capacity', mod_type='factor'),
+                        Stat("Hearing", 0.2, stat_type='capacity', mod_type='offset'),
+                        Stat("Sight", 0.1, stat_type='capacity', mod_type='offset'),
                         Stat("MeleeDodgeChance", 0.1, stat_type='stat', mod_type='offset'),
                     ]
                 ),
@@ -665,7 +666,7 @@ if __name__ == "__main__":
                 Stat("PawnBeauty", 1.0, stat_type='stat', mod_type='offset'),
                 Stat("SocialImpact", 0.25, stat_type='stat', mod_type='offset'),
                 Stat("FoodPoisonChance", -0.5, stat_type='stat', mod_type='offset'),
-                Stat("Breathing", 1.25, stat_type='capacity', mod_type='factor'),
+                Stat("Breathing", 0.25, stat_type='capacity', mod_type='offset'),
             ]
         ),
         Bionic(
@@ -675,7 +676,7 @@ if __name__ == "__main__":
                 "The Astraltech Jaw is a pinnacle of oral enhancement, granting its user unparalleled speech capabilities. "
                 "It provides flawless articulation in any language, enhanced persuasive abilities."
             ),
-            part_efficiency=3.5,
+            part_efficiency=1.25,
             market_value=20800,
             mass=0.8,
             body_part="Jaw",
@@ -684,7 +685,6 @@ if __name__ == "__main__":
                 Stat("SocialImpact", 0.25, stat_type='stat', mod_type='offset'),
                 Stat("NegotiationAbility", 0.25, stat_type='stat', mod_type='offset'),
                 Stat("TradePriceImprovement", 0.1, stat_type='stat', mod_type='offset'),
-                Stat("EatingSpeed", 1.5, stat_type='stat', mod_type='factor'),
             ]
         ),
         Bionic(
@@ -701,10 +701,10 @@ if __name__ == "__main__":
             replace_part=False,
             body_part="Neck",
             additional_stats=[
-                Stat("ArmorRating_Sharp", 1.1, stat_type='stat', mod_type='factor'),
-                Stat("Manipulation", 1.1, stat_type='capacity', mod_type='factor'),
+                Stat("ArmorRating_Sharp", 0.1, stat_type='stat', mod_type='offset'),
+                Stat("Manipulation", 0.1, stat_type='capacity', mod_type='offset'),
                 Stat("MeleeDodgeChance", 0.2, stat_type='stat', mod_type='offset'),
-                Stat("Breathing", 1.25, stat_type='capacity', mod_type='factor'),
+                Stat("Breathing", 0.25, stat_type='capacity', mod_type='offset'),
             ]
         ),
         Bionic(
@@ -721,8 +721,8 @@ if __name__ == "__main__":
             body_part="Shoulder",
             damage_multiplier=3.0,
             additional_stats=[
-                Stat("Manipulation", 2.0, stat_type='capacity', mod_type='factor'),
-                Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
+                Stat("Manipulation", 1.0, stat_type='capacity', mod_type='offset'),
+                Stat("WorkSpeedGlobal", 0.2, stat_type='stat', mod_type='offset'),
                 Stat("ShootingAccuracyPawn", 0.6, stat_type='stat', mod_type='offset'),
                 Stat("MedicalOperationSpeed", 0.3, stat_type='stat', mod_type='offset'),
                 Stat("MedicalTendSpeed", 0.3, stat_type='stat', mod_type='offset'),
@@ -742,8 +742,8 @@ if __name__ == "__main__":
                     ),
                     market_value=19500,
                     additional_stats=[
-                        Stat("Manipulation", 1.3, stat_type='capacity', mod_type='factor'),
-                        Stat("MeleeDPS", 1.2, stat_type='stat', mod_type='factor'),
+                        Stat("Manipulation", 0.3, stat_type='capacity', mod_type='offset'),
+                        Stat("MeleeDPS", 0.2, stat_type='stat', mod_type='offset'),
                     ]
                 ),
             ]
@@ -762,10 +762,10 @@ if __name__ == "__main__":
             replace_part=False,
             body_part="Spine",
             additional_stats=[
-                Stat("Moving", 1.6, stat_type='capacity', mod_type='factor'),
-                Stat("Manipulation", 1.4, stat_type='capacity', mod_type='factor'),
+                Stat("Moving", 0.6, stat_type='capacity', mod_type='offset'),
+                Stat("Manipulation", 0.4, stat_type='capacity', mod_type='offset'),
                 Stat("MeleeDodgeChance", 1.0, stat_type='stat', mod_type='offset'),
-                Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
+                Stat("Consciousness", 0.2, stat_type='capacity', mod_type='offset'),
             ],
             compatible_addons=[
                 Addon(
@@ -777,7 +777,7 @@ if __name__ == "__main__":
                     ),
                     market_value=23400,
                     additional_stats=[
-                        Stat("Manipulation", 1.1, stat_type='capacity', mod_type='factor'),
+                        Stat("Manipulation", 0.1, stat_type='capacity', mod_type='offset'),
                         Stat("PawnBeauty", 1.0, stat_type='stat', mod_type='offset'),
                         Stat("SocialImpact", 0.25, stat_type='stat', mod_type='offset'),
                     ]
@@ -791,7 +791,7 @@ if __name__ == "__main__":
                     ),
                     market_value=26000,
                     additional_stats=[
-                        Stat("Manipulation", 1.1, stat_type='capacity', mod_type='factor'),
+                        Stat("Manipulation", 0.1, stat_type='capacity', mod_type='offset'),
                         Stat("ShootingAccuracyPawn", 0.5, stat_type='stat', mod_type='offset'),
                     ]
                 ),
@@ -804,7 +804,7 @@ if __name__ == "__main__":
                     ),
                     market_value=32500,
                     additional_stats=[
-                        Stat("Moving", 1.2, stat_type='capacity', mod_type='factor'),
+                        Stat("Moving", 0.2, stat_type='capacity', mod_type='offset'),
                         Stat("MeleeDodgeChance", 0.5, stat_type='stat', mod_type='offset'),
                     ]
                 ),
@@ -822,8 +822,8 @@ if __name__ == "__main__":
             mass=5,
             body_part="Ribcage",
             additional_stats=[
-                Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
-                Stat("Breathing", 1.5, stat_type='capacity', mod_type='factor'),
+                Stat("ArmorRating_Blunt", 0.2, stat_type='stat', mod_type='offset'),
+                Stat("Breathing", 0.5, stat_type='capacity', mod_type='offset'),
             ]
         ),
         Bionic(
@@ -840,11 +840,11 @@ if __name__ == "__main__":
             replace_part=False,
             body_part="Torso",
             additional_stats=[
-                Stat("ArmorRating_Sharp", 1.1, stat_type='stat', mod_type='factor'),
-                Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
-                Stat("BloodPumping", 1.2, stat_type='capacity', mod_type='factor'),
-                Stat("Moving", 1.4, stat_type='capacity', mod_type='factor'),
-                Stat("Manipulation", 1.25, stat_type='capacity', mod_type='factor'),
+                Stat("ArmorRating_Sharp", 0.1, stat_type='stat', mod_type='offset'),
+                Stat("ArmorRating_Blunt", 0.2, stat_type='stat', mod_type='offset'),
+                Stat("BloodPumping", 0.2, stat_type='capacity', mod_type='offset'),
+                Stat("Moving", 0.4, stat_type='capacity', mod_type='offset'),
+                Stat("Manipulation", 0.25, stat_type='capacity', mod_type='offset'),
             ],
             compatible_addons=[
                 Addon(
@@ -856,8 +856,8 @@ if __name__ == "__main__":
                     ),
                     market_value=19500,
                     additional_stats=[
-                        Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
-                        Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
+                        Stat("ArmorRating_Sharp", 0.2, stat_type='stat', mod_type='offset'),
+                        Stat("ArmorRating_Blunt", 0.2, stat_type='stat', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -869,8 +869,8 @@ if __name__ == "__main__":
                     ),
                     market_value=23400,
                     additional_stats=[
-                        Stat("Moving", 1.25, stat_type='capacity', mod_type='factor'),
-                        Stat("Manipulation", 1.25, stat_type='capacity', mod_type='factor'),
+                        Stat("Moving", 0.25, stat_type='capacity', mod_type='offset'),
+                        Stat("Manipulation", 0.25, stat_type='capacity', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -882,8 +882,8 @@ if __name__ == "__main__":
                     ),
                     market_value=26000,
                     additional_stats=[
-                        Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
-                        Stat("MeleeDPS", 1.1, stat_type='stat', mod_type='factor'),
+                        Stat("ArmorRating_Blunt", 0.2, stat_type='stat', mod_type='offset'),
+                        Stat("MeleeDPS", 0.1, stat_type='stat', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -895,8 +895,8 @@ if __name__ == "__main__":
                     ),
                     market_value=32500,
                     additional_stats=[
-                        Stat("Moving", 1.2, stat_type='capacity', mod_type='factor'),
-                        Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
+                        Stat("Moving", 0.2, stat_type='capacity', mod_type='offset'),
+                        Stat("Consciousness", 0.1, stat_type='capacity', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -908,9 +908,9 @@ if __name__ == "__main__":
                     ),
                     market_value=39000,
                     additional_stats=[
-                        Stat("ArmorRating_Sharp", 1.1, stat_type='stat', mod_type='factor'),
-                        Stat("ArmorRating_Blunt", 1.1, stat_type='stat', mod_type='factor'),
-                        Stat("MeleeDPS", 1.1, stat_type='stat', mod_type='factor'),
+                        Stat("ArmorRating_Sharp", 0.1, stat_type='stat', mod_type='offset'),
+                        Stat("ArmorRating_Blunt", 0.1, stat_type='stat', mod_type='offset'),
+                        Stat("MeleeDPS", 0.1, stat_type='stat', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -937,7 +937,7 @@ if __name__ == "__main__":
                     ),
                     market_value=26600,
                     additional_stats=[
-                        Stat("ArmorRating_Sharp", 1.1, stat_type='stat', mod_type='factor'),
+                        Stat("ArmorRating_Sharp", 0.1, stat_type='stat', mod_type='offset'),
                         Stat("PawnBeauty", 2.0, stat_type='stat', mod_type='offset'),
                         Stat("SocialImpact", 0.3, stat_type='stat', mod_type='offset'),
                     ]
@@ -956,9 +956,9 @@ if __name__ == "__main__":
             mass=2,
             body_part="Heart",
             additional_stats=[
-                Stat("BloodPumping", 2.5, stat_type='capacity', mod_type='factor'),
-                Stat("Moving", 1.2, stat_type='capacity', mod_type='factor'),
-                Stat("Consciousness", 1.2, stat_type='capacity', mod_type='factor'),
+                Stat("BloodPumping", 1.5, stat_type='capacity', mod_type='offset'),
+                Stat("Moving", 0.2, stat_type='capacity', mod_type='offset'),
+                Stat("Consciousness", 0.2, stat_type='capacity', mod_type='offset'),
             ],
             compatible_addons=[
                 Addon(
@@ -970,9 +970,9 @@ if __name__ == "__main__":
                     ),
                     market_value=32500,
                     additional_stats=[
-                        Stat("BloodPumping", 1.25, stat_type='capacity', mod_type='factor'),
-                        Stat("Moving", 1.3, stat_type='capacity', mod_type='factor'),
-                        Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
+                        Stat("BloodPumping", 0.25, stat_type='capacity', mod_type='offset'),
+                        Stat("Moving", 0.3, stat_type='capacity', mod_type='offset'),
+                        Stat("Consciousness", 0.1, stat_type='capacity', mod_type='offset'),
                     ]
                 ),
             ]
@@ -989,10 +989,10 @@ if __name__ == "__main__":
             mass=2,
             body_part="Lung",
             additional_stats=[
-                Stat("Breathing", 2.0, stat_type='capacity', mod_type='factor'),
-                Stat("BloodPumping", 1.1, stat_type='capacity', mod_type='factor'),
-                Stat("Moving", 1.5, stat_type='capacity', mod_type='factor'),
-                Stat("Consciousness", 1.05, stat_type='capacity', mod_type='factor'),
+                Stat("Breathing", 1.5, stat_type='capacity', mod_type='offset'),
+                Stat("BloodPumping", 0.1, stat_type='capacity', mod_type='offset'),
+                Stat("Moving", 0.5, stat_type='capacity', mod_type='offset'),
+                Stat("Consciousness", 0.05, stat_type='capacity', mod_type='offset'),
             ]
         ),
         Bionic(
@@ -1007,9 +1007,9 @@ if __name__ == "__main__":
             mass=1.5,
             body_part="Kidney",
             additional_stats=[
-                Stat("BloodFiltration", 2.0, stat_type='capacity', mod_type='factor'),
-                Stat("Consciousness", 1.05, stat_type='capacity', mod_type='factor'),
-                Stat("Breathing", 1.2, stat_type='capacity', mod_type='factor'),
+                Stat("BloodFiltration", 1.0, stat_type='capacity', mod_type='offset'),
+                Stat("Consciousness", 0.05, stat_type='capacity', mod_type='offset'),
+                Stat("Breathing", 0.2, stat_type='capacity', mod_type='offset'),
             ]
         ),
         Bionic(
@@ -1024,8 +1024,8 @@ if __name__ == "__main__":
             mass=3,
             body_part="Liver",
             additional_stats=[
-                Stat("BloodFiltration", 3.25, stat_type='capacity', mod_type='factor'),
-                Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
+                Stat("BloodFiltration", 2.25, stat_type='capacity', mod_type='offset'),
+                Stat("Consciousness", 0.1, stat_type='capacity', mod_type='offset'),
             ]
         ),
         Bionic(
@@ -1040,8 +1040,8 @@ if __name__ == "__main__":
             mass=3,
             body_part="Stomach",
             additional_stats=[
-                Stat("MaxNutrition", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("Consciousness", 1.05, stat_type='capacity', mod_type='factor'),
+                Stat("MaxNutrition", 0.5, stat_type='stat', mod_type='offset'),
+                Stat("Consciousness", 0.05, stat_type='capacity', mod_type='offset'),
             ],
             compatible_addons=[
                 Addon(
@@ -1053,8 +1053,8 @@ if __name__ == "__main__":
                     ),
                     market_value=18800,
                     additional_stats=[
-                        Stat("BloodFiltration", 1.5, stat_type='capacity', mod_type='factor'),
-                        Stat("Consciousness", 1.05, stat_type='capacity', mod_type='factor'),
+                        Stat("BloodFiltration", 0.5, stat_type='capacity', mod_type='offset'),
+                        Stat("Consciousness", 0.05, stat_type='capacity', mod_type='offset'),
                     ]
                 ),
             ]
@@ -1072,7 +1072,7 @@ if __name__ == "__main__":
             replace_part=False,
             body_part="Pelvis",
             additional_stats=[
-                Stat("Moving", 1.25, stat_type='capacity', mod_type='factor'),
+                Stat("Moving", 0.25, stat_type='capacity', mod_type='offset'),
                 Stat("MeleeHitChance", 0.25, stat_type='stat', mod_type='offset'),
                 Stat("MeleeDodgeChance", 0.2, stat_type='stat', mod_type='offset'),
             ]
@@ -1090,7 +1090,7 @@ if __name__ == "__main__":
             mass=5,
             body_part="Leg",
             additional_stats=[
-                Stat("Moving", 1.8, stat_type='capacity', mod_type='factor'),
+                Stat("Moving", 0.8, stat_type='capacity', mod_type='offset'),
                 Stat("MeleeDodgeChance", 0.2, stat_type='stat', mod_type='offset'),
             ],
             compatible_addons=[
@@ -1103,7 +1103,7 @@ if __name__ == "__main__":
                     ),
                     market_value=19500,
                     additional_stats=[
-                        Stat("Moving", 1.25, stat_type='capacity', mod_type='factor'),
+                        Stat("Moving", 0.25, stat_type='capacity', mod_type='offset'),
                         Stat("MeleeDodgeChance", 0.1, stat_type='stat', mod_type='offset'),
                     ]
                 ),
