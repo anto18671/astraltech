@@ -6,7 +6,7 @@
 	<labelNoun>Astraltech Skull</labelNoun>
 	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
-The Astraltech Skull is a highly advanced cranial implant designed to provide superior protection to the brain while enhancing cognitive processing speed. It offers unmatched resilience against physical trauma and improves overall mental clarity, making it a critical upgrade for individuals in combat or high-stress environments.</description>
+The Astraltech Skull is a highly advanced cranial implant designed to provide superior protection to the brain while significantly enhancing cognitive processing speed. In addition to its unmatched resilience against physical trauma, the Astraltech Skull provides an enhanced aesthetic appeal, dramatically improving the wearer's facial beauty. This implant not only increases mental clarity but also elevates social standing, making it an ideal upgrade for individuals in combat, diplomacy, or high-stress environments.</description>
 	<descriptionHyperlinks>
 		<ThingDef>Astraltech_Skull</ThingDef>
 	</descriptionHyperlinks>
@@ -18,6 +18,12 @@ The Astraltech Skull is a highly advanced cranial implant designed to provide su
 	</addedPartProps>
 	<stages>
 		<li>
+			<statOffsets>
+				<PawnBeauty>3.0</PawnBeauty>
+				<SocialImpact>0.5</SocialImpact>
+				<NegotiationAbility>0.5</NegotiationAbility>
+				<TradePriceImprovement>0.25</TradePriceImprovement>
+			</statOffsets>
 		</li>
 	</stages>
 </HediffDef>
@@ -41,12 +47,12 @@ The Astraltech Brain is a pinnacle of neurotechnology, vastly expanding cognitiv
 		<li>
 			<statOffsets>
 				<PawnBeauty>1.0</PawnBeauty>
-				<SocialImpact>0.5</SocialImpact>
+				<SocialImpact>0.75</SocialImpact>
 				<NegotiationAbility>0.5</NegotiationAbility>
 				<TradePriceImprovement>0.25</TradePriceImprovement>
 				<MeleeHitChance>5.0</MeleeHitChance>
 				<ShootingAccuracyPawn>5.0</ShootingAccuracyPawn>
-				<GlobalLearningFactor>4.0</GlobalLearningFactor>
+				<GlobalLearningFactor>4.5</GlobalLearningFactor>
 				<MedicalOperationSpeed>0.4</MedicalOperationSpeed>
 				<MedicalTendSpeed>0.4</MedicalTendSpeed>
 				<MedicalTendQuality>0.4</MedicalTendQuality>
@@ -57,7 +63,7 @@ The Astraltech Brain is a pinnacle of neurotechnology, vastly expanding cognitiv
 			<capMods>
 				<li>
 					<capacity>Consciousness</capacity>
-					<postFactor>6.0</postFactor>
+					<postFactor>7.5</postFactor>
 				</li>
 				<li>
 					<capacity>Sight</capacity>
@@ -242,36 +248,6 @@ The Astraltech Eye is a cutting-edge bionic implant designed to vastly improve v
 					<postFactor>1.2</postFactor>
 				</li>
 			</capMods>
-		</li>
-	</stages>
-</HediffDef>
-<HediffDef ParentName="AddedBodyPartBase">
-	<defName>AstraltechNightVisionModule_hediff</defName>
-	<label>Astraltech Night Vision Module</label>
-	<labelNoun>Astraltech Night Vision Module</labelNoun>
-	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
-
-The Astraltech Night Vision Module grants the user the ability to see clearly in low-light environments. With advanced light amplification technology, this addon ensures perfect vision during nighttime or dimly lit conditions.</description>
-	<descriptionHyperlinks>
-		<ThingDef>AstraltechNightVisionModule</ThingDef>
-	</descriptionHyperlinks>
-	<spawnThingOnRemoved>AstraltechNightVisionModule</spawnThingOnRemoved>
-	<hediffClass>Hediff_Implant</hediffClass>
-	<isBad>false</isBad>
-	<addedPartProps>
-		<partEfficiency>1.0</partEfficiency>
-	</addedPartProps>
-	<stages>
-		<li>
-			<capMods>
-				<li>
-					<capacity>Sight</capacity>
-					<postFactor>1.75</postFactor>
-				</li>
-			</capMods>
-			<statOffsets>
-				<ShootingAccuracyPawn>1.4</ShootingAccuracyPawn>
-			</statOffsets>
 		</li>
 	</stages>
 </HediffDef>
@@ -507,7 +483,7 @@ The Astraltech Nose is an olfactory marvel that transcends normal sensory limits
 	<labelNoun>Astraltech Jaw</labelNoun>
 	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
-The Astraltech Jaw is a pinnacle of oral enhancement, granting its user unparalleled speech capabilities and devastating bite force. It provides flawless articulation in any language, enhanced persuasive abilities, and the strength to crush steel between its teeth. This implant redefines the limits of both diplomacy and close-quarters combat.</description>
+The Astraltech Jaw is a pinnacle of oral enhancement, granting its user unparalleled speech capabilities. It provides flawless articulation in any language, enhanced persuasive abilities.</description>
 	<descriptionHyperlinks>
 		<ThingDef>Astraltech_Jaw</ThingDef>
 	</descriptionHyperlinks>
@@ -555,6 +531,10 @@ The Astraltech Neck is a marvel of biomechanical engineering, offering superhuma
 				<li>
 					<capacity>Manipulation</capacity>
 					<postFactor>1.2</postFactor>
+				</li>
+				<li>
+					<capacity>Breathing</capacity>
+					<postFactor>1.5</postFactor>
 				</li>
 			</capMods>
 		</li>
@@ -657,6 +637,10 @@ The Astraltech Spine is a revolutionary bionic implant that redefines human phys
 				<li>
 					<capacity>Manipulation</capacity>
 					<postFactor>2.0</postFactor>
+				</li>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>1.25</postFactor>
 				</li>
 			</capMods>
 		</li>
@@ -928,6 +912,10 @@ The Astraltech Durability Matrix exponentially reinforces the torso's structural
 			<statOffsets>
 				<MeleeHitChance>1.4</MeleeHitChance>
 			</statOffsets>
+			<statFactors>
+				<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+				<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+			</statFactors>
 		</li>
 	</stages>
 </HediffDef>
@@ -953,6 +941,10 @@ The Astraltech Metabolic Regulator perfects the user's metabolism, optimizing en
 				<li>
 					<capacity>Moving</capacity>
 					<postFactor>1.4</postFactor>
+				</li>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>1.2</postFactor>
 				</li>
 			</capMods>
 			<statFactors>
@@ -988,6 +980,10 @@ The Astraltech Internal Shielding creates an energy barrier that absorbs and dis
 			<statOffsets>
 				<ShootingAccuracyPawn>1.2</ShootingAccuracyPawn>
 			</statOffsets>
+			<statFactors>
+				<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+				<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+			</statFactors>
 		</li>
 	</stages>
 </HediffDef>
@@ -1068,6 +1064,10 @@ The Astraltech Heart is a revolutionary cardiovascular system that transcends th
 					<capacity>Moving</capacity>
 					<postFactor>2.0</postFactor>
 				</li>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>1.25</postFactor>
+				</li>
 			</capMods>
 		</li>
 	</stages>
@@ -1138,6 +1138,10 @@ The Astraltech Lung is a revolutionary respiratory enhancement that defies the l
 					<capacity>Moving</capacity>
 					<postFactor>1.75</postFactor>
 				</li>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>1.2</postFactor>
+				</li>
 			</capMods>
 		</li>
 	</stages>
@@ -1173,6 +1177,10 @@ The Astraltech Kidney is an unparalleled filtration system that revolutionizes t
 					<capacity>Breathing</capacity>
 					<postFactor>1.75</postFactor>
 				</li>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>1.2</postFactor>
+				</li>
 			</capMods>
 		</li>
 	</stages>
@@ -1203,6 +1211,10 @@ The Astraltech Liver is a marvel of biotechnology, providing unimaginable detoxi
 				<li>
 					<capacity>Consciousness</capacity>
 					<postFactor>1.5</postFactor>
+				</li>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>1.2</postFactor>
 				</li>
 			</capMods>
 		</li>

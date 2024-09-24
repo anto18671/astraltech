@@ -12,7 +12,7 @@ Prepare to transcend the limits of human potential with AstralTech!
 
 ## Features
 
-- **42 New Bionic Parts**: Each AstralTech implant is a masterpiece of biotechnology, offering unprecedented enhancements to human capabilities.
+- **41 New Bionic Parts**: Each AstralTech implant is a masterpiece of biotechnology, offering unprecedented enhancements to human capabilities.
 - **Modular Addon System**: Many AstralTech bionics support powerful addons, allowing for further customization and enhancement.
 - **Balanced Progression**: While incredibly powerful, AstralTech bionics are appropriately rare and expensive, maintaining game balance.
 - **Lore-Friendly**: Seamlessly integrates into the RimWorld universe, expanding on the existing bionic and archotech concepts.
@@ -74,19 +74,13 @@ The Astraltech Eye is a cutting-edge bionic implant designed to vastly improve v
 
 **Addons:**
 
-1. 🌙 Night Vision Module
-
-   - Grants clear vision in low-light environments
-   - Utilizes advanced light amplification technology
-   - Ensures perfect vision during nighttime or dimly lit conditions
-
-2. 🎯 Targeting Enhancer
+1. 🎯 Targeting Enhancer
 
    - Improves focus on targets and increases precision in combat
    - Utilizes advanced tracking algorithms
    - Ideal for sharpshooters and combat-heavy roles
 
-3. 📡 Motion Detection Module
+2. 📡 Motion Detection Module
    - Enhances ability to detect and track movement
    - Significantly increases reaction time in fast-paced environments
    - Provides an edge in combat by allowing quicker threat response

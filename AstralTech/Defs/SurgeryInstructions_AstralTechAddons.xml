@@ -165,47 +165,6 @@
 	<addsHediff>AstraltechThoughtAccelerator_hediff</addsHediff>
 </RecipeDef>
 <RecipeDef ParentName="SurgeryFlesh">
-	<defName>Install_AstraltechNightVisionModule</defName>
-	<label>install astraltech night vision module</label>
-	<description>Install an astraltech night vision module.</description>
-	<jobString>Installing astraltech night vision module.</jobString>
-	<workAmount>4500</workAmount>
-	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
-	<skillRequirements>
-		<Medicine>8</Medicine>
-	</skillRequirements>
-	<ingredients>
-		<li>
-			<filter>
-				<categories>
-					<li>Medicine</li>
-				</categories>
-			</filter>
-			<count>2</count>
-		</li>
-		<li>
-			<filter>
-				<thingDefs>
-					<li>AstraltechNightVisionModule</li>
-				</thingDefs>
-			</filter>
-			<count>1</count>
-		</li>
-	</ingredients>
-	<fixedIngredientFilter>
-		<categories>
-			<li>Medicine</li>
-		</categories>
-		<thingDefs>
-			<li>AstraltechNightVisionModule</li>
-		</thingDefs>
-	</fixedIngredientFilter>
-	<appliedOnFixedBodyParts>
-		<li>Eye</li>
-	</appliedOnFixedBodyParts>
-	<addsHediff>AstraltechNightVisionModule_hediff</addsHediff>
-</RecipeDef>
-<RecipeDef ParentName="SurgeryFlesh">
 	<defName>Install_AstraltechTargetingEnhancer</defName>
 	<label>install astraltech targeting enhancer</label>
 	<description>Install an astraltech targeting enhancer.</description>

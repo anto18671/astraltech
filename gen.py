@@ -427,7 +427,7 @@ if __name__ == "__main__":
                 "In addition to its unmatched resilience against physical trauma, the Astraltech Skull provides an enhanced aesthetic appeal, dramatically improving the wearer's facial beauty. "
                 "This implant not only increases mental clarity but also elevates social standing, making it an ideal upgrade for individuals in combat, diplomacy, or high-stress environments."
             ),
-            part_efficiency=4.0,
+            part_efficiency=3.0,
             market_value=26000,
             mass=6,
             body_part="Skull",
@@ -449,24 +449,23 @@ if __name__ == "__main__":
                 "and mental acuity. It seamlessly integrates with neural pathways to provide heightened "
                 "intelligence, rapid information processing, and enhanced decision-making capabilities."
             ),
-            part_efficiency=4.0,
-            market_value=65000,
+            part_efficiency=3.0,
+            market_value=78000,
             mass=2,
             replace_part=False,
             body_part="Brain",
             additional_stats=[
                 Stat("PawnBeauty", 1.0, stat_type='stat', mod_type='offset'),
-                Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
+                Stat("SocialImpact", 0.75, stat_type='stat', mod_type='offset'),
                 Stat("NegotiationAbility", 0.5, stat_type='stat', mod_type='offset'),
                 Stat("TradePriceImprovement", 0.25, stat_type='stat', mod_type='offset'),
-                Stat("Consciousness", 6.0, stat_type='capacity', mod_type='factor'),
+                Stat("Consciousness", 4.5, stat_type='capacity', mod_type='factor'),
                 Stat("Sight", 1.5, stat_type='capacity', mod_type='factor'),
                 Stat("Hearing", 1.5, stat_type='capacity', mod_type='factor'),
-                Stat("Manipulation", 1.5, stat_type='capacity', mod_type='factor'),
-                Stat("WorkSpeedGlobal", 1.25, stat_type='stat', mod_type='factor'),
+                Stat("Manipulation", 1.25, stat_type='capacity', mod_type='factor'),
                 Stat("MeleeHitChance", 5.0, stat_type='stat', mod_type='offset'),
                 Stat("ShootingAccuracyPawn", 5.0, stat_type='stat', mod_type='offset'),
-                Stat("GlobalLearningFactor", 4.0, stat_type='stat', mod_type='offset'),
+                Stat("GlobalLearningFactor", 4.5, stat_type='stat', mod_type='offset'),
                 Stat("MedicalOperationSpeed", 0.4, stat_type='stat', mod_type='offset'),
                 Stat("MedicalTendSpeed", 0.4, stat_type='stat', mod_type='offset'),
                 Stat("MedicalTendQuality", 0.4, stat_type='stat', mod_type='offset'),
@@ -485,8 +484,8 @@ if __name__ == "__main__":
                     ),
                     market_value=23400,
                     additional_stats=[
-                        Stat("Consciousness", 1.5, stat_type='capacity', mod_type='factor'),
-                        Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
+                        Stat("Consciousness", 1.25, stat_type='capacity', mod_type='factor'),
+                        Stat("WorkSpeedGlobal", 1.1, stat_type='stat', mod_type='factor'),
                         Stat("GlobalLearningFactor", 1.0, stat_type='stat', mod_type='offset'),
                         Stat("ResearchSpeed", 2.0, stat_type='stat', mod_type='offset'),
                     ]
@@ -517,8 +516,8 @@ if __name__ == "__main__":
                     ),
                     market_value=20800,
                     additional_stats=[
-                        Stat("Consciousness", 1.25, stat_type='capacity', mod_type='factor'),
-                        Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
+                        Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
+                        Stat("WorkSpeedGlobal", 1.1, stat_type='stat', mod_type='factor'),
                         Stat("Manipulation", 1.25, stat_type='capacity', mod_type='factor'),
                     ]
                 ),
@@ -532,9 +531,9 @@ if __name__ == "__main__":
                     ),
                     market_value=26000,
                     additional_stats=[
-                        Stat("Consciousness", 1.2, stat_type='capacity', mod_type='factor'),
+                        Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
                         Stat("GlobalLearningFactor", 1.5, stat_type='stat', mod_type='offset'),
-                        Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
+                        Stat("WorkSpeedGlobal", 1.1, stat_type='stat', mod_type='factor'),
                         Stat("MeleeHitChance", 1.25, stat_type='stat', mod_type='offset'),
                         Stat("ShootingAccuracyPawn", 1.25, stat_type='stat', mod_type='offset'),
                     ]
@@ -600,7 +599,7 @@ if __name__ == "__main__":
                 "With its otherworldly sound-processing capabilities, even the faintest whisper becomes clear as day."
             ),
             part_efficiency=2.5,
-            market_value=280000,
+            market_value=19000,
             mass=0.5,
             body_part="Ear",
             additional_stats=[
@@ -617,7 +616,7 @@ if __name__ == "__main__":
                         "The Astraltech Sound Amplifier grants its user the ability to hear sounds from impossible distances. "
                         "This addon enhances long-range auditory detection and allows the user to hear through solid obstacles as if they weren't there."
                     ),
-                    market_value=140000,
+                    market_value=11700,
                     additional_stats=[
                         Stat("Hearing", 1.5, stat_type='capacity', mod_type='factor'),
                         Stat("ShootingAccuracyPawn", 1.1, stat_type='stat', mod_type='offset'),
@@ -631,7 +630,7 @@ if __name__ == "__main__":
                         "The Astraltech Noise Filter eliminates all unwanted background noise, allowing the user to focus on crucial sounds with preternatural clarity. "
                         "In even the most chaotic environments, it filters out distractions, enhancing auditory perception to superhuman levels."
                     ),
-                    market_value=16000,
+                    market_value=8450,
                     additional_stats=[
                         Stat("Hearing", 1.25, stat_type='capacity', mod_type='factor'),
                         Stat("Sight", 1.1, stat_type='capacity', mod_type='factor'),
@@ -644,7 +643,7 @@ if __name__ == "__main__":
                         "The Astraltech Echo Locator utilizes impossible echolocation technology, granting the user an almost precognitive spatial awareness. "
                         "This addon provides unparalleled threat detection and environmental navigation, bordering on the supernatural."
                     ),
-                    market_value=18000,
+                    market_value=11700,
                     additional_stats=[
                         Stat("Hearing", 1.4, stat_type='capacity', mod_type='factor'),
                         Stat("MeleeHitChance", 1.3, stat_type='stat', mod_type='offset'),
@@ -663,7 +662,7 @@ if __name__ == "__main__":
                 "Users can track scents across vast distances and even detect emotional states through pheromone analysis."
             ),
             part_efficiency=3.0,
-            market_value=200000,
+            market_value=16000,
             mass=0.3,
             body_part="Nose",
             additional_stats=[
@@ -681,7 +680,7 @@ if __name__ == "__main__":
                 "It provides flawless articulation in any language, enhanced persuasive abilities."
             ),
             part_efficiency=3.5,
-            market_value=250000,
+            market_value=20800,
             mass=0.8,
             body_part="Jaw",
             additional_stats=[
@@ -701,7 +700,7 @@ if __name__ == "__main__":
                 "This implant elevates the user's physical capabilities to mythical levels, making them a force to be reckoned with in any situation."
             ),
             part_efficiency=3.5,
-            market_value=300000,
+            market_value=26000,
             mass=2,
             replace_part=False,
             body_part="Neck",
@@ -713,6 +712,7 @@ if __name__ == "__main__":
                 Stat("Manipulation", 1.2, stat_type='capacity', mod_type='factor'),
                 Stat("MoveSpeed", 1.1, stat_type='stat', mod_type='factor'),
                 Stat("MeleeDodgeChance", 1.2, stat_type='stat', mod_type='offset'),
+                Stat("Breathing", 1.5, stat_type='capacity', mod_type='factor'),
             ]
         ),
         Bionic(
@@ -724,13 +724,13 @@ if __name__ == "__main__":
                 "while its indestructible construction ensures unmatched durability in even the most extreme situations."
             ),
             part_efficiency=3.0,
-            market_value=425000,
+            market_value=32500,
             mass=4,
             body_part="Shoulder",
             damage_multiplier=3.0,
             additional_stats=[
-                Stat("Manipulation", 2.5, stat_type='capacity', mod_type='factor'),
-                Stat("WorkSpeedGlobal", 1.5, stat_type='stat', mod_type='factor'),
+                Stat("Manipulation", 2.0, stat_type='capacity', mod_type='factor'),
+                Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
                 Stat("ShootingAccuracyPawn", 1.5, stat_type='stat', mod_type='offset'),
                 Stat("MedicalOperationSpeed", 0.4, stat_type='stat', mod_type='offset'),
                 Stat("MedicalTendSpeed", 0.4, stat_type='stat', mod_type='offset'),
@@ -749,9 +749,9 @@ if __name__ == "__main__":
                         "structural integrity and power output of bionic arms, enabling strength beyond mortal comprehension and "
                         "unbreakable resilience in even the most extreme environments."
                     ),
-                    market_value=96000,
+                    market_value=19500,
                     additional_stats=[
-                        Stat("Manipulation", 1.5, stat_type='capacity', mod_type='factor'),
+                        Stat("Manipulation", 1.4, stat_type='capacity', mod_type='factor'),
                         Stat("MeleeDPS", 1.3, stat_type='stat', mod_type='factor'),
                         Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
                     ]
@@ -766,17 +766,18 @@ if __name__ == "__main__":
                 "It grants the user inhuman core stability, mobility, and overall physical coordination. "
                 "Wearers move with preternatural grace, maintain perfect balance in any situation, and possess flexibility that defies biological limitations."
             ),
-            part_efficiency=5.0,
-            market_value=450000,
+            part_efficiency=3.0,
+            market_value=39000,
             mass=6,
             replace_part=False,
             body_part="Spine",
             additional_stats=[
                 Stat("Moving", 3.0, stat_type='capacity', mod_type='factor'),
-                Stat("Manipulation", 2.0, stat_type='capacity', mod_type='factor'),
+                Stat("Manipulation", 1.5, stat_type='capacity', mod_type='factor'),
                 Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='offset'),
                 Stat("MeleeDodgeChance", 1.5, stat_type='stat', mod_type='offset'),
                 Stat("MoveSpeed", 1.5, stat_type='stat', mod_type='factor'),
+                Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
             ],
             compatible_addons=[
                 Addon(
@@ -786,7 +787,7 @@ if __name__ == "__main__":
                         "The Astraltech Posture Enhancer perfects the user's body alignment, eliminating strain during any movement and granting limitless endurance. "
                         "This addon ensures flawless posture for any task, offering superhuman comfort and efficiency in all physical endeavors."
                     ),
-                    market_value=200000,
+                    market_value=23400,
                     additional_stats=[
                         Stat("Moving", 1.5, stat_type='capacity', mod_type='factor'),
                         Stat("Manipulation", 1.25, stat_type='capacity', mod_type='factor'),
@@ -802,7 +803,7 @@ if __name__ == "__main__":
                         "The Astraltech Stability Module grants supernatural core stability, allowing the user to perform even the most delicate tasks with perfect accuracy and control. "
                         "It renders the user nearly immune to knockdowns and dramatically improves overall physical performance."
                     ),
-                    market_value=250000,
+                    market_value=26000,
                     additional_stats=[
                         Stat("Manipulation", 1.4, stat_type='capacity', mod_type='factor'),
                         Stat("MeleeHitChance", 1.3, stat_type='stat', mod_type='offset'),
@@ -817,7 +818,7 @@ if __name__ == "__main__":
                         "The Astraltech Agility Booster elevates the user's agility to superhuman levels, enabling movements faster than the eye can track and instantaneous combat responses. "
                         "This addon dramatically enhances reflexes and coordination, making the user seem to bend the laws of physics in fast-paced environments."
                     ),
-                    market_value=300000,
+                    market_value=32500,
                     additional_stats=[
                         Stat("Moving", 1.8, stat_type='capacity', mod_type='factor'),
                         Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='offset'),
@@ -834,15 +835,15 @@ if __name__ == "__main__":
                 "The Astraltech Ribcage is an impenetrable bionic implant that redefines the concept of physical protection. "
                 "With its advanced energy-dispersing reinforcement, it renders the user nearly invulnerable to physical trauma, offering an unprecedented level of defense in combat situations."
             ),
-            part_efficiency=4.0,
-            market_value=350000,
+            part_efficiency=3.0,
+            market_value=28600,
             mass=5,
             body_part="Ribcage",
             additional_stats=[
                 Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
                 Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
                 Stat("Breathing", 2.0, stat_type='capacity', mod_type='factor'),
-                Stat("BloodPumping", 1.5, stat_type='capacity', mod_type='factor'),
+                Stat("BloodPumping", 1.2, stat_type='capacity', mod_type='factor'),
             ]
         ),
         Bionic(
@@ -853,20 +854,19 @@ if __name__ == "__main__":
                 "Its hyper-advanced systems provide unparalleled internal support, allowing the user to endure forces that would shatter normal bodies. "
                 "The implant's exotic technology ensures superhuman physical performance, seemingly limitless endurance, and rapid healing in any situation."
             ),
-            part_efficiency=4.0,
-            market_value=500000,
+            part_efficiency=3.0,
+            market_value=45500,
             mass=8,
             replace_part=False,
             body_part="Torso",
             additional_stats=[
                 Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
                 Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
-                Stat("BloodPumping", 2.0, stat_type='capacity', mod_type='factor'),
+                Stat("BloodPumping", 1.2, stat_type='capacity', mod_type='factor'),
                 Stat("Moving", 1.5, stat_type='capacity', mod_type='factor'),
                 Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='offset'),
                 Stat("ShootingAccuracyPawn", 1.4, stat_type='stat', mod_type='offset'),
                 Stat("Manipulation", 1.3, stat_type='capacity', mod_type='factor'),
-                Stat("WorkSpeedGlobal", 1.3, stat_type='stat', mod_type='factor'),
                 Stat("MoveSpeed", 1.3, stat_type='stat', mod_type='factor'),
             ],
             compatible_addons=[
@@ -877,9 +877,8 @@ if __name__ == "__main__":
                         "The Astraltech Resilience Enhancer dramatically improves the user's overall toughness, allowing them to shrug off damage that would incapacitate or kill a normal human. "
                         "This addon grants near-superhuman physical endurance, making the user almost impervious to harsh conditions and physical trauma."
                     ),
-                    market_value=220000,
+                    market_value=19500,
                     additional_stats=[
-                        Stat("BloodPumping", 1.5, stat_type='capacity', mod_type='factor'),
                         Stat("Moving", 1.2, stat_type='capacity', mod_type='factor'),
                     ]
                 ),
@@ -890,11 +889,11 @@ if __name__ == "__main__":
                         "The Astraltech Core Stabilizer perfects the user's internal balance and core strength, dramatically improving movement efficiency and virtually eliminating energy expenditure during physical tasks. "
                         "This addon is essential for those who need to perform at peak levels indefinitely."
                     ),
-                    market_value=240000,
+                    market_value=23400,
                     additional_stats=[
                         Stat("Moving", 1.4, stat_type='capacity', mod_type='factor'),
                         Stat("Manipulation", 1.3, stat_type='capacity', mod_type='factor'),
-                        Stat("WorkSpeedGlobal", 1.25, stat_type='stat', mod_type='factor'),
+                        Stat("WorkSpeedGlobal", 1.15, stat_type='stat', mod_type='factor'),
                     ]
                 ),
                 Addon(
@@ -904,7 +903,7 @@ if __name__ == "__main__":
                         "The Astraltech Durability Matrix exponentially reinforces the torso's structural integrity, providing near-invulnerability to physical damage. "
                         "This addon ensures unparalleled survivability in combat situations, as the body becomes resistant to all but the most catastrophic injuries."
                     ),
-                    market_value=280000,
+                    market_value=26000,
                     additional_stats=[
                         Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
                         Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
@@ -919,10 +918,11 @@ if __name__ == "__main__":
                         "The Astraltech Metabolic Regulator perfects the user's metabolism, optimizing energy utilization to such a degree that fatigue becomes nearly non-existent. "
                         "This addon is crucial for individuals requiring perpetual physical exertion without any loss in stamina or endurance."
                     ),
-                    market_value=320000,
+                    market_value=32500,
                     additional_stats=[
                         Stat("Moving", 1.4, stat_type='capacity', mod_type='factor'),
-                        Stat("WorkSpeedGlobal", 1.4, stat_type='stat', mod_type='factor'),
+                        Stat("WorkSpeedGlobal", 1.1, stat_type='stat', mod_type='factor'),
+                        Stat("Consciousness", 1.05, stat_type='capacity', mod_type='factor'),
                     ]
                 ),
                 Addon(
@@ -932,7 +932,7 @@ if __name__ == "__main__":
                         "The Astraltech Internal Shielding creates an energy barrier that absorbs and dissipates impacts, dramatically reducing the severity of injuries. "
                         "This addon is invaluable in combat situations, where it can mean the difference between walking away unscathed and critical injury."
                     ),
-                    market_value=350000,
+                    market_value=39000,
                     additional_stats=[
                         Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
                         Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
@@ -948,7 +948,7 @@ if __name__ == "__main__":
                         "It redefines the body's proportions, enhancing muscle tone and symmetry to create an ideal form. "
                         "This addon dramatically improves physical appearance, making the user exceptionally attractive."
                     ),
-                    market_value=260000,
+                    market_value=28600,
                     additional_stats=[
                         Stat("PawnBeauty", 3.0, stat_type='stat', mod_type='offset'),
                         Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
@@ -962,7 +962,7 @@ if __name__ == "__main__":
                         "It eliminates imperfections, scars, and signs of aging, granting flawless and radiant skin. "
                         "This addon significantly enhances the user's appearance and social presence."
                     ),
-                    market_value=240000,
+                    market_value=26600,
                     additional_stats=[
                         Stat("PawnBeauty", 2.0, stat_type='stat', mod_type='offset'),
                         Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
@@ -977,15 +977,16 @@ if __name__ == "__main__":
                 "The Astraltech Heart is a revolutionary cardiovascular system that transcends the limitations of biology. "
                 "It provides seemingly limitless stamina, complete immunity to fatigue, and superhuman physical performance, allowing the user to maintain peak activity levels indefinitely."
             ),
-            part_efficiency=6.0,
-            market_value=700000,
+            part_efficiency=3.0,
+            market_value=52000,
             mass=2,
             body_part="Heart",
             additional_stats=[
-                Stat("BloodPumping", 6.0, stat_type='capacity', mod_type='factor'),
+                Stat("BloodPumping", 2.75, stat_type='capacity', mod_type='factor'),
                 Stat("Moving", 2.0, stat_type='capacity', mod_type='factor'),
-                Stat("WorkSpeedGlobal", 1.25, stat_type='stat', mod_type='factor'),
+                Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
                 Stat("MoveSpeed", 1.5, stat_type='stat', mod_type='factor'),
+                Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
             ],
             compatible_addons=[
                 Addon(
@@ -995,11 +996,11 @@ if __name__ == "__main__":
                         "The Astraltech Cardio Boost is an advanced addon that further enhances the heart's capabilities beyond comprehension. "
                         "This addon eliminates the concept of physical exhaustion, allowing the user to perform at peak levels continuously without any decline in performance."
                     ),
-                    market_value=350000,
+                    market_value=32500,
                     additional_stats=[
-                        Stat("BloodPumping", 1.5, stat_type='capacity', mod_type='factor'),
+                        Stat("BloodPumping", 1.4, stat_type='capacity', mod_type='factor'),
                         Stat("Moving", 1.3, stat_type='capacity', mod_type='factor'),
-                        Stat("WorkSpeedGlobal", 1.3, stat_type='stat', mod_type='factor'),
+                        Stat("WorkSpeedGlobal", 1.1, stat_type='stat', mod_type='factor'),
                         Stat("MoveSpeed", 1.3, stat_type='stat', mod_type='factor'),
                     ]
                 ),
@@ -1012,16 +1013,16 @@ if __name__ == "__main__":
                 "The Astraltech Lung is a revolutionary respiratory enhancement that defies the limits of biology. "
                 "It allows for superhuman stamina and endurance, providing near-invulnerability to suffocation and unparalleled performance in any atmosphere."
             ),
-            part_efficiency=6.0,
-            market_value=600000,
+            part_efficiency=3.0,
+            market_value=39000,
             mass=2,
             body_part="Lung",
             additional_stats=[
-                Stat("Breathing", 6.0, stat_type='capacity', mod_type='factor'),
-                Stat("BloodPumping", 2.0, stat_type='capacity', mod_type='factor'),
+                Stat("Breathing", 3.0, stat_type='capacity', mod_type='factor'),
+                Stat("BloodPumping", 1.25, stat_type='capacity', mod_type='factor'),
                 Stat("Moving", 1.75, stat_type='capacity', mod_type='factor'),
-                Stat("WorkSpeedGlobal", 1.3, stat_type='stat', mod_type='factor'),
                 Stat("MoveSpeed", 1.3, stat_type='stat', mod_type='factor'),
+                Stat("Consciousness", 1.05, stat_type='capacity', mod_type='factor'),
             ]
         ),
         Bionic(
@@ -1031,14 +1032,14 @@ if __name__ == "__main__":
                 "The Astraltech Kidney is an unparalleled filtration system that revolutionizes the body's ability to purge toxins and regulate hydration. "
                 "It grants near-immunity to poisons and illnesses, while dramatically enhancing overall vitality and resilience."
             ),
-            part_efficiency=6.0,
-            market_value=580000,
+            part_efficiency=3.0,
+            market_value=28000,
             mass=1.5,
             body_part="Kidney",
             additional_stats=[
                 Stat("BloodFiltration", 6.0, stat_type='capacity', mod_type='factor'),
-                Stat("Consciousness", 1.5, stat_type='capacity', mod_type='factor'),
-                Stat("Breathing", 1.75, stat_type='capacity', mod_type='factor'),
+                Stat("Consciousness", 1.05, stat_type='capacity', mod_type='factor'),
+                Stat("Breathing", 1.1, stat_type='capacity', mod_type='factor'),
             ]
         ),
         Bionic(
@@ -1048,13 +1049,14 @@ if __name__ == "__main__":
                 "The Astraltech Liver is a marvel of biotechnology, providing unimaginable detoxification and metabolic regulation. "
                 "It grants the user virtual immunity to toxins and alcohol while dramatically accelerating healing and providing unmatched resilience to diseases."
             ),
-            part_efficiency=6.0,
-            market_value=620000,
+            part_efficiency=3.0,
+            market_value=31200,
             mass=3,
             body_part="Liver",
             additional_stats=[
                 Stat("BloodFiltration", 6.0, stat_type='capacity', mod_type='factor'),
-                Stat("Consciousness", 1.5, stat_type='capacity', mod_type='factor'),
+                Stat("Breathing", 1.2, stat_type='capacity', mod_type='factor'),
+                Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
             ]
         ),
         Bionic(
@@ -1064,14 +1066,14 @@ if __name__ == "__main__":
                 "The Astraltech Stomach is a revolutionary digestive system that redefines the limits of nutrient absorption and energy extraction. "
                 "It allows for near-perfect metabolic efficiency, dramatically reducing food requirements while maximizing energy output and physical endurance."
             ),
-            part_efficiency=6.0,
-            market_value=500000,
+            part_efficiency=3.0,
+            market_value=28600,
             mass=3,
             body_part="Stomach",
             additional_stats=[
-                Stat("Moving", 1.75, stat_type='capacity', mod_type='factor'),
+                Stat("Moving", 1.25, stat_type='capacity', mod_type='factor'),
                 Stat("MaxNutrition", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
+                Stat("Consciousness", 1.05, stat_type='capacity', mod_type='factor'),
             ],
             compatible_addons=[
                 Addon(
@@ -1081,12 +1083,12 @@ if __name__ == "__main__":
                         "The Astraltech Metabolic Optimizer pushes the stomach's capabilities to near-magical levels. "
                         "This addon allows the user to extract maximum energy from minimal food, virtually eliminating fatigue and granting seemingly limitless endurance."
                     ),
-                    market_value=250000,
+                    market_value=20800,
                     additional_stats=[
-                        Stat("Moving", 1.3, stat_type='capacity', mod_type='factor'),
-                        Stat("WorkSpeedGlobal", 1.15, stat_type='stat', mod_type='factor'),
+                        Stat("Moving", 1.1, stat_type='capacity', mod_type='factor'),
+                        Stat("WorkSpeedGlobal", 1.1, stat_type='stat', mod_type='factor'),
                         Stat("BloodFiltration", 2.0, stat_type='capacity', mod_type='factor'),
-                        Stat("Consciousness", 1.2, stat_type='capacity', mod_type='factor'),
+                        Stat("Consciousness", 1.05, stat_type='capacity', mod_type='factor'),
                     ]
                 ),
             ]
@@ -1098,17 +1100,17 @@ if __name__ == "__main__":
                 "The Astraltech Pelvis is a groundbreaking implant that redefines human biomechanics. "
                 "It provides supernatural core stability and lower body strength, allowing for inhuman endurance, agility, and resilience in any physical endeavor."
             ),
-            part_efficiency=4.0,
-            market_value=400000,
+            part_efficiency=3.0,
+            market_value=36400,
             mass=7,
             replace_part=False,
             body_part="Pelvis",
             additional_stats=[
-                Stat("Moving", 2.0, stat_type='capacity', mod_type='factor'),
-                Stat("Manipulation", 1.4, stat_type='capacity', mod_type='factor'),
-                Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='offset'),
-                Stat("MeleeDodgeChance", 1.5, stat_type='stat', mod_type='offset'),
-                Stat("MoveSpeed", 1.3, stat_type='stat', mod_type='factor'),
+                Stat("Moving", 1.4, stat_type='capacity', mod_type='factor'),
+                Stat("Manipulation", 1.25, stat_type='capacity', mod_type='factor'),
+                Stat("MeleeHitChance", 1.25, stat_type='stat', mod_type='offset'),
+                Stat("MeleeDodgeChance", 1.25, stat_type='stat', mod_type='offset'),
+                Stat("MoveSpeed", 1.2, stat_type='stat', mod_type='factor'),
             ]
         ),
         Bionic(
@@ -1120,11 +1122,11 @@ if __name__ == "__main__":
                 "and superhuman jumping abilities, redefining the limits of mobility and athletic performance."
             ),
             part_efficiency=3.0,
-            market_value=425000,
+            market_value=32500,
             mass=5,
             body_part="Leg",
             additional_stats=[
-                Stat("Moving", 2.0, stat_type='capacity', mod_type='factor'),
+                Stat("Moving", 1.75, stat_type='capacity', mod_type='factor'),
                 Stat("MoveSpeed", 1.5, stat_type='stat', mod_type='factor'),
                 Stat("MeleeHitChance", 1.3, stat_type='stat', mod_type='offset'),
                 Stat("MeleeDodgeChance", 1.4, stat_type='stat', mod_type='offset'),
@@ -1138,10 +1140,10 @@ if __name__ == "__main__":
                         "The Astraltech Knee Enhancement integrates otherworldly technology to push the capabilities of bionic legs beyond imagination. "
                         "It grants the user near-perfect agility, allowing for instantaneous direction changes and providing seemingly limitless endurance."
                     ),
-                    market_value=96000,
+                    market_value=19500,
                     additional_stats=[
-                        Stat("Moving", 1.5, stat_type='capacity', mod_type='factor'),
-                        Stat("MoveSpeed", 1.3, stat_type='stat', mod_type='factor'),
+                        Stat("Moving", 1.4, stat_type='capacity', mod_type='factor'),
+                        Stat("MoveSpeed", 1.25, stat_type='stat', mod_type='factor'),
                         Stat("MeleeDodgeChance", 1.3, stat_type='stat', mod_type='offset'),
                         Stat("WorkSpeedGlobal", 1.15, stat_type='stat', mod_type='factor'),
                     ]

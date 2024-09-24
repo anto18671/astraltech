@@ -13,7 +13,7 @@ The Astraltech Working Memory Augmentation drastically improves the brain's capa
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>40000</MarketValue>
+		<MarketValue>23400</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -41,7 +41,7 @@ The Astraltech Emotional Regulator stabilizes emotional responses, ensuring that
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>19500</MarketValue>
+		<MarketValue>15600</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -69,7 +69,7 @@ The Astraltech Cognitive Synchronizer tunes brainwave patterns to enhance focus 
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>26000</MarketValue>
+		<MarketValue>20800</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -97,40 +97,12 @@ The Astraltech Rapid Thought Accelerator boosts the brain’s processing speed, 
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>30000</MarketValue>
+		<MarketValue>26000</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
 	<descriptionHyperlinks>
 		<RecipeDef>Install_AstraltechThoughtAccelerator</RecipeDef>
-	</descriptionHyperlinks>
-	<costList>
-		<Plasteel>10</Plasteel>
-		<ComponentSpacer>3</ComponentSpacer>
-	</costList>
-	<comps>
-		<li Class="CompProperties_Forbiddable" />
-	</comps>
-</ThingDef>
-<ThingDef ParentName="BodyPartBionicBase">
-	<defName>AstraltechNightVisionModule</defName>
-	<label>Astraltech Night Vision Module</label>
-	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
-
-The Astraltech Night Vision Module grants the user the ability to see clearly in low-light environments. With advanced light amplification technology, this addon ensures perfect vision during nighttime or dimly lit conditions.</description>
-	<techLevel>Spacer</techLevel>
-	<thingClass>ThingWithComps</thingClass>
-	<graphicData>
-		<texPath>Things/Item/Health/AstralAddons</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-	</graphicData>
-	<statBases>
-		<MarketValue>15000</MarketValue>
-	</statBases>
-	<techHediffsTags><li>Advanced</li></techHediffsTags>
-	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
-	<descriptionHyperlinks>
-		<RecipeDef>Install_AstraltechNightVisionModule</RecipeDef>
 	</descriptionHyperlinks>
 	<costList>
 		<Plasteel>10</Plasteel>
@@ -153,7 +125,7 @@ The Astraltech Targeting Enhancer improves the user’s ability to focus on targ
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>20000</MarketValue>
+		<MarketValue>11700</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -181,7 +153,7 @@ The Astraltech Motion Detection Module enhances the user’s ability to detect m
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>18000</MarketValue>
+		<MarketValue>10400</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -209,7 +181,7 @@ The Astraltech Sound Amplifier grants its user the ability to hear sounds from i
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>140000</MarketValue>
+		<MarketValue>11700</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -237,7 +209,7 @@ The Astraltech Noise Filter eliminates all unwanted background noise, allowing t
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>16000</MarketValue>
+		<MarketValue>8450</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -265,7 +237,7 @@ The Astraltech Echo Locator utilizes impossible echolocation technology, grantin
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>18000</MarketValue>
+		<MarketValue>11700</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -293,7 +265,7 @@ Engineered with otherworldly precision, the Astraltech Shoulder Reinforcement dr
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>96000</MarketValue>
+		<MarketValue>19500</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -321,7 +293,7 @@ The Astraltech Posture Enhancer perfects the user's body alignment, eliminating 
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>200000</MarketValue>
+		<MarketValue>23400</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -349,7 +321,7 @@ The Astraltech Stability Module grants supernatural core stability, allowing the
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>250000</MarketValue>
+		<MarketValue>26000</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -377,7 +349,7 @@ The Astraltech Agility Booster elevates the user's agility to superhuman levels,
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>300000</MarketValue>
+		<MarketValue>32500</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -405,7 +377,7 @@ The Astraltech Resilience Enhancer dramatically improves the user's overall toug
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>220000</MarketValue>
+		<MarketValue>19500</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -433,7 +405,7 @@ The Astraltech Core Stabilizer perfects the user's internal balance and core str
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>240000</MarketValue>
+		<MarketValue>23400</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -461,7 +433,7 @@ The Astraltech Durability Matrix exponentially reinforces the torso's structural
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>280000</MarketValue>
+		<MarketValue>26000</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -489,7 +461,7 @@ The Astraltech Metabolic Regulator perfects the user's metabolism, optimizing en
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>320000</MarketValue>
+		<MarketValue>32500</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -517,7 +489,7 @@ The Astraltech Internal Shielding creates an energy barrier that absorbs and dis
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>350000</MarketValue>
+		<MarketValue>39000</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -545,7 +517,7 @@ The Astraltech Shaper is an advanced implant that sculpts the user's physique to
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>260000</MarketValue>
+		<MarketValue>28600</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -573,7 +545,7 @@ The Astraltech Skin Enhancer rejuvenates and perfects the user's skin at the cel
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>240000</MarketValue>
+		<MarketValue>26600</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -601,7 +573,7 @@ The Astraltech Cardio Boost is an advanced addon that further enhances the heart
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>350000</MarketValue>
+		<MarketValue>32500</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -629,7 +601,7 @@ The Astraltech Metabolic Optimizer pushes the stomach's capabilities to near-mag
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>250000</MarketValue>
+		<MarketValue>20800</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
@@ -657,7 +629,7 @@ The Astraltech Knee Enhancement integrates otherworldly technology to push the c
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>96000</MarketValue>
+		<MarketValue>19500</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
