@@ -4,23 +4,20 @@
 	<defName>Astraltech_Skull_hediff</defName>
 	<label>Astraltech Skull</label>
 	<labelNoun>Astraltech Skull</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Skull is a highly advanced cranial implant designed to provide superior protection to the brain while enhancing cognitive processing speed. It offers unmatched resilience against physical trauma and improves overall mental clarity, making it a critical upgrade for individuals in combat or high-stress environments.</description>
 	<descriptionHyperlinks>
 		<ThingDef>Astraltech_Skull</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>Astraltech_Skull</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>4.0</partEfficiency>
 	</addedPartProps>
 	<stages>
 		<li>
-			<statOffsets>
-				<MentalBreakThreshold>-0.25</MentalBreakThreshold>
-			</statOffsets>
 		</li>
 	</stages>
 </HediffDef>
@@ -28,14 +25,14 @@ The Astraltech Skull is a highly advanced cranial implant designed to provide su
 	<defName>Astraltech_Brain_hediff</defName>
 	<label>Astraltech Brain</label>
 	<labelNoun>Astraltech Brain</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Brain is a pinnacle of neurotechnology, vastly expanding cognitive capacities and mental acuity. It seamlessly integrates with neural pathways to provide heightened intelligence, rapid information processing, and enhanced decision-making capabilities.</description>
 	<descriptionHyperlinks>
 		<ThingDef>Astraltech_Brain</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>Astraltech_Brain</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>4.0</partEfficiency>
@@ -43,12 +40,24 @@ The Astraltech Brain is a pinnacle of neurotechnology, vastly expanding cognitiv
 	<stages>
 		<li>
 			<statOffsets>
-				<MentalBreakThreshold>-0.25</MentalBreakThreshold>
+				<PawnBeauty>1.0</PawnBeauty>
+				<SocialImpact>0.5</SocialImpact>
+				<NegotiationAbility>0.5</NegotiationAbility>
+				<TradePriceImprovement>0.25</TradePriceImprovement>
+				<MeleeHitChance>5.0</MeleeHitChance>
+				<ShootingAccuracyPawn>5.0</ShootingAccuracyPawn>
+				<GlobalLearningFactor>4.0</GlobalLearningFactor>
+				<MedicalOperationSpeed>0.4</MedicalOperationSpeed>
+				<MedicalTendSpeed>0.4</MedicalTendSpeed>
+				<MedicalTendQuality>0.4</MedicalTendQuality>
+				<MedicalSurgerySuccessChance>0.4</MedicalSurgerySuccessChance>
+				<MeditationFocusGain>1.5</MeditationFocusGain>
+				<ResearchSpeed>3.0</ResearchSpeed>
 			</statOffsets>
 			<capMods>
 				<li>
 					<capacity>Consciousness</capacity>
-					<postFactor>4.0</postFactor>
+					<postFactor>6.0</postFactor>
 				</li>
 				<li>
 					<capacity>Sight</capacity>
@@ -70,14 +79,14 @@ The Astraltech Brain is a pinnacle of neurotechnology, vastly expanding cognitiv
 	<defName>Astraltech_Working_Memory_Augmentation_hediff</defName>
 	<label>Astraltech Working Memory Augmentation</label>
 	<labelNoun>Astraltech Working Memory Augmentation</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Working Memory Augmentation drastically improves the brain's capacity to hold and manipulate information in real-time. By enhancing short-term memory and cognitive agility, this addon is ideal for users engaged in complex, high-pressure decision-making, allowing them to juggle multiple tasks and data points effortlessly.</description>
 	<descriptionHyperlinks>
 		<ThingDef>Astraltech_Working_Memory_Augmentation</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>Astraltech_Working_Memory_Augmentation</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -87,13 +96,15 @@ The Astraltech Working Memory Augmentation drastically improves the brain's capa
 			<capMods>
 				<li>
 					<capacity>Consciousness</capacity>
-					<postFactor>1.25</postFactor>
+					<postFactor>1.5</postFactor>
 				</li>
 			</capMods>
+			<statOffsets>
+				<GlobalLearningFactor>1.0</GlobalLearningFactor>
+				<ResearchSpeed>2.0</ResearchSpeed>
+			</statOffsets>
 			<statFactors>
-				<WorkSpeedGlobal>1.5</WorkSpeedGlobal>
-				<GlobalLearningFactor>2.0</GlobalLearningFactor>
-				<ResearchSpeedFactor>2.0</ResearchSpeedFactor>
+				<WorkSpeedGlobal>1.2</WorkSpeedGlobal>
 			</statFactors>
 		</li>
 	</stages>
@@ -102,38 +113,14 @@ The Astraltech Working Memory Augmentation drastically improves the brain's capa
 	<defName>Astraltech_Emotional_Regulator_hediff</defName>
 	<label>Astraltech Emotional Regulator</label>
 	<labelNoun>Astraltech Emotional Regulator</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Emotional Regulator stabilizes emotional responses, ensuring that the user can stay calm and composed under the most stressful conditions. This addon promotes clarity of thought and enhances social dynamics by eliminating erratic emotional shifts.</description>
 	<descriptionHyperlinks>
 		<ThingDef>Astraltech_Emotional_Regulator</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>Astraltech_Emotional_Regulator</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
-	<isBad>false</isBad>
-	<addedPartProps>
-		<partEfficiency>1.0</partEfficiency>
-	</addedPartProps>
-	<stages>
-		<li>
-			<statOffsets>
-				<MentalBreakThreshold>-0.4</MentalBreakThreshold>
-			</statOffsets>
-		</li>
-	</stages>
-</HediffDef>
-<HediffDef ParentName="AddedBodyPartBase">
-	<defName>Astraltech_Cognitive_Synchronizer_hediff</defName>
-	<label>Astraltech Cognitive Synchronizer</label>
-	<labelNoun>Astraltech Cognitive Synchronizer</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
-
-The Astraltech Cognitive Synchronizer tunes brainwave patterns to enhance focus and multi-tasking abilities. With this addon, the user can seamlessly handle multiple tasks with minimal loss of efficiency, vastly improving overall productivity.</description>
-	<descriptionHyperlinks>
-		<ThingDef>Astraltech_Cognitive_Synchronizer</ThingDef>
-	</descriptionHyperlinks>
-	<spawnThingOnRemoved>Astraltech_Cognitive_Synchronizer</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -146,6 +133,42 @@ The Astraltech Cognitive Synchronizer tunes brainwave patterns to enhance focus 
 					<postFactor>1.1</postFactor>
 				</li>
 			</capMods>
+			<statOffsets>
+				<NegotiationAbility>0.5</NegotiationAbility>
+				<TradePriceImprovement>0.25</TradePriceImprovement>
+				<MentalBreakThreshold>-0.4</MentalBreakThreshold>
+			</statOffsets>
+		</li>
+	</stages>
+</HediffDef>
+<HediffDef ParentName="AddedBodyPartBase">
+	<defName>Astraltech_Cognitive_Synchronizer_hediff</defName>
+	<label>Astraltech Cognitive Synchronizer</label>
+	<labelNoun>Astraltech Cognitive Synchronizer</labelNoun>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Cognitive Synchronizer tunes brainwave patterns to enhance focus and multi-tasking abilities. With this addon, the user can seamlessly handle multiple tasks with minimal loss of efficiency, vastly improving overall productivity.</description>
+	<descriptionHyperlinks>
+		<ThingDef>Astraltech_Cognitive_Synchronizer</ThingDef>
+	</descriptionHyperlinks>
+	<spawnThingOnRemoved>Astraltech_Cognitive_Synchronizer</spawnThingOnRemoved>
+	<hediffClass>Hediff_Implant</hediffClass>
+	<isBad>false</isBad>
+	<addedPartProps>
+		<partEfficiency>1.0</partEfficiency>
+	</addedPartProps>
+	<stages>
+		<li>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>1.25</postFactor>
+				</li>
+				<li>
+					<capacity>Manipulation</capacity>
+					<postFactor>1.25</postFactor>
+				</li>
+			</capMods>
 			<statFactors>
 				<WorkSpeedGlobal>1.2</WorkSpeedGlobal>
 			</statFactors>
@@ -156,14 +179,14 @@ The Astraltech Cognitive Synchronizer tunes brainwave patterns to enhance focus 
 	<defName>AstraltechThoughtAccelerator_hediff</defName>
 	<label>Astraltech Rapid Thought Accelerator</label>
 	<labelNoun>Astraltech Rapid Thought Accelerator</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Rapid Thought Accelerator boosts the brain’s processing speed, enabling quick decisions, faster reactions, and split-second calculations. It’s perfect for users engaged in high-stakes operations or intense mental tasks.</description>
 	<descriptionHyperlinks>
 		<ThingDef>AstraltechThoughtAccelerator</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>AstraltechThoughtAccelerator</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -176,11 +199,13 @@ The Astraltech Rapid Thought Accelerator boosts the brain’s processing speed, 
 					<postFactor>1.2</postFactor>
 				</li>
 			</capMods>
-			<statFactors>
-				<GlobalLearningFactor>1.75</GlobalLearningFactor>
-				<WorkSpeedGlobal>1.2</WorkSpeedGlobal>
+			<statOffsets>
+				<GlobalLearningFactor>1.5</GlobalLearningFactor>
 				<MeleeHitChance>1.25</MeleeHitChance>
 				<ShootingAccuracyPawn>1.25</ShootingAccuracyPawn>
+			</statOffsets>
+			<statFactors>
+				<WorkSpeedGlobal>1.2</WorkSpeedGlobal>
 			</statFactors>
 		</li>
 	</stages>
@@ -189,7 +214,7 @@ The Astraltech Rapid Thought Accelerator boosts the brain’s processing speed, 
 	<defName>Astraltech_Eye_hediff</defName>
 	<label>Astraltech Eye</label>
 	<labelNoun>Astraltech Eye</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Eye is a cutting-edge bionic implant designed to vastly improve visual acuity and perception. With advanced optical systems, it enhances sight beyond normal human limits, enabling the user to see in low-light conditions, improve reaction times, and increase accuracy in combat situations.</description>
 	<descriptionHyperlinks>
@@ -203,6 +228,10 @@ The Astraltech Eye is a cutting-edge bionic implant designed to vastly improve v
 	</addedPartProps>
 	<stages>
 		<li>
+			<statOffsets>
+				<ShootingAccuracyPawn>1.75</ShootingAccuracyPawn>
+				<MeleeHitChance>1.5</MeleeHitChance>
+			</statOffsets>
 			<capMods>
 				<li>
 					<capacity>Sight</capacity>
@@ -220,14 +249,14 @@ The Astraltech Eye is a cutting-edge bionic implant designed to vastly improve v
 	<defName>AstraltechNightVisionModule_hediff</defName>
 	<label>Astraltech Night Vision Module</label>
 	<labelNoun>Astraltech Night Vision Module</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Night Vision Module grants the user the ability to see clearly in low-light environments. With advanced light amplification technology, this addon ensures perfect vision during nighttime or dimly lit conditions.</description>
 	<descriptionHyperlinks>
 		<ThingDef>AstraltechNightVisionModule</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>AstraltechNightVisionModule</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -240,9 +269,9 @@ The Astraltech Night Vision Module grants the user the ability to see clearly in
 					<postFactor>1.75</postFactor>
 				</li>
 			</capMods>
-			<statFactors>
+			<statOffsets>
 				<ShootingAccuracyPawn>1.4</ShootingAccuracyPawn>
-			</statFactors>
+			</statOffsets>
 		</li>
 	</stages>
 </HediffDef>
@@ -250,24 +279,30 @@ The Astraltech Night Vision Module grants the user the ability to see clearly in
 	<defName>AstraltechTargetingEnhancer_hediff</defName>
 	<label>Astraltech Targeting Enhancer</label>
 	<labelNoun>Astraltech Targeting Enhancer</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Targeting Enhancer improves the user’s ability to focus on targets and increases precision in combat. With advanced tracking algorithms, this addon is ideal for sharpshooters and individuals in combat-heavy roles.</description>
 	<descriptionHyperlinks>
 		<ThingDef>AstraltechTargetingEnhancer</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>AstraltechTargetingEnhancer</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
 	</addedPartProps>
 	<stages>
 		<li>
-			<statFactors>
+			<capMods>
+				<li>
+					<capacity>Sight</capacity>
+					<postFactor>1.5</postFactor>
+				</li>
+			</capMods>
+			<statOffsets>
 				<ShootingAccuracyPawn>1.6</ShootingAccuracyPawn>
 				<MeleeHitChance>1.4</MeleeHitChance>
-			</statFactors>
+			</statOffsets>
 		</li>
 	</stages>
 </HediffDef>
@@ -275,14 +310,14 @@ The Astraltech Targeting Enhancer improves the user’s ability to focus on targ
 	<defName>AstraltechMotionDetectionModule_hediff</defName>
 	<label>Astraltech Motion Detection Module</label>
 	<labelNoun>Astraltech Motion Detection Module</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Motion Detection Module enhances the user’s ability to detect movement, significantly increasing their reaction time in fast-paced environments. It provides an edge in combat by allowing the user to anticipate and respond to threats more quickly.</description>
 	<descriptionHyperlinks>
 		<ThingDef>AstraltechMotionDetectionModule</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>AstraltechMotionDetectionModule</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -299,8 +334,10 @@ The Astraltech Motion Detection Module enhances the user’s ability to detect m
 					<postFactor>1.2</postFactor>
 				</li>
 			</capMods>
-			<statFactors>
+			<statOffsets>
 				<MeleeHitChance>1.4</MeleeHitChance>
+			</statOffsets>
+			<statFactors>
 				<MoveSpeed>1.1</MoveSpeed>
 			</statFactors>
 		</li>
@@ -310,7 +347,7 @@ The Astraltech Motion Detection Module enhances the user’s ability to detect m
 	<defName>Astraltech_Ear_hediff</defName>
 	<label>Astraltech Ear</label>
 	<labelNoun>Astraltech Ear</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Ear is a marvel of auditory enhancement, granting its user unparalleled hearing abilities. It provides superhuman sound detection, heightened situational awareness, and flawless communication in any environment. With its otherworldly sound-processing capabilities, even the faintest whisper becomes clear as day.</description>
 	<descriptionHyperlinks>
@@ -325,7 +362,9 @@ The Astraltech Ear is a marvel of auditory enhancement, granting its user unpara
 	<stages>
 		<li>
 			<statOffsets>
-				<MentalBreakThreshold>-0.15</MentalBreakThreshold>
+				<MeleeHitChance>1.2</MeleeHitChance>
+				<ShootingAccuracyPawn>1.2</ShootingAccuracyPawn>
+				<NegotiationAbility>0.2</NegotiationAbility>
 			</statOffsets>
 			<capMods>
 				<li>
@@ -340,14 +379,14 @@ The Astraltech Ear is a marvel of auditory enhancement, granting its user unpara
 	<defName>AstraltechSoundAmplifier_hediff</defName>
 	<label>Astraltech Sound Amplifier</label>
 	<labelNoun>Astraltech Sound Amplifier</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Sound Amplifier grants its user the ability to hear sounds from impossible distances. This addon enhances long-range auditory detection and allows the user to hear through solid obstacles as if they weren't there.</description>
 	<descriptionHyperlinks>
 		<ThingDef>AstraltechSoundAmplifier</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>AstraltechSoundAmplifier</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -360,10 +399,10 @@ The Astraltech Sound Amplifier grants its user the ability to hear sounds from i
 					<postFactor>1.5</postFactor>
 				</li>
 			</capMods>
-			<statFactors>
+			<statOffsets>
 				<ShootingAccuracyPawn>1.1</ShootingAccuracyPawn>
 				<MeleeHitChance>1.1</MeleeHitChance>
-			</statFactors>
+			</statOffsets>
 		</li>
 	</stages>
 </HediffDef>
@@ -371,14 +410,14 @@ The Astraltech Sound Amplifier grants its user the ability to hear sounds from i
 	<defName>AstraltechNoiseFilter_hediff</defName>
 	<label>Astraltech Noise Filter</label>
 	<labelNoun>Astraltech Noise Filter</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Noise Filter eliminates all unwanted background noise, allowing the user to focus on crucial sounds with preternatural clarity. In even the most chaotic environments, it filters out distractions, enhancing auditory perception to superhuman levels.</description>
 	<descriptionHyperlinks>
 		<ThingDef>AstraltechNoiseFilter</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>AstraltechNoiseFilter</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -390,13 +429,11 @@ The Astraltech Noise Filter eliminates all unwanted background noise, allowing t
 					<capacity>Hearing</capacity>
 					<postFactor>1.25</postFactor>
 				</li>
+				<li>
+					<capacity>Sight</capacity>
+					<postFactor>1.1</postFactor>
+				</li>
 			</capMods>
-			<statOffsets>
-				<MentalBreakThreshold>-0.2</MentalBreakThreshold>
-			</statOffsets>
-			<statFactors>
-				<AimingDelayFactor>0.9</AimingDelayFactor>
-			</statFactors>
 		</li>
 	</stages>
 </HediffDef>
@@ -404,14 +441,14 @@ The Astraltech Noise Filter eliminates all unwanted background noise, allowing t
 	<defName>AstraltechEchoLocator_hediff</defName>
 	<label>Astraltech Echo Locator</label>
 	<labelNoun>Astraltech Echo Locator</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Echo Locator utilizes impossible echolocation technology, granting the user an almost precognitive spatial awareness. This addon provides unparalleled threat detection and environmental navigation, bordering on the supernatural.</description>
 	<descriptionHyperlinks>
 		<ThingDef>AstraltechEchoLocator</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>AstraltechEchoLocator</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -425,13 +462,10 @@ The Astraltech Echo Locator utilizes impossible echolocation technology, grantin
 				</li>
 			</capMods>
 			<statOffsets>
-				<MentalBreakThreshold>-0.15</MentalBreakThreshold>
-			</statOffsets>
-			<statFactors>
 				<MeleeHitChance>1.3</MeleeHitChance>
 				<ShootingAccuracyPawn>1.2</ShootingAccuracyPawn>
 				<MeleeDodgeChance>1.2</MeleeDodgeChance>
-			</statFactors>
+			</statOffsets>
 		</li>
 	</stages>
 </HediffDef>
@@ -439,7 +473,7 @@ The Astraltech Echo Locator utilizes impossible echolocation technology, grantin
 	<defName>Astraltech_Nose_hediff</defName>
 	<label>Astraltech Nose</label>
 	<labelNoun>Astraltech Nose</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Nose is an olfactory marvel that transcends normal sensory limits. It offers supernatural detection of airborne particles, granting the ability to discern complex chemical compositions at a glance. Users can track scents across vast distances and even detect emotional states through pheromone analysis.</description>
 	<descriptionHyperlinks>
@@ -454,9 +488,16 @@ The Astraltech Nose is an olfactory marvel that transcends normal sensory limits
 	<stages>
 		<li>
 			<statOffsets>
-				<MentalBreakThreshold>-0.15</MentalBreakThreshold>
+				<PawnBeauty>1.0</PawnBeauty>
+				<SocialImpact>0.5</SocialImpact>
 				<FoodPoisonChance>-0.5</FoodPoisonChance>
 			</statOffsets>
+			<capMods>
+				<li>
+					<capacity>Breathing</capacity>
+					<postFactor>1.5</postFactor>
+				</li>
+			</capMods>
 		</li>
 	</stages>
 </HediffDef>
@@ -464,7 +505,7 @@ The Astraltech Nose is an olfactory marvel that transcends normal sensory limits
 	<defName>Astraltech_Jaw_hediff</defName>
 	<label>Astraltech Jaw</label>
 	<labelNoun>Astraltech Jaw</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Jaw is a pinnacle of oral enhancement, granting its user unparalleled speech capabilities and devastating bite force. It provides flawless articulation in any language, enhanced persuasive abilities, and the strength to crush steel between its teeth. This implant redefines the limits of both diplomacy and close-quarters combat.</description>
 	<descriptionHyperlinks>
@@ -479,6 +520,9 @@ The Astraltech Jaw is a pinnacle of oral enhancement, granting its user unparall
 	<stages>
 		<li>
 			<statOffsets>
+				<PawnBeauty>1.0</PawnBeauty>
+				<SocialImpact>0.5</SocialImpact>
+				<NegotiationAbility>0.5</NegotiationAbility>
 				<TradePriceImprovement>0.1</TradePriceImprovement>
 			</statOffsets>
 		</li>
@@ -488,14 +532,14 @@ The Astraltech Jaw is a pinnacle of oral enhancement, granting its user unparall
 	<defName>Astraltech_Neck_hediff</defName>
 	<label>Astraltech Neck</label>
 	<labelNoun>Astraltech Neck</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Neck is a marvel of biomechanical engineering, offering superhuman structural integrity and flexibility. It grants the user near-invulnerability to neck injuries, perfect posture control, and enhanced sensory processing. This implant elevates the user's physical capabilities to mythical levels, making them a force to be reckoned with in any situation.</description>
 	<descriptionHyperlinks>
 		<ThingDef>Astraltech_Neck</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>Astraltech_Neck</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>3.5</partEfficiency>
@@ -503,7 +547,9 @@ The Astraltech Neck is a marvel of biomechanical engineering, offering superhuma
 	<stages>
 		<li>
 			<statOffsets>
-				<MentalBreakThreshold>-0.2</MentalBreakThreshold>
+				<MeleeHitChance>1.4</MeleeHitChance>
+				<ShootingAccuracyPawn>1.3</ShootingAccuracyPawn>
+				<MeleeDodgeChance>1.2</MeleeDodgeChance>
 			</statOffsets>
 			<capMods>
 				<li>
@@ -518,7 +564,7 @@ The Astraltech Neck is a marvel of biomechanical engineering, offering superhuma
 	<defName>Astraltech_Arm_hediff</defName>
 	<label>Astraltech Arm</label>
 	<labelNoun>Astraltech Arm</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Arm represents the pinnacle of prosthetic engineering, offering superhuman strength and dexterity. Its adaptive nanosystems allow for impossibly precise movements and effortless lifting of massive weights, while its indestructible construction ensures unmatched durability in even the most extreme situations.</description>
 	<descriptionHyperlinks>
@@ -532,6 +578,15 @@ The Astraltech Arm represents the pinnacle of prosthetic engineering, offering s
 	</addedPartProps>
 	<stages>
 		<li>
+			<statOffsets>
+				<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
+				<MedicalOperationSpeed>0.4</MedicalOperationSpeed>
+				<MedicalTendSpeed>0.4</MedicalTendSpeed>
+				<MedicalTendQuality>0.4</MedicalTendQuality>
+				<MedicalSurgerySuccessChance>0.4</MedicalSurgerySuccessChance>
+				<MeleeHitChance>1.4</MeleeHitChance>
+				<ConstructionSpeed>0.3</ConstructionSpeed>
+			</statOffsets>
 			<capMods>
 				<li>
 					<capacity>Manipulation</capacity>
@@ -545,14 +600,14 @@ The Astraltech Arm represents the pinnacle of prosthetic engineering, offering s
 	<defName>Astraltech_Shoulder_Reinforcement_hediff</defName>
 	<label>Astraltech Shoulder Reinforcement</label>
 	<labelNoun>Astraltech Shoulder Reinforcement</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 Engineered with otherworldly precision, the Astraltech Shoulder Reinforcement dramatically enhances the structural integrity and power output of bionic arms, enabling strength beyond mortal comprehension and unbreakable resilience in even the most extreme environments.</description>
 	<descriptionHyperlinks>
 		<ThingDef>Astraltech_Shoulder_Reinforcement</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>Astraltech_Shoulder_Reinforcement</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -576,20 +631,24 @@ Engineered with otherworldly precision, the Astraltech Shoulder Reinforcement dr
 	<defName>Astraltech_Spine_hediff</defName>
 	<label>Astraltech Spine</label>
 	<labelNoun>Astraltech Spine</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Spine is a revolutionary bionic implant that redefines human physicality. It grants the user inhuman core stability, mobility, and overall physical coordination. Wearers move with preternatural grace, maintain perfect balance in any situation, and possess flexibility that defies biological limitations.</description>
 	<descriptionHyperlinks>
 		<ThingDef>Astraltech_Spine</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>Astraltech_Spine</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>5.0</partEfficiency>
 	</addedPartProps>
 	<stages>
 		<li>
+			<statOffsets>
+				<MeleeHitChance>1.5</MeleeHitChance>
+				<MeleeDodgeChance>1.5</MeleeDodgeChance>
+			</statOffsets>
 			<capMods>
 				<li>
 					<capacity>Moving</capacity>
@@ -607,14 +666,14 @@ The Astraltech Spine is a revolutionary bionic implant that redefines human phys
 	<defName>AstraltechPostureEnhancer_hediff</defName>
 	<label>Astraltech Posture Enhancer</label>
 	<labelNoun>Astraltech Posture Enhancer</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Posture Enhancer perfects the user's body alignment, eliminating strain during any movement and granting limitless endurance. This addon ensures flawless posture for any task, offering superhuman comfort and efficiency in all physical endeavors.</description>
 	<descriptionHyperlinks>
 		<ThingDef>AstraltechPostureEnhancer</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>AstraltechPostureEnhancer</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -631,6 +690,10 @@ The Astraltech Posture Enhancer perfects the user's body alignment, eliminating 
 					<postFactor>1.25</postFactor>
 				</li>
 			</capMods>
+			<statOffsets>
+				<PawnBeauty>1.0</PawnBeauty>
+				<SocialImpact>0.5</SocialImpact>
+			</statOffsets>
 			<statFactors>
 				<WorkSpeedGlobal>1.2</WorkSpeedGlobal>
 			</statFactors>
@@ -641,14 +704,14 @@ The Astraltech Posture Enhancer perfects the user's body alignment, eliminating 
 	<defName>AstraltechStabilityModule_hediff</defName>
 	<label>Astraltech Stability Module</label>
 	<labelNoun>Astraltech Stability Module</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Stability Module grants supernatural core stability, allowing the user to perform even the most delicate tasks with perfect accuracy and control. It renders the user nearly immune to knockdowns and dramatically improves overall physical performance.</description>
 	<descriptionHyperlinks>
 		<ThingDef>AstraltechStabilityModule</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>AstraltechStabilityModule</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -661,11 +724,11 @@ The Astraltech Stability Module grants supernatural core stability, allowing the
 					<postFactor>1.4</postFactor>
 				</li>
 			</capMods>
-			<statFactors>
+			<statOffsets>
 				<MeleeHitChance>1.3</MeleeHitChance>
 				<ShootingAccuracyPawn>1.3</ShootingAccuracyPawn>
 				<MeleeDodgeChance>1.3</MeleeDodgeChance>
-			</statFactors>
+			</statOffsets>
 		</li>
 	</stages>
 </HediffDef>
@@ -673,14 +736,14 @@ The Astraltech Stability Module grants supernatural core stability, allowing the
 	<defName>AstraltechAgilityBooster_hediff</defName>
 	<label>Astraltech Agility Booster</label>
 	<labelNoun>Astraltech Agility Booster</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Agility Booster elevates the user's agility to superhuman levels, enabling movements faster than the eye can track and instantaneous combat responses. This addon dramatically enhances reflexes and coordination, making the user seem to bend the laws of physics in fast-paced environments.</description>
 	<descriptionHyperlinks>
 		<ThingDef>AstraltechAgilityBooster</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>AstraltechAgilityBooster</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -693,10 +756,11 @@ The Astraltech Agility Booster elevates the user's agility to superhuman levels,
 					<postFactor>1.8</postFactor>
 				</li>
 			</capMods>
-			<statFactors>
+			<statOffsets>
 				<MeleeHitChance>1.5</MeleeHitChance>
 				<MeleeDodgeChance>1.5</MeleeDodgeChance>
-				<PainShockThreshold>0.7</PainShockThreshold>
+			</statOffsets>
+			<statFactors>
 				<MoveSpeed>1.4</MoveSpeed>
 			</statFactors>
 		</li>
@@ -706,7 +770,7 @@ The Astraltech Agility Booster elevates the user's agility to superhuman levels,
 	<defName>Astraltech_Ribcage_hediff</defName>
 	<label>Astraltech Ribcage</label>
 	<labelNoun>Astraltech Ribcage</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Ribcage is an impenetrable bionic implant that redefines the concept of physical protection. With its advanced energy-dispersing reinforcement, it renders the user nearly invulnerable to physical trauma, offering an unprecedented level of defense in combat situations.</description>
 	<descriptionHyperlinks>
@@ -723,7 +787,7 @@ The Astraltech Ribcage is an impenetrable bionic implant that redefines the conc
 			<capMods>
 				<li>
 					<capacity>Breathing</capacity>
-					<postFactor>3.0</postFactor>
+					<postFactor>2.0</postFactor>
 				</li>
 				<li>
 					<capacity>BloodPumping</capacity>
@@ -737,14 +801,14 @@ The Astraltech Ribcage is an impenetrable bionic implant that redefines the conc
 	<defName>Astraltech_Torso_hediff</defName>
 	<label>Astraltech Torso</label>
 	<labelNoun>Astraltech Torso</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Torso is a marvel of biotechnology that completely redefines human physical capabilities. Its hyper-advanced systems provide unparalleled internal support, allowing the user to endure forces that would shatter normal bodies. The implant's exotic technology ensures superhuman physical performance, seemingly limitless endurance, and rapid healing in any situation.</description>
 	<descriptionHyperlinks>
 		<ThingDef>Astraltech_Torso</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>Astraltech_Torso</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>4.0</partEfficiency>
@@ -752,12 +816,13 @@ The Astraltech Torso is a marvel of biotechnology that completely redefines huma
 	<stages>
 		<li>
 			<statOffsets>
-				<MentalBreakThreshold>-0.3</MentalBreakThreshold>
+				<MeleeHitChance>1.5</MeleeHitChance>
+				<ShootingAccuracyPawn>1.4</ShootingAccuracyPawn>
 			</statOffsets>
 			<capMods>
 				<li>
 					<capacity>BloodPumping</capacity>
-					<postFactor>2.5</postFactor>
+					<postFactor>2.0</postFactor>
 				</li>
 				<li>
 					<capacity>Moving</capacity>
@@ -775,14 +840,14 @@ The Astraltech Torso is a marvel of biotechnology that completely redefines huma
 	<defName>AstraltechResilienceEnhancer_hediff</defName>
 	<label>Astraltech Resilience Enhancer</label>
 	<labelNoun>Astraltech Resilience Enhancer</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Resilience Enhancer dramatically improves the user's overall toughness, allowing them to shrug off damage that would incapacitate or kill a normal human. This addon grants near-superhuman physical endurance, making the user almost impervious to harsh conditions and physical trauma.</description>
 	<descriptionHyperlinks>
 		<ThingDef>AstraltechResilienceEnhancer</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>AstraltechResilienceEnhancer</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -799,9 +864,6 @@ The Astraltech Resilience Enhancer dramatically improves the user's overall toug
 					<postFactor>1.2</postFactor>
 				</li>
 			</capMods>
-			<statFactors>
-				<PainShockThreshold>0.7</PainShockThreshold>
-			</statFactors>
 		</li>
 	</stages>
 </HediffDef>
@@ -809,14 +871,14 @@ The Astraltech Resilience Enhancer dramatically improves the user's overall toug
 	<defName>AstraltechCoreStabilizer_hediff</defName>
 	<label>Astraltech Core Stabilizer</label>
 	<labelNoun>Astraltech Core Stabilizer</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Core Stabilizer perfects the user's internal balance and core strength, dramatically improving movement efficiency and virtually eliminating energy expenditure during physical tasks. This addon is essential for those who need to perform at peak levels indefinitely.</description>
 	<descriptionHyperlinks>
 		<ThingDef>AstraltechCoreStabilizer</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>AstraltechCoreStabilizer</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -833,9 +895,6 @@ The Astraltech Core Stabilizer perfects the user's internal balance and core str
 					<postFactor>1.3</postFactor>
 				</li>
 			</capMods>
-			<statOffsets>
-				<MentalBreakThreshold>-0.2</MentalBreakThreshold>
-			</statOffsets>
 			<statFactors>
 				<WorkSpeedGlobal>1.25</WorkSpeedGlobal>
 			</statFactors>
@@ -846,14 +905,14 @@ The Astraltech Core Stabilizer perfects the user's internal balance and core str
 	<defName>AstraltechDurabilityMatrix_hediff</defName>
 	<label>Astraltech Durability Matrix</label>
 	<labelNoun>Astraltech Durability Matrix</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Durability Matrix exponentially reinforces the torso's structural integrity, providing near-invulnerability to physical damage. This addon ensures unparalleled survivability in combat situations, as the body becomes resistant to all but the most catastrophic injuries.</description>
 	<descriptionHyperlinks>
 		<ThingDef>AstraltechDurabilityMatrix</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>AstraltechDurabilityMatrix</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -866,10 +925,9 @@ The Astraltech Durability Matrix exponentially reinforces the torso's structural
 					<postFactor>1.2</postFactor>
 				</li>
 			</capMods>
-			<statFactors>
-				<PainShockThreshold>0.6</PainShockThreshold>
+			<statOffsets>
 				<MeleeHitChance>1.4</MeleeHitChance>
-			</statFactors>
+			</statOffsets>
 		</li>
 	</stages>
 </HediffDef>
@@ -877,14 +935,14 @@ The Astraltech Durability Matrix exponentially reinforces the torso's structural
 	<defName>AstraltechMetabolicRegulator_hediff</defName>
 	<label>Astraltech Metabolic Regulator</label>
 	<labelNoun>Astraltech Metabolic Regulator</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Metabolic Regulator perfects the user's metabolism, optimizing energy utilization to such a degree that fatigue becomes nearly non-existent. This addon is crucial for individuals requiring perpetual physical exertion without any loss in stamina or endurance.</description>
 	<descriptionHyperlinks>
 		<ThingDef>AstraltechMetabolicRegulator</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>AstraltechMetabolicRegulator</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -899,7 +957,6 @@ The Astraltech Metabolic Regulator perfects the user's metabolism, optimizing en
 			</capMods>
 			<statFactors>
 				<WorkSpeedGlobal>1.4</WorkSpeedGlobal>
-				<RestRateMultiplier>1.3</RestRateMultiplier>
 			</statFactors>
 		</li>
 	</stages>
@@ -908,14 +965,14 @@ The Astraltech Metabolic Regulator perfects the user's metabolism, optimizing en
 	<defName>AstraltechInternalShielding_hediff</defName>
 	<label>Astraltech Internal Shielding</label>
 	<labelNoun>Astraltech Internal Shielding</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Internal Shielding creates an energy barrier that absorbs and dissipates impacts, dramatically reducing the severity of injuries. This addon is invaluable in combat situations, where it can mean the difference between walking away unscathed and critical injury.</description>
 	<descriptionHyperlinks>
 		<ThingDef>AstraltechInternalShielding</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>AstraltechInternalShielding</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -928,10 +985,59 @@ The Astraltech Internal Shielding creates an energy barrier that absorbs and dis
 					<postFactor>1.2</postFactor>
 				</li>
 			</capMods>
-			<statFactors>
-				<PainShockThreshold>0.5</PainShockThreshold>
+			<statOffsets>
 				<ShootingAccuracyPawn>1.2</ShootingAccuracyPawn>
-			</statFactors>
+			</statOffsets>
+		</li>
+	</stages>
+</HediffDef>
+<HediffDef ParentName="AddedBodyPartBase">
+	<defName>Astraltech_Shaper_hediff</defName>
+	<label>Astraltech Shaper</label>
+	<labelNoun>Astraltech Shaper</labelNoun>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Shaper is an advanced implant that sculpts the user's physique to perfection. It redefines the body's proportions, enhancing muscle tone and symmetry to create an ideal form. This addon dramatically improves physical appearance, making the user exceptionally attractive.</description>
+	<descriptionHyperlinks>
+		<ThingDef>Astraltech_Shaper</ThingDef>
+	</descriptionHyperlinks>
+	<spawnThingOnRemoved>Astraltech_Shaper</spawnThingOnRemoved>
+	<hediffClass>Hediff_Implant</hediffClass>
+	<isBad>false</isBad>
+	<addedPartProps>
+		<partEfficiency>1.0</partEfficiency>
+	</addedPartProps>
+	<stages>
+		<li>
+			<statOffsets>
+				<PawnBeauty>3.0</PawnBeauty>
+				<SocialImpact>0.5</SocialImpact>
+			</statOffsets>
+		</li>
+	</stages>
+</HediffDef>
+<HediffDef ParentName="AddedBodyPartBase">
+	<defName>Astraltech_Skin_Enhancer_hediff</defName>
+	<label>Astraltech Skin Enhancer</label>
+	<labelNoun>Astraltech Skin Enhancer</labelNoun>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Skin Enhancer rejuvenates and perfects the user's skin at the cellular level. It eliminates imperfections, scars, and signs of aging, granting flawless and radiant skin. This addon significantly enhances the user's appearance and social presence.</description>
+	<descriptionHyperlinks>
+		<ThingDef>Astraltech_Skin_Enhancer</ThingDef>
+	</descriptionHyperlinks>
+	<spawnThingOnRemoved>Astraltech_Skin_Enhancer</spawnThingOnRemoved>
+	<hediffClass>Hediff_Implant</hediffClass>
+	<isBad>false</isBad>
+	<addedPartProps>
+		<partEfficiency>1.0</partEfficiency>
+	</addedPartProps>
+	<stages>
+		<li>
+			<statOffsets>
+				<PawnBeauty>2.0</PawnBeauty>
+				<SocialImpact>0.5</SocialImpact>
+			</statOffsets>
 		</li>
 	</stages>
 </HediffDef>
@@ -939,7 +1045,7 @@ The Astraltech Internal Shielding creates an energy barrier that absorbs and dis
 	<defName>Astraltech_Heart_hediff</defName>
 	<label>Astraltech Heart</label>
 	<labelNoun>Astraltech Heart</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Heart is a revolutionary cardiovascular system that transcends the limitations of biology. It provides seemingly limitless stamina, complete immunity to fatigue, and superhuman physical performance, allowing the user to maintain peak activity levels indefinitely.</description>
 	<descriptionHyperlinks>
@@ -949,14 +1055,14 @@ The Astraltech Heart is a revolutionary cardiovascular system that transcends th
 	<hediffClass>Hediff_AddedPart</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
-		<partEfficiency>7.0</partEfficiency>
+		<partEfficiency>6.0</partEfficiency>
 	</addedPartProps>
 	<stages>
 		<li>
 			<capMods>
 				<li>
 					<capacity>BloodPumping</capacity>
-					<postFactor>7.0</postFactor>
+					<postFactor>6.0</postFactor>
 				</li>
 				<li>
 					<capacity>Moving</capacity>
@@ -970,14 +1076,14 @@ The Astraltech Heart is a revolutionary cardiovascular system that transcends th
 	<defName>AstraltechCardioBoost_hediff</defName>
 	<label>Astraltech Cardio Boost</label>
 	<labelNoun>Astraltech Cardio Boost</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Cardio Boost is an advanced addon that further enhances the heart's capabilities beyond comprehension. This addon eliminates the concept of physical exhaustion, allowing the user to perform at peak levels continuously without any decline in performance.</description>
 	<descriptionHyperlinks>
 		<ThingDef>AstraltechCardioBoost</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>AstraltechCardioBoost</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -995,10 +1101,8 @@ The Astraltech Cardio Boost is an advanced addon that further enhances the heart
 				</li>
 			</capMods>
 			<statFactors>
-				<PainShockThreshold>0.7</PainShockThreshold>
 				<WorkSpeedGlobal>1.3</WorkSpeedGlobal>
 				<MoveSpeed>1.3</MoveSpeed>
-				<RestRateMultiplier>1.4</RestRateMultiplier>
 			</statFactors>
 		</li>
 	</stages>
@@ -1007,7 +1111,7 @@ The Astraltech Cardio Boost is an advanced addon that further enhances the heart
 	<defName>Astraltech_Lung_hediff</defName>
 	<label>Astraltech Lung</label>
 	<labelNoun>Astraltech Lung</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Lung is a revolutionary respiratory enhancement that defies the limits of biology. It allows for superhuman stamina and endurance, providing near-invulnerability to suffocation and unparalleled performance in any atmosphere.</description>
 	<descriptionHyperlinks>
@@ -1017,18 +1121,18 @@ The Astraltech Lung is a revolutionary respiratory enhancement that defies the l
 	<hediffClass>Hediff_AddedPart</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
-		<partEfficiency>7.0</partEfficiency>
+		<partEfficiency>6.0</partEfficiency>
 	</addedPartProps>
 	<stages>
 		<li>
 			<capMods>
 				<li>
 					<capacity>Breathing</capacity>
-					<postFactor>7.0</postFactor>
+					<postFactor>6.0</postFactor>
 				</li>
 				<li>
 					<capacity>BloodPumping</capacity>
-					<postFactor>2.5</postFactor>
+					<postFactor>2.0</postFactor>
 				</li>
 				<li>
 					<capacity>Moving</capacity>
@@ -1042,7 +1146,7 @@ The Astraltech Lung is a revolutionary respiratory enhancement that defies the l
 	<defName>Astraltech_Kidney_hediff</defName>
 	<label>Astraltech Kidney</label>
 	<labelNoun>Astraltech Kidney</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Kidney is an unparalleled filtration system that revolutionizes the body's ability to purge toxins and regulate hydration. It grants near-immunity to poisons and illnesses, while dramatically enhancing overall vitality and resilience.</description>
 	<descriptionHyperlinks>
@@ -1052,17 +1156,14 @@ The Astraltech Kidney is an unparalleled filtration system that revolutionizes t
 	<hediffClass>Hediff_AddedPart</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
-		<partEfficiency>7.0</partEfficiency>
+		<partEfficiency>6.0</partEfficiency>
 	</addedPartProps>
 	<stages>
 		<li>
-			<statOffsets>
-				<MentalBreakThreshold>-0.3</MentalBreakThreshold>
-			</statOffsets>
 			<capMods>
 				<li>
 					<capacity>BloodFiltration</capacity>
-					<postFactor>7.0</postFactor>
+					<postFactor>6.0</postFactor>
 				</li>
 				<li>
 					<capacity>Consciousness</capacity>
@@ -1080,7 +1181,7 @@ The Astraltech Kidney is an unparalleled filtration system that revolutionizes t
 	<defName>Astraltech_Liver_hediff</defName>
 	<label>Astraltech Liver</label>
 	<labelNoun>Astraltech Liver</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Liver is a marvel of biotechnology, providing unimaginable detoxification and metabolic regulation. It grants the user virtual immunity to toxins and alcohol while dramatically accelerating healing and providing unmatched resilience to diseases.</description>
 	<descriptionHyperlinks>
@@ -1090,17 +1191,14 @@ The Astraltech Liver is a marvel of biotechnology, providing unimaginable detoxi
 	<hediffClass>Hediff_AddedPart</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
-		<partEfficiency>7.0</partEfficiency>
+		<partEfficiency>6.0</partEfficiency>
 	</addedPartProps>
 	<stages>
 		<li>
-			<statOffsets>
-				<MentalBreakThreshold>-0.4</MentalBreakThreshold>
-			</statOffsets>
 			<capMods>
 				<li>
 					<capacity>BloodFiltration</capacity>
-					<postFactor>7.0</postFactor>
+					<postFactor>6.0</postFactor>
 				</li>
 				<li>
 					<capacity>Consciousness</capacity>
@@ -1114,7 +1212,7 @@ The Astraltech Liver is a marvel of biotechnology, providing unimaginable detoxi
 	<defName>Astraltech_Stomach_hediff</defName>
 	<label>Astraltech Stomach</label>
 	<labelNoun>Astraltech Stomach</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Stomach is a revolutionary digestive system that redefines the limits of nutrient absorption and energy extraction. It allows for near-perfect metabolic efficiency, dramatically reducing food requirements while maximizing energy output and physical endurance.</description>
 	<descriptionHyperlinks>
@@ -1152,14 +1250,14 @@ The Astraltech Stomach is a revolutionary digestive system that redefines the li
 	<defName>AstraltechMetabolicOptimizer_hediff</defName>
 	<label>Astraltech Metabolic Optimizer</label>
 	<labelNoun>Astraltech Metabolic Optimizer</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Metabolic Optimizer pushes the stomach's capabilities to near-magical levels. This addon allows the user to extract maximum energy from minimal food, virtually eliminating fatigue and granting seemingly limitless endurance.</description>
 	<descriptionHyperlinks>
 		<ThingDef>AstraltechMetabolicOptimizer</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>AstraltechMetabolicOptimizer</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -1168,20 +1266,20 @@ The Astraltech Metabolic Optimizer pushes the stomach's capabilities to near-mag
 		<li>
 			<capMods>
 				<li>
-					<capacity>Eating</capacity>
-					<postFactor>2.0</postFactor>
-				</li>
-				<li>
 					<capacity>Moving</capacity>
 					<postFactor>1.3</postFactor>
 				</li>
+				<li>
+					<capacity>BloodFiltration</capacity>
+					<postFactor>2.0</postFactor>
+				</li>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>1.2</postFactor>
+				</li>
 			</capMods>
-			<statOffsets>
-				<MentalBreakThreshold>-0.2</MentalBreakThreshold>
-			</statOffsets>
 			<statFactors>
 				<WorkSpeedGlobal>1.15</WorkSpeedGlobal>
-				<RestRateMultiplier>1.3</RestRateMultiplier>
 			</statFactors>
 		</li>
 	</stages>
@@ -1190,20 +1288,24 @@ The Astraltech Metabolic Optimizer pushes the stomach's capabilities to near-mag
 	<defName>Astraltech_Pelvis_hediff</defName>
 	<label>Astraltech Pelvis</label>
 	<labelNoun>Astraltech Pelvis</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Pelvis is a groundbreaking implant that redefines human biomechanics. It provides supernatural core stability and lower body strength, allowing for inhuman endurance, agility, and resilience in any physical endeavor.</description>
 	<descriptionHyperlinks>
 		<ThingDef>Astraltech_Pelvis</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>Astraltech_Pelvis</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>4.0</partEfficiency>
 	</addedPartProps>
 	<stages>
 		<li>
+			<statOffsets>
+				<MeleeHitChance>1.5</MeleeHitChance>
+				<MeleeDodgeChance>1.5</MeleeDodgeChance>
+			</statOffsets>
 			<capMods>
 				<li>
 					<capacity>Moving</capacity>
@@ -1221,7 +1323,7 @@ The Astraltech Pelvis is a groundbreaking implant that redefines human biomechan
 	<defName>Astraltech_Leg_hediff</defName>
 	<label>Astraltech Leg</label>
 	<labelNoun>Astraltech Leg</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Leg is a marvel of bionic engineering that transcends human locomotion capabilities. Equipped with hyper-advanced kinetic systems, it enables movement faster than the eye can track, perfect balance in any terrain, and superhuman jumping abilities, redefining the limits of mobility and athletic performance.</description>
 	<descriptionHyperlinks>
@@ -1235,6 +1337,10 @@ The Astraltech Leg is a marvel of bionic engineering that transcends human locom
 	</addedPartProps>
 	<stages>
 		<li>
+			<statOffsets>
+				<MeleeHitChance>1.3</MeleeHitChance>
+				<MeleeDodgeChance>1.4</MeleeDodgeChance>
+			</statOffsets>
 			<capMods>
 				<li>
 					<capacity>Moving</capacity>
@@ -1248,14 +1354,14 @@ The Astraltech Leg is a marvel of bionic engineering that transcends human locom
 	<defName>Astraltech_Knee_Enhancement_hediff</defName>
 	<label>Astraltech Knee Enhancement</label>
 	<labelNoun>Astraltech Knee Enhancement</labelNoun>
-	<description>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices.     Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.     They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance.     No one knows the full extent of their capabilities, but their power is unmistakable.
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
 
 The Astraltech Knee Enhancement integrates otherworldly technology to push the capabilities of bionic legs beyond imagination. It grants the user near-perfect agility, allowing for instantaneous direction changes and providing seemingly limitless endurance.</description>
 	<descriptionHyperlinks>
 		<ThingDef>Astraltech_Knee_Enhancement</ThingDef>
 	</descriptionHyperlinks>
 	<spawnThingOnRemoved>Astraltech_Knee_Enhancement</spawnThingOnRemoved>
-	<hediffClass>Hediff_AddedPart</hediffClass>
+	<hediffClass>Hediff_Implant</hediffClass>
 	<isBad>false</isBad>
 	<addedPartProps>
 		<partEfficiency>1.0</partEfficiency>
@@ -1268,9 +1374,11 @@ The Astraltech Knee Enhancement integrates otherworldly technology to push the c
 					<postFactor>1.5</postFactor>
 				</li>
 			</capMods>
+			<statOffsets>
+				<MeleeDodgeChance>1.3</MeleeDodgeChance>
+			</statOffsets>
 			<statFactors>
 				<MoveSpeed>1.3</MoveSpeed>
-				<MeleeDodgeChance>1.3</MeleeDodgeChance>
 				<WorkSpeedGlobal>1.15</WorkSpeedGlobal>
 			</statFactors>
 		</li>

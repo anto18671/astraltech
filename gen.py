@@ -3,10 +3,8 @@ import shutil
 import os
 
 # Define a preface that explains the Astraltech's superiority
-ASTRALTECH_LORE = " Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices. \
-    Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals. \
-    They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance. \
-    No one knows the full extent of their capabilities, but their power is unmistakable."
+ASTRALTECH_LORE = "Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable."
+
 
 # Valid body parts for bionics and addons targeted
 BODY_PARTS = [
@@ -140,7 +138,7 @@ class Addon:
             f"\t\t<ThingDef>{self.addon_name}</ThingDef>\n"
             "\t</descriptionHyperlinks>\n"
             f"\t<spawnThingOnRemoved>{self.addon_name}</spawnThingOnRemoved>\n"
-            "\t<hediffClass>Hediff_AddedPart</hediffClass>\n"
+            "\t<hediffClass>Hediff_Implant</hediffClass>\n"
             "\t<isBad>false</isBad>\n"
             "\t<addedPartProps>\n"
             f"\t\t<partEfficiency>{self.part_efficiency}</partEfficiency>\n"
@@ -302,7 +300,7 @@ class Bionic:
         return surgery
 
     def generate_hediffdef(self):
-        # Common hediff header
+        hediff_class = "Hediff_AddedPart" if self.replace_part else "Hediff_Implant"
         hediff = (
             "<HediffDef ParentName=\"AddedBodyPartBase\">\n"
             f"\t<defName>{self.bionic_name}_hediff</defName>\n"
@@ -313,7 +311,7 @@ class Bionic:
             f"\t\t<ThingDef>{self.bionic_name}</ThingDef>\n"
             "\t</descriptionHyperlinks>\n"
             f"\t<spawnThingOnRemoved>{self.bionic_name}</spawnThingOnRemoved>\n"
-            "\t<hediffClass>Hediff_AddedPart</hediffClass>\n"
+            f"\t<hediffClass>{hediff_class}</hediffClass>\n"
             "\t<isBad>false</isBad>\n"
             "\t<addedPartProps>\n"
             f"\t\t<partEfficiency>{self.part_efficiency}</partEfficiency>\n"
@@ -425,19 +423,22 @@ if __name__ == "__main__":
             bionic_name="Astraltech Skull",
             label="Astraltech Skull",
             description=(
-                "The Astraltech Skull is a highly advanced cranial implant designed to provide superior protection to the brain while enhancing cognitive processing speed. "
-                "It offers unmatched resilience against physical trauma and improves overall mental clarity, making it a critical upgrade for individuals in combat or high-stress environments."
+                "The Astraltech Skull is a highly advanced cranial implant designed to provide superior protection to the brain while significantly enhancing cognitive processing speed. "
+                "In addition to its unmatched resilience against physical trauma, the Astraltech Skull provides an enhanced aesthetic appeal, dramatically improving the wearer's facial beauty. "
+                "This implant not only increases mental clarity but also elevates social standing, making it an ideal upgrade for individuals in combat, diplomacy, or high-stress environments."
             ),
             part_efficiency=4.0,
-            market_value=65000,
+            market_value=26000,
             mass=6,
             body_part="Skull",
             replace_part=False,
             additional_stats=[
-                Stat("PainShockThreshold", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("MentalBreakThreshold", -0.25, stat_type='stat', mod_type='offset'),
                 Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
                 Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
+                Stat("PawnBeauty", 3.0, stat_type='stat', mod_type='offset'),
+                Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
+                Stat("NegotiationAbility", 0.5, stat_type='stat', mod_type='offset'),
+                Stat("TradePriceImprovement", 0.25, stat_type='stat', mod_type='offset'),
             ]
         ),
         Bionic(
@@ -449,29 +450,29 @@ if __name__ == "__main__":
                 "intelligence, rapid information processing, and enhanced decision-making capabilities."
             ),
             part_efficiency=4.0,
-            market_value=225000,
+            market_value=65000,
             mass=2,
             replace_part=False,
             body_part="Brain",
             additional_stats=[
-                Stat("NegotiationAbility", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("TradePriceImprovement", 1.25, stat_type='stat', mod_type='factor'),
-                Stat("Consciousness", 4.0, stat_type='capacity', mod_type='factor'),
+                Stat("PawnBeauty", 1.0, stat_type='stat', mod_type='offset'),
+                Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
+                Stat("NegotiationAbility", 0.5, stat_type='stat', mod_type='offset'),
+                Stat("TradePriceImprovement", 0.25, stat_type='stat', mod_type='offset'),
+                Stat("Consciousness", 6.0, stat_type='capacity', mod_type='factor'),
                 Stat("Sight", 1.5, stat_type='capacity', mod_type='factor'),
                 Stat("Hearing", 1.5, stat_type='capacity', mod_type='factor'),
                 Stat("Manipulation", 1.5, stat_type='capacity', mod_type='factor'),
-                Stat("WorkSpeedGlobal", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("PainShockThreshold", 0.5, stat_type='stat', mod_type='factor'),
-                Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("ShootingAccuracyPawn", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("MentalBreakThreshold", -0.25, stat_type='stat', mod_type='offset'),
-                Stat("GlobalLearningFactor", 3.0, stat_type='stat', mod_type='factor'),
-                Stat("MedicalOperationSpeed", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("MedicalTendSpeed", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("MedicalTendQuality", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("MedicalSurgerySuccessChance", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("MeditationFocusGain", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("ResearchSpeedFactor", 3.0, stat_type='stat', mod_type='factor'),
+                Stat("WorkSpeedGlobal", 1.25, stat_type='stat', mod_type='factor'),
+                Stat("MeleeHitChance", 5.0, stat_type='stat', mod_type='offset'),
+                Stat("ShootingAccuracyPawn", 5.0, stat_type='stat', mod_type='offset'),
+                Stat("GlobalLearningFactor", 4.0, stat_type='stat', mod_type='offset'),
+                Stat("MedicalOperationSpeed", 0.4, stat_type='stat', mod_type='offset'),
+                Stat("MedicalTendSpeed", 0.4, stat_type='stat', mod_type='offset'),
+                Stat("MedicalTendQuality", 0.4, stat_type='stat', mod_type='offset'),
+                Stat("MedicalSurgerySuccessChance", 0.4, stat_type='stat', mod_type='offset'),
+                Stat("MeditationFocusGain", 1.5, stat_type='stat', mod_type='offset'),
+                Stat("ResearchSpeed", 3.0, stat_type='stat', mod_type='offset'),
             ],
             compatible_addons=[
                 Addon(
@@ -482,12 +483,12 @@ if __name__ == "__main__":
                         "in real-time. By enhancing short-term memory and cognitive agility, this addon is ideal for users engaged in complex, "
                         "high-pressure decision-making, allowing them to juggle multiple tasks and data points effortlessly."
                     ),
-                    market_value=40000,
+                    market_value=23400,
                     additional_stats=[
-                        Stat("Consciousness", 1.25, stat_type='capacity', mod_type='factor'),
-                        Stat("WorkSpeedGlobal", 1.5, stat_type='stat', mod_type='factor'),
-                        Stat("GlobalLearningFactor", 2.0, stat_type='stat', mod_type='factor'),
-                        Stat("ResearchSpeedFactor", 2.0, stat_type='stat', mod_type='factor'),
+                        Stat("Consciousness", 1.5, stat_type='capacity', mod_type='factor'),
+                        Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
+                        Stat("GlobalLearningFactor", 1.0, stat_type='stat', mod_type='offset'),
+                        Stat("ResearchSpeed", 2.0, stat_type='stat', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -498,8 +499,11 @@ if __name__ == "__main__":
                         "calm and composed under the most stressful conditions. This addon promotes clarity of thought and "
                         "enhances social dynamics by eliminating erratic emotional shifts."
                     ),
-                    market_value=19500,
+                    market_value=15600,
                     additional_stats=[
+                        Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
+                        Stat("NegotiationAbility", 0.5, stat_type='stat', mod_type='offset'),
+                        Stat("TradePriceImprovement", 0.25, stat_type='stat', mod_type='offset'),
                         Stat("MentalBreakThreshold", -0.4, stat_type='stat', mod_type='offset'),
                     ]
                 ),
@@ -511,10 +515,11 @@ if __name__ == "__main__":
                         "With this addon, the user can seamlessly handle multiple tasks with minimal loss of efficiency, vastly "
                         "improving overall productivity."
                     ),
-                    market_value=26000,
+                    market_value=20800,
                     additional_stats=[
-                        Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
+                        Stat("Consciousness", 1.25, stat_type='capacity', mod_type='factor'),
                         Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
+                        Stat("Manipulation", 1.25, stat_type='capacity', mod_type='factor'),
                     ]
                 ),
                 Addon(
@@ -525,13 +530,13 @@ if __name__ == "__main__":
                         "faster reactions, and split-second calculations. It’s perfect for users engaged in high-stakes operations "
                         "or intense mental tasks."
                     ),
-                    market_value=30000,
+                    market_value=26000,
                     additional_stats=[
                         Stat("Consciousness", 1.2, stat_type='capacity', mod_type='factor'),
-                        Stat("GlobalLearningFactor", 1.75, stat_type='stat', mod_type='factor'),
+                        Stat("GlobalLearningFactor", 1.5, stat_type='stat', mod_type='offset'),
                         Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
-                        Stat("MeleeHitChance", 1.25, stat_type='stat', mod_type='factor'),
-                        Stat("ShootingAccuracyPawn", 1.25, stat_type='stat', mod_type='factor'),
+                        Stat("MeleeHitChance", 1.25, stat_type='stat', mod_type='offset'),
+                        Stat("ShootingAccuracyPawn", 1.25, stat_type='stat', mod_type='offset'),
                     ]
                 ),
             ]
@@ -545,30 +550,16 @@ if __name__ == "__main__":
                 "improve reaction times, and increase accuracy in combat situations."
             ),
             part_efficiency=3.0,
-            market_value=35000,
+            market_value=15000,
             mass=1,
             body_part="Eye",
             additional_stats=[
                 Stat("Sight", 2.5, stat_type='capacity', mod_type='factor'),
-                Stat("ShootingAccuracyPawn", 1.75, stat_type='stat', mod_type='factor'),
-                Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='factor'),
+                Stat("ShootingAccuracyPawn", 1.75, stat_type='stat', mod_type='offset'),
+                Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='offset'),
                 Stat("Manipulation", 1.2, stat_type='capacity', mod_type='factor'),
-                Stat("AimingDelayFactor", 0.9, stat_type='stat', mod_type='factor'),
             ],
             compatible_addons=[
-                Addon(
-                    addon_name="AstraltechNightVisionModule",
-                    label="Astraltech Night Vision Module",
-                    description=(
-                        "The Astraltech Night Vision Module grants the user the ability to see clearly in low-light environments. "
-                        "With advanced light amplification technology, this addon ensures perfect vision during nighttime or dimly lit conditions."
-                    ),
-                    market_value=15000,
-                    additional_stats=[
-                        Stat("Sight", 1.75, stat_type='capacity', mod_type='factor'),
-                        Stat("ShootingAccuracyPawn", 1.4, stat_type='stat', mod_type='factor'),
-                    ]
-                ),
                 Addon(
                     addon_name="AstraltechTargetingEnhancer",
                     label="Astraltech Targeting Enhancer",
@@ -576,10 +567,11 @@ if __name__ == "__main__":
                         "The Astraltech Targeting Enhancer improves the user’s ability to focus on targets and increases precision in combat. "
                         "With advanced tracking algorithms, this addon is ideal for sharpshooters and individuals in combat-heavy roles."
                     ),
-                    market_value=20000,
+                    market_value=11700,
                     additional_stats=[
-                        Stat("ShootingAccuracyPawn", 1.6, stat_type='stat', mod_type='factor'),
-                        Stat("MeleeHitChance", 1.4, stat_type='stat', mod_type='factor'),
+                        Stat("Sight", 1.5, stat_type='capacity', mod_type='factor'),
+                        Stat("ShootingAccuracyPawn", 1.6, stat_type='stat', mod_type='offset'),
+                        Stat("MeleeHitChance", 1.4, stat_type='stat', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -589,10 +581,10 @@ if __name__ == "__main__":
                         "The Astraltech Motion Detection Module enhances the user’s ability to detect movement, significantly increasing their reaction time "
                         "in fast-paced environments. It provides an edge in combat by allowing the user to anticipate and respond to threats more quickly."
                     ),
-                    market_value=18000,
+                    market_value=10400,
                     additional_stats=[
                         Stat("Sight", 1.5, stat_type='capacity', mod_type='factor'),
-                        Stat("MeleeHitChance", 1.4, stat_type='stat', mod_type='factor'),
+                        Stat("MeleeHitChance", 1.4, stat_type='stat', mod_type='offset'),
                         Stat("Manipulation", 1.2, stat_type='capacity', mod_type='factor'),
                         Stat("MoveSpeed", 1.1, stat_type='stat', mod_type='factor'),
                     ]
@@ -613,10 +605,9 @@ if __name__ == "__main__":
             body_part="Ear",
             additional_stats=[
                 Stat("Hearing", 3.0, stat_type='capacity', mod_type='factor'),
-                Stat("MeleeHitChance", 1.2, stat_type='stat', mod_type='factor'),
-                Stat("MentalBreakThreshold", -0.15, stat_type='stat', mod_type='offset'),
-                Stat("ShootingAccuracyPawn", 1.2, stat_type='stat', mod_type='factor'),
-                Stat("NegotiationAbility", 1.2, stat_type='stat', mod_type='factor'),
+                Stat("MeleeHitChance", 1.2, stat_type='stat', mod_type='offset'),
+                Stat("ShootingAccuracyPawn", 1.2, stat_type='stat', mod_type='offset'),
+                Stat("NegotiationAbility", 0.2, stat_type='stat', mod_type='offset'),
             ],
             compatible_addons=[
                 Addon(
@@ -629,8 +620,8 @@ if __name__ == "__main__":
                     market_value=140000,
                     additional_stats=[
                         Stat("Hearing", 1.5, stat_type='capacity', mod_type='factor'),
-                        Stat("ShootingAccuracyPawn", 1.1, stat_type='stat', mod_type='factor'),
-                        Stat("MeleeHitChance", 1.1, stat_type='stat', mod_type='factor'),
+                        Stat("ShootingAccuracyPawn", 1.1, stat_type='stat', mod_type='offset'),
+                        Stat("MeleeHitChance", 1.1, stat_type='stat', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -640,11 +631,10 @@ if __name__ == "__main__":
                         "The Astraltech Noise Filter eliminates all unwanted background noise, allowing the user to focus on crucial sounds with preternatural clarity. "
                         "In even the most chaotic environments, it filters out distractions, enhancing auditory perception to superhuman levels."
                     ),
-                    market_value=160000,
+                    market_value=16000,
                     additional_stats=[
                         Stat("Hearing", 1.25, stat_type='capacity', mod_type='factor'),
-                        Stat("MentalBreakThreshold", -0.2, stat_type='stat', mod_type='offset'),
-                        Stat("AimingDelayFactor", 0.9, stat_type='stat', mod_type='factor'),
+                        Stat("Sight", 1.1, stat_type='capacity', mod_type='factor'),
                     ]
                 ),
                 Addon(
@@ -654,13 +644,12 @@ if __name__ == "__main__":
                         "The Astraltech Echo Locator utilizes impossible echolocation technology, granting the user an almost precognitive spatial awareness. "
                         "This addon provides unparalleled threat detection and environmental navigation, bordering on the supernatural."
                     ),
-                    market_value=180000,
+                    market_value=18000,
                     additional_stats=[
                         Stat("Hearing", 1.4, stat_type='capacity', mod_type='factor'),
-                        Stat("MeleeHitChance", 1.3, stat_type='stat', mod_type='factor'),
-                        Stat("ShootingAccuracyPawn", 1.2, stat_type='stat', mod_type='factor'),
-                        Stat("MeleeDodgeChance", 1.2, stat_type='stat', mod_type='factor'),
-                        Stat("MentalBreakThreshold", -0.15, stat_type='stat', mod_type='offset'),
+                        Stat("MeleeHitChance", 1.3, stat_type='stat', mod_type='offset'),
+                        Stat("ShootingAccuracyPawn", 1.2, stat_type='stat', mod_type='offset'),
+                        Stat("MeleeDodgeChance", 1.2, stat_type='stat', mod_type='offset'),
                     ]
                 ),
             ]
@@ -678,28 +667,27 @@ if __name__ == "__main__":
             mass=0.3,
             body_part="Nose",
             additional_stats=[
-                Stat("MentalBreakThreshold", -0.15, stat_type='stat', mod_type='offset'),
+                Stat("PawnBeauty", 1.0, stat_type='stat', mod_type='offset'),
+                Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
                 Stat("FoodPoisonChance", -0.5, stat_type='stat', mod_type='offset'),
-                Stat("ArrestSuccessChance", 1.2, stat_type='stat', mod_type='factor'),
-                Stat("MeleeDodgeChance", 1.1, stat_type='stat', mod_type='factor'),
+                Stat("Breathing", 1.5, stat_type='capacity', mod_type='factor'),
             ]
         ),
         Bionic(
             bionic_name="Astraltech Jaw",
             label="Astraltech Jaw",
             description=(
-                "The Astraltech Jaw is a pinnacle of oral enhancement, granting its user unparalleled speech capabilities and devastating bite force. "
-                "It provides flawless articulation in any language, enhanced persuasive abilities, and the strength to crush steel between its teeth. "
-                "This implant redefines the limits of both diplomacy and close-quarters combat."
+                "The Astraltech Jaw is a pinnacle of oral enhancement, granting its user unparalleled speech capabilities. "
+                "It provides flawless articulation in any language, enhanced persuasive abilities."
             ),
             part_efficiency=3.5,
             market_value=250000,
             mass=0.8,
             body_part="Jaw",
             additional_stats=[
-                Stat("MeleeHitChance", 1.3, stat_type='stat', mod_type='factor'),
-                Stat("MeleeDPS", 1.4, stat_type='stat', mod_type='factor'),
-                Stat("NegotiationAbility", 1.5, stat_type='stat', mod_type='factor'),
+                Stat("PawnBeauty", 1.0, stat_type='stat', mod_type='offset'),
+                Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
+                Stat("NegotiationAbility", 0.5, stat_type='stat', mod_type='offset'),
                 Stat("TradePriceImprovement", 0.1, stat_type='stat', mod_type='offset'),
                 Stat("EatingSpeed", 1.5, stat_type='stat', mod_type='factor'),
             ]
@@ -718,14 +706,13 @@ if __name__ == "__main__":
             replace_part=False,
             body_part="Neck",
             additional_stats=[
-                Stat("MeleeHitChance", 1.4, stat_type='stat', mod_type='factor'),
-                Stat("ShootingAccuracyPawn", 1.3, stat_type='stat', mod_type='factor'),
+                Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
+                Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
+                Stat("MeleeHitChance", 1.4, stat_type='stat', mod_type='offset'),
+                Stat("ShootingAccuracyPawn", 1.3, stat_type='stat', mod_type='offset'),
                 Stat("Manipulation", 1.2, stat_type='capacity', mod_type='factor'),
-                Stat("PainShockThreshold", 0.7, stat_type='stat', mod_type='factor'),
-                Stat("MentalBreakThreshold", -0.2, stat_type='stat', mod_type='offset'),
                 Stat("MoveSpeed", 1.1, stat_type='stat', mod_type='factor'),
-                Stat("PawnBeauty", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("MeleeDodgeChance", 1.2, stat_type='stat', mod_type='factor'),
+                Stat("MeleeDodgeChance", 1.2, stat_type='stat', mod_type='offset'),
             ]
         ),
         Bionic(
@@ -744,14 +731,14 @@ if __name__ == "__main__":
             additional_stats=[
                 Stat("Manipulation", 2.5, stat_type='capacity', mod_type='factor'),
                 Stat("WorkSpeedGlobal", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("ShootingAccuracyPawn", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("MedicalOperationSpeed", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("MedicalTendSpeed", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("MedicalTendQuality", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("MedicalSurgerySuccessChance", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("MeleeHitChance", 1.4, stat_type='stat', mod_type='factor'),
+                Stat("ShootingAccuracyPawn", 1.5, stat_type='stat', mod_type='offset'),
+                Stat("MedicalOperationSpeed", 0.4, stat_type='stat', mod_type='offset'),
+                Stat("MedicalTendSpeed", 0.4, stat_type='stat', mod_type='offset'),
+                Stat("MedicalTendQuality", 0.4, stat_type='stat', mod_type='offset'),
+                Stat("MedicalSurgerySuccessChance", 0.4, stat_type='stat', mod_type='offset'),
+                Stat("MeleeHitChance", 1.4, stat_type='stat', mod_type='offset'),
                 Stat("MeleeDPS", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("ConstructionSpeed", 1.3, stat_type='stat', mod_type='factor'),
+                Stat("ConstructionSpeed", 0.3, stat_type='stat', mod_type='offset'),
             ],
             compatible_addons=[
                 Addon(
@@ -787,9 +774,8 @@ if __name__ == "__main__":
             additional_stats=[
                 Stat("Moving", 3.0, stat_type='capacity', mod_type='factor'),
                 Stat("Manipulation", 2.0, stat_type='capacity', mod_type='factor'),
-                Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("MeleeDodgeChance", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("PainShockThreshold", 0.5, stat_type='stat', mod_type='factor'),
+                Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='offset'),
+                Stat("MeleeDodgeChance", 1.5, stat_type='stat', mod_type='offset'),
                 Stat("MoveSpeed", 1.5, stat_type='stat', mod_type='factor'),
             ],
             compatible_addons=[
@@ -805,6 +791,8 @@ if __name__ == "__main__":
                         Stat("Moving", 1.5, stat_type='capacity', mod_type='factor'),
                         Stat("Manipulation", 1.25, stat_type='capacity', mod_type='factor'),
                         Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
+                        Stat("PawnBeauty", 1.0, stat_type='stat', mod_type='offset'),
+                        Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -817,9 +805,9 @@ if __name__ == "__main__":
                     market_value=250000,
                     additional_stats=[
                         Stat("Manipulation", 1.4, stat_type='capacity', mod_type='factor'),
-                        Stat("MeleeHitChance", 1.3, stat_type='stat', mod_type='factor'),
-                        Stat("ShootingAccuracyPawn", 1.3, stat_type='stat', mod_type='factor'),
-                        Stat("MeleeDodgeChance", 1.3, stat_type='stat', mod_type='factor'),
+                        Stat("MeleeHitChance", 1.3, stat_type='stat', mod_type='offset'),
+                        Stat("ShootingAccuracyPawn", 1.3, stat_type='stat', mod_type='offset'),
+                        Stat("MeleeDodgeChance", 1.3, stat_type='stat', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -832,9 +820,8 @@ if __name__ == "__main__":
                     market_value=300000,
                     additional_stats=[
                         Stat("Moving", 1.8, stat_type='capacity', mod_type='factor'),
-                        Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='factor'),
-                        Stat("MeleeDodgeChance", 1.5, stat_type='stat', mod_type='factor'),
-                        Stat("PainShockThreshold", 0.7, stat_type='stat', mod_type='factor'),
+                        Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='offset'),
+                        Stat("MeleeDodgeChance", 1.5, stat_type='stat', mod_type='offset'),
                         Stat("MoveSpeed", 1.4, stat_type='stat', mod_type='factor'),
                     ]
                 ),
@@ -852,8 +839,9 @@ if __name__ == "__main__":
             mass=5,
             body_part="Ribcage",
             additional_stats=[
-                Stat("PainShockThreshold", 0.5, stat_type='stat', mod_type='factor'),
-                Stat("Breathing", 3.0, stat_type='capacity', mod_type='factor'),
+                Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
+                Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
+                Stat("Breathing", 2.0, stat_type='capacity', mod_type='factor'),
                 Stat("BloodPumping", 1.5, stat_type='capacity', mod_type='factor'),
             ]
         ),
@@ -871,13 +859,13 @@ if __name__ == "__main__":
             replace_part=False,
             body_part="Torso",
             additional_stats=[
-                Stat("BloodPumping", 2.5, stat_type='capacity', mod_type='factor'),
+                Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
+                Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
+                Stat("BloodPumping", 2.0, stat_type='capacity', mod_type='factor'),
                 Stat("Moving", 1.5, stat_type='capacity', mod_type='factor'),
-                Stat("PainShockThreshold", 0.5, stat_type='stat', mod_type='factor'),
-                Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("ShootingAccuracyPawn", 1.4, stat_type='stat', mod_type='factor'),
+                Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='offset'),
+                Stat("ShootingAccuracyPawn", 1.4, stat_type='stat', mod_type='offset'),
                 Stat("Manipulation", 1.3, stat_type='capacity', mod_type='factor'),
-                Stat("MentalBreakThreshold", -0.3, stat_type='stat', mod_type='offset'),
                 Stat("WorkSpeedGlobal", 1.3, stat_type='stat', mod_type='factor'),
                 Stat("MoveSpeed", 1.3, stat_type='stat', mod_type='factor'),
             ],
@@ -892,7 +880,6 @@ if __name__ == "__main__":
                     market_value=220000,
                     additional_stats=[
                         Stat("BloodPumping", 1.5, stat_type='capacity', mod_type='factor'),
-                        Stat("PainShockThreshold", 0.7, stat_type='stat', mod_type='factor'),
                         Stat("Moving", 1.2, stat_type='capacity', mod_type='factor'),
                     ]
                 ),
@@ -907,7 +894,6 @@ if __name__ == "__main__":
                     additional_stats=[
                         Stat("Moving", 1.4, stat_type='capacity', mod_type='factor'),
                         Stat("Manipulation", 1.3, stat_type='capacity', mod_type='factor'),
-                        Stat("MentalBreakThreshold", -0.2, stat_type='stat', mod_type='offset'),
                         Stat("WorkSpeedGlobal", 1.25, stat_type='stat', mod_type='factor'),
                     ]
                 ),
@@ -920,9 +906,10 @@ if __name__ == "__main__":
                     ),
                     market_value=280000,
                     additional_stats=[
-                        Stat("PainShockThreshold", 0.6, stat_type='stat', mod_type='factor'),
+                        Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
+                        Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
                         Stat("Manipulation", 1.2, stat_type='capacity', mod_type='factor'),
-                        Stat("MeleeHitChance", 1.4, stat_type='stat', mod_type='factor'),
+                        Stat("MeleeHitChance", 1.4, stat_type='stat', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -936,7 +923,6 @@ if __name__ == "__main__":
                     additional_stats=[
                         Stat("Moving", 1.4, stat_type='capacity', mod_type='factor'),
                         Stat("WorkSpeedGlobal", 1.4, stat_type='stat', mod_type='factor'),
-                        Stat("RestRateMultiplier", 1.3, stat_type='stat', mod_type='factor'),
                     ]
                 ),
                 Addon(
@@ -948,12 +934,41 @@ if __name__ == "__main__":
                     ),
                     market_value=350000,
                     additional_stats=[
+                        Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
+                        Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
                         Stat("Manipulation", 1.2, stat_type='capacity', mod_type='factor'),
-                        Stat("PainShockThreshold", 0.5, stat_type='stat', mod_type='factor'),
-                        Stat("ShootingAccuracyPawn", 1.2, stat_type='stat', mod_type='factor'),
+                        Stat("ShootingAccuracyPawn", 1.2, stat_type='stat', mod_type='offset'),
                     ]
                 ),
-            ]
+                Addon(
+                    addon_name="Astraltech Shaper",
+                    label="Astraltech Shaper",
+                    description=(
+                        "The Astraltech Shaper is an advanced implant that sculpts the user's physique to perfection. "
+                        "It redefines the body's proportions, enhancing muscle tone and symmetry to create an ideal form. "
+                        "This addon dramatically improves physical appearance, making the user exceptionally attractive."
+                    ),
+                    market_value=260000,
+                    additional_stats=[
+                        Stat("PawnBeauty", 3.0, stat_type='stat', mod_type='offset'),
+                        Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
+                    ]
+                ),
+                Addon(
+                    addon_name="Astraltech Skin Enhancer",
+                    label="Astraltech Skin Enhancer",
+                    description=(
+                        "The Astraltech Skin Enhancer rejuvenates and perfects the user's skin at the cellular level. "
+                        "It eliminates imperfections, scars, and signs of aging, granting flawless and radiant skin. "
+                        "This addon significantly enhances the user's appearance and social presence."
+                    ),
+                    market_value=240000,
+                    additional_stats=[
+                        Stat("PawnBeauty", 2.0, stat_type='stat', mod_type='offset'),
+                        Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
+                    ]
+                ),
+            ],
         ),
         Bionic(
             bionic_name="Astraltech Heart",
@@ -962,15 +977,14 @@ if __name__ == "__main__":
                 "The Astraltech Heart is a revolutionary cardiovascular system that transcends the limitations of biology. "
                 "It provides seemingly limitless stamina, complete immunity to fatigue, and superhuman physical performance, allowing the user to maintain peak activity levels indefinitely."
             ),
-            part_efficiency=7.0,
+            part_efficiency=6.0,
             market_value=700000,
             mass=2,
             body_part="Heart",
             additional_stats=[
-                Stat("BloodPumping", 7.0, stat_type='capacity', mod_type='factor'),
+                Stat("BloodPumping", 6.0, stat_type='capacity', mod_type='factor'),
                 Stat("Moving", 2.0, stat_type='capacity', mod_type='factor'),
-                Stat("PainShockThreshold", 0.5, stat_type='stat', mod_type='factor'),
-                Stat("WorkSpeedGlobal", 1.5, stat_type='stat', mod_type='factor'),
+                Stat("WorkSpeedGlobal", 1.25, stat_type='stat', mod_type='factor'),
                 Stat("MoveSpeed", 1.5, stat_type='stat', mod_type='factor'),
             ],
             compatible_addons=[
@@ -985,10 +999,8 @@ if __name__ == "__main__":
                     additional_stats=[
                         Stat("BloodPumping", 1.5, stat_type='capacity', mod_type='factor'),
                         Stat("Moving", 1.3, stat_type='capacity', mod_type='factor'),
-                        Stat("PainShockThreshold", 0.7, stat_type='stat', mod_type='factor'),
                         Stat("WorkSpeedGlobal", 1.3, stat_type='stat', mod_type='factor'),
                         Stat("MoveSpeed", 1.3, stat_type='stat', mod_type='factor'),
-                        Stat("RestRateMultiplier", 1.4, stat_type='stat', mod_type='factor'),
                     ]
                 ),
             ]
@@ -1000,14 +1012,13 @@ if __name__ == "__main__":
                 "The Astraltech Lung is a revolutionary respiratory enhancement that defies the limits of biology. "
                 "It allows for superhuman stamina and endurance, providing near-invulnerability to suffocation and unparalleled performance in any atmosphere."
             ),
-            part_efficiency=7.0,
+            part_efficiency=6.0,
             market_value=600000,
             mass=2,
             body_part="Lung",
             additional_stats=[
-                Stat("Breathing", 7.0, stat_type='capacity', mod_type='factor'),
-                Stat("BloodPumping", 2.5, stat_type='capacity', mod_type='factor'),
-                Stat("PainShockThreshold", 0.6, stat_type='stat', mod_type='factor'),
+                Stat("Breathing", 6.0, stat_type='capacity', mod_type='factor'),
+                Stat("BloodPumping", 2.0, stat_type='capacity', mod_type='factor'),
                 Stat("Moving", 1.75, stat_type='capacity', mod_type='factor'),
                 Stat("WorkSpeedGlobal", 1.3, stat_type='stat', mod_type='factor'),
                 Stat("MoveSpeed", 1.3, stat_type='stat', mod_type='factor'),
@@ -1020,15 +1031,14 @@ if __name__ == "__main__":
                 "The Astraltech Kidney is an unparalleled filtration system that revolutionizes the body's ability to purge toxins and regulate hydration. "
                 "It grants near-immunity to poisons and illnesses, while dramatically enhancing overall vitality and resilience."
             ),
-            part_efficiency=7.0,
+            part_efficiency=6.0,
             market_value=580000,
             mass=1.5,
             body_part="Kidney",
             additional_stats=[
-                Stat("BloodFiltration", 7.0, stat_type='capacity', mod_type='factor'),
+                Stat("BloodFiltration", 6.0, stat_type='capacity', mod_type='factor'),
                 Stat("Consciousness", 1.5, stat_type='capacity', mod_type='factor'),
                 Stat("Breathing", 1.75, stat_type='capacity', mod_type='factor'),
-                Stat("MentalBreakThreshold", -0.3, stat_type='stat', mod_type='offset'),
             ]
         ),
         Bionic(
@@ -1038,15 +1048,13 @@ if __name__ == "__main__":
                 "The Astraltech Liver is a marvel of biotechnology, providing unimaginable detoxification and metabolic regulation. "
                 "It grants the user virtual immunity to toxins and alcohol while dramatically accelerating healing and providing unmatched resilience to diseases."
             ),
-            part_efficiency=7.0,
+            part_efficiency=6.0,
             market_value=620000,
             mass=3,
             body_part="Liver",
             additional_stats=[
-                Stat("BloodFiltration", 7.0, stat_type='capacity', mod_type='factor'),
+                Stat("BloodFiltration", 6.0, stat_type='capacity', mod_type='factor'),
                 Stat("Consciousness", 1.5, stat_type='capacity', mod_type='factor'),
-                Stat("PainShockThreshold", 0.6, stat_type='stat', mod_type='factor'),
-                Stat("MentalBreakThreshold", -0.4, stat_type='stat', mod_type='offset'),
             ]
         ),
         Bionic(
@@ -1061,9 +1069,7 @@ if __name__ == "__main__":
             mass=3,
             body_part="Stomach",
             additional_stats=[
-                Stat("Eating", 6.0, stat_type='capacity', mod_type='factor'),
                 Stat("Moving", 1.75, stat_type='capacity', mod_type='factor'),
-                Stat("MentalBreakThreshold", -0.3, stat_type='stat', mod_type='offset'),
                 Stat("MaxNutrition", 1.5, stat_type='stat', mod_type='factor'),
                 Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
             ],
@@ -1077,11 +1083,10 @@ if __name__ == "__main__":
                     ),
                     market_value=250000,
                     additional_stats=[
-                        Stat("Eating", 2.0, stat_type='capacity', mod_type='factor'),
                         Stat("Moving", 1.3, stat_type='capacity', mod_type='factor'),
-                        Stat("MentalBreakThreshold", -0.2, stat_type='stat', mod_type='offset'),
                         Stat("WorkSpeedGlobal", 1.15, stat_type='stat', mod_type='factor'),
-                        Stat("RestRateMultiplier", 1.3, stat_type='stat', mod_type='factor'),
+                        Stat("BloodFiltration", 2.0, stat_type='capacity', mod_type='factor'),
+                        Stat("Consciousness", 1.2, stat_type='capacity', mod_type='factor'),
                     ]
                 ),
             ]
@@ -1101,10 +1106,9 @@ if __name__ == "__main__":
             additional_stats=[
                 Stat("Moving", 2.0, stat_type='capacity', mod_type='factor'),
                 Stat("Manipulation", 1.4, stat_type='capacity', mod_type='factor'),
-                Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("MeleeDodgeChance", 1.5, stat_type='stat', mod_type='factor'),
+                Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='offset'),
+                Stat("MeleeDodgeChance", 1.5, stat_type='stat', mod_type='offset'),
                 Stat("MoveSpeed", 1.3, stat_type='stat', mod_type='factor'),
-                Stat("PainShockThreshold", 0.7, stat_type='stat', mod_type='factor'),
             ]
         ),
         Bionic(
@@ -1122,8 +1126,8 @@ if __name__ == "__main__":
             additional_stats=[
                 Stat("Moving", 2.0, stat_type='capacity', mod_type='factor'),
                 Stat("MoveSpeed", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("MeleeHitChance", 1.3, stat_type='stat', mod_type='factor'),
-                Stat("MeleeDodgeChance", 1.4, stat_type='stat', mod_type='factor'),
+                Stat("MeleeHitChance", 1.3, stat_type='stat', mod_type='offset'),
+                Stat("MeleeDodgeChance", 1.4, stat_type='stat', mod_type='offset'),
                 Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
             ],
             compatible_addons=[
@@ -1138,7 +1142,7 @@ if __name__ == "__main__":
                     additional_stats=[
                         Stat("Moving", 1.5, stat_type='capacity', mod_type='factor'),
                         Stat("MoveSpeed", 1.3, stat_type='stat', mod_type='factor'),
-                        Stat("MeleeDodgeChance", 1.3, stat_type='stat', mod_type='factor'),
+                        Stat("MeleeDodgeChance", 1.3, stat_type='stat', mod_type='offset'),
                         Stat("WorkSpeedGlobal", 1.15, stat_type='stat', mod_type='factor'),
                     ]
                 ),

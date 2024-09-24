@@ -1,7 +1,7 @@
 VALID_STATS = [
     'WorkSpeedGlobal', 'ShootingAccuracyPawn', 'MeleeHitChance', 'MoveSpeed', 'AimingDelayFactor',
     'PainShockThreshold', 'GlobalLearningFactor', 'MedicalTendSpeed',
-    'MedicalTendQuality', 'MedicalSurgerySuccessChance', 'ResearchSpeedFactor', 'SocialImpact',
+    'MedicalTendQuality', 'MedicalSurgerySuccessChance', 'ResearchSpeed', 'SocialImpact',
     'NegotiationAbility', 'TradePriceImprovement', 'ConstructionSpeed', 'MiningYield',
     'PlantWorkSpeed', 'ButcheryFleshSpeed', 'ButcheryFleshEfficiency', 'ButcheryMechanoidSpeed',
     'ButcheryMechanoidEfficiency', 'CookSpeed', 'EatSpeed', 'ImmunityGainSpeed',

@@ -12,7 +12,7 @@ Prepare to transcend the limits of human potential with AstralTech!
 
 ## Features
 
-- **40 New Bionic Parts**: Each AstralTech implant is a masterpiece of biotechnology, offering unprecedented enhancements to human capabilities.
+- **41 New Bionic Parts**: Each AstralTech implant is a masterpiece of biotechnology, offering unprecedented enhancements to human capabilities.
 - **Modular Addon System**: Many AstralTech bionics support powerful addons, allowing for further customization and enhancement.
 - **Balanced Progression**: While incredibly powerful, AstralTech bionics are appropriately rare and expensive, maintaining game balance.
 - **Lore-Friendly**: Seamlessly integrates into the RimWorld universe, expanding on the existing bionic and archotech concepts.
@@ -74,19 +74,13 @@ The Astraltech Eye is a cutting-edge bionic implant designed to vastly improve v
 
 **Addons:**
 
-1. 🌙 Night Vision Module
-
-   - Grants clear vision in low-light environments
-   - Utilizes advanced light amplification technology
-   - Ensures perfect vision during nighttime or dimly lit conditions
-
-2. 🎯 Targeting Enhancer
+1. 🎯 Targeting Enhancer
 
    - Improves focus on targets and increases precision in combat
    - Utilizes advanced tracking algorithms
    - Ideal for sharpshooters and combat-heavy roles
 
-3. 📡 Motion Detection Module
+2. 📡 Motion Detection Module
    - Enhances ability to detect and track movement
    - Significantly increases reaction time in fast-paced environments
    - Provides an edge in combat by allowing quicker threat response
@@ -234,34 +228,49 @@ The Astraltech Torso is a marvel of biotechnology that completely redefines huma
 
 **Addons:**
 
-1. 🛡️ Resilience Enhancer
+1. 🛡️ **Resilience Enhancer**
 
    - Dramatically improves overall toughness
    - Grants near-superhuman physical endurance
    - Makes the user almost impervious to harsh conditions
 
-2. 🔩 Core Stabilizer
+2. 🔩 **Core Stabilizer**
 
    - Perfects internal balance and core strength
    - Dramatically improves movement efficiency
    - Virtually eliminates energy expenditure during physical tasks
 
-3. 🧱 Durability Matrix
+3. 🧱 **Durability Matrix**
 
    - Exponentially reinforces structural integrity
    - Provides near-invulnerability to physical damage
    - Ensures unparalleled survivability in combat
 
-4. ⚖️ Metabolic Regulator
+4. ⚖️ **Metabolic Regulator**
 
    - Optimizes energy utilization
    - Makes fatigue nearly non-existent
    - Crucial for perpetual physical exertion
 
-5. 🛡️ Internal Shielding
+5. 🛡️ **Internal Shielding**
+
    - Creates an energy barrier to absorb and dissipate impacts
    - Dramatically reduces the severity of injuries
    - Invaluable for combat situations
+
+6. 💪 **Body Shaper**
+
+   - Sculpts the user's physique to perfection
+   - Enhances muscle tone and symmetry
+   - Dramatically improves physical appearance
+   - Makes the user exceptionally attractive
+
+7. ✨ **Skin Enhancer**
+
+   - Rejuvenates and perfects the skin at the cellular level
+   - Eliminates imperfections, scars, and signs of aging
+   - Significantly enhances appearance and social presence
+   - Grants flawless and radiant skin
 
 ## ❤️ Astraltech Heart
 

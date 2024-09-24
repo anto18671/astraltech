@@ -780,6 +780,88 @@
 	<addsHediff>AstraltechInternalShielding_hediff</addsHediff>
 </RecipeDef>
 <RecipeDef ParentName="SurgeryFlesh">
+	<defName>Install_Astraltech_Shaper</defName>
+	<label>install astraltech shaper</label>
+	<description>Install an astraltech shaper.</description>
+	<jobString>Installing astraltech shaper.</jobString>
+	<workAmount>4500</workAmount>
+	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
+	<skillRequirements>
+		<Medicine>8</Medicine>
+	</skillRequirements>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>Medicine</li>
+				</categories>
+			</filter>
+			<count>2</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Astraltech_Shaper</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+			<li>Medicine</li>
+		</categories>
+		<thingDefs>
+			<li>Astraltech_Shaper</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<appliedOnFixedBodyParts>
+		<li>Torso</li>
+	</appliedOnFixedBodyParts>
+	<addsHediff>Astraltech_Shaper_hediff</addsHediff>
+</RecipeDef>
+<RecipeDef ParentName="SurgeryFlesh">
+	<defName>Install_Astraltech_Skin_Enhancer</defName>
+	<label>install astraltech skin enhancer</label>
+	<description>Install an astraltech skin enhancer.</description>
+	<jobString>Installing astraltech skin enhancer.</jobString>
+	<workAmount>4500</workAmount>
+	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
+	<skillRequirements>
+		<Medicine>8</Medicine>
+	</skillRequirements>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>Medicine</li>
+				</categories>
+			</filter>
+			<count>2</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Astraltech_Skin_Enhancer</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+			<li>Medicine</li>
+		</categories>
+		<thingDefs>
+			<li>Astraltech_Skin_Enhancer</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<appliedOnFixedBodyParts>
+		<li>Torso</li>
+	</appliedOnFixedBodyParts>
+	<addsHediff>Astraltech_Skin_Enhancer_hediff</addsHediff>
+</RecipeDef>
+<RecipeDef ParentName="SurgeryFlesh">
 	<defName>Install_AstraltechCardioBoost</defName>
 	<label>install astraltech cardio boost</label>
 	<description>Install an astraltech cardio boost.</description>
