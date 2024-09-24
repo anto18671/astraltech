@@ -274,7 +274,7 @@ The Astraltech Ribcage is an impenetrable bionic implant that redefines the conc
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>28600</MarketValue>
+		<MarketValue>22600</MarketValue>
 		<Mass>5</Mass>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>

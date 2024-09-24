@@ -601,7 +601,7 @@ The Astraltech Metabolic Optimizer pushes the stomach's capabilities to near-mag
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
-		<MarketValue>20800</MarketValue>
+		<MarketValue>18800</MarketValue>
 	</statBases>
 	<techHediffsTags><li>Advanced</li></techHediffsTags>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>

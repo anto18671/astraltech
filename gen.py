@@ -13,8 +13,8 @@ BODY_PARTS = [
 ]
 
 # Check if the folder exists, then delete it
-if os.path.exists("AstralTech/"):
-    shutil.rmtree("AstralTech/")
+if os.path.exists("Astraltech/"):
+    shutil.rmtree("Astraltech/")
 
 class Addon:
     def __init__(self, addon_name, label, description, market_value, additional_stats=None, part_efficiency=1.0):
@@ -371,7 +371,7 @@ class Bionic:
         return hediff
 
 def write_xml_file(filename, content):
-    relative_path = f"AstralTech/{filename}"
+    relative_path = f"Astraltech/{filename}"
     os.makedirs(os.path.dirname(relative_path), exist_ok=True)
     with open(relative_path, "w", encoding='utf-8') as file:
         file.write(content)
@@ -381,10 +381,10 @@ def generate_mod_metadata():
     return (
         """<?xml version="1.0" encoding="utf-8" ?>\n"""
         "<ModMetaData>\n"
-        "\t<name>AstralTech Bionic Implants</name>\n"
+        "\t<name>Astraltech Bionic Implants</name>\n"
         "\t<author>Anthony Therrien</author>\n"
-        "\t<description>Adds new advanced bionic implants to RimWorld, pushing the boundaries of human enhancement with the mysterious AstralTech technology.</description>\n"
-        "\t<packageId>AnthonyTherrien.AstralTechBionics</packageId>\n"
+        "\t<description>Adds new advanced bionic implants to RimWorld, pushing the boundaries of human enhancement with the mysterious Astraltech technology.</description>\n"
+        "\t<packageId>AnthonyTherrien.AstraltechBionics</packageId>\n"
         "\t<supportedVersions>\n"
         "\t\t<li>1.5</li>\n"
         "\t</supportedVersions>\n"
@@ -395,11 +395,11 @@ def generate_about_xml():
     return (
         """<?xml version="1.0" encoding="utf-8"?>\n"""
         "<ModMetaData>\n"
-        "\t<name>AstralTech Bionic Implants</name>\n"
+        "\t<name>Astraltech Bionic Implants</name>\n"
         "\t<author>Anthony Therrien</author>\n"
         "\t<url></url>\n"
-        "\t<description>AstralTech Bionic Implants introduces a new tier of advanced bionics to RimWorld. These implants, developed by a mysterious faction from beyond known space, offer unprecedented enhancements to human capabilities. Each AstralTech implant pushes the boundaries of what's possible, granting users abilities that border on the supernatural. Upgrade your colonists with these cutting-edge implants and experience a new level of power in the RimWorld universe.</description>\n"
-        "\t<packageId>AnthonyTherrien.AstralTechBionics</packageId>\n"
+        "\t<description>Astraltech Bionic Implants introduces a new tier of advanced bionics to RimWorld. These implants, developed by a mysterious faction from beyond known space, offer unprecedented enhancements to human capabilities. Each Astraltech implant pushes the boundaries of what's possible, granting users abilities that border on the supernatural. Upgrade your colonists with these cutting-edge implants and experience a new level of power in the RimWorld universe.</description>\n"
+        "\t<packageId>AnthonyTherrien.AstraltechBionics</packageId>\n"
         "\t<supportedVersions>\n"
         "\t\t<li>1.5</li>\n"
         "\t</supportedVersions>\n"
@@ -410,7 +410,7 @@ def generate_language_keys():
     return (
         """<?xml version="1.0" encoding="utf-8" ?>\n"""
         "<LanguageData>\n"
-        "\t<AstralTechDescription>AstralTech is the next leap in bionic technology, far beyond even the mysterious Archotech devices. Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals. They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance. No one knows the full extent of their capabilities, but their power is unmistakable.</AstralTechDescription>\n"
+        "\t<AstraltechDescription>Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices. Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals. They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance. No one knows the full extent of their capabilities, but their power is unmistakable.</AstraltechDescription>\n"
         "</LanguageData>"
     )
 
@@ -432,9 +432,9 @@ if __name__ == "__main__":
             body_part="Skull",
             replace_part=False,
             additional_stats=[
-                Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
+                Stat("ArmorRating_Sharp", 1.1, stat_type='stat', mod_type='factor'),
                 Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
-                Stat("PawnBeauty", 3.0, stat_type='stat', mod_type='offset'),
+                Stat("PawnBeauty", 4.0, stat_type='stat', mod_type='offset'),
                 Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
                 Stat("NegotiationAbility", 0.5, stat_type='stat', mod_type='offset'),
                 Stat("TradePriceImprovement", 0.25, stat_type='stat', mod_type='offset'),
@@ -458,18 +458,18 @@ if __name__ == "__main__":
                 Stat("SocialImpact", 0.75, stat_type='stat', mod_type='offset'),
                 Stat("NegotiationAbility", 0.5, stat_type='stat', mod_type='offset'),
                 Stat("TradePriceImprovement", 0.25, stat_type='stat', mod_type='offset'),
-                Stat("Consciousness", 4.0, stat_type='capacity', mod_type='factor'),
+                Stat("Consciousness", 3.0, stat_type='capacity', mod_type='factor'),
                 Stat("Sight", 1.5, stat_type='capacity', mod_type='factor'),
                 Stat("Hearing", 1.5, stat_type='capacity', mod_type='factor'),
                 Stat("Manipulation", 1.2, stat_type='capacity', mod_type='factor'),
-                Stat("MeleeHitChance", 5.0, stat_type='stat', mod_type='offset'),
-                Stat("ShootingAccuracyPawn", 5.0, stat_type='stat', mod_type='offset'),
-                Stat("GlobalLearningFactor", 4.0, stat_type='stat', mod_type='offset'),
-                Stat("MedicalOperationSpeed", 0.4, stat_type='stat', mod_type='offset'),
-                Stat("MedicalTendSpeed", 0.4, stat_type='stat', mod_type='offset'),
+                Stat("MeleeHitChance", 0.75, stat_type='stat', mod_type='offset'),
+                Stat("ShootingAccuracyPawn", 0.75, stat_type='stat', mod_type='offset'),
+                Stat("GlobalLearningFactor", 3.0, stat_type='stat', mod_type='offset'),
+                Stat("MedicalOperationSpeed", 0.2, stat_type='stat', mod_type='offset'),
+                Stat("MedicalTendSpeed", 0.2, stat_type='stat', mod_type='offset'),
                 Stat("MedicalTendQuality", 0.4, stat_type='stat', mod_type='offset'),
                 Stat("MedicalSurgerySuccessChance", 0.4, stat_type='stat', mod_type='offset'),
-                Stat("MeditationFocusGain", 1.5, stat_type='stat', mod_type='offset'),
+                Stat("MeditationFocusGain", 0.8, stat_type='stat', mod_type='offset'),
                 Stat("ResearchSpeed", 3.0, stat_type='stat', mod_type='offset'),
             ],
             compatible_addons=[
@@ -486,7 +486,7 @@ if __name__ == "__main__":
                         Stat("Consciousness", 1.25, stat_type='capacity', mod_type='factor'),
                         Stat("WorkSpeedGlobal", 1.1, stat_type='stat', mod_type='factor'),
                         Stat("GlobalLearningFactor", 1.0, stat_type='stat', mod_type='offset'),
-                        Stat("ResearchSpeed", 2.0, stat_type='stat', mod_type='offset'),
+                        Stat("ResearchSpeed", 1.0, stat_type='stat', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -499,7 +499,6 @@ if __name__ == "__main__":
                     ),
                     market_value=15600,
                     additional_stats=[
-                        Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
                         Stat("NegotiationAbility", 0.5, stat_type='stat', mod_type='offset'),
                         Stat("TradePriceImprovement", 0.25, stat_type='stat', mod_type='offset'),
                         Stat("MentalBreakThreshold", -0.4, stat_type='stat', mod_type='offset'),
@@ -515,9 +514,10 @@ if __name__ == "__main__":
                     ),
                     market_value=20800,
                     additional_stats=[
-                        Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
+                        Stat("Consciousness", 1.2, stat_type='capacity', mod_type='factor'),
                         Stat("WorkSpeedGlobal", 1.1, stat_type='stat', mod_type='factor'),
                         Stat("Manipulation", 1.1, stat_type='capacity', mod_type='factor'),
+                        Stat("GlobalLearningFactor", 0.2, stat_type='stat', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -530,11 +530,10 @@ if __name__ == "__main__":
                     ),
                     market_value=26000,
                     additional_stats=[
-                        Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
-                        Stat("GlobalLearningFactor", 1.5, stat_type='stat', mod_type='offset'),
+                        Stat("GlobalLearningFactor", 0.5, stat_type='stat', mod_type='offset'),
                         Stat("WorkSpeedGlobal", 1.1, stat_type='stat', mod_type='factor'),
-                        Stat("MeleeHitChance", 1.25, stat_type='stat', mod_type='offset'),
-                        Stat("ShootingAccuracyPawn", 1.25, stat_type='stat', mod_type='offset'),
+                        Stat("MeleeHitChance", 0.25, stat_type='stat', mod_type='offset'),
+                        Stat("ShootingAccuracyPawn", 0.25, stat_type='stat', mod_type='offset'),
                     ]
                 ),
             ]
@@ -553,8 +552,7 @@ if __name__ == "__main__":
             body_part="Eye",
             additional_stats=[
                 Stat("Sight", 2.5, stat_type='capacity', mod_type='factor'),
-                Stat("ShootingAccuracyPawn", 1.75, stat_type='stat', mod_type='offset'),
-                Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='offset'),
+                Stat("ShootingAccuracyPawn", 1.0, stat_type='stat', mod_type='offset'),
                 Stat("Manipulation", 1.1, stat_type='capacity', mod_type='factor'),
             ],
             compatible_addons=[
@@ -568,8 +566,7 @@ if __name__ == "__main__":
                     market_value=11700,
                     additional_stats=[
                         Stat("Sight", 1.5, stat_type='capacity', mod_type='factor'),
-                        Stat("ShootingAccuracyPawn", 1.6, stat_type='stat', mod_type='offset'),
-                        Stat("MeleeHitChance", 1.4, stat_type='stat', mod_type='offset'),
+                        Stat("ShootingAccuracyPawn", 0.4, stat_type='stat', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -582,9 +579,8 @@ if __name__ == "__main__":
                     market_value=10400,
                     additional_stats=[
                         Stat("Sight", 1.5, stat_type='capacity', mod_type='factor'),
-                        Stat("MeleeHitChance", 1.4, stat_type='stat', mod_type='offset'),
+                        Stat("MeleeHitChance", 0.8, stat_type='stat', mod_type='offset'),
                         Stat("Manipulation", 1.1, stat_type='capacity', mod_type='factor'),
-                        Stat("MoveSpeed", 1.1, stat_type='stat', mod_type='factor'),
                     ]
                 ),
             ]
@@ -602,10 +598,11 @@ if __name__ == "__main__":
             mass=0.5,
             body_part="Ear",
             additional_stats=[
-                Stat("Hearing", 3.0, stat_type='capacity', mod_type='factor'),
-                Stat("MeleeHitChance", 1.2, stat_type='stat', mod_type='offset'),
-                Stat("ShootingAccuracyPawn", 1.2, stat_type='stat', mod_type='offset'),
+                Stat("Hearing", 2.5, stat_type='capacity', mod_type='factor'),
+                Stat("ShootingAccuracyPawn", 0.2, stat_type='stat', mod_type='offset'),
                 Stat("NegotiationAbility", 0.2, stat_type='stat', mod_type='offset'),
+                Stat("SocialImpact", 0.1, stat_type='stat', mod_type='offset'),
+                Stat("MeleeHitChance", 0.1, stat_type='stat', mod_type='offset'),
             ],
             compatible_addons=[
                 Addon(
@@ -617,9 +614,9 @@ if __name__ == "__main__":
                     ),
                     market_value=11700,
                     additional_stats=[
-                        Stat("Hearing", 1.5, stat_type='capacity', mod_type='factor'),
-                        Stat("ShootingAccuracyPawn", 1.1, stat_type='stat', mod_type='offset'),
-                        Stat("MeleeHitChance", 1.1, stat_type='stat', mod_type='offset'),
+                        Stat("Hearing", 1.4, stat_type='capacity', mod_type='factor'),
+                        Stat("ShootingAccuracyPawn", 0.1, stat_type='stat', mod_type='offset'),
+                        Stat("MeleeHitChance", 0.1, stat_type='stat', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -631,8 +628,9 @@ if __name__ == "__main__":
                     ),
                     market_value=8450,
                     additional_stats=[
-                        Stat("Hearing", 1.25, stat_type='capacity', mod_type='factor'),
-                        Stat("Sight", 1.1, stat_type='capacity', mod_type='factor'),
+                        Stat("Hearing", 1.2, stat_type='capacity', mod_type='factor'),
+                        Stat("MeleeHitChance", 0.1, stat_type='stat', mod_type='offset'),
+                        Stat("ShootingAccuracyPawn", 0.1, stat_type='stat', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -644,10 +642,9 @@ if __name__ == "__main__":
                     ),
                     market_value=11700,
                     additional_stats=[
-                        Stat("Hearing", 1.4, stat_type='capacity', mod_type='factor'),
-                        Stat("MeleeHitChance", 1.3, stat_type='stat', mod_type='offset'),
-                        Stat("ShootingAccuracyPawn", 1.2, stat_type='stat', mod_type='offset'),
-                        Stat("MeleeDodgeChance", 1.2, stat_type='stat', mod_type='offset'),
+                        Stat("Hearing", 1.2, stat_type='capacity', mod_type='factor'),
+                        Stat("Sight", 1.1, stat_type='capacity', mod_type='factor'),
+                        Stat("MeleeDodgeChance", 0.1, stat_type='stat', mod_type='offset'),
                     ]
                 ),
             ]
@@ -666,9 +663,9 @@ if __name__ == "__main__":
             body_part="Nose",
             additional_stats=[
                 Stat("PawnBeauty", 1.0, stat_type='stat', mod_type='offset'),
-                Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
+                Stat("SocialImpact", 0.25, stat_type='stat', mod_type='offset'),
                 Stat("FoodPoisonChance", -0.5, stat_type='stat', mod_type='offset'),
-                Stat("Breathing", 1.5, stat_type='capacity', mod_type='factor'),
+                Stat("Breathing", 1.25, stat_type='capacity', mod_type='factor'),
             ]
         ),
         Bionic(
@@ -684,8 +681,8 @@ if __name__ == "__main__":
             body_part="Jaw",
             additional_stats=[
                 Stat("PawnBeauty", 1.0, stat_type='stat', mod_type='offset'),
-                Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
-                Stat("NegotiationAbility", 0.5, stat_type='stat', mod_type='offset'),
+                Stat("SocialImpact", 0.25, stat_type='stat', mod_type='offset'),
+                Stat("NegotiationAbility", 0.25, stat_type='stat', mod_type='offset'),
                 Stat("TradePriceImprovement", 0.1, stat_type='stat', mod_type='offset'),
                 Stat("EatingSpeed", 1.5, stat_type='stat', mod_type='factor'),
             ]
@@ -704,14 +701,10 @@ if __name__ == "__main__":
             replace_part=False,
             body_part="Neck",
             additional_stats=[
-                Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
-                Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
-                Stat("MeleeHitChance", 1.4, stat_type='stat', mod_type='offset'),
-                Stat("ShootingAccuracyPawn", 1.3, stat_type='stat', mod_type='offset'),
+                Stat("ArmorRating_Sharp", 1.1, stat_type='stat', mod_type='factor'),
                 Stat("Manipulation", 1.1, stat_type='capacity', mod_type='factor'),
-                Stat("MoveSpeed", 1.1, stat_type='stat', mod_type='factor'),
-                Stat("MeleeDodgeChance", 1.2, stat_type='stat', mod_type='offset'),
-                Stat("Breathing", 1.5, stat_type='capacity', mod_type='factor'),
+                Stat("MeleeDodgeChance", 0.2, stat_type='stat', mod_type='offset'),
+                Stat("Breathing", 1.25, stat_type='capacity', mod_type='factor'),
             ]
         ),
         Bionic(
@@ -730,14 +723,13 @@ if __name__ == "__main__":
             additional_stats=[
                 Stat("Manipulation", 2.0, stat_type='capacity', mod_type='factor'),
                 Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
-                Stat("ShootingAccuracyPawn", 1.5, stat_type='stat', mod_type='offset'),
-                Stat("MedicalOperationSpeed", 0.4, stat_type='stat', mod_type='offset'),
-                Stat("MedicalTendSpeed", 0.4, stat_type='stat', mod_type='offset'),
-                Stat("MedicalTendQuality", 0.4, stat_type='stat', mod_type='offset'),
-                Stat("MedicalSurgerySuccessChance", 0.4, stat_type='stat', mod_type='offset'),
-                Stat("MeleeHitChance", 1.4, stat_type='stat', mod_type='offset'),
-                Stat("MeleeDPS", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("ConstructionSpeed", 0.3, stat_type='stat', mod_type='offset'),
+                Stat("ShootingAccuracyPawn", 0.6, stat_type='stat', mod_type='offset'),
+                Stat("MedicalOperationSpeed", 0.3, stat_type='stat', mod_type='offset'),
+                Stat("MedicalTendSpeed", 0.3, stat_type='stat', mod_type='offset'),
+                Stat("MedicalTendQuality", 0.3, stat_type='stat', mod_type='offset'),
+                Stat("MedicalSurgerySuccessChance", 0.3, stat_type='stat', mod_type='offset'),
+                Stat("MeleeHitChance", 0.5, stat_type='stat', mod_type='offset'),
+                Stat("ConstructionSpeed", 0.25, stat_type='stat', mod_type='offset'),
             ],
             compatible_addons=[
                 Addon(
@@ -750,9 +742,8 @@ if __name__ == "__main__":
                     ),
                     market_value=19500,
                     additional_stats=[
-                        Stat("Manipulation", 1.4, stat_type='capacity', mod_type='factor'),
-                        Stat("MeleeDPS", 1.3, stat_type='stat', mod_type='factor'),
-                        Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
+                        Stat("Manipulation", 1.3, stat_type='capacity', mod_type='factor'),
+                        Stat("MeleeDPS", 1.2, stat_type='stat', mod_type='factor'),
                     ]
                 ),
             ]
@@ -771,11 +762,9 @@ if __name__ == "__main__":
             replace_part=False,
             body_part="Spine",
             additional_stats=[
-                Stat("Moving", 3.0, stat_type='capacity', mod_type='factor'),
+                Stat("Moving", 1.6, stat_type='capacity', mod_type='factor'),
                 Stat("Manipulation", 1.4, stat_type='capacity', mod_type='factor'),
-                Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='offset'),
-                Stat("MeleeDodgeChance", 1.5, stat_type='stat', mod_type='offset'),
-                Stat("MoveSpeed", 1.5, stat_type='stat', mod_type='factor'),
+                Stat("MeleeDodgeChance", 1.0, stat_type='stat', mod_type='offset'),
                 Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
             ],
             compatible_addons=[
@@ -788,11 +777,9 @@ if __name__ == "__main__":
                     ),
                     market_value=23400,
                     additional_stats=[
-                        Stat("Moving", 1.5, stat_type='capacity', mod_type='factor'),
-                        Stat("Manipulation", 1.2, stat_type='capacity', mod_type='factor'),
-                        Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
+                        Stat("Manipulation", 1.1, stat_type='capacity', mod_type='factor'),
                         Stat("PawnBeauty", 1.0, stat_type='stat', mod_type='offset'),
-                        Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
+                        Stat("SocialImpact", 0.25, stat_type='stat', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -804,10 +791,8 @@ if __name__ == "__main__":
                     ),
                     market_value=26000,
                     additional_stats=[
-                        Stat("Manipulation", 1.2, stat_type='capacity', mod_type='factor'),
-                        Stat("MeleeHitChance", 1.3, stat_type='stat', mod_type='offset'),
-                        Stat("ShootingAccuracyPawn", 1.3, stat_type='stat', mod_type='offset'),
-                        Stat("MeleeDodgeChance", 1.3, stat_type='stat', mod_type='offset'),
+                        Stat("Manipulation", 1.1, stat_type='capacity', mod_type='factor'),
+                        Stat("ShootingAccuracyPawn", 0.5, stat_type='stat', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -819,10 +804,8 @@ if __name__ == "__main__":
                     ),
                     market_value=32500,
                     additional_stats=[
-                        Stat("Moving", 1.8, stat_type='capacity', mod_type='factor'),
-                        Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='offset'),
-                        Stat("MeleeDodgeChance", 1.5, stat_type='stat', mod_type='offset'),
-                        Stat("MoveSpeed", 1.4, stat_type='stat', mod_type='factor'),
+                        Stat("Moving", 1.2, stat_type='capacity', mod_type='factor'),
+                        Stat("MeleeDodgeChance", 0.5, stat_type='stat', mod_type='offset'),
                     ]
                 ),
             ]
@@ -835,14 +818,12 @@ if __name__ == "__main__":
                 "With its advanced energy-dispersing reinforcement, it renders the user nearly invulnerable to physical trauma, offering an unprecedented level of defense in combat situations."
             ),
             part_efficiency=3.0,
-            market_value=28600,
+            market_value=22600,
             mass=5,
             body_part="Ribcage",
             additional_stats=[
-                Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
                 Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
-                Stat("Breathing", 2.0, stat_type='capacity', mod_type='factor'),
-                Stat("BloodPumping", 1.2, stat_type='capacity', mod_type='factor'),
+                Stat("Breathing", 1.5, stat_type='capacity', mod_type='factor'),
             ]
         ),
         Bionic(
@@ -859,14 +840,11 @@ if __name__ == "__main__":
             replace_part=False,
             body_part="Torso",
             additional_stats=[
-                Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
+                Stat("ArmorRating_Sharp", 1.1, stat_type='stat', mod_type='factor'),
                 Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
                 Stat("BloodPumping", 1.2, stat_type='capacity', mod_type='factor'),
-                Stat("Moving", 1.5, stat_type='capacity', mod_type='factor'),
-                Stat("MeleeHitChance", 1.5, stat_type='stat', mod_type='offset'),
-                Stat("ShootingAccuracyPawn", 1.4, stat_type='stat', mod_type='offset'),
+                Stat("Moving", 1.4, stat_type='capacity', mod_type='factor'),
                 Stat("Manipulation", 1.25, stat_type='capacity', mod_type='factor'),
-                Stat("MoveSpeed", 1.3, stat_type='stat', mod_type='factor'),
             ],
             compatible_addons=[
                 Addon(
@@ -878,7 +856,8 @@ if __name__ == "__main__":
                     ),
                     market_value=19500,
                     additional_stats=[
-                        Stat("Moving", 1.2, stat_type='capacity', mod_type='factor'),
+                        Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
+                        Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
                     ]
                 ),
                 Addon(
@@ -890,9 +869,8 @@ if __name__ == "__main__":
                     ),
                     market_value=23400,
                     additional_stats=[
-                        Stat("Moving", 1.4, stat_type='capacity', mod_type='factor'),
+                        Stat("Moving", 1.25, stat_type='capacity', mod_type='factor'),
                         Stat("Manipulation", 1.25, stat_type='capacity', mod_type='factor'),
-                        Stat("WorkSpeedGlobal", 1.15, stat_type='stat', mod_type='factor'),
                     ]
                 ),
                 Addon(
@@ -904,10 +882,8 @@ if __name__ == "__main__":
                     ),
                     market_value=26000,
                     additional_stats=[
-                        Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
                         Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
-                        Stat("Manipulation", 1.2, stat_type='capacity', mod_type='factor'),
-                        Stat("MeleeHitChance", 1.4, stat_type='stat', mod_type='offset'),
+                        Stat("MeleeDPS", 1.1, stat_type='stat', mod_type='factor'),
                     ]
                 ),
                 Addon(
@@ -919,9 +895,8 @@ if __name__ == "__main__":
                     ),
                     market_value=32500,
                     additional_stats=[
-                        Stat("Moving", 1.4, stat_type='capacity', mod_type='factor'),
-                        Stat("WorkSpeedGlobal", 1.1, stat_type='stat', mod_type='factor'),
-                        Stat("Consciousness", 1.05, stat_type='capacity', mod_type='factor'),
+                        Stat("Moving", 1.2, stat_type='capacity', mod_type='factor'),
+                        Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
                     ]
                 ),
                 Addon(
@@ -933,10 +908,9 @@ if __name__ == "__main__":
                     ),
                     market_value=39000,
                     additional_stats=[
-                        Stat("ArmorRating_Sharp", 1.2, stat_type='stat', mod_type='factor'),
-                        Stat("ArmorRating_Blunt", 1.2, stat_type='stat', mod_type='factor'),
-                        Stat("Manipulation", 1.2, stat_type='capacity', mod_type='factor'),
-                        Stat("ShootingAccuracyPawn", 1.2, stat_type='stat', mod_type='offset'),
+                        Stat("ArmorRating_Sharp", 1.1, stat_type='stat', mod_type='factor'),
+                        Stat("ArmorRating_Blunt", 1.1, stat_type='stat', mod_type='factor'),
+                        Stat("MeleeDPS", 1.1, stat_type='stat', mod_type='factor'),
                     ]
                 ),
                 Addon(
@@ -949,8 +923,8 @@ if __name__ == "__main__":
                     ),
                     market_value=28600,
                     additional_stats=[
-                        Stat("PawnBeauty", 3.0, stat_type='stat', mod_type='offset'),
-                        Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
+                        Stat("PawnBeauty", 2.0, stat_type='stat', mod_type='offset'),
+                        Stat("SocialImpact", 0.3, stat_type='stat', mod_type='offset'),
                     ]
                 ),
                 Addon(
@@ -963,8 +937,9 @@ if __name__ == "__main__":
                     ),
                     market_value=26600,
                     additional_stats=[
+                        Stat("ArmorRating_Sharp", 1.1, stat_type='stat', mod_type='factor'),
                         Stat("PawnBeauty", 2.0, stat_type='stat', mod_type='offset'),
-                        Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
+                        Stat("SocialImpact", 0.3, stat_type='stat', mod_type='offset'),
                     ]
                 ),
             ],
@@ -981,11 +956,9 @@ if __name__ == "__main__":
             mass=2,
             body_part="Heart",
             additional_stats=[
-                Stat("BloodPumping", 2.75, stat_type='capacity', mod_type='factor'),
-                Stat("Moving", 2.0, stat_type='capacity', mod_type='factor'),
-                Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
-                Stat("MoveSpeed", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
+                Stat("BloodPumping", 2.5, stat_type='capacity', mod_type='factor'),
+                Stat("Moving", 1.2, stat_type='capacity', mod_type='factor'),
+                Stat("Consciousness", 1.2, stat_type='capacity', mod_type='factor'),
             ],
             compatible_addons=[
                 Addon(
@@ -997,10 +970,9 @@ if __name__ == "__main__":
                     ),
                     market_value=32500,
                     additional_stats=[
-                        Stat("BloodPumping", 1.4, stat_type='capacity', mod_type='factor'),
+                        Stat("BloodPumping", 1.25, stat_type='capacity', mod_type='factor'),
                         Stat("Moving", 1.3, stat_type='capacity', mod_type='factor'),
-                        Stat("WorkSpeedGlobal", 1.1, stat_type='stat', mod_type='factor'),
-                        Stat("MoveSpeed", 1.3, stat_type='stat', mod_type='factor'),
+                        Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
                     ]
                 ),
             ]
@@ -1017,10 +989,9 @@ if __name__ == "__main__":
             mass=2,
             body_part="Lung",
             additional_stats=[
-                Stat("Breathing", 3.0, stat_type='capacity', mod_type='factor'),
-                Stat("BloodPumping", 1.25, stat_type='capacity', mod_type='factor'),
-                Stat("Moving", 1.75, stat_type='capacity', mod_type='factor'),
-                Stat("MoveSpeed", 1.3, stat_type='stat', mod_type='factor'),
+                Stat("Breathing", 2.0, stat_type='capacity', mod_type='factor'),
+                Stat("BloodPumping", 1.1, stat_type='capacity', mod_type='factor'),
+                Stat("Moving", 1.5, stat_type='capacity', mod_type='factor'),
                 Stat("Consciousness", 1.05, stat_type='capacity', mod_type='factor'),
             ]
         ),
@@ -1036,9 +1007,9 @@ if __name__ == "__main__":
             mass=1.5,
             body_part="Kidney",
             additional_stats=[
-                Stat("BloodFiltration", 6.0, stat_type='capacity', mod_type='factor'),
+                Stat("BloodFiltration", 2.0, stat_type='capacity', mod_type='factor'),
                 Stat("Consciousness", 1.05, stat_type='capacity', mod_type='factor'),
-                Stat("Breathing", 1.1, stat_type='capacity', mod_type='factor'),
+                Stat("Breathing", 1.2, stat_type='capacity', mod_type='factor'),
             ]
         ),
         Bionic(
@@ -1053,8 +1024,7 @@ if __name__ == "__main__":
             mass=3,
             body_part="Liver",
             additional_stats=[
-                Stat("BloodFiltration", 6.0, stat_type='capacity', mod_type='factor'),
-                Stat("Breathing", 1.2, stat_type='capacity', mod_type='factor'),
+                Stat("BloodFiltration", 3.25, stat_type='capacity', mod_type='factor'),
                 Stat("Consciousness", 1.1, stat_type='capacity', mod_type='factor'),
             ]
         ),
@@ -1070,7 +1040,6 @@ if __name__ == "__main__":
             mass=3,
             body_part="Stomach",
             additional_stats=[
-                Stat("Moving", 1.25, stat_type='capacity', mod_type='factor'),
                 Stat("MaxNutrition", 1.5, stat_type='stat', mod_type='factor'),
                 Stat("Consciousness", 1.05, stat_type='capacity', mod_type='factor'),
             ],
@@ -1082,11 +1051,9 @@ if __name__ == "__main__":
                         "The Astraltech Metabolic Optimizer pushes the stomach's capabilities to near-magical levels. "
                         "This addon allows the user to extract maximum energy from minimal food, virtually eliminating fatigue and granting seemingly limitless endurance."
                     ),
-                    market_value=20800,
+                    market_value=18800,
                     additional_stats=[
-                        Stat("Moving", 1.1, stat_type='capacity', mod_type='factor'),
-                        Stat("WorkSpeedGlobal", 1.1, stat_type='stat', mod_type='factor'),
-                        Stat("BloodFiltration", 2.0, stat_type='capacity', mod_type='factor'),
+                        Stat("BloodFiltration", 1.5, stat_type='capacity', mod_type='factor'),
                         Stat("Consciousness", 1.05, stat_type='capacity', mod_type='factor'),
                     ]
                 ),
@@ -1105,11 +1072,9 @@ if __name__ == "__main__":
             replace_part=False,
             body_part="Pelvis",
             additional_stats=[
-                Stat("Moving", 1.4, stat_type='capacity', mod_type='factor'),
-                Stat("Manipulation", 1.25, stat_type='capacity', mod_type='factor'),
-                Stat("MeleeHitChance", 1.25, stat_type='stat', mod_type='offset'),
-                Stat("MeleeDodgeChance", 1.25, stat_type='stat', mod_type='offset'),
-                Stat("MoveSpeed", 1.2, stat_type='stat', mod_type='factor'),
+                Stat("Moving", 1.25, stat_type='capacity', mod_type='factor'),
+                Stat("MeleeHitChance", 0.25, stat_type='stat', mod_type='offset'),
+                Stat("MeleeDodgeChance", 0.2, stat_type='stat', mod_type='offset'),
             ]
         ),
         Bionic(
@@ -1125,11 +1090,8 @@ if __name__ == "__main__":
             mass=5,
             body_part="Leg",
             additional_stats=[
-                Stat("Moving", 1.75, stat_type='capacity', mod_type='factor'),
-                Stat("MoveSpeed", 1.5, stat_type='stat', mod_type='factor'),
-                Stat("MeleeHitChance", 1.3, stat_type='stat', mod_type='offset'),
-                Stat("MeleeDodgeChance", 1.4, stat_type='stat', mod_type='offset'),
-                Stat("WorkSpeedGlobal", 1.2, stat_type='stat', mod_type='factor'),
+                Stat("Moving", 1.8, stat_type='capacity', mod_type='factor'),
+                Stat("MeleeDodgeChance", 0.2, stat_type='stat', mod_type='offset'),
             ],
             compatible_addons=[
                 Addon(
@@ -1141,10 +1103,8 @@ if __name__ == "__main__":
                     ),
                     market_value=19500,
                     additional_stats=[
-                        Stat("Moving", 1.4, stat_type='capacity', mod_type='factor'),
-                        Stat("MoveSpeed", 1.25, stat_type='stat', mod_type='factor'),
-                        Stat("MeleeDodgeChance", 1.3, stat_type='stat', mod_type='offset'),
-                        Stat("WorkSpeedGlobal", 1.15, stat_type='stat', mod_type='factor'),
+                        Stat("Moving", 1.25, stat_type='capacity', mod_type='factor'),
+                        Stat("MeleeDodgeChance", 0.1, stat_type='stat', mod_type='offset'),
                     ]
                 ),
             ]
@@ -1154,7 +1114,7 @@ if __name__ == "__main__":
     # Generate mod structure and files
     write_xml_file("About/ModMetaData.xml", generate_mod_metadata())
     write_xml_file("About/About.xml", generate_about_xml())
-    write_xml_file("Languages/English/Keyed/AstralTech_Keys.xml", generate_language_keys())
+    write_xml_file("Languages/English/Keyed/Astraltech_Keys.xml", generate_language_keys())
 
     # Initialize counters
     bionics_count = 0
@@ -1184,17 +1144,17 @@ if __name__ == "__main__":
     addons_surgery_xml += "</Defs>"
     hediffs_xml += "</Defs>"
 
-    write_xml_file("Defs/ThingDefs_AstralTechBionics.xml", bionics_xml)
-    write_xml_file("Defs/ThingDefs_AstralTechAddons.xml", addons_xml)
-    write_xml_file("Defs/SurgeryInstructions_AstralTechBionics.xml", bionics_surgery_xml)
-    write_xml_file("Defs/SurgeryInstructions_AstralTechAddons.xml", addons_surgery_xml)
-    write_xml_file("Defs/HediffDefs_AstralTech.xml", hediffs_xml)
+    write_xml_file("Defs/ThingDefs_AstraltechBionics.xml", bionics_xml)
+    write_xml_file("Defs/ThingDefs_AstraltechAddons.xml", addons_xml)
+    write_xml_file("Defs/SurgeryInstructions_AstraltechBionics.xml", bionics_surgery_xml)
+    write_xml_file("Defs/SurgeryInstructions_AstraltechAddons.xml", addons_surgery_xml)
+    write_xml_file("Defs/HediffDefs_Astraltech.xml", hediffs_xml)
 
     # Copy the texture files
     bionics_texture_source = "assets/astral_bionics.png"
-    bionics_texture_destination = "AstralTech/Textures/Things/Item/Health/AstralBionics.png"
+    bionics_texture_destination = "Astraltech/Textures/Things/Item/Health/AstralBionics.png"
     addons_texture_source = "assets/astral_addons.png"
-    addons_texture_destination = "AstralTech/Textures/Things/Item/Health/AstralAddons.png"
+    addons_texture_destination = "Astraltech/Textures/Things/Item/Health/AstralAddons.png"
 
     # Ensure the destination directories exist
     os.makedirs(os.path.dirname(bionics_texture_destination), exist_ok=True)
@@ -1206,14 +1166,14 @@ if __name__ == "__main__":
 
     # Copy the Steam presentation file
     source_file = "assets/presentation.md"
-    destination_file = "AstralTech/About/PublishedFileId.txt"
+    destination_file = "Astraltech/About/PublishedFileId.txt"
     shutil.copy2(source_file, destination_file)
 
     # Copy the Steam Workshop image
     steam_image_source = "assets/steam.png"
-    steam_image_destination = "AstralTech/About/Preview.png"
+    steam_image_destination = "Astraltech/About/Preview.png"
     shutil.copy2(steam_image_source, steam_image_destination)
 
-    print(f"AstralTech Bionic Implants mod generated successfully with {bionics_count} bionics and {addons_count} addons.")
+    print(f"Astraltech Bionic Implants mod generated successfully with {bionics_count} bionics and {addons_count} addons.")
     print("Texture files and Steam assets copied successfully.")
     

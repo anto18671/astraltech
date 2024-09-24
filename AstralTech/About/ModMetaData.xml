@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ModMetaData>
-	<name>AstralTech Bionic Implants</name>
+	<name>Astraltech Bionic Implants</name>
 	<author>Anthony Therrien</author>
-	<description>Adds new advanced bionic implants to RimWorld, pushing the boundaries of human enhancement with the mysterious AstralTech technology.</description>
-	<packageId>AnthonyTherrien.AstralTechBionics</packageId>
+	<description>Adds new advanced bionic implants to RimWorld, pushing the boundaries of human enhancement with the mysterious Astraltech technology.</description>
+	<packageId>AnthonyTherrien.AstraltechBionics</packageId>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
