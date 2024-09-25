@@ -1,4 +1,4 @@
-from const import VALID_STATS, VALID_CAPACITIES, ASTRALTECH_LORE
+from .utils import VALID_STATS, VALID_CAPACITIES, ASTRALTECH_LORE
 
 class Addon:
     def __init__(self, addon_name, label, description, market_value, additional_stats=None, part_efficiency=1.0):

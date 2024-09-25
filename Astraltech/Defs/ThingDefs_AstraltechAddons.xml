@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>Astraltech_Working_Memory_Augmentation</defName>
+	<label>Astraltech Working Memory Augmentation</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Working Memory Augmentation drastically improves the brain's capacity to hold and manipulate information in real-time. By enhancing short-term memory and cognitive agility, this addon is ideal for users engaged in complex, high-pressure decision-making, allowing them to juggle multiple tasks and data points effortlessly.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>23400</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_Astraltech_Working_Memory_Augmentation</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>Astraltech_Emotional_Regulator</defName>
+	<label>Astraltech Emotional Regulator</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Emotional Regulator stabilizes emotional responses, ensuring that the user can stay calm and composed under the most stressful conditions. This addon promotes clarity of thought and enhances social dynamics by eliminating erratic emotional shifts.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>15600</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_Astraltech_Emotional_Regulator</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>Astraltech_Cognitive_Synchronizer</defName>
+	<label>Astraltech Cognitive Synchronizer</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Cognitive Synchronizer tunes brainwave patterns to enhance focus and multi-tasking abilities. With this addon, the user can seamlessly handle multiple tasks with minimal loss of efficiency, vastly improving overall productivity.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>20800</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_Astraltech_Cognitive_Synchronizer</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>AstraltechThoughtAccelerator</defName>
+	<label>Astraltech Rapid Thought Accelerator</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Rapid Thought Accelerator boosts the brain’s processing speed, enabling quick decisions, faster reactions, and split-second calculations. It’s perfect for users engaged in high-stakes operations or intense mental tasks.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>26000</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_AstraltechThoughtAccelerator</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>AstraltechTargetingEnhancer</defName>
+	<label>Astraltech Targeting Enhancer</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Targeting Enhancer improves the user’s ability to focus on targets and increases precision in combat. With advanced tracking algorithms, this addon is ideal for sharpshooters and individuals in combat-heavy roles.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>11700</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_AstraltechTargetingEnhancer</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>AstraltechMotionDetectionModule</defName>
+	<label>Astraltech Motion Detection Module</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Motion Detection Module enhances the user’s ability to detect movement, significantly increasing their reaction time in fast-paced environments. It provides an edge in combat by allowing the user to anticipate and respond to threats more quickly.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>10400</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_AstraltechMotionDetectionModule</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>AstraltechSoundAmplifier</defName>
+	<label>Astraltech Sound Amplifier</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Sound Amplifier grants its user the ability to hear sounds from impossible distances. This addon enhances long-range auditory detection and allows the user to hear through solid obstacles as if they weren't there.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>11700</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_AstraltechSoundAmplifier</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>AstraltechNoiseFilter</defName>
+	<label>Astraltech Noise Filter</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Noise Filter eliminates all unwanted background noise, allowing the user to focus on crucial sounds with preternatural clarity. In even the most chaotic environments, it filters out distractions, enhancing auditory perception to superhuman levels.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>8450</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_AstraltechNoiseFilter</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>AstraltechEchoLocator</defName>
+	<label>Astraltech Echo Locator</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Echo Locator utilizes impossible echolocation technology, granting the user an almost precognitive spatial awareness. This addon provides unparalleled threat detection and environmental navigation, bordering on the supernatural.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>11700</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_AstraltechEchoLocator</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>Astraltech_Shoulder_Reinforcement</defName>
+	<label>Astraltech Shoulder Reinforcement</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+Engineered with otherworldly precision, the Astraltech Shoulder Reinforcement dramatically enhances the structural integrity and power output of bionic arms, enabling strength beyond mortal comprehension and unbreakable resilience in even the most extreme environments.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>19500</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_Astraltech_Shoulder_Reinforcement</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>AstraltechPostureEnhancer</defName>
+	<label>Astraltech Posture Enhancer</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Posture Enhancer perfects the user's body alignment, eliminating strain during any movement and granting limitless endurance. This addon ensures flawless posture for any task, offering superhuman comfort and efficiency in all physical endeavors.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>23400</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_AstraltechPostureEnhancer</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>AstraltechStabilityModule</defName>
+	<label>Astraltech Stability Module</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Stability Module grants supernatural core stability, allowing the user to perform even the most delicate tasks with perfect accuracy and control. It renders the user nearly immune to knockdowns and dramatically improves overall physical performance.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>26000</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_AstraltechStabilityModule</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>AstraltechAgilityBooster</defName>
+	<label>Astraltech Agility Booster</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Agility Booster elevates the user's agility to superhuman levels, enabling movements faster than the eye can track and instantaneous combat responses. This addon dramatically enhances reflexes and coordination, making the user seem to bend the laws of physics in fast-paced environments.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>32500</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_AstraltechAgilityBooster</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>AstraltechResilienceEnhancer</defName>
+	<label>Astraltech Resilience Enhancer</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Resilience Enhancer dramatically improves the user's overall toughness, allowing them to shrug off damage that would incapacitate or kill a normal human. This addon grants near-superhuman physical endurance, making the user almost impervious to harsh conditions and physical trauma.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>19500</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_AstraltechResilienceEnhancer</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>AstraltechCoreStabilizer</defName>
+	<label>Astraltech Core Stabilizer</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Core Stabilizer perfects the user's internal balance and core strength, dramatically improving movement efficiency and virtually eliminating energy expenditure during physical tasks. This addon is essential for those who need to perform at peak levels indefinitely.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>23400</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_AstraltechCoreStabilizer</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>AstraltechDurabilityMatrix</defName>
+	<label>Astraltech Durability Matrix</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Durability Matrix exponentially reinforces the torso's structural integrity, providing near-invulnerability to physical damage. This addon ensures unparalleled survivability in combat situations, as the body becomes resistant to all but the most catastrophic injuries.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>26000</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_AstraltechDurabilityMatrix</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>AstraltechMetabolicRegulator</defName>
+	<label>Astraltech Metabolic Regulator</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Metabolic Regulator perfects the user's metabolism, optimizing energy utilization to such a degree that fatigue becomes nearly non-existent. This addon is crucial for individuals requiring perpetual physical exertion without any loss in stamina or endurance.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>32500</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_AstraltechMetabolicRegulator</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>AstraltechInternalShielding</defName>
+	<label>Astraltech Internal Shielding</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Internal Shielding creates an energy barrier that absorbs and dissipates impacts, dramatically reducing the severity of injuries. This addon is invaluable in combat situations, where it can mean the difference between walking away unscathed and critical injury.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>39000</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_AstraltechInternalShielding</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>Astraltech_Shaper</defName>
+	<label>Astraltech Shaper</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Shaper is an advanced implant that sculpts the user's physique to perfection. It redefines the body's proportions, enhancing muscle tone and symmetry to create an ideal form. This addon dramatically improves physical appearance, making the user exceptionally attractive.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>28600</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_Astraltech_Shaper</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>Astraltech_Skin_Enhancer</defName>
+	<label>Astraltech Skin Enhancer</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Skin Enhancer rejuvenates and perfects the user's skin at the cellular level. It eliminates imperfections, scars, and signs of aging, granting flawless and radiant skin. This addon significantly enhances the user's appearance and social presence.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>26600</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_Astraltech_Skin_Enhancer</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>AstraltechCardioBoost</defName>
+	<label>Astraltech Cardio Boost</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Cardio Boost is an advanced addon that further enhances the heart's capabilities beyond comprehension. This addon eliminates the concept of physical exhaustion, allowing the user to perform at peak levels continuously without any decline in performance.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>32500</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_AstraltechCardioBoost</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>AstraltechMetabolicOptimizer</defName>
+	<label>Astraltech Metabolic Optimizer</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Metabolic Optimizer pushes the stomach's capabilities to near-magical levels. This addon allows the user to extract maximum energy from minimal food, virtually eliminating fatigue and granting seemingly limitless endurance.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>18800</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_AstraltechMetabolicOptimizer</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>Astraltech_Knee_Enhancement</defName>
+	<label>Astraltech Knee Enhancement</label>
+	<description>Astraltech is a monumental leap in bionic technology, surpassing even the mysterious Archotech devices. Secretly developed by an advanced faction beyond known stars for the elite, these implants possess seemingly supernatural abilities that push physical limits. Their full capabilities are unknown, but their power is undeniable.
+
+The Astraltech Knee Enhancement integrates otherworldly technology to push the capabilities of bionic legs beyond imagination. It grants the user near-perfect agility, allowing for instantaneous direction changes and providing seemingly limitless endurance.</description>
+	<techLevel>Spacer</techLevel>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Item/Health/AstralAddons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>19500</MarketValue>
+	</statBases>
+	<techHediffsTags><li>Advanced</li></techHediffsTags>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<descriptionHyperlinks>
+		<RecipeDef>Install_Astraltech_Knee_Enhancement</RecipeDef>
+	</descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+	</comps>
+</ThingDef>
+</Defs>

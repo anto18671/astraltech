@@ -1,4 +1,4 @@
-from const import BODY_PARTS, VALID_STATS, VALID_CAPACITIES, ASTRALTECH_LORE
+from .utils import BODY_PARTS, VALID_STATS, VALID_CAPACITIES, ASTRALTECH_LORE
 
 class Bionic:
     def __init__(self, bionic_name, label, description, part_efficiency, market_value, mass,
