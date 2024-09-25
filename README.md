@@ -1,25 +1,25 @@
-# AstralTech Bionic Implants
+# Astraltech Bionic Implants
 
-![AstralTech Logo](assets/steam.png)
+![Astraltech Logo](assets/steam.png)
 
 ## Overview
 
-AstralTech Bionic Implants is an ambitious RimWorld mod that introduces a new tier of advanced bionics, pushing the boundaries of human enhancement to extraordinary levels. Developed by a mysterious faction from beyond known space, these implants offer unprecedented abilities that border on the supernatural, allowing your colonists to transcend the limits of human capability.
+Astraltech Bionic Implants is an ambitious RimWorld mod that introduces a new tier of advanced bionics, pushing the boundaries of human enhancement to extraordinary levels. Developed by a mysterious faction from beyond known space, these implants offer unprecedented abilities that border on the supernatural, allowing your colonists to transcend the limits of human capability.
 
 ---
 
 ## Features
 
-- **41 New Bionic Parts**: Each AstralTech implant is a masterpiece of biotechnology, offering unprecedented enhancements to human capabilities.
-- **Modular Addon System**: Many AstralTech bionics support powerful addons, allowing for further customization and enhancement.
-- **Balanced Progression**: While incredibly powerful, AstralTech bionics are appropriately rare and expensive, maintaining game balance.
+- **41 New Bionic Parts**: Each Astraltech implant is a masterpiece of biotechnology, offering unprecedented enhancements to human capabilities.
+- **Modular Addon System**: Many Astraltech bionics support powerful addons, allowing for further customization and enhancement.
+- **Balanced Progression**: While incredibly powerful, Astraltech bionics are appropriately rare and expensive, maintaining game balance.
 - **Lore-Friendly**: Seamlessly integrates into the RimWorld universe, expanding on the existing bionic and archotech concepts.
 - **High-Quality Textures**: Each bionic part comes with its own unique, high-resolution texture (coming soon).
-- **Crafting System**: Fabricate AstralTech bionics and addons at the hi-tech research bench.
+- **Crafting System**: Fabricate Astraltech bionics and addons at the hi-tech research bench.
 
 ---
 
-## AstralTech Implants and Addons
+## Astraltech Implants and Addons
 
 ## 🧠 Astraltech Brain
 
@@ -379,14 +379,14 @@ The Astraltech Leg is a marvel of bionic engineering that transcends human locom
 
 ### Balanced Gameplay
 
-While AstralTech implants offer powerful enhancements, they are designed to integrate into the RimWorld experience without breaking game balance:
+While Astraltech implants offer powerful enhancements, they are designed to integrate into the RimWorld experience without breaking game balance:
 
 - Expensive to produce, requiring advanced materials and components
 - Surgical procedures to install implants carry risks
 
 ### Lore-Friendly Integration
 
-AstralTech comes with a rich backstory that fits seamlessly into the RimWorld universe:
+Astraltech comes with a rich backstory that fits seamlessly into the RimWorld universe:
 
 - Mysterious origin from an advanced faction beyond known space
 - Hints at greater technological marvels yet to be discovered
@@ -396,23 +396,23 @@ AstralTech comes with a rich backstory that fits seamlessly into the RimWorld un
 
 1. Subscribe to the mod on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=XXXXXXX) (replace XXXXXXX with your actual Workshop ID)
 
-2. Launch RimWorld and enable "AstralTech Bionic Implants" in the Mods menu.
+2. Launch RimWorld and enable "Astraltech Bionic Implants" in the Mods menu.
 
-3. Start a new game or load an existing save to begin researching and crafting AstralTech implants.
+3. Start a new game or load an existing save to begin researching and crafting Astraltech implants.
 
 ## Compatibility
 
 - Requires RimWorld 1.5
 - Should be compatible with most other mods, including:
-  - Other bionic/prosthetics mods (AstralTech will appear as a separate, advanced tier)
+  - Other bionic/prosthetics mods (Astraltech will appear as a separate, advanced tier)
   - Combat mods (enhances combat capabilities without breaking balance)
   - Work and crafting mods (integrates well with mods that add new workbenches or crafting systems)
 
-If you encounter any compatibility issues, please report them on our [Issues page](https://github.com/anto18671/AstralTechBionics/issues).
+If you encounter any compatibility issues, please report them on our [Issues page](https://github.com/anto18671/astraltech/issues).
 
 ## Contributing
 
-We welcome contributions from the community! If you'd like to contribute to the development of AstralTech Bionic Implants, please:
+We welcome contributions from the community! If you'd like to contribute to the development of Astraltech Bionic Implants, please:
 
 1. Fork the repository
 2. Create a new branch for your feature
@@ -438,6 +438,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-- For bug reports and feature requests, please use our [GitHub Issues page](https://github.com/anto18671/AstralTechBionics/issues)
+- For bug reports and feature requests, please use our [GitHub Issues page](https://github.com/anto18671/astraltech/issues)
 
-Enjoy your journey into the future of human enhancement with AstralTech Bionic Implants!
+Enjoy your journey into the future of human enhancement with Astraltech Bionic Implants!

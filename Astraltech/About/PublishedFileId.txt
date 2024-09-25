@@ -1,27 +1,27 @@
-# AstralTech Bionic Implants
+# Astraltech Bionic Implants
 
-![AstralTech Banner](https://steamuserimages-a.akamaihd.net/ugc/placeholder/astraltech_banner.jpg)
+![Astraltech Banner](https://steamuserimages-a.akamaihd.net/ugc/placeholder/astraltech_banner.jpg)
 
 ## Overview
 
-AstralTech Bionic Implants introduces a new tier of advanced bionics to RimWorld, pushing the boundaries of human enhancement beyond even the mysterious Archotech. Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.
+Astraltech Bionic Implants introduces a new tier of advanced bionics to RimWorld, pushing the boundaries of human enhancement beyond even the mysterious Archotech. Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals.
 
-Prepare to transcend the limits of human potential with AstralTech!
+Prepare to transcend the limits of human potential with Astraltech!
 
 ---
 
 ## Features
 
-- **41 New Bionic Parts**: Each AstralTech implant is a masterpiece of biotechnology, offering unprecedented enhancements to human capabilities.
-- **Modular Addon System**: Many AstralTech bionics support powerful addons, allowing for further customization and enhancement.
-- **Balanced Progression**: While incredibly powerful, AstralTech bionics are appropriately rare and expensive, maintaining game balance.
+- **41 New Bionic Parts**: Each Astraltech implant is a masterpiece of biotechnology, offering unprecedented enhancements to human capabilities.
+- **Modular Addon System**: Many Astraltech bionics support powerful addons, allowing for further customization and enhancement.
+- **Balanced Progression**: While incredibly powerful, Astraltech bionics are appropriately rare and expensive, maintaining game balance.
 - **Lore-Friendly**: Seamlessly integrates into the RimWorld universe, expanding on the existing bionic and archotech concepts.
 - **High-Quality Textures**: Each bionic part comes with its own unique, high-resolution texture (coming soon).
-- **Crafting System**: Fabricate AstralTech bionics and addons at the hi-tech research bench.
+- **Crafting System**: Fabricate Astraltech bionics and addons at the hi-tech research bench.
 
 ---
 
-## AstralTech Implants and Addons
+## Astraltech Implants and Addons
 
 ## 🧠 Astraltech Brain
 
@@ -381,7 +381,7 @@ The Astraltech Leg is a marvel of bionic engineering that transcends human locom
 
 ## Lore
 
-AstralTech is the next leap in bionic technology, far beyond even the mysterious Archotech devices. Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals. They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance. No one knows the full extent of their capabilities, but their power is unmistakable.
+Astraltech is the next leap in bionic technology, far beyond even the mysterious Archotech devices. Developed in secret by an advanced faction from beyond the known stars, these implants were created for only the most elite individuals. They are not only functional but also imbued with seemingly supernatural capabilities that push the very limits of physical performance. No one knows the full extent of their capabilities, but their power is unmistakable.
 
 ---
 
@@ -394,19 +394,19 @@ AstralTech is the next leap in bionic technology, far beyond even the mysterious
 ## Frequently Asked Questions
 
 Q: Is this mod compatible with [specific mod]?
-A: We've designed AstralTech to be as compatible as possible. If you encounter any issues, please let us know!
+A: We've designed Astraltech to be as compatible as possible. If you encounter any issues, please let us know!
 
 Q: Can I add this to an existing save?
-A: Yes, you can safely add AstralTech Bionic Implants to existing saves.
+A: Yes, you can safely add Astraltech Bionic Implants to existing saves.
 
 Q: Are these implants too overpowered?
-A: While extremely powerful, AstralTech implants are balanced through rarity and high costss. They're designed to be end-game content.
+A: While extremely powerful, Astraltech implants are balanced through rarity and high costss. They're designed to be end-game content.
 
 ---
 
 ## Support and Feedback
 
-If you enjoy AstralTech Bionic Implants, please leave a rating and share your experiences! For bug reports, suggestions, or general feedback, please use the discussion board or comment section.
+If you enjoy Astraltech Bionic Implants, please leave a rating and share your experiences! For bug reports, suggestions, or general feedback, please use the discussion board or comment section.
 
 ---
 
@@ -424,4 +424,4 @@ If you enjoy AstralTech Bionic Implants, please leave a rating and share your ex
 
 ---
 
-Enjoy your journey into the future of human enhancement with AstralTech Bionic Implants!
+Enjoy your journey into the future of human enhancement with Astraltech Bionic Implants!
