@@ -5,11 +5,16 @@
 	<label>install astraltech working memory augmentation</label>
 	<description>Install an astraltech working memory augmentation.</description>
 	<jobString>Installing astraltech working memory augmentation.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -46,11 +51,16 @@
 	<label>install astraltech emotional regulator</label>
 	<description>Install an astraltech emotional regulator.</description>
 	<jobString>Installing astraltech emotional regulator.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -87,11 +97,16 @@
 	<label>install astraltech cognitive synchronizer</label>
 	<description>Install an astraltech cognitive synchronizer.</description>
 	<jobString>Installing astraltech cognitive synchronizer.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -128,11 +143,16 @@
 	<label>install astraltech rapid thought accelerator</label>
 	<description>Install an astraltech rapid thought accelerator.</description>
 	<jobString>Installing astraltech rapid thought accelerator.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -169,11 +189,16 @@
 	<label>install astraltech targeting enhancer</label>
 	<description>Install an astraltech targeting enhancer.</description>
 	<jobString>Installing astraltech targeting enhancer.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -210,11 +235,16 @@
 	<label>install astraltech motion detection module</label>
 	<description>Install an astraltech motion detection module.</description>
 	<jobString>Installing astraltech motion detection module.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -251,11 +281,16 @@
 	<label>install astraltech sound amplifier</label>
 	<description>Install an astraltech sound amplifier.</description>
 	<jobString>Installing astraltech sound amplifier.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -292,11 +327,16 @@
 	<label>install astraltech noise filter</label>
 	<description>Install an astraltech noise filter.</description>
 	<jobString>Installing astraltech noise filter.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -333,11 +373,16 @@
 	<label>install astraltech echo locator</label>
 	<description>Install an astraltech echo locator.</description>
 	<jobString>Installing astraltech echo locator.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -374,11 +419,16 @@
 	<label>install astraltech shoulder reinforcement</label>
 	<description>Install an astraltech shoulder reinforcement.</description>
 	<jobString>Installing astraltech shoulder reinforcement.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -415,11 +465,16 @@
 	<label>install astraltech posture enhancer</label>
 	<description>Install an astraltech posture enhancer.</description>
 	<jobString>Installing astraltech posture enhancer.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -456,11 +511,16 @@
 	<label>install astraltech stability module</label>
 	<description>Install an astraltech stability module.</description>
 	<jobString>Installing astraltech stability module.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -497,11 +557,16 @@
 	<label>install astraltech agility booster</label>
 	<description>Install an astraltech agility booster.</description>
 	<jobString>Installing astraltech agility booster.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -538,11 +603,16 @@
 	<label>install astraltech resilience enhancer</label>
 	<description>Install an astraltech resilience enhancer.</description>
 	<jobString>Installing astraltech resilience enhancer.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -579,11 +649,16 @@
 	<label>install astraltech core stabilizer</label>
 	<description>Install an astraltech core stabilizer.</description>
 	<jobString>Installing astraltech core stabilizer.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -620,11 +695,16 @@
 	<label>install astraltech durability matrix</label>
 	<description>Install an astraltech durability matrix.</description>
 	<jobString>Installing astraltech durability matrix.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -661,11 +741,16 @@
 	<label>install astraltech metabolic regulator</label>
 	<description>Install an astraltech metabolic regulator.</description>
 	<jobString>Installing astraltech metabolic regulator.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -702,11 +787,16 @@
 	<label>install astraltech internal shielding</label>
 	<description>Install an astraltech internal shielding.</description>
 	<jobString>Installing astraltech internal shielding.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -743,11 +833,16 @@
 	<label>install astraltech shaper</label>
 	<description>Install an astraltech shaper.</description>
 	<jobString>Installing astraltech shaper.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -784,11 +879,16 @@
 	<label>install astraltech skin enhancer</label>
 	<description>Install an astraltech skin enhancer.</description>
 	<jobString>Installing astraltech skin enhancer.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -825,11 +925,16 @@
 	<label>install astraltech cardio boost</label>
 	<description>Install an astraltech cardio boost.</description>
 	<jobString>Installing astraltech cardio boost.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -866,11 +971,16 @@
 	<label>install astraltech metabolic optimizer</label>
 	<description>Install an astraltech metabolic optimizer.</description>
 	<jobString>Installing astraltech metabolic optimizer.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -907,11 +1017,16 @@
 	<label>install astraltech knee enhancement</label>
 	<description>Install an astraltech knee enhancement.</description>
 	<jobString>Installing astraltech knee enhancement.</jobString>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<anesthetize>true</anesthetize>
 	<workAmount>4500</workAmount>
 	<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
 	<skillRequirements>
 		<Medicine>8</Medicine>
 	</skillRequirements>
+	<recipeUsers>
+		<li>Human</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>

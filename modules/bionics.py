@@ -76,18 +76,29 @@ class Bionic:
         )
         return thingdef
 
-    def generate_surgery_instruction(self):
+    def generate_surgery_instruction(self, races=["Human"]):
+        worker_class = "Recipe_InstallArtificialBodyPart" if self.replace_part else "Recipe_InstallImplant"
+        
+        # Generate the recipeUsers XML
+        recipe_users_xml = "\t<recipeUsers>\n"
+        for race in races:
+            recipe_users_xml += f"\t\t<li>{race}</li>\n"
+        recipe_users_xml += "\t</recipeUsers>\n"
+        
         surgery = (
             "<RecipeDef ParentName=\"SurgeryFlesh\">\n"
             f"\t<defName>Install_{self.bionic_name}</defName>\n"
             f"\t<label>install {self.label.lower()}</label>\n"
             f"\t<description>Install a {self.label.lower()}.</description>\n"
             f"\t<jobString>Installing {self.label.lower()}.</jobString>\n"
+            f"\t<workerClass>{worker_class}</workerClass>\n"
+            "\t<anesthetize>true</anesthetize>\n"
             "\t<workAmount>6000</workAmount>\n"
             "\t<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>\n"
             "\t<skillRequirements>\n"
             "\t\t<Medicine>8</Medicine>\n"
             "\t</skillRequirements>\n"
+            + recipe_users_xml +
             "\t<ingredients>\n"
             "\t\t<li>\n"
             "\t\t\t<filter>\n"
