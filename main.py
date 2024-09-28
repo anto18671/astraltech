@@ -1,10 +1,311 @@
 from modules.utils import write_xml_file, generate_mod_metadata, generate_about_xml, generate_language_keys
+from modules.backstory import Backstory
 from modules.bionics import Bionic
 from modules.addons import Addon
 from modules.stats import Stat
 import shutil
 import os
 
+# Define a list of Astraltech-inspired backstories
+adult_backstories = [
+    Backstory(
+        slot="Adulthood",
+        title="Astraltech Salvager",
+        def_name="AST_Salvager",
+        title_short="Salvager",
+        base_desc="[PAWN_nameDef] made a living salvaging parts from destroyed ships, many of which were rumored to contain traces of Astraltech technology. Though [PAWN_nameDef] could never fully verify their origin, the strange, advanced components were unlike anything [PAWN_nameDef] had ever seen, and their value on the black market was undeniable.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Crafting": 8, "Intellectual": 4, "Shooting": 3},
+        work_disables=["Social"]
+    ),
+    Backstory(
+        slot="Adulthood",
+        title="Bionic Research Assistant",
+        def_name="AST_ResearchAssistant",
+        title_short="Research Assistant",
+        base_desc="[PAWN_nameDef] worked in a clandestine lab dedicated to reverse-engineering advanced technology, some of which was whispered to be based on Astraltech. Though the inner workings of these mysterious devices were closely guarded, [PAWN_nameDef] became adept at piecing together their basic functions, always aware that there was more beneath the surface.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Intellectual": 6, "Medicine": 5, "Crafting": 3},
+    ),
+    Backstory(
+        slot="Adulthood",
+        title="Corporate Security Guard",
+        def_name="AST_CorpSecurity",
+        title_short="Security Guard",
+        base_desc="Hired to guard a highly secretive facility believed to be researching technology inspired by Astraltech, [PAWN_nameDef] had no access to the advanced tech but heard countless rumors of its incredible power. [PAWN_nameDef] trained extensively, knowing that failure to protect the site could have dire consequences.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Shooting": 7, "Melee": 5, "Social": 2},
+    ),
+    Backstory(
+        slot="Adulthood",
+        title="Bionic Sales Representative",
+        def_name="AST_SalesRep",
+        title_short="Sales Rep",
+        base_desc="[PAWN_nameDef] sold products that incorporated speculative technology inspired by Astraltech. Though [PAWN_nameDef] never fully understood the mechanics of the devices, the allure of Astraltech legends made every sale easier.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Social": 8, "Artistic": 4, "Intellectual": 2}
+    ),
+    Backstory(
+        slot="Adulthood",
+        title="Astraltech Artifact Dealer",
+        def_name="AST_ArtifactDealer",
+        title_short="Artifact Dealer",
+        base_desc="[PAWN_nameDef] traded in rare, mysterious objects believed to be connected to Astraltech. While many of these items' origins were dubious, their extraordinary craftsmanship and rumored abilities attracted wealthy buyers from all over the galaxy.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Social": 7, "Crafting": 4, "Intellectual": 4},
+        work_disables=["Caring"]
+    ),
+    Backstory(
+        slot="Adulthood",
+        title="Astraltech Cleanup Crew",
+        def_name="AST_CleanupCrew",
+        title_short="Cleaner",
+        base_desc="[PAWN_nameDef] worked on cleanup crews following skirmishes involving advanced technology that many believed to be of Astraltech origin. [PAWN_nameDef] had seen the aftermath of battles involving such tech firsthand, but was never allowed to inspect the wreckage closely.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Construction": 6, "Shooting": 4, "Melee": 2},
+        work_disables=["Social"]
+    ),
+    Backstory(
+        slot="Adulthood",
+        title="Bionic Conspiracy Theorist",
+        def_name="AST_ConspiracyTheorist",
+        title_short="Theorist",
+        base_desc="Convinced that Astraltech was pulling the strings behind major world events, [PAWN_nameDef] spent years gathering information and spreading conspiracy theories. Though lacking hard evidence, [PAWN_nameDef] became adept at connecting dots where few others dared look.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Intellectual": 7, "Social": 5, "Artistic": 2},
+    ),
+    Backstory(
+        slot="Adulthood",
+        title="Underground Mechanic",
+        def_name="AST_UndergroundMechanic",
+        title_short="Mechanic",
+        base_desc="[PAWN_nameDef] ran a secret workshop specializing in modifying and repairing black market bionics. Much of the tech [PAWN_nameDef] worked on was rumored to be derived from Astraltech, though [PAWN_nameDef] never saw definitive proof.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Crafting": 8, "Intellectual": 3, "Construction": 3}
+    ),
+    Backstory(
+        slot="Adulthood",
+        title="Military Analyst",
+        def_name="AST_MilitaryAnalyst",
+        title_short="Analyst",
+        base_desc="[PAWN_nameDef] studied combat footage of battles where highly advanced bionic soldiers were used, some claiming they were equipped with Astraltech-enhanced weaponry. [PAWN_nameDef] became an expert in predicting the future of warfare, though [PAWN_nameDef] had no direct combat experience.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Intellectual": 7, "Shooting": 4, "Social": 3}
+    ),
+    Backstory(
+        slot="Adulthood",
+        title="Bionic Trial Participant",
+        def_name="AST_TrialParticipant",
+        title_short="Trial Participant",
+        base_desc="[PAWN_nameDef] participated in human trials for experimental bionics, which were rumored to incorporate technology inspired by Astraltech. Though the trials were shrouded in secrecy, [PAWN_nameDef] experienced firsthand the power and potential of these devices.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Medicine": 5, "Intellectual": 4, "Crafting": 2},
+    ),
+    Backstory(
+        slot="Adulthood",
+        title="Bionic Instructor",
+        def_name="AST_BionicInstructor",
+        title_short="Instructor",
+        base_desc="[PAWN_nameDef] taught bionics engineering at a technical school, though much of the curriculum was based on theoretical knowledge derived from rumors about Astraltech. [PAWN_nameDef] was highly skilled but had never worked with authentic Astraltech devices.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Intellectual": 8, "Social": 5, "Crafting": 3},
+    ),
+    Backstory(
+        slot="Adulthood",
+        title="Smuggler's Scout",
+        def_name="AST_SmugglersScout",
+        title_short="Scout",
+        base_desc="[PAWN_nameDef] worked for a smuggling ring dealing in illicit bionics, many of which were rumored to have Astraltech origins. [PAWN_nameDef] scouted routes and helped avoid detection, always aware that the stakes were high when dealing with such high-value tech.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Shooting": 5, "Melee": 4, "Social": 3},
+        work_disables=["Caring"]
+    ),
+    Backstory(
+        slot="Adulthood",
+        title="Astraltech Bounty Hunter",
+        def_name="AST_BountyHunter",
+        title_short="Bounty Hunter",
+        base_desc="[PAWN_nameDef] made a living hunting down criminals who dealt in stolen bionics, including those suspected of originating from Astraltech. [PAWN_nameDef] relied on a mix of combat skills and knowledge of underground markets to track targets.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Shooting": 6, "Melee": 5, "Social": 3},
+    ),
+    Backstory(
+        slot="Adulthood",
+        title="Astraltech Test Engineer",
+        def_name="AST_TestEngineer",
+        title_short="Test Engineer",
+        base_desc="[PAWN_nameDef] tested prototype bionics, some of which were rumored to be based on Astraltech technology. Though these devices often malfunctioned or fell short of expectations, [PAWN_nameDef] became adept at identifying weaknesses in design.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Crafting": 7, "Intellectual": 4, "Medicine": 3},
+    ),
+    Backstory(
+        slot="Adulthood",
+        title="Astraltech Black Market Surgeon",
+        def_name="AST_BlackMarketSurgeon",
+        title_short="Surgeon",
+        base_desc="[PAWN_nameDef] performed illegal bionic surgeries in underground clinics. [PAWN_nameDef] became highly skilled at installing and repairing black-market bionics, including those rumored to have Astraltech origins.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Medicine": 9, "Crafting": 4, "Social": 2},
+    ),
+    Backstory(
+        slot="Adulthood",
+        title="Astraltech Hacker",
+        def_name="AST_Hacker",
+        title_short="Hacker",
+        base_desc="[PAWN_nameDef] specialized in breaching highly secure systems, often believed to contain data on Astraltech technology. While never confirmed, [PAWN_nameDef]'s work pushed the boundaries of what was thought possible with conventional tech.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Intellectual": 8, "Crafting": 5, "Social": 2},
+    )
+]
+
+# Define a list of Astraltech-inspired child backstories
+child_backstories = [
+    Backstory(
+        slot="Childhood",
+        title="Astraltech Warehouse Child",
+        def_name="AST_WarehouseChild",
+        title_short="Warehouse Worker",
+        base_desc="Growing up in a factory district where Astraltech parts were stored and shipped, [PAWN_nameDef] often snuck into crates and learned a lot about the tech through observation.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Crafting": 3, "Intellectual": 1},
+    ),
+    Backstory(
+        slot="Childhood",
+        title="Bionic Trader's Assistant",
+        def_name="AST_TraderAssistant",
+        title_short="Trader's Assistant",
+        base_desc="[PAWN_nameDef] grew up assisting a traveling merchant who dealt in tech goods, including parts rumored to come from Astraltech. [PAWN_nameDef] learned how to identify valuable items and haggle effectively.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Social": 3, "Crafting": 2},
+    ),
+    Backstory(
+        slot="Childhood",
+        title="Astraltech Refugee",
+        def_name="AST_RefugeeChild",
+        title_short="Refugee",
+        base_desc="Forced to flee home when Astraltech weapons were deployed in a nearby conflict, [PAWN_nameDef] learned resilience and became adept at surviving under harsh conditions.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Melee": 2, "Shooting": 1},
+    ),
+    Backstory(
+        slot="Childhood",
+        title="Astraltech Junkyard Scavenger",
+        def_name="AST_JunkyardScavenger",
+        title_short="Scavenger",
+        base_desc="Growing up in a junkyard filled with discarded tech, including remnants of Astraltech products, [PAWN_nameDef] spent days sifting through debris, finding useful parts to sell.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Crafting": 4, "Intellectual": 2},
+    ),
+    Backstory(
+        slot="Childhood",
+        title="Bionic Research Intern",
+        def_name="AST_ResearchIntern",
+        title_short="Intern",
+        base_desc="[PAWN_nameDef] was an intern at a laboratory researching Astraltech-inspired bionics. Although young, [PAWN_nameDef] was exposed to complex theories and was tasked with minor technical responsibilities.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Intellectual": 3, "Crafting": 2},
+    ),
+    Backstory(
+        slot="Childhood",
+        title="Astraltech War Orphan",
+        def_name="AST_WarOrphan",
+        title_short="Orphan",
+        base_desc="[PAWN_nameDef]'s parents were killed in a battle involving Astraltech forces. Orphaned at a young age, [PAWN_nameDef] grew up in a war-torn environment, developing a strong sense of survival.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Melee": 2, "Shooting": 2},
+    ),
+    Backstory(
+        slot="Childhood",
+        title="Bionic Scrap Dealer's Kid",
+        def_name="AST_ScrapDealersKid",
+        title_short="Scrap Dealer's Kid",
+        base_desc="Growing up in a family scrap business that often dealt in old bionic parts, [PAWN_nameDef] learned how to identify useful components and repair basic machinery.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Crafting": 3, "Social": 1},
+    ),
+    Backstory(
+        slot="Childhood",
+        title="Astraltech Technician's Child",
+        def_name="AST_TechnicianChild",
+        title_short="Technician's Child",
+        base_desc="The child of a technician who worked on non-classified Astraltech technologies, [PAWN_nameDef] often watched their parent at work and learned a few things about machines.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Crafting": 3, "Intellectual": 2},
+    ),
+    Backstory(
+        slot="Childhood",
+        title="Astraltech Museum Curator's Child",
+        def_name="AST_MuseumCuratorsChild",
+        title_short="Curator's Child",
+        base_desc="Raised in an academic environment, [PAWN_nameDef]'s parent was a curator at a museum displaying historical technology, including artifacts believed to come from Astraltech.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Intellectual": 4, "Artistic": 2},
+    ),
+    Backstory(
+        slot="Childhood",
+        title="Astraltech Freelancer's Apprentice",
+        def_name="AST_FreelancersApprentice",
+        title_short="Apprentice",
+        base_desc="[PAWN_nameDef] was apprenticed to a freelancer who worked on projects involving tech inspired by Astraltech. [PAWN_nameDef] picked up practical skills and a love of tinkering.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Crafting": 3, "Medicine": 1},
+    ),
+    Backstory(
+        slot="Childhood",
+        title="Astraltech Salvage Kid",
+        def_name="AST_SalvageKid",
+        title_short="Salvage Kid",
+        base_desc="[PAWN_nameDef] grew up in a salvage community where Astraltech debris was highly prized. [PAWN_nameDef] learned early on how to find value in scraps and became resourceful in survival.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Crafting": 4, "Shooting": 2},
+    ),
+    Backstory(
+        slot="Childhood",
+        title="Astraltech Collector's Heir",
+        def_name="AST_CollectorsHeir",
+        title_short="Collector's Heir",
+        base_desc="[PAWN_nameDef] was born into wealth as the child of a collector obsessed with Astraltech relics. Their upbringing was filled with stories of legendary bionics and forbidden tech.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Social": 3, "Intellectual": 3},
+    ),
+    Backstory(
+        slot="Childhood",
+        title="Astraltech Robotics Enthusiast",
+        def_name="AST_RoboticsEnthusiast",
+        title_short="Robotics Enthusiast",
+        base_desc="[PAWN_nameDef] grew up fascinated by robots built with Astraltech parts. [PAWN_nameDef] spent hours tinkering with machines, learning as much as possible from old manuals and scavenged parts.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Crafting": 3, "Intellectual": 3},
+    ),
+    Backstory(
+        slot="Childhood",
+        title="Astraltech Street Urchin",
+        def_name="AST_StreetUrchin",
+        title_short="Street Urchin",
+        base_desc="[PAWN_nameDef] grew up on the streets, surviving by stealing and selling Astraltech scraps. [PAWN_nameDef] became adept at evading the law and using the tech to their advantage.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Social": 2, "Melee": 3},
+    ),
+    Backstory(
+        slot="Childhood",
+        title="Astraltech Experimental Subject",
+        def_name="AST_ExperimentalSubject",
+        title_short="Experimental Subject",
+        base_desc="[PAWN_nameDef] was taken in by an experimental lab as a child and subjected to minor tests involving Astraltech prototypes. The experience left [PAWN_nameDef] with a deep curiosity about technology and its limits.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Intellectual": 3, "Crafting": 1},
+    ),
+    Backstory(
+        slot="Childhood",
+        title="Astraltech Bionic Prodigy",
+        def_name="AST_BionicProdigy",
+        title_short="Bionic Prodigy",
+        base_desc="[PAWN_nameDef] displayed an exceptional aptitude for understanding complex machines at a young age. [PAWN_nameDef] often helped older engineers with repairs and tinkered with basic bionic devices.",
+        spawn_categories=["Astraltech Impacted"],
+        skill_gains={"Crafting": 4, "Intellectual": 3},
+    )
+]
+        
 # Define a list of bionics with improved descriptions
 bionics_list = [
     Bionic(
@@ -707,9 +1008,36 @@ if __name__ == "__main__":
         shutil.rmtree("Astraltech/")
 
     # Generate mod structure and files
-    write_xml_file("About/ModMetaData.xml", generate_mod_metadata())
+    write_xml_file("About/PublishedFileId.xml", generate_mod_metadata())
     write_xml_file("About/About.xml", generate_about_xml())
     write_xml_file("Languages/English/Keyed/Astraltech_Keys.xml", generate_language_keys())
+    
+    # Initialize counters
+    adult_backstory_count = 0
+    child_backstory_count = 0
+    
+    # Generate XML content for adult backstories
+    adult_xml_content = '<?xml version="1.0" encoding="utf-8"?>\n<Defs>\n'
+    for backstory in adult_backstories:
+        adult_backstory_count += 1
+        adult_xml_content += backstory.generate_xml() + "\n"
+    adult_xml_content += "</Defs>"
+    
+    # Write the adult backstories to a separate XML file
+    write_xml_file("Defs/AstraltechAdultBackstories.xml", adult_xml_content)
+
+    # Generate XML content for child backstories
+    child_xml_content = '<?xml version="1.0" encoding="utf-8"?>\n<Defs>\n'
+    for backstory in child_backstories:
+        child_backstory_count += 1
+        child_xml_content += backstory.generate_xml() + "\n"
+    child_xml_content += "</Defs>"
+    
+    # Write the child backstories to a separate XML file
+    write_xml_file("Defs/AstraltechChildBackstories.xml", child_xml_content)
+    
+    # Print the number of backstories
+    print(f"Generated successfully {adult_backstory_count} adult backstories and {child_backstory_count} child backstories.")
 
     # Initialize counters
     bionics_count = 0
@@ -723,17 +1051,19 @@ if __name__ == "__main__":
     bionics_hediffs_xml = '<?xml version="1.0" encoding="utf-8" ?>\n<Defs>\n'
     addons_hediffs_xml = '<?xml version="1.0" encoding="utf-8" ?>\n<Defs>\n'
 
+    # Generate XML content for bionics and addons
     for bionic in bionics_list:
         bionics_xml += bionic.generate_thingdef()
         bionics_surgery_xml += bionic.generate_surgery_instruction()
         bionics_hediffs_xml += bionic.generate_hediffdef()
-        bionics_count += 1  # Increment bionic count
+        bionics_count += 1
         for addon in bionic.compatible_addons:
             addons_xml += addon.generate_thingdef()
             addons_surgery_xml += addon.generate_surgery_instruction()
             addons_hediffs_xml += addon.generate_hediffdef()
-            addons_count += 1  # Increment addon count
+            addons_count += 1
 
+    # Close the XML content
     bionics_xml += "</Defs>"
     addons_xml += "</Defs>"
     bionics_surgery_xml += "</Defs>"
@@ -741,6 +1071,7 @@ if __name__ == "__main__":
     bionics_hediffs_xml += "</Defs>"
     addons_hediffs_xml += "</Defs>"
 
+    # Write the bionics and addons to separate XML files
     write_xml_file("Defs/ThingDefs_AstraltechBionics.xml", bionics_xml)
     write_xml_file("Defs/ThingDefs_AstraltechAddons.xml", addons_xml)
     write_xml_file("Defs/SurgeryInstructions_AstraltechBionics.xml", bionics_surgery_xml)
@@ -761,11 +1092,6 @@ if __name__ == "__main__":
     # Copy the texture files
     shutil.copy2(bionics_texture_source, bionics_texture_destination)
     shutil.copy2(addons_texture_source, addons_texture_destination)
-
-    # Copy the Steam presentation file
-    source_file = "assets/presentation.md"
-    destination_file = "Astraltech/About/PublishedFileId.txt"
-    shutil.copy2(source_file, destination_file)
 
     # Copy the Steam Workshop image
     steam_image_source = "assets/steam.png"

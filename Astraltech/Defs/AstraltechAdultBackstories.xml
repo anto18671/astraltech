@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<BackstoryDef>
+  <slot>Adulthood</slot>
+  <title>Astraltech Salvager</title>
+  <defName>AST_Salvager</defName>
+  <titleShort>Salvager</titleShort>
+  <baseDesc>[PAWN_nameDef] made a living salvaging parts from destroyed ships, many of which were rumored to contain traces of Astraltech technology. Though [PAWN_nameDef] could never fully verify their origin, the strange, advanced components were unlike anything [PAWN_nameDef] had ever seen, and their value on the black market was undeniable.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Crafting>8</Crafting>
+    <Intellectual>4</Intellectual>
+    <Shooting>3</Shooting>
+  </skillGains>
+  <workDisables>
+    <li>Social</li>
+  </workDisables>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Adulthood</slot>
+  <title>Bionic Research Assistant</title>
+  <defName>AST_ResearchAssistant</defName>
+  <titleShort>Research Assistant</titleShort>
+  <baseDesc>[PAWN_nameDef] worked in a clandestine lab dedicated to reverse-engineering advanced technology, some of which was whispered to be based on Astraltech. Though the inner workings of these mysterious devices were closely guarded, [PAWN_nameDef] became adept at piecing together their basic functions, always aware that there was more beneath the surface.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Intellectual>6</Intellectual>
+    <Medicine>5</Medicine>
+    <Crafting>3</Crafting>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Adulthood</slot>
+  <title>Corporate Security Guard</title>
+  <defName>AST_CorpSecurity</defName>
+  <titleShort>Security Guard</titleShort>
+  <baseDesc>Hired to guard a highly secretive facility believed to be researching technology inspired by Astraltech, [PAWN_nameDef] had no access to the advanced tech but heard countless rumors of its incredible power. [PAWN_nameDef] trained extensively, knowing that failure to protect the site could have dire consequences.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Shooting>7</Shooting>
+    <Melee>5</Melee>
+    <Social>2</Social>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Adulthood</slot>
+  <title>Bionic Sales Representative</title>
+  <defName>AST_SalesRep</defName>
+  <titleShort>Sales Rep</titleShort>
+  <baseDesc>[PAWN_nameDef] sold products that incorporated speculative technology inspired by Astraltech. Though [PAWN_nameDef] never fully understood the mechanics of the devices, the allure of Astraltech legends made every sale easier.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Social>8</Social>
+    <Artistic>4</Artistic>
+    <Intellectual>2</Intellectual>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Adulthood</slot>
+  <title>Astraltech Artifact Dealer</title>
+  <defName>AST_ArtifactDealer</defName>
+  <titleShort>Artifact Dealer</titleShort>
+  <baseDesc>[PAWN_nameDef] traded in rare, mysterious objects believed to be connected to Astraltech. While many of these items' origins were dubious, their extraordinary craftsmanship and rumored abilities attracted wealthy buyers from all over the galaxy.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Social>7</Social>
+    <Crafting>4</Crafting>
+    <Intellectual>4</Intellectual>
+  </skillGains>
+  <workDisables>
+    <li>Caring</li>
+  </workDisables>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Adulthood</slot>
+  <title>Astraltech Cleanup Crew</title>
+  <defName>AST_CleanupCrew</defName>
+  <titleShort>Cleaner</titleShort>
+  <baseDesc>[PAWN_nameDef] worked on cleanup crews following skirmishes involving advanced technology that many believed to be of Astraltech origin. [PAWN_nameDef] had seen the aftermath of battles involving such tech firsthand, but was never allowed to inspect the wreckage closely.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Construction>6</Construction>
+    <Shooting>4</Shooting>
+    <Melee>2</Melee>
+  </skillGains>
+  <workDisables>
+    <li>Social</li>
+  </workDisables>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Adulthood</slot>
+  <title>Bionic Conspiracy Theorist</title>
+  <defName>AST_ConspiracyTheorist</defName>
+  <titleShort>Theorist</titleShort>
+  <baseDesc>Convinced that Astraltech was pulling the strings behind major world events, [PAWN_nameDef] spent years gathering information and spreading conspiracy theories. Though lacking hard evidence, [PAWN_nameDef] became adept at connecting dots where few others dared look.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Intellectual>7</Intellectual>
+    <Social>5</Social>
+    <Artistic>2</Artistic>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Adulthood</slot>
+  <title>Underground Mechanic</title>
+  <defName>AST_UndergroundMechanic</defName>
+  <titleShort>Mechanic</titleShort>
+  <baseDesc>[PAWN_nameDef] ran a secret workshop specializing in modifying and repairing black market bionics. Much of the tech [PAWN_nameDef] worked on was rumored to be derived from Astraltech, though [PAWN_nameDef] never saw definitive proof.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Crafting>8</Crafting>
+    <Intellectual>3</Intellectual>
+    <Construction>3</Construction>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Adulthood</slot>
+  <title>Military Analyst</title>
+  <defName>AST_MilitaryAnalyst</defName>
+  <titleShort>Analyst</titleShort>
+  <baseDesc>[PAWN_nameDef] studied combat footage of battles where highly advanced bionic soldiers were used, some claiming they were equipped with Astraltech-enhanced weaponry. [PAWN_nameDef] became an expert in predicting the future of warfare, though [PAWN_nameDef] had no direct combat experience.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Intellectual>7</Intellectual>
+    <Shooting>4</Shooting>
+    <Social>3</Social>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Adulthood</slot>
+  <title>Bionic Trial Participant</title>
+  <defName>AST_TrialParticipant</defName>
+  <titleShort>Trial Participant</titleShort>
+  <baseDesc>[PAWN_nameDef] participated in human trials for experimental bionics, which were rumored to incorporate technology inspired by Astraltech. Though the trials were shrouded in secrecy, [PAWN_nameDef] experienced firsthand the power and potential of these devices.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Medicine>5</Medicine>
+    <Intellectual>4</Intellectual>
+    <Crafting>2</Crafting>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Adulthood</slot>
+  <title>Bionic Instructor</title>
+  <defName>AST_BionicInstructor</defName>
+  <titleShort>Instructor</titleShort>
+  <baseDesc>[PAWN_nameDef] taught bionics engineering at a technical school, though much of the curriculum was based on theoretical knowledge derived from rumors about Astraltech. [PAWN_nameDef] was highly skilled but had never worked with authentic Astraltech devices.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Intellectual>8</Intellectual>
+    <Social>5</Social>
+    <Crafting>3</Crafting>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Adulthood</slot>
+  <title>Smuggler's Scout</title>
+  <defName>AST_SmugglersScout</defName>
+  <titleShort>Scout</titleShort>
+  <baseDesc>[PAWN_nameDef] worked for a smuggling ring dealing in illicit bionics, many of which were rumored to have Astraltech origins. [PAWN_nameDef] scouted routes and helped avoid detection, always aware that the stakes were high when dealing with such high-value tech.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Shooting>5</Shooting>
+    <Melee>4</Melee>
+    <Social>3</Social>
+  </skillGains>
+  <workDisables>
+    <li>Caring</li>
+  </workDisables>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Adulthood</slot>
+  <title>Astraltech Bounty Hunter</title>
+  <defName>AST_BountyHunter</defName>
+  <titleShort>Bounty Hunter</titleShort>
+  <baseDesc>[PAWN_nameDef] made a living hunting down criminals who dealt in stolen bionics, including those suspected of originating from Astraltech. [PAWN_nameDef] relied on a mix of combat skills and knowledge of underground markets to track targets.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Shooting>6</Shooting>
+    <Melee>5</Melee>
+    <Social>3</Social>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Adulthood</slot>
+  <title>Astraltech Test Engineer</title>
+  <defName>AST_TestEngineer</defName>
+  <titleShort>Test Engineer</titleShort>
+  <baseDesc>[PAWN_nameDef] tested prototype bionics, some of which were rumored to be based on Astraltech technology. Though these devices often malfunctioned or fell short of expectations, [PAWN_nameDef] became adept at identifying weaknesses in design.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Crafting>7</Crafting>
+    <Intellectual>4</Intellectual>
+    <Medicine>3</Medicine>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Adulthood</slot>
+  <title>Astraltech Black Market Surgeon</title>
+  <defName>AST_BlackMarketSurgeon</defName>
+  <titleShort>Surgeon</titleShort>
+  <baseDesc>[PAWN_nameDef] performed illegal bionic surgeries in underground clinics. [PAWN_nameDef] became highly skilled at installing and repairing black-market bionics, including those rumored to have Astraltech origins.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Medicine>9</Medicine>
+    <Crafting>4</Crafting>
+    <Social>2</Social>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Adulthood</slot>
+  <title>Astraltech Hacker</title>
+  <defName>AST_Hacker</defName>
+  <titleShort>Hacker</titleShort>
+  <baseDesc>[PAWN_nameDef] specialized in breaching highly secure systems, often believed to contain data on Astraltech technology. While never confirmed, [PAWN_nameDef]'s work pushed the boundaries of what was thought possible with conventional tech.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Intellectual>8</Intellectual>
+    <Crafting>5</Crafting>
+    <Social>2</Social>
+  </skillGains>
+</BackstoryDef>
+
+</Defs>

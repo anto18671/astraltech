@@ -1,4 +1,6 @@
 from .utils import VALID_STATS, VALID_CAPACITIES, ASTRALTECH_LORE
+import xml.etree.ElementTree as ET
+import xml.dom.minidom
 
 class Addon:
     def __init__(self, addon_name, label, description, market_value, additional_stats=None, part_efficiency=1.0):
@@ -32,139 +34,171 @@ class Addon:
             else:
                 raise ValueError(f"Invalid stat or capacity: {stat.name}")
 
+    def generate_xml_element(self, tag, text=None, attrib=None):
+        """Helper function to generate XML element"""
+        element = ET.Element(tag, attrib if attrib else {})
+        if text:
+            element.text = text
+        return element
+
     def generate_thingdef(self):
-        # Only MarketValue is included in statBases for ThingDef
-        thingdef = (
-            "<ThingDef ParentName=\"BodyPartBionicBase\">\n"
-            f"\t<defName>{self.addon_name}</defName>\n"
-            f"\t<label>{self.label}</label>\n"
-            f"\t<description>{self.description}</description>\n"
-            "\t<techLevel>Spacer</techLevel>\n"
-            f"\t<thingClass>{self.thing_class}</thingClass>\n"
-            "\t<graphicData>\n"
-            f"\t\t<texPath>{self.tex_path}</texPath>\n"
-            "\t\t<graphicClass>Graphic_Single</graphicClass>\n"
-            "\t</graphicData>\n"
-            "\t<statBases>\n"
-            f"\t\t<MarketValue>{self.market_value}</MarketValue>\n"
-            "\t</statBases>\n"
-            f"\t<techHediffsTags><li>Advanced</li></techHediffsTags>\n"
-            f"\t<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>\n"
-            f"\t<descriptionHyperlinks>\n"
-            f"\t\t<RecipeDef>Install_{self.addon_name}</RecipeDef>\n"
-            f"\t</descriptionHyperlinks>\n"
-            f"\t<costList>\n"
-            f"\t\t<Plasteel>10</Plasteel>\n"
-            f"\t\t<ComponentSpacer>3</ComponentSpacer>\n"
-            f"\t</costList>\n"
-            "\t<comps>\n"
-            "\t\t<li Class=\"CompProperties_Forbiddable\" />\n"
-            "\t</comps>\n"
-            "</ThingDef>\n"
-        )
-        return thingdef
+        root = self.generate_xml_element("ThingDef", attrib={"ParentName": "BodyPartBionicBase"})
+        
+        root.append(self.generate_xml_element("defName", self.addon_name))
+        root.append(self.generate_xml_element("label", self.label))
+        root.append(self.generate_xml_element("description", self.description))
+        root.append(self.generate_xml_element("techLevel", "Spacer"))
+        root.append(self.generate_xml_element("thingClass", self.thing_class))
+
+        graphic_data = self.generate_xml_element("graphicData")
+        graphic_data.append(self.generate_xml_element("texPath", self.tex_path))
+        graphic_data.append(self.generate_xml_element("graphicClass", "Graphic_Single"))
+        root.append(graphic_data)
+
+        stat_bases = self.generate_xml_element("statBases")
+        stat_bases.append(self.generate_xml_element("MarketValue", str(self.market_value)))
+        root.append(stat_bases)
+
+        tech_hediffs_tags = self.generate_xml_element("techHediffsTags")
+        tech_hediffs_tags.append(self.generate_xml_element("li", "Advanced"))
+        root.append(tech_hediffs_tags)
+
+        thing_set_maker_tags = self.generate_xml_element("thingSetMakerTags")
+        thing_set_maker_tags.append(self.generate_xml_element("li", "RewardStandardLowFreq"))
+        root.append(thing_set_maker_tags)
+
+        description_hyperlinks = self.generate_xml_element("descriptionHyperlinks")
+        description_hyperlinks.append(self.generate_xml_element("RecipeDef", f"Install_{self.addon_name}"))
+        root.append(description_hyperlinks)
+
+        cost_list = self.generate_xml_element("costList")
+        cost_list.append(self.generate_xml_element("Plasteel", "10"))
+        cost_list.append(self.generate_xml_element("ComponentSpacer", "3"))
+        root.append(cost_list)
+
+        comps = self.generate_xml_element("comps")
+        comps.append(self.generate_xml_element("li", attrib={"Class": "CompProperties_Forbiddable"}))
+        root.append(comps)
+
+        # Convert to string and prettify
+        xml_string = ET.tostring(root, encoding="unicode")
+        pretty_xml = xml.dom.minidom.parseString(xml_string).toprettyxml(indent="  ")
+
+        return "\n".join(pretty_xml.split("\n")[1:])
 
     def generate_surgery_instruction(self, races=["Human"]):
-        # Generate the recipeUsers XML
-        recipe_users_xml = "\t<recipeUsers>\n"
-        for race in races:
-            recipe_users_xml += f"\t\t<li>{race}</li>\n"
-        recipe_users_xml += "\t</recipeUsers>\n"
+        root = self.generate_xml_element("RecipeDef", attrib={"ParentName": "SurgeryFlesh"})
         
-        surgery = (
-            "<RecipeDef ParentName=\"SurgeryFlesh\">\n"
-            f"\t<defName>Install_{self.addon_name}</defName>\n"
-            f"\t<label>install {self.label.lower()}</label>\n"
-            f"\t<description>Install an {self.label.lower()}.</description>\n"
-            f"\t<jobString>Installing {self.label.lower()}.</jobString>\n"
-            "\t<workerClass>Recipe_InstallImplant</workerClass>\n"
-            "\t<anesthetize>true</anesthetize>\n"
-            "\t<workAmount>4500</workAmount>\n"
-            "\t<surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>\n"
-            "\t<skillRequirements>\n"
-            "\t\t<Medicine>8</Medicine>\n"
-            "\t</skillRequirements>\n"
-            + recipe_users_xml +
-            "\t<ingredients>\n"
-            "\t\t<li>\n"
-            "\t\t\t<filter>\n"
-            "\t\t\t\t<categories>\n"
-            "\t\t\t\t\t<li>Medicine</li>\n"
-            "\t\t\t\t</categories>\n"
-            "\t\t\t</filter>\n"
-            "\t\t\t<count>2</count>\n"
-            "\t\t</li>\n"
-            "\t\t<li>\n"
-            "\t\t\t<filter>\n"
-            "\t\t\t\t<thingDefs>\n"
-            f"\t\t\t\t\t<li>{self.addon_name}</li>\n"
-            "\t\t\t\t</thingDefs>\n"
-            "\t\t\t</filter>\n"
-            "\t\t\t<count>1</count>\n"
-            "\t\t</li>\n"
-            "\t</ingredients>\n"
-            "\t<fixedIngredientFilter>\n"
-            "\t\t<categories>\n"
-            "\t\t\t<li>Medicine</li>\n"
-            "\t\t</categories>\n"
-            "\t\t<thingDefs>\n"
-            f"\t\t\t<li>{self.addon_name}</li>\n"
-            "\t\t</thingDefs>\n"
-            "\t</fixedIngredientFilter>\n"
-            f"\t<appliedOnFixedBodyParts>\n"
-            f"\t\t<li>{self.body_part}</li>\n"
-            f"\t</appliedOnFixedBodyParts>\n"
-            f"\t<addsHediff>{self.addon_name}_hediff</addsHediff>\n"
-            "</RecipeDef>\n"
-        )
-        return surgery
+        root.append(self.generate_xml_element("defName", f"Install_{self.addon_name}"))
+        root.append(self.generate_xml_element("label", f"install {self.label.lower()}"))
+        root.append(self.generate_xml_element("description", f"Install an {self.label.lower()}."))
+        root.append(self.generate_xml_element("jobString", f"Installing {self.label.lower()}."))
+        root.append(self.generate_xml_element("workerClass", "Recipe_InstallImplant"))
+        root.append(self.generate_xml_element("anesthetize", "true"))
+        root.append(self.generate_xml_element("workAmount", "4500"))
+        root.append(self.generate_xml_element("surgerySuccessChanceFactor", "1.2"))
+
+        skill_requirements = self.generate_xml_element("skillRequirements")
+        skill_requirements.append(self.generate_xml_element("Medicine", "8"))
+        root.append(skill_requirements)
+
+        recipe_users = self.generate_xml_element("recipeUsers")
+        for race in races:
+            recipe_users.append(self.generate_xml_element("li", race))
+        root.append(recipe_users)
+
+        ingredients = self.generate_xml_element("ingredients")
+        ingredient_1 = self.generate_xml_element("li")
+        filter_1 = self.generate_xml_element("filter")
+        categories_1 = self.generate_xml_element("categories")
+        categories_1.append(self.generate_xml_element("li", "Medicine"))
+        filter_1.append(categories_1)
+        ingredient_1.append(filter_1)
+        ingredient_1.append(self.generate_xml_element("count", "2"))
+        ingredients.append(ingredient_1)
+
+        ingredient_2 = self.generate_xml_element("li")
+        filter_2 = self.generate_xml_element("filter")
+        thing_defs = self.generate_xml_element("thingDefs")
+        thing_defs.append(self.generate_xml_element("li", self.addon_name))
+        filter_2.append(thing_defs)
+        ingredient_2.append(filter_2)
+        ingredient_2.append(self.generate_xml_element("count", "1"))
+        ingredients.append(ingredient_2)
+
+        root.append(ingredients)
+
+        fixed_ingredient_filter = self.generate_xml_element("fixedIngredientFilter")
+        fixed_categories = self.generate_xml_element("categories")
+        fixed_categories.append(self.generate_xml_element("li", "Medicine"))
+        fixed_ingredient_filter.append(fixed_categories)
+        fixed_thing_defs = self.generate_xml_element("thingDefs")
+        fixed_thing_defs.append(self.generate_xml_element("li", self.addon_name))
+        fixed_ingredient_filter.append(fixed_thing_defs)
+        root.append(fixed_ingredient_filter)
+
+        applied_on_fixed_body_parts = self.generate_xml_element("appliedOnFixedBodyParts")
+        applied_on_fixed_body_parts.append(self.generate_xml_element("li", self.body_part))
+        root.append(applied_on_fixed_body_parts)
+
+        root.append(self.generate_xml_element("addsHediff", f"{self.addon_name}_hediff"))
+
+        # Convert to string and prettify
+        xml_string = ET.tostring(root, encoding="unicode")
+        pretty_xml = xml.dom.minidom.parseString(xml_string).toprettyxml(indent="  ")
+
+        return "\n".join(pretty_xml.split("\n")[1:])
 
     def generate_hediffdef(self):
-        hediff = (
-            "<HediffDef ParentName=\"AddedBodyPartBase\">\n"
-            f"\t<defName>{self.addon_name}_hediff</defName>\n"
-            f"\t<label>{self.label}</label>\n"
-            f"\t<labelNoun>{self.label}</labelNoun>\n"
-            f"\t<description>{self.description}</description>\n"
-            "\t<descriptionHyperlinks>\n"
-            f"\t\t<ThingDef>{self.addon_name}</ThingDef>\n"
-            "\t</descriptionHyperlinks>\n"
-            f"\t<spawnThingOnRemoved>{self.addon_name}</spawnThingOnRemoved>\n"
-            "\t<hediffClass>Hediff_Implant</hediffClass>\n"
-            "\t<isBad>false</isBad>\n"
-            "\t<addedPartProps>\n"
-            f"\t\t<partEfficiency>{self.part_efficiency}</partEfficiency>\n"
-            "\t</addedPartProps>\n"
-            "\t<stages>\n"
-            "\t\t<li>\n"
-        )
+        root = self.generate_xml_element("HediffDef", attrib={"ParentName": "AddedBodyPartBase"})
+        
+        root.append(self.generate_xml_element("defName", f"{self.addon_name}_hediff"))
+        root.append(self.generate_xml_element("label", self.label))
+        root.append(self.generate_xml_element("labelNoun", self.label))
+        root.append(self.generate_xml_element("description", self.description))
 
+        description_hyperlinks = self.generate_xml_element("descriptionHyperlinks")
+        description_hyperlinks.append(self.generate_xml_element("ThingDef", self.addon_name))
+        root.append(description_hyperlinks)
+
+        root.append(self.generate_xml_element("spawnThingOnRemoved", self.addon_name))
+        root.append(self.generate_xml_element("hediffClass", "Hediff_Implant"))
+
+        root.append(self.generate_xml_element("isBad", "false"))
+
+        added_part_props = self.generate_xml_element("addedPartProps")
+        added_part_props.append(self.generate_xml_element("partEfficiency", str(self.part_efficiency)))
+        root.append(added_part_props)
+
+        stages = self.generate_xml_element("stages")
+        stage = self.generate_xml_element("li")
+        
         if self.capacity_factors or self.capacity_offsets:
-            hediff += "\t\t\t<capMods>\n"
+            cap_mods = self.generate_xml_element("capMods")
             for stat in self.capacity_factors + self.capacity_offsets:
-                hediff += (
-                    "\t\t\t\t<li>\n"
-                    f"\t\t\t\t\t<capacity>{stat.name}</capacity>\n"
-                    f"\t\t\t\t\t<{'offset' if stat.mod_type == 'offset' else 'postFactor'}>{stat.value}</{'offset' if stat.mod_type == 'offset' else 'postFactor'}>\n"
-                    "\t\t\t\t</li>\n"
-                )
-            hediff += "\t\t\t</capMods>\n"
+                cap_mod = self.generate_xml_element("li")
+                cap_mod.append(self.generate_xml_element("capacity", stat.name))
+                cap_mod.append(self.generate_xml_element("postFactor" if stat.mod_type == "factor" else "offset", str(stat.value)))
+                cap_mods.append(cap_mod)
+            stage.append(cap_mods)
 
         if self.stat_offsets:
-            hediff += "\t\t\t<statOffsets>\n"
+            stat_offsets = self.generate_xml_element("statOffsets")
             for stat in self.stat_offsets:
-                hediff += f"\t\t\t\t<{stat.name}>{stat.value}</{stat.name}>\n"
-            hediff += "\t\t\t</statOffsets>\n"
+                stat_offsets.append(self.generate_xml_element(stat.name, str(stat.value)))
+            stage.append(stat_offsets)
 
         if self.stat_factors:
-            hediff += "\t\t\t<statFactors>\n"
+            stat_factors = self.generate_xml_element("statFactors")
             for stat in self.stat_factors:
-                hediff += f"\t\t\t\t<{stat.name}>{stat.value}</{stat.name}>\n"
-            hediff += "\t\t\t</statFactors>\n"
+                stat_factors.append(self.generate_xml_element(stat.name, str(stat.value)))
+            stage.append(stat_factors)
 
-        hediff += (
-            "\t\t</li>\n"
-            "\t</stages>\n"
-            "</HediffDef>\n"
-        )
-        return hediff
+        stages.append(stage)
+        root.append(stages)
+
+        # Convert to string and prettify
+        xml_string = ET.tostring(root, encoding="unicode")
+        pretty_xml = xml.dom.minidom.parseString(xml_string).toprettyxml(indent="  ")
+
+        return "\n".join(pretty_xml.split("\n")[1:])

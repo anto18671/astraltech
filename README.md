@@ -11,6 +11,8 @@ Astraltech Bionic Implants is an ambitious RimWorld mod that introduces a new ti
 ## Features
 
 - **41 New Bionic Parts**: Each Astraltech implant is a masterpiece of biotechnology, offering unprecedented enhancements to human capabilities.
+- **16 New Adult Backstories**: Rich narratives influenced by encounters with Astraltech technology.
+- **16 New Child Backstories**: Unique experiences shaped by the indirect influence of Astraltech.
 - **Modular Addon System**: Many Astraltech bionics support powerful addons, allowing for further customization and enhancement.
 - **Balanced Progression**: While incredibly powerful, Astraltech bionics are appropriately rare and expensive, maintaining game balance.
 - **Lore-Friendly**: Seamlessly integrates into the RimWorld universe, expanding on the existing bionic and archotech concepts.
@@ -374,6 +376,50 @@ The Astraltech Leg is a marvel of bionic engineering that transcends human locom
    - Integrates otherworldly technology for unimaginable agility
    - Allows for instantaneous direction changes
    - Provides seemingly limitless endurance
+
+---
+
+## 🔍 Backstories:
+
+This mod introduces a variety of rich, Astraltech-influenced backstories, providing characters with narratives that reflect their encounters with Astraltech technology. These backstories are not about characters who have received implants themselves, but rather those whose lives have been impacted by the powerful technology in indirect ways.
+
+### Adult Backstories:
+
+- Astraltech Salvager
+- Bionic Research Assistant
+- Corporate Security Guard
+- Bionic Sales Representative
+- Astraltech Artifact Dealer
+- Astraltech Cleanup Crew
+- Bionic Conspiracy Theorist
+- Underground Mechanic
+- Military Analyst
+- Bionic Trial Participant
+- Bionic Instructor
+- Smuggler's Scout
+- Astraltech Bounty Hunter
+- Astraltech Test Engineer
+- Astraltech Black Market Surgeon
+- Astraltech Hacker
+
+### Child Backstories:
+
+- Astraltech Warehouse Child
+- Bionic Trader's Assistant
+- Astraltech Refugee
+- Astraltech Junkyard Scavenger
+- Bionic Research Intern
+- Astraltech War Orphan
+- Bionic Scrap Dealer's Kid
+- Astraltech Technician's Child
+- Astraltech Museum Curator's Child
+- Astraltech Freelancer's Apprentice
+- Astraltech Salvage Kid
+- Astraltech Collector's Heir
+- Astraltech Robotics Enthusiast
+- Astraltech Street Urchin
+- Astraltech Experimental Subject
+- Astraltech Bionic Prodigy
 
 ---
 
