@@ -42,19 +42,21 @@ def write_xml_file(filename, content):
         file.write(content)
     print(f"{relative_path} generated successfully.")
 
-def generate_mod_metadata():
-    return (
-        """<?xml version="1.0" encoding="utf-8" ?>\n"""
-        "<ModMetaData>\n"
-        "\t<name>Astraltech Bionic Implants</name>\n"
-        "\t<author>Anthony Therrien</author>\n"
-        "\t<description>Adds new advanced bionic implants to RimWorld, pushing the boundaries of human enhancement with the mysterious Astraltech technology.</description>\n"
-        "\t<packageId>AnthonyTherrien.AstraltechBionics</packageId>\n"
-        "\t<supportedVersions>\n"
-        "\t\t<li>1.5</li>\n"
-        "\t</supportedVersions>\n"
-        "</ModMetaData>"
-    )
+def write_published_file_id(published_file_id, mod_directory='Astraltech'):
+    # Ensure the About folder exists
+    about_folder = os.path.join(mod_directory, "About")
+    if not os.path.exists(about_folder):
+        os.makedirs(about_folder)
+
+    # Define the path for PublishedFileId.txt
+    file_path = os.path.join(about_folder, "PublishedFileId.txt")
+
+    # Write the PublishedFileId.txt content
+    with open(file_path, 'w') as file:
+        file.write(f"{published_file_id}")
+
+    print(f"PublishedFileId.txt created at: {file_path}")
+
 
 def generate_about_xml():
     return (

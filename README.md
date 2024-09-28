@@ -21,361 +21,241 @@ Astraltech Bionic Implants is an ambitious RimWorld mod that introduces a new ti
 
 ---
 
-## Astraltech Implants and Addons
+# Astraltech Implants and Addons
+
+## 🦴 Astraltech Skull
+
+The **Astraltech Skull** offers superior protection for the brain while enhancing cognitive speed and sensory perception.
+
+- **Cranial Reinforcement:**
+  - Improves resistance to brain trauma
+  - Aesthetic enhancement for a strikingly beautiful appearance
 
 ## 🧠 Astraltech Brain
 
-The Astraltech Brain is a pinnacle of neurotechnology, vastly expanding cognitive capacities and mental acuity. It seamlessly integrates with neural pathways to provide heightened intelligence, rapid information processing, and enhanced decision-making capabilities.
+The **Astraltech Brain** dramatically enhances intelligence, memory, and multitasking, making it a pinnacle of neurotechnology.
 
-**Key Features:**
+### Addons:
 
-- Drastically improved cognitive processing speed
-- Enhanced memory retention and recall
-- Heightened analytical capabilities
-- Improved multitasking abilities
-- Enhanced emotional regulation
+1. **Working Memory Augmentation:**
 
-**Addons:**
+   - Boosts short-term memory and cognitive agility
+   - Ideal for complex decision-making
 
-1. 💡 Working Memory Augmentation
+2. **Emotional Regulator:**
 
-   - Drastically improves the brain's capacity to hold and manipulate information in real-time
-   - Enhances short-term memory and cognitive agility
-   - Ideal for complex, high-pressure decision-making
+   - Stabilizes emotional responses
+   - Enhances clarity of thought and social interactions
 
-2. 😌 Emotional Regulator
+3. **Cognitive Synchronizer:**
 
-   - Stabilizes emotional responses, ensuring calm and composure under stress
-   - Promotes clarity of thought and enhances social dynamics
-   - Eliminates erratic emotional shifts
+   - Tunes brainwaves for better focus and multitasking
+   - Increases productivity
 
-3. 🔄 Cognitive Synchronizer
-
-   - Tunes brainwave patterns to enhance focus and multi-tasking abilities
-   - Allows seamless handling of multiple tasks with minimal efficiency loss
-   - Vastly improves overall productivity
-
-4. ⚡ Rapid Thought Accelerator
-   - Boosts the brain's processing speed for quick decisions and faster reactions
-   - Enables split-second calculations and improved reaction times
-   - Perfect for high-stakes operations and intense mental tasks
+4. **Rapid Thought Accelerator:**
+   - Increases brain processing speed for faster reactions
+   - Ideal for high-stakes situations requiring quick decisions
 
 ## 👁️ Astraltech Eye
 
-The Astraltech Eye is a cutting-edge bionic implant designed to vastly improve visual acuity and perception. With advanced optical systems, it enhances sight beyond normal human limits, enabling the user to see in low-light conditions, improve reaction times, and increase accuracy in combat situations.
+The **Astraltech Eye** offers superhuman visual acuity, enhancing reaction speed, low-light vision, and combat targeting.
 
-**Key Features:**
+### Addons:
 
-- Superhuman visual acuity
-- Enhanced low-light vision
-- Improved depth perception and spatial awareness
-- Rapid visual information processing
-- Integrated targeting systems for combat situations
+1. **Targeting Enhancer:**
 
-**Addons:**
+   - Improves accuracy and focus
+   - Perfect for combat situations
 
-1. 🎯 Targeting Enhancer
-
-   - Improves focus on targets and increases precision in combat
-   - Utilizes advanced tracking algorithms
-   - Ideal for sharpshooters and combat-heavy roles
-
-2. 📡 Motion Detection Module
-   - Enhances ability to detect and track movement
-   - Significantly increases reaction time in fast-paced environments
-   - Provides an edge in combat by allowing quicker threat response
+2. **Motion Detection Module:**
+   - Detects and tracks movement with precision
+   - Increases reaction speed in fast-paced environments
 
 ## 👂 Astraltech Ear
 
-The Astraltech Ear is a marvel of auditory enhancement, granting its user unparalleled hearing abilities. It provides superhuman sound detection, heightened situational awareness, and flawless communication in any environment.
+The **Astraltech Ear** provides enhanced hearing, with superhuman auditory detection and noise filtering.
 
-**Key Features:**
+### Addons:
 
-- Vastly improved hearing range and sensitivity
-- Advanced sound processing and filtering
-- Enhanced directional hearing
-- Improved balance and spatial orientation
-- Noise cancellation capabilities
+1. **Sound Amplifier:**
 
-**Addons:**
+   - Amplifies distant sounds
+   - Ideal for long-range auditory detection
 
-1. 🔊 Sound Amplifier
+2. **Noise Filter:**
 
-   - Enables hearing sounds from incredible distances
-   - Enhances long-range auditory detection
-   - Allows hearing through solid obstacles
+   - Removes unwanted background noise
+   - Improves auditory perception in chaotic environments
 
-2. 🔇 Noise Filter
-
-   - Eliminates unwanted background noise
-   - Allows focus on crucial sounds with preternatural clarity
-   - Enhances auditory perception in chaotic environments
-
-3. 🦇 Echo Locator
-   - Utilizes advanced echolocation technology
-   - Grants almost precognitive spatial awareness
-   - Provides unparalleled threat detection and environmental navigation
+3. **Echo Locator:**
+   - Uses echolocation for spatial awareness
+   - Enhances threat detection
 
 ## 👃 Astraltech Nose
 
-The Astraltech Nose is an olfactory marvel that transcends normal sensory limits. It offers supernatural detection of airborne particles, granting the ability to discern complex chemical compositions at a glance.
+The **Astraltech Nose** enhances olfactory sensitivity, providing superhuman detection of airborne particles.
 
-**Key Features:**
-
-- Superhuman olfactory sensitivity
-- Ability to detect and analyze complex chemical compounds
-- Long-range scent tracking capabilities
-- Pheromone detection and analysis
-- Poison and toxin identification
+- **Key Features:**
+  - Detects complex chemical compounds
+  - Long-range scent tracking
+  - Identifies poisons and toxins
 
 ## 👄 Astraltech Jaw
 
-The Astraltech Jaw is a pinnacle of oral enhancement, granting its user unparalleled speech capabilities and devastating bite force. It provides flawless articulation in any language, enhanced persuasive abilities, and the strength to crush steel between its teeth.
+The **Astraltech Jaw** grants superhuman articulation and bite force, perfecting both speech and physical strength.
 
-**Key Features:**
-
-- Perfect articulation and speech capabilities
-- Enhanced persuasive abilities
-- Superhuman bite force
-- Improved taste sensitivity
-- Resistance to dental issues and oral injuries
+- **Key Features:**
+  - Flawless articulation in any language
+  - Superhuman bite force and enhanced persuasion abilities
 
 ## 🦴 Astraltech Neck
 
-The Astraltech Neck is a marvel of biomechanical engineering, offering superhuman structural integrity and flexibility. It grants the user near-invulnerability to neck injuries, perfect posture control, and enhanced sensory processing.
+The **Astraltech Neck** provides structural integrity, offering superhuman durability, flexibility, and perfect posture control.
 
-**Key Features:**
-
-- Extreme durability and flexibility
-- Enhanced range of motion
-- Improved neural signal transmission
-- Perfect posture control
-- Resistance to whiplash and impact injuries
+- **Key Features:**
+  - Resistance to neck injuries
+  - Enhanced range of motion and sensory processing
 
 ## 💪 Astraltech Arm
 
-The Astraltech Arm represents the pinnacle of prosthetic engineering, offering superhuman strength and dexterity. Its adaptive nanosystems allow for impossibly precise movements and effortless lifting of massive weights.
+The **Astraltech Arm** delivers superhuman strength and dexterity, allowing for precise, powerful movements.
 
-**Key Features:**
+### Addon:
 
-- Superhuman strength and lifting capacity
-- Unparalleled precision and dexterity
-- Adaptive nanosystems for fine motor control
-- Enhanced durability and impact resistance
-- Integrated sensory feedback systems
-
-**Addon:**
-
-1. 🦾 Shoulder Reinforcement
-   - Dramatically enhances structural integrity and power output
-   - Enables strength beyond mortal comprehension
-   - Provides unbreakable resilience in extreme environments
+1. **Shoulder Reinforcement:**
+   - Increases structural integrity and power output
+   - Provides unbreakable resilience
 
 ## 🦴 Astraltech Spine
 
-The Astraltech Spine is a revolutionary bionic implant that redefines human physicality. It grants the user inhuman core stability, mobility, and overall physical coordination.
+The **Astraltech Spine** enhances core stability and flexibility, improving overall physical coordination and balance.
 
-**Key Features:**
+### Addons:
 
-- Superhuman core stability and flexibility
-- Enhanced overall physical coordination
-- Perfect balance in any situation
-- Improved nerve signal transmission
-- Resistance to spinal injuries and chronic pain
+1. **Posture Enhancer:**
 
-**Addons:**
+   - Ensures perfect body alignment and comfort
+   - Boosts physical efficiency and endurance
 
-1. 🧘 Posture Enhancer
-
-   - Perfects body alignment, eliminating strain during movement
-   - Grants limitless endurance for any physical task
-   - Ensures flawless posture for enhanced comfort and efficiency
-
-2. 🏋️ Stability Module
+2. **Stability Module:**
 
    - Grants supernatural core stability
-   - Allows for perfect accuracy and control in delicate tasks
-   - Provides near-immunity to knockdowns
+   - Prevents knockdowns and enhances precision
 
-3. 🏃 Agility Booster
-   - Elevates agility to superhuman levels
-   - Enables movements faster than the eye can track
-   - Dramatically enhances reflexes and coordination
+3. **Agility Booster:**
+   - Drastically increases agility and reflexes
+   - Ideal for fast, fluid movements
 
 ## 🦴 Astraltech Ribcage
 
-The Astraltech Ribcage is an impenetrable bionic implant that redefines the concept of physical protection. With its advanced energy-dispersing reinforcement, it renders the user nearly invulnerable to physical trauma.
+The **Astraltech Ribcage** provides impenetrable protection for vital organs, dispersing energy from impacts.
 
-**Key Features:**
-
-- Unmatched protection against physical impacts
-- Energy-dispersing technology for damage reduction
-- Enhanced breathing capacity and efficiency
-- Improved protection for vital organs
-- Resistance to crushing and penetrating injuries
+- **Key Features:**
+  - Superior protection from crushing and penetrating injuries
+  - Enhanced breathing capacity
 
 ## 🫁 Astraltech Torso
 
-The Astraltech Torso is a marvel of biotechnology that completely redefines human physical capabilities. Its hyper-advanced systems provide unparalleled internal support, allowing the user to endure forces that would shatter normal bodies.
+The **Astraltech Torso** offers hyper-advanced internal support systems, granting resilience, endurance, and physical performance.
 
-**Key Features:**
+### Addons:
 
-- Superhuman physical performance and endurance
-- Advanced internal support systems
-- Rapid healing and tissue regeneration
-- Enhanced protection for vital organs
-- Improved overall physical resilience
+1. **Resilience Enhancer:**
 
-**Addons:**
+   - Enhances toughness and endurance
+   - Provides near-immunity to harsh conditions
 
-1. 🛡️ **Resilience Enhancer**
+2. **Core Stabilizer:**
 
-   - Dramatically improves overall toughness
-   - Grants near-superhuman physical endurance
-   - Makes the user almost impervious to harsh conditions
+   - Improves internal balance and efficiency
+   - Reduces energy expenditure
 
-2. 🔩 **Core Stabilizer**
+3. **Durability Matrix:**
 
-   - Perfects internal balance and core strength
-   - Dramatically improves movement efficiency
-   - Virtually eliminates energy expenditure during physical tasks
+   - Near-invulnerability to physical damage
+   - Vital for combat situations
 
-3. 🧱 **Durability Matrix**
+4. **Metabolic Regulator:**
 
-   - Exponentially reinforces structural integrity
-   - Provides near-invulnerability to physical damage
-   - Ensures unparalleled survivability in combat
+   - Optimizes energy use
+   - Eliminates fatigue
 
-4. ⚖️ **Metabolic Regulator**
+5. **Internal Shielding:**
 
-   - Optimizes energy utilization
-   - Makes fatigue nearly non-existent
-   - Crucial for perpetual physical exertion
+   - Protects against impacts by dispersing energy
+   - Enhances survivability
 
-5. 🛡️ **Internal Shielding**
+6. **Body Shaper:**
 
-   - Creates an energy barrier to absorb and dissipate impacts
-   - Dramatically reduces the severity of injuries
-   - Invaluable for combat situations
+   - Sculpts physique to perfection
+   - Enhances muscle tone and attractiveness
 
-6. 💪 **Body Shaper**
-
-   - Sculpts the user's physique to perfection
-   - Enhances muscle tone and symmetry
-   - Dramatically improves physical appearance
-   - Makes the user exceptionally attractive
-
-7. ✨ **Skin Enhancer**
-
-   - Rejuvenates and perfects the skin at the cellular level
-   - Eliminates imperfections, scars, and signs of aging
-   - Significantly enhances appearance and social presence
-   - Grants flawless and radiant skin
+7. **Skin Enhancer:**
+   - Perfects skin at the cellular level
+   - Provides flawless appearance and youthfulness
 
 ## ❤️ Astraltech Heart
 
-The Astraltech Heart is a revolutionary cardiovascular system that transcends the limitations of biology. It provides seemingly limitless stamina, complete immunity to fatigue, and superhuman physical performance.
+The **Astraltech Heart** eliminates fatigue and enhances stamina, allowing for peak physical performance.
 
-**Key Features:**
+### Addon:
 
-- Limitless stamina and endurance
-- Enhanced blood flow and oxygenation
-- Rapid toxin filtration
-- Improved temperature regulation
-- Resistance to cardiovascular diseases
-
-**Addon:**
-
-1. 🏃‍♂️ Cardio Boost
-   - Further enhances heart capabilities beyond comprehension
-   - Eliminates the concept of physical exhaustion
-   - Allows for continuous peak performance without decline
+1. **Cardio Boost:**
+   - Further enhances heart capabilities
+   - Eliminates physical exhaustion
 
 ## 🫁 Astraltech Lung
 
-The Astraltech Lung is a revolutionary respiratory enhancement that defies the limits of biology. It allows for superhuman stamina and endurance, providing near-invulnerability to suffocation and unparalleled performance in any atmosphere.
+The **Astraltech Lung** dramatically improves respiratory capacity, enabling the user to perform in low-oxygen environments.
 
-**Key Features:**
-
-- Superhuman breathing capacity and efficiency
-- Ability to function in low-oxygen environments
-- Enhanced toxin filtration
-- Improved overall stamina and endurance
-- Resistance to respiratory diseases and pollutants
+- **Key Features:**
+  - Superhuman breathing capacity and toxin filtration
+  - Increased endurance and stamina
 
 ## 🫘 Astraltech Kidney
 
-The Astraltech Kidney is an unparalleled filtration system that revolutionizes the body's ability to purge toxins and regulate hydration. It grants near-immunity to poisons and illnesses, while dramatically enhancing overall vitality and resilience.
+The **Astraltech Kidney** vastly improves the body’s toxin filtration system, enhancing overall vitality and resilience.
 
-**Key Features:**
-
-- Superhuman toxin filtration capabilities
-- Enhanced hydration regulation
-- Improved overall vitality and resilience
-- Near-immunity to kidney-related diseases
-- Ability to function with minimal water intake
+- **Key Features:**
+  - Superhuman toxin filtration
+  - Enhanced hydration regulation
+  - Near-immunity to diseases
 
 ## 🫁 Astraltech Liver
 
-The Astraltech Liver is a marvel of biotechnology, providing unimaginable detoxification and metabolic regulation. It grants the user virtual immunity to toxins and alcohol while dramatically accelerating healing and providing unmatched resilience to diseases.
+The **Astraltech Liver** provides unmatched detoxification and healing, with near-immunity to toxins and diseases.
 
-**Key Features:**
-
-- Unparalleled detoxification capabilities
-- Enhanced metabolic regulation
-- Accelerated healing and tissue regeneration
-- Virtual immunity to liver diseases
-- Ability to neutralize almost any ingested toxin
+- **Key Features:**
+  - Accelerated healing and tissue regeneration
+  - Unmatched detoxification
 
 ## 🫁 Astraltech Stomach
 
-The Astraltech Stomach is a revolutionary digestive system that redefines the limits of nutrient absorption and energy extraction. It allows for near-perfect metabolic efficiency, dramatically reducing food requirements while maximizing energy output and physical endurance.
+The **Astraltech Stomach** enhances nutrient absorption and energy extraction, drastically reducing food requirements.
 
-**Key Features:**
+### Addon:
 
-- Superhuman nutrient absorption and processing
-- Drastically reduced food requirements
-- Enhanced energy production and storage
-- Ability to digest a wide range of substances
-- Resistance to gastrointestinal diseases and disorders
-
-**Addon:**
-
-1. 🔋 Metabolic Optimizer
-   - Pushes stomach capabilities to near-magical levels
-   - Allows maximum energy extraction from minimal food
-   - Virtually eliminates fatigue and grants limitless endurance
+1. **Metabolic Optimizer:**
+   - Maximizes energy extraction from minimal food
+   - Provides near-limitless endurance
 
 ## 🦴 Astraltech Pelvis
 
-The Astraltech Pelvis is a groundbreaking implant that redefines human biomechanics. It provides supernatural core stability and lower body strength, allowing for inhuman endurance, agility, and resilience in any physical endeavor.
+The **Astraltech Pelvis** enhances lower body strength and stability, improving agility and endurance.
 
-**Key Features:**
-
-- Superhuman lower body strength and stability
-- Enhanced overall agility and balance
-- Improved shock absorption for high-impact activities
-- Increased resistance to hip and pelvic injuries
-- Enhanced reproductive system protection and function
+- **Key Features:**
+  - Superhuman strength and agility
+  - Enhanced shock absorption for high-impact activities
 
 ## 🦿 Astraltech Leg
 
-The Astraltech Leg is a marvel of bionic engineering that transcends human locomotion capabilities. Equipped with hyper-advanced kinetic systems, it enables movement faster than the eye can track, perfect balance in any terrain, and superhuman jumping abilities.
+The **Astraltech Leg** offers superhuman speed, agility, and jumping capabilities, improving balance and energy efficiency.
 
-**Key Features:**
+### Addon:
 
-- Superhuman speed and agility
-- Perfect balance on any terrain
-- Enhanced jumping and landing capabilities
-- Improved energy efficiency in movement
-- Resistance to leg injuries and fatigue
-
-**Addon:**
-
-1. 🦵 Knee Enhancement
-   - Integrates otherworldly technology for unimaginable agility
-   - Allows for instantaneous direction changes
-   - Provides seemingly limitless endurance
+1. **Knee Enhancement:**
+   - Enhances knee flexibility and mobility
+   - Enables faster, more agile movement
 
 ---
 

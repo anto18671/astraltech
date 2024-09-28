@@ -1,4 +1,4 @@
-from modules.utils import write_xml_file, generate_mod_metadata, generate_about_xml, generate_language_keys
+from modules.utils import write_xml_file, write_published_file_id, generate_about_xml, generate_language_keys
 from modules.backstory import Backstory
 from modules.bionics import Bionic
 from modules.addons import Addon
@@ -1008,7 +1008,8 @@ if __name__ == "__main__":
         shutil.rmtree("Astraltech/")
 
     # Generate mod structure and files
-    write_xml_file("About/PublishedFileId.xml", generate_mod_metadata())
+    published_file_id = "3337372073"
+    write_published_file_id(published_file_id)
     write_xml_file("About/About.xml", generate_about_xml())
     write_xml_file("Languages/English/Keyed/Astraltech_Keys.xml", generate_language_keys())
     
