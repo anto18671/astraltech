@@ -1,4 +1,4 @@
-[b]Astraltech Bionic Implants[/b] introduces a new tier of advanced bionics, surpassing even Archotech. Created by a secretive advanced faction, these implants offer unprecedented human enhancements for only the elite.
+[b]Astraltech Bionic Implants[/b] introduces a new tier of advanced bionics, offering unprecedented human enhancements for only the elite. While Archotech technology transcends human limits, Astraltech focuses on enhancing humanoid biology in a practical, specialized way. Developed by a mysterious and secretive faction, rumored to be centuries ahead in technological advancements, Astraltech implants blend cutting-edge science with a nearly mystical understanding of the human body. Though their true origins remain hidden, scattered remains of Astraltech technology can be found across the Rim, fueling both intrigue and fear among those who stumble upon them. These remnants hint at a far-reaching influence, but also raise questions about why such powerful artifacts have been left behind.
 
 [hr]
 
