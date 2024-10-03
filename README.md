@@ -320,7 +320,7 @@ Astraltech comes with a rich backstory that fits seamlessly into the RimWorld un
 
 ## Installation
 
-1. Subscribe to the mod on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=XXXXXXX) (replace XXXXXXX with your actual Workshop ID)
+1. Subscribe to the mod on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3337372073&searchtext=Astraltech+Bionic+Implants)
 
 2. Launch RimWorld and enable "Astraltech Bionic Implants" in the Mods menu.
 
