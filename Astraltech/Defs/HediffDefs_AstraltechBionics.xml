@@ -14,16 +14,16 @@ The Astraltech Skull is a highly advanced cranial implant designed to provide su
   <hediffClass>Hediff_Implant</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
-    <partEfficiency>3.0</partEfficiency>
+    <partEfficiency>2.0</partEfficiency>
   </addedPartProps>
   <stages>
     <li>
       <statOffsets>
         <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
         <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-        <PawnBeauty>4.0</PawnBeauty>
-        <SocialImpact>0.5</SocialImpact>
-        <NegotiationAbility>0.5</NegotiationAbility>
+        <PawnBeauty>2.0</PawnBeauty>
+        <SocialImpact>0.25</SocialImpact>
+        <NegotiationAbility>0.25</NegotiationAbility>
         <TradePriceImprovement>0.25</TradePriceImprovement>
       </statOffsets>
     </li>
@@ -43,37 +43,37 @@ The Astraltech Brain is a pinnacle of neurotechnology, vastly expanding cognitiv
   <hediffClass>Hediff_Implant</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
-    <partEfficiency>3.0</partEfficiency>
+    <partEfficiency>2.5</partEfficiency>
   </addedPartProps>
   <stages>
     <li>
       <statOffsets>
         <PawnBeauty>1.0</PawnBeauty>
-        <SocialImpact>0.75</SocialImpact>
-        <NegotiationAbility>0.5</NegotiationAbility>
+        <SocialImpact>0.5</SocialImpact>
+        <NegotiationAbility>0.25</NegotiationAbility>
         <TradePriceImprovement>0.25</TradePriceImprovement>
-        <MeleeHitChance>0.75</MeleeHitChance>
-        <ShootingAccuracyPawn>1.25</ShootingAccuracyPawn>
+        <MeleeHitChance>0.5</MeleeHitChance>
+        <ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
         <GlobalLearningFactor>3.0</GlobalLearningFactor>
         <MedicalOperationSpeed>0.2</MedicalOperationSpeed>
         <MedicalTendSpeed>0.2</MedicalTendSpeed>
         <MedicalTendQuality>0.6</MedicalTendQuality>
         <MedicalSurgerySuccessChance>0.6</MedicalSurgerySuccessChance>
         <MeditationFocusGain>0.8</MeditationFocusGain>
-        <ResearchSpeed>3.0</ResearchSpeed>
+        <ResearchSpeed>2.5</ResearchSpeed>
       </statOffsets>
       <capMods>
         <li>
           <capacity>Consciousness</capacity>
-          <offset>4.5</offset>
+          <offset>2.5</offset>
         </li>
         <li>
           <capacity>Sight</capacity>
-          <offset>0.75</offset>
+          <offset>0.5</offset>
         </li>
         <li>
           <capacity>Hearing</capacity>
-          <offset>0.75</offset>
+          <offset>0.5</offset>
         </li>
         <li>
           <capacity>Manipulation</capacity>
@@ -97,17 +97,17 @@ The Astraltech Eye is a cutting-edge bionic implant designed to vastly improve v
   <hediffClass>Hediff_AddedPart</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
-    <partEfficiency>3.0</partEfficiency>
+    <partEfficiency>2.0</partEfficiency>
   </addedPartProps>
   <stages>
     <li>
       <statOffsets>
-        <ShootingAccuracyPawn>1.0</ShootingAccuracyPawn>
+        <ShootingAccuracyPawn>1.2</ShootingAccuracyPawn>
       </statOffsets>
       <capMods>
         <li>
           <capacity>Sight</capacity>
-          <offset>1.75</offset>
+          <offset>1.25</offset>
         </li>
         <li>
           <capacity>Manipulation</capacity>
@@ -131,7 +131,7 @@ The Astraltech Ear is a marvel of auditory enhancement, granting its user unpara
   <hediffClass>Hediff_AddedPart</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
-    <partEfficiency>2.5</partEfficiency>
+    <partEfficiency>2.0</partEfficiency>
   </addedPartProps>
   <stages>
     <li>
@@ -144,7 +144,7 @@ The Astraltech Ear is a marvel of auditory enhancement, granting its user unpara
       <capMods>
         <li>
           <capacity>Hearing</capacity>
-          <offset>1.75</offset>
+          <offset>1.25</offset>
         </li>
       </capMods>
     </li>
@@ -164,7 +164,7 @@ The Astraltech Nose is an olfactory marvel that transcends normal sensory limits
   <hediffClass>Hediff_AddedPart</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
-    <partEfficiency>3.0</partEfficiency>
+    <partEfficiency>2.0</partEfficiency>
   </addedPartProps>
   <stages>
     <li>
@@ -176,7 +176,7 @@ The Astraltech Nose is an olfactory marvel that transcends normal sensory limits
       <capMods>
         <li>
           <capacity>Breathing</capacity>
-          <offset>0.25</offset>
+          <offset>0.2</offset>
         </li>
       </capMods>
     </li>
@@ -223,7 +223,7 @@ The Astraltech Neck is a marvel of biomechanical engineering, offering superhuma
   <hediffClass>Hediff_Implant</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
-    <partEfficiency>3.5</partEfficiency>
+    <partEfficiency>1.75</partEfficiency>
   </addedPartProps>
   <stages>
     <li>
@@ -238,7 +238,7 @@ The Astraltech Neck is a marvel of biomechanical engineering, offering superhuma
         </li>
         <li>
           <capacity>Breathing</capacity>
-          <offset>0.25</offset>
+          <offset>0.2</offset>
         </li>
       </capMods>
     </li>
@@ -258,13 +258,13 @@ The Astraltech Arm represents the pinnacle of prosthetic engineering, offering s
   <hediffClass>Hediff_AddedPart</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
-    <partEfficiency>3.0</partEfficiency>
+    <partEfficiency>2.5</partEfficiency>
   </addedPartProps>
   <stages>
     <li>
       <statOffsets>
         <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
-        <ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
+        <ShootingAccuracyPawn>0.8</ShootingAccuracyPawn>
         <MedicalOperationSpeed>0.3</MedicalOperationSpeed>
         <MedicalTendSpeed>0.3</MedicalTendSpeed>
         <MedicalTendQuality>0.3</MedicalTendQuality>
@@ -275,7 +275,7 @@ The Astraltech Arm represents the pinnacle of prosthetic engineering, offering s
       <capMods>
         <li>
           <capacity>Manipulation</capacity>
-          <offset>1.0</offset>
+          <offset>0.8</offset>
         </li>
       </capMods>
     </li>
@@ -295,21 +295,21 @@ The Astraltech Spine is a revolutionary bionic implant that redefines human phys
   <hediffClass>Hediff_Implant</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
-    <partEfficiency>3.0</partEfficiency>
+    <partEfficiency>2.5</partEfficiency>
   </addedPartProps>
   <stages>
     <li>
       <statOffsets>
-        <MeleeDodgeChance>1.0</MeleeDodgeChance>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
       </statOffsets>
       <capMods>
         <li>
           <capacity>Moving</capacity>
-          <offset>0.6</offset>
+          <offset>0.4</offset>
         </li>
         <li>
           <capacity>Manipulation</capacity>
-          <offset>0.4</offset>
+          <offset>0.25</offset>
         </li>
         <li>
           <capacity>Consciousness</capacity>
@@ -333,7 +333,7 @@ The Astraltech Ribcage is an impenetrable bionic implant that redefines the conc
   <hediffClass>Hediff_AddedPart</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
-    <partEfficiency>3.0</partEfficiency>
+    <partEfficiency>2.0</partEfficiency>
   </addedPartProps>
   <stages>
     <li>
@@ -343,7 +343,7 @@ The Astraltech Ribcage is an impenetrable bionic implant that redefines the conc
       <capMods>
         <li>
           <capacity>Breathing</capacity>
-          <offset>0.5</offset>
+          <offset>0.25</offset>
         </li>
       </capMods>
     </li>
@@ -363,7 +363,7 @@ The Astraltech Torso is a marvel of biotechnology that completely redefines huma
   <hediffClass>Hediff_Implant</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
-    <partEfficiency>3.0</partEfficiency>
+    <partEfficiency>2.0</partEfficiency>
   </addedPartProps>
   <stages>
     <li>
@@ -374,11 +374,11 @@ The Astraltech Torso is a marvel of biotechnology that completely redefines huma
       <capMods>
         <li>
           <capacity>BloodPumping</capacity>
-          <offset>0.2</offset>
+          <offset>0.1</offset>
         </li>
         <li>
           <capacity>Moving</capacity>
-          <offset>0.4</offset>
+          <offset>0.25</offset>
         </li>
         <li>
           <capacity>Manipulation</capacity>
@@ -402,14 +402,14 @@ The Astraltech Heart is a revolutionary cardiovascular system that transcends th
   <hediffClass>Hediff_AddedPart</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
-    <partEfficiency>3.0</partEfficiency>
+    <partEfficiency>2.0</partEfficiency>
   </addedPartProps>
   <stages>
     <li>
       <capMods>
         <li>
           <capacity>BloodPumping</capacity>
-          <offset>1.5</offset>
+          <offset>1.0</offset>
         </li>
         <li>
           <capacity>Moving</capacity>
@@ -437,26 +437,22 @@ The Astraltech Lung is a revolutionary respiratory enhancement that defies the l
   <hediffClass>Hediff_AddedPart</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
-    <partEfficiency>3.0</partEfficiency>
+    <partEfficiency>2.0</partEfficiency>
   </addedPartProps>
   <stages>
     <li>
       <capMods>
         <li>
           <capacity>Breathing</capacity>
-          <offset>1.5</offset>
-        </li>
-        <li>
-          <capacity>BloodPumping</capacity>
-          <offset>0.1</offset>
+          <offset>1.0</offset>
         </li>
         <li>
           <capacity>Moving</capacity>
-          <offset>0.5</offset>
+          <offset>0.25</offset>
         </li>
         <li>
           <capacity>Consciousness</capacity>
-          <offset>0.05</offset>
+          <offset>0.1</offset>
         </li>
       </capMods>
     </li>
@@ -476,22 +472,18 @@ The Astraltech Kidney is an unparalleled filtration system that revolutionizes t
   <hediffClass>Hediff_AddedPart</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
-    <partEfficiency>3.0</partEfficiency>
+    <partEfficiency>2.0</partEfficiency>
   </addedPartProps>
   <stages>
     <li>
       <capMods>
         <li>
           <capacity>BloodFiltration</capacity>
-          <offset>1.0</offset>
+          <offset>0.75</offset>
         </li>
         <li>
           <capacity>Consciousness</capacity>
-          <offset>0.05</offset>
-        </li>
-        <li>
-          <capacity>Breathing</capacity>
-          <offset>0.2</offset>
+          <offset>0.1</offset>
         </li>
       </capMods>
     </li>
@@ -511,14 +503,14 @@ The Astraltech Liver is a marvel of biotechnology, providing unimaginable detoxi
   <hediffClass>Hediff_AddedPart</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
-    <partEfficiency>3.0</partEfficiency>
+    <partEfficiency>2.0</partEfficiency>
   </addedPartProps>
   <stages>
     <li>
       <capMods>
         <li>
           <capacity>BloodFiltration</capacity>
-          <offset>2.25</offset>
+          <offset>1.0</offset>
         </li>
         <li>
           <capacity>Consciousness</capacity>
@@ -542,7 +534,7 @@ The Astraltech Stomach is a revolutionary digestive system that redefines the li
   <hediffClass>Hediff_AddedPart</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
-    <partEfficiency>3.0</partEfficiency>
+    <partEfficiency>2.0</partEfficiency>
   </addedPartProps>
   <stages>
     <li>
@@ -580,18 +572,18 @@ The Astraltech Pelvis is a groundbreaking implant that redefines human biomechan
   <hediffClass>Hediff_Implant</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
-    <partEfficiency>3.0</partEfficiency>
+    <partEfficiency>2.5</partEfficiency>
   </addedPartProps>
   <stages>
     <li>
       <statOffsets>
-        <MeleeHitChance>0.25</MeleeHitChance>
+        <MeleeHitChance>0.2</MeleeHitChance>
         <MeleeDodgeChance>0.2</MeleeDodgeChance>
       </statOffsets>
       <capMods>
         <li>
           <capacity>Moving</capacity>
-          <offset>0.25</offset>
+          <offset>0.2</offset>
         </li>
       </capMods>
     </li>
@@ -611,7 +603,7 @@ The Astraltech Leg is a marvel of bionic engineering that transcends human locom
   <hediffClass>Hediff_AddedPart</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
-    <partEfficiency>3.0</partEfficiency>
+    <partEfficiency>2.5</partEfficiency>
   </addedPartProps>
   <stages>
     <li>
@@ -621,7 +613,7 @@ The Astraltech Leg is a marvel of bionic engineering that transcends human locom
       <capMods>
         <li>
           <capacity>Moving</capacity>
-          <offset>0.8</offset>
+          <offset>0.5</offset>
         </li>
       </capMods>
     </li>

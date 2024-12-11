@@ -13,7 +13,7 @@ The Astraltech Skull is a highly advanced cranial implant designed to provide su
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>26000</MarketValue>
+    <MarketValue>22000</MarketValue>
     <Mass>6</Mass>
   </statBases>
   <techHediffsTags>
@@ -46,7 +46,7 @@ The Astraltech Brain is a pinnacle of neurotechnology, vastly expanding cognitiv
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>78000</MarketValue>
+    <MarketValue>58000</MarketValue>
     <Mass>2</Mass>
   </statBases>
   <techHediffsTags>
@@ -112,7 +112,7 @@ The Astraltech Ear is a marvel of auditory enhancement, granting its user unpara
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>19000</MarketValue>
+    <MarketValue>16000</MarketValue>
     <Mass>0.5</Mass>
   </statBases>
   <techHediffsTags>
@@ -145,7 +145,7 @@ The Astraltech Nose is an olfactory marvel that transcends normal sensory limits
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>16000</MarketValue>
+    <MarketValue>11000</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
   <techHediffsTags>
@@ -178,7 +178,7 @@ The Astraltech Jaw is a pinnacle of oral enhancement, granting its user unparall
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>20800</MarketValue>
+    <MarketValue>17800</MarketValue>
     <Mass>0.8</Mass>
   </statBases>
   <techHediffsTags>
@@ -211,7 +211,7 @@ The Astraltech Neck is a marvel of biomechanical engineering, offering superhuma
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>26000</MarketValue>
+    <MarketValue>19000</MarketValue>
     <Mass>2</Mass>
   </statBases>
   <techHediffsTags>
@@ -244,7 +244,7 @@ The Astraltech Arm represents the pinnacle of prosthetic engineering, offering s
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>32500</MarketValue>
+    <MarketValue>29500</MarketValue>
     <Mass>4</Mass>
   </statBases>
   <techHediffsTags>
@@ -277,7 +277,7 @@ The Astraltech Spine is a revolutionary bionic implant that redefines human phys
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>39000</MarketValue>
+    <MarketValue>31200</MarketValue>
     <Mass>6</Mass>
   </statBases>
   <techHediffsTags>
@@ -310,7 +310,7 @@ The Astraltech Ribcage is an impenetrable bionic implant that redefines the conc
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>22600</MarketValue>
+    <MarketValue>18600</MarketValue>
     <Mass>5</Mass>
   </statBases>
   <techHediffsTags>
@@ -343,7 +343,7 @@ The Astraltech Torso is a marvel of biotechnology that completely redefines huma
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>45500</MarketValue>
+    <MarketValue>35500</MarketValue>
     <Mass>8</Mass>
   </statBases>
   <techHediffsTags>
@@ -376,7 +376,7 @@ The Astraltech Heart is a revolutionary cardiovascular system that transcends th
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>52000</MarketValue>
+    <MarketValue>40000</MarketValue>
     <Mass>2</Mass>
   </statBases>
   <techHediffsTags>
@@ -409,7 +409,7 @@ The Astraltech Lung is a revolutionary respiratory enhancement that defies the l
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>39000</MarketValue>
+    <MarketValue>30000</MarketValue>
     <Mass>2</Mass>
   </statBases>
   <techHediffsTags>
@@ -442,7 +442,7 @@ The Astraltech Kidney is an unparalleled filtration system that revolutionizes t
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>28000</MarketValue>
+    <MarketValue>18000</MarketValue>
     <Mass>1.5</Mass>
   </statBases>
   <techHediffsTags>
@@ -475,7 +475,7 @@ The Astraltech Liver is a marvel of biotechnology, providing unimaginable detoxi
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>31200</MarketValue>
+    <MarketValue>24200</MarketValue>
     <Mass>3</Mass>
   </statBases>
   <techHediffsTags>
@@ -508,7 +508,7 @@ The Astraltech Stomach is a revolutionary digestive system that redefines the li
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>28600</MarketValue>
+    <MarketValue>20600</MarketValue>
     <Mass>3</Mass>
   </statBases>
   <techHediffsTags>
@@ -541,7 +541,7 @@ The Astraltech Pelvis is a groundbreaking implant that redefines human biomechan
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>36400</MarketValue>
+    <MarketValue>31400</MarketValue>
     <Mass>7</Mass>
   </statBases>
   <techHediffsTags>

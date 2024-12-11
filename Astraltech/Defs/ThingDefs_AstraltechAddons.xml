@@ -13,7 +13,7 @@ The Astraltech Working Memory Augmentation drastically improves the brain's capa
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>23400</MarketValue>
+    <MarketValue>25400</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -45,7 +45,7 @@ The Astraltech Emotional Regulator stabilizes emotional responses, ensuring that
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>15600</MarketValue>
+    <MarketValue>12600</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -77,7 +77,7 @@ The Astraltech Cognitive Synchronizer tunes brainwave patterns to enhance focus 
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>20800</MarketValue>
+    <MarketValue>16800</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -109,7 +109,7 @@ The Astraltech Rapid Thought Accelerator boosts the brain’s processing speed, 
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>26000</MarketValue>
+    <MarketValue>17000</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -141,7 +141,7 @@ The Astraltech Targeting Enhancer improves the user’s ability to focus on targ
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>11700</MarketValue>
+    <MarketValue>10700</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -173,7 +173,7 @@ The Astraltech Motion Detection Module enhances the user’s ability to detect m
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>10400</MarketValue>
+    <MarketValue>10200</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -205,7 +205,7 @@ The Astraltech Sound Amplifier grants its user the ability to hear sounds from i
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>11700</MarketValue>
+    <MarketValue>11000</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -269,7 +269,7 @@ The Astraltech Echo Locator utilizes impossible echolocation technology, grantin
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>11700</MarketValue>
+    <MarketValue>10700</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -301,7 +301,7 @@ Engineered with otherworldly precision, the Astraltech Shoulder Reinforcement dr
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>19500</MarketValue>
+    <MarketValue>18500</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -333,7 +333,7 @@ The Astraltech Posture Enhancer perfects the user's body alignment, eliminating 
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>23400</MarketValue>
+    <MarketValue>20400</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -365,7 +365,7 @@ The Astraltech Stability Module grants supernatural core stability, allowing the
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>26000</MarketValue>
+    <MarketValue>21000</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -397,7 +397,7 @@ The Astraltech Agility Booster elevates the user's agility to superhuman levels,
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>32500</MarketValue>
+    <MarketValue>23500</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -429,7 +429,7 @@ The Astraltech Resilience Enhancer dramatically improves the user's overall toug
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>19500</MarketValue>
+    <MarketValue>18500</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -461,7 +461,7 @@ The Astraltech Core Stabilizer perfects the user's internal balance and core str
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>23400</MarketValue>
+    <MarketValue>21400</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -493,7 +493,7 @@ The Astraltech Durability Matrix exponentially reinforces the torso's structural
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>26000</MarketValue>
+    <MarketValue>19000</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -525,7 +525,7 @@ The Astraltech Metabolic Regulator perfects the user's metabolism, optimizing en
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>32500</MarketValue>
+    <MarketValue>18500</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -557,7 +557,7 @@ The Astraltech Internal Shielding creates an energy barrier that absorbs and dis
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>39000</MarketValue>
+    <MarketValue>22000</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -589,7 +589,7 @@ The Astraltech Shaper is an advanced implant that sculpts the user's physique to
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>28600</MarketValue>
+    <MarketValue>22600</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -621,7 +621,7 @@ The Astraltech Skin Enhancer rejuvenates and perfects the user's skin at the cel
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>26600</MarketValue>
+    <MarketValue>21600</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>
@@ -653,7 +653,7 @@ The Astraltech Cardio Boost is an advanced addon that further enhances the heart
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>32500</MarketValue>
+    <MarketValue>30500</MarketValue>
   </statBases>
   <techHediffsTags>
     <li>Advanced</li>

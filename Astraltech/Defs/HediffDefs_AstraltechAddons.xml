@@ -21,7 +21,7 @@ The Astraltech Working Memory Augmentation drastically improves the brain's capa
       <capMods>
         <li>
           <capacity>Consciousness</capacity>
-          <offset>0.75</offset>
+          <offset>0.5</offset>
         </li>
       </capMods>
       <statOffsets>
@@ -79,7 +79,7 @@ The Astraltech Cognitive Synchronizer tunes brainwave patterns to enhance focus 
       <capMods>
         <li>
           <capacity>Consciousness</capacity>
-          <offset>0.5</offset>
+          <offset>0.25</offset>
         </li>
         <li>
           <capacity>Manipulation</capacity>
@@ -114,7 +114,7 @@ The Astraltech Rapid Thought Accelerator boosts the brain’s processing speed, 
       <capMods>
         <li>
           <capacity>Consciousness</capacity>
-          <offset>0.5</offset>
+          <offset>0.25</offset>
         </li>
       </capMods>
       <statOffsets>
@@ -147,7 +147,7 @@ The Astraltech Targeting Enhancer improves the user’s ability to focus on targ
       <capMods>
         <li>
           <capacity>Sight</capacity>
-          <offset>0.5</offset>
+          <offset>0.25</offset>
         </li>
       </capMods>
       <statOffsets>
@@ -177,7 +177,7 @@ The Astraltech Motion Detection Module enhances the user’s ability to detect m
       <capMods>
         <li>
           <capacity>Sight</capacity>
-          <offset>0.5</offset>
+          <offset>0.25</offset>
         </li>
         <li>
           <capacity>Manipulation</capacity>
@@ -211,7 +211,7 @@ The Astraltech Sound Amplifier grants its user the ability to hear sounds from i
       <capMods>
         <li>
           <capacity>Hearing</capacity>
-          <offset>0.4</offset>
+          <offset>0.2</offset>
         </li>
       </capMods>
       <statOffsets>
@@ -273,7 +273,7 @@ The Astraltech Echo Locator utilizes impossible echolocation technology, grantin
       <capMods>
         <li>
           <capacity>Hearing</capacity>
-          <offset>0.2</offset>
+          <offset>0.1</offset>
         </li>
         <li>
           <capacity>Sight</capacity>
@@ -307,11 +307,11 @@ Engineered with otherworldly precision, the Astraltech Shoulder Reinforcement dr
       <capMods>
         <li>
           <capacity>Manipulation</capacity>
-          <offset>0.3</offset>
+          <offset>0.25</offset>
         </li>
       </capMods>
       <statOffsets>
-        <MeleeDPS>0.2</MeleeDPS>
+        <MeleeDPS>0.25</MeleeDPS>
       </statOffsets>
     </li>
   </stages>
@@ -372,7 +372,7 @@ The Astraltech Stability Module grants supernatural core stability, allowing the
         </li>
       </capMods>
       <statOffsets>
-        <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+        <ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
       </statOffsets>
     </li>
   </stages>
@@ -402,7 +402,7 @@ The Astraltech Agility Booster elevates the user's agility to superhuman levels,
         </li>
       </capMods>
       <statOffsets>
-        <MeleeDodgeChance>0.5</MeleeDodgeChance>
+        <MeleeDodgeChance>0.4</MeleeDodgeChance>
       </statOffsets>
     </li>
   </stages>
@@ -457,7 +457,7 @@ The Astraltech Core Stabilizer perfects the user's internal balance and core str
         </li>
         <li>
           <capacity>Manipulation</capacity>
-          <offset>0.25</offset>
+          <offset>0.2</offset>
         </li>
       </capMods>
     </li>
@@ -565,7 +565,7 @@ The Astraltech Shaper is an advanced implant that sculpts the user's physique to
     <li>
       <statOffsets>
         <PawnBeauty>2.0</PawnBeauty>
-        <SocialImpact>0.3</SocialImpact>
+        <SocialImpact>0.5</SocialImpact>
       </statOffsets>
     </li>
   </stages>
@@ -591,7 +591,7 @@ The Astraltech Skin Enhancer rejuvenates and perfects the user's skin at the cel
       <statOffsets>
         <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
         <PawnBeauty>2.0</PawnBeauty>
-        <SocialImpact>0.3</SocialImpact>
+        <SocialImpact>0.5</SocialImpact>
       </statOffsets>
     </li>
   </stages>
@@ -617,15 +617,11 @@ The Astraltech Cardio Boost is an advanced addon that further enhances the heart
       <capMods>
         <li>
           <capacity>BloodPumping</capacity>
-          <offset>0.25</offset>
+          <offset>0.2</offset>
         </li>
         <li>
           <capacity>Moving</capacity>
-          <offset>0.3</offset>
-        </li>
-        <li>
-          <capacity>Consciousness</capacity>
-          <offset>0.1</offset>
+          <offset>0.25</offset>
         </li>
       </capMods>
     </li>
@@ -652,11 +648,11 @@ The Astraltech Metabolic Optimizer pushes the stomach's capabilities to near-mag
       <capMods>
         <li>
           <capacity>BloodFiltration</capacity>
-          <offset>0.5</offset>
+          <offset>0.25</offset>
         </li>
         <li>
           <capacity>Consciousness</capacity>
-          <offset>0.05</offset>
+          <offset>0.1</offset>
         </li>
       </capMods>
     </li>

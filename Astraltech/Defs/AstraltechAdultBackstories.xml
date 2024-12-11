@@ -10,7 +10,7 @@
     <li>Astraltech Impacted</li>
   </spawnCategories>
   <skillGains>
-    <Crafting>8</Crafting>
+    <Crafting>6</Crafting>
     <Intellectual>4</Intellectual>
     <Shooting>3</Shooting>
   </skillGains>
@@ -30,7 +30,7 @@
   </spawnCategories>
   <skillGains>
     <Intellectual>6</Intellectual>
-    <Medicine>5</Medicine>
+    <Medicine>4</Medicine>
     <Crafting>3</Crafting>
   </skillGains>
 </BackstoryDef>
@@ -45,7 +45,7 @@
     <li>Astraltech Impacted</li>
   </spawnCategories>
   <skillGains>
-    <Shooting>7</Shooting>
+    <Shooting>6</Shooting>
     <Melee>5</Melee>
     <Social>2</Social>
   </skillGains>
@@ -61,7 +61,7 @@
     <li>Astraltech Impacted</li>
   </spawnCategories>
   <skillGains>
-    <Social>8</Social>
+    <Social>3</Social>
     <Artistic>4</Artistic>
     <Intellectual>2</Intellectual>
   </skillGains>
@@ -77,7 +77,7 @@
     <li>Astraltech Impacted</li>
   </spawnCategories>
   <skillGains>
-    <Social>7</Social>
+    <Social>5</Social>
     <Crafting>4</Crafting>
     <Intellectual>4</Intellectual>
   </skillGains>
@@ -96,7 +96,7 @@
     <li>Astraltech Impacted</li>
   </spawnCategories>
   <skillGains>
-    <Construction>6</Construction>
+    <Construction>5</Construction>
     <Shooting>4</Shooting>
     <Melee>2</Melee>
   </skillGains>
@@ -115,7 +115,7 @@
     <li>Astraltech Impacted</li>
   </spawnCategories>
   <skillGains>
-    <Intellectual>7</Intellectual>
+    <Intellectual>5</Intellectual>
     <Social>5</Social>
     <Artistic>2</Artistic>
   </skillGains>
@@ -131,7 +131,7 @@
     <li>Astraltech Impacted</li>
   </spawnCategories>
   <skillGains>
-    <Crafting>8</Crafting>
+    <Crafting>5</Crafting>
     <Intellectual>3</Intellectual>
     <Construction>3</Construction>
   </skillGains>
@@ -147,7 +147,7 @@
     <li>Astraltech Impacted</li>
   </spawnCategories>
   <skillGains>
-    <Intellectual>7</Intellectual>
+    <Intellectual>6</Intellectual>
     <Shooting>4</Shooting>
     <Social>3</Social>
   </skillGains>
@@ -179,7 +179,7 @@
     <li>Astraltech Impacted</li>
   </spawnCategories>
   <skillGains>
-    <Intellectual>8</Intellectual>
+    <Intellectual>6</Intellectual>
     <Social>5</Social>
     <Crafting>3</Crafting>
   </skillGains>
@@ -215,7 +215,7 @@
   </spawnCategories>
   <skillGains>
     <Shooting>6</Shooting>
-    <Melee>5</Melee>
+    <Melee>4</Melee>
     <Social>3</Social>
   </skillGains>
 </BackstoryDef>
@@ -230,7 +230,7 @@
     <li>Astraltech Impacted</li>
   </spawnCategories>
   <skillGains>
-    <Crafting>7</Crafting>
+    <Crafting>6</Crafting>
     <Intellectual>4</Intellectual>
     <Medicine>3</Medicine>
   </skillGains>
@@ -246,7 +246,7 @@
     <li>Astraltech Impacted</li>
   </spawnCategories>
   <skillGains>
-    <Medicine>9</Medicine>
+    <Medicine>7</Medicine>
     <Crafting>4</Crafting>
     <Social>2</Social>
   </skillGains>
@@ -262,7 +262,7 @@
     <li>Astraltech Impacted</li>
   </spawnCategories>
   <skillGains>
-    <Intellectual>8</Intellectual>
+    <Intellectual>7</Intellectual>
     <Crafting>5</Crafting>
     <Social>2</Social>
   </skillGains>
