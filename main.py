@@ -442,7 +442,6 @@ bionics_list = [
         mass=1,
         body_part="Eye",
         additional_stats=[
-            Stat("Sight", 1.25, stat_type='capacity', mod_type='offset'),
             Stat("ShootingAccuracyPawn", 1.2, stat_type='stat', mod_type='offset'),
             Stat("Manipulation", 0.1, stat_type='capacity', mod_type='offset'),
         ],
@@ -489,7 +488,6 @@ bionics_list = [
         mass=0.5,
         body_part="Ear",
         additional_stats=[
-            Stat("Hearing", 1.25, stat_type='capacity', mod_type='offset'),
             Stat("ShootingAccuracyPawn", 0.2, stat_type='stat', mod_type='offset'),
             Stat("NegotiationAbility", 0.2, stat_type='stat', mod_type='offset'),
             Stat("SocialImpact", 0.1, stat_type='stat', mod_type='offset'),
