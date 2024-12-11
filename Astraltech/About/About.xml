@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Astraltech Bionic Implants</name>
+	<author>Anthony Therrien</author>
+	<url></url>
+	<description>Astraltech Bionic Implants introduces a new tier of advanced bionics to RimWorld. These implants, developed by a mysterious faction from beyond known space, offer unprecedented enhancements to human capabilities. Each Astraltech implant pushes the boundaries of what's possible, granting users abilities that border on the supernatural. Upgrade your colonists with these cutting-edge implants and experience a new level of power in the RimWorld universe.</description>
+	<packageId>AnthonyTherrien.AstraltechBionics</packageId>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+</ModMetaData>

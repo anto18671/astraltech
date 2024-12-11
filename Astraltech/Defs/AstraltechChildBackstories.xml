@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<BackstoryDef>
+  <slot>Childhood</slot>
+  <title>Astraltech Warehouse Child</title>
+  <defName>AST_WarehouseChild</defName>
+  <titleShort>Warehouse Worker</titleShort>
+  <baseDesc>Growing up in a factory district where Astraltech parts were stored and shipped, [PAWN_nameDef] often snuck into crates and learned a lot about the tech through observation.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Crafting>3</Crafting>
+    <Intellectual>1</Intellectual>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Childhood</slot>
+  <title>Bionic Trader's Assistant</title>
+  <defName>AST_TraderAssistant</defName>
+  <titleShort>Trader's Assistant</titleShort>
+  <baseDesc>[PAWN_nameDef] grew up assisting a traveling merchant who dealt in tech goods, including parts rumored to come from Astraltech. [PAWN_nameDef] learned how to identify valuable items and haggle effectively.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Social>3</Social>
+    <Crafting>2</Crafting>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Childhood</slot>
+  <title>Astraltech Refugee</title>
+  <defName>AST_RefugeeChild</defName>
+  <titleShort>Refugee</titleShort>
+  <baseDesc>Forced to flee home when Astraltech weapons were deployed in a nearby conflict, [PAWN_nameDef] learned resilience and became adept at surviving under harsh conditions.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Melee>2</Melee>
+    <Shooting>1</Shooting>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Childhood</slot>
+  <title>Astraltech Junkyard Scavenger</title>
+  <defName>AST_JunkyardScavenger</defName>
+  <titleShort>Scavenger</titleShort>
+  <baseDesc>Growing up in a junkyard filled with discarded tech, including remnants of Astraltech products, [PAWN_nameDef] spent days sifting through debris, finding useful parts to sell.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Crafting>4</Crafting>
+    <Intellectual>2</Intellectual>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Childhood</slot>
+  <title>Bionic Research Intern</title>
+  <defName>AST_ResearchIntern</defName>
+  <titleShort>Intern</titleShort>
+  <baseDesc>[PAWN_nameDef] was an intern at a laboratory researching Astraltech-inspired bionics. Although young, [PAWN_nameDef] was exposed to complex theories and was tasked with minor technical responsibilities.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Intellectual>3</Intellectual>
+    <Crafting>2</Crafting>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Childhood</slot>
+  <title>Astraltech War Orphan</title>
+  <defName>AST_WarOrphan</defName>
+  <titleShort>Orphan</titleShort>
+  <baseDesc>[PAWN_nameDef]'s parents were killed in a battle involving Astraltech forces. Orphaned at a young age, [PAWN_nameDef] grew up in a war-torn environment, developing a strong sense of survival.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Melee>2</Melee>
+    <Shooting>2</Shooting>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Childhood</slot>
+  <title>Bionic Scrap Dealer's Kid</title>
+  <defName>AST_ScrapDealersKid</defName>
+  <titleShort>Scrap Dealer's Kid</titleShort>
+  <baseDesc>Growing up in a family scrap business that often dealt in old bionic parts, [PAWN_nameDef] learned how to identify useful components and repair basic machinery.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Crafting>3</Crafting>
+    <Social>1</Social>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Childhood</slot>
+  <title>Astraltech Technician's Child</title>
+  <defName>AST_TechnicianChild</defName>
+  <titleShort>Technician's Child</titleShort>
+  <baseDesc>The child of a technician who worked on non-classified Astraltech technologies, [PAWN_nameDef] often watched their parent at work and learned a few things about machines.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Crafting>3</Crafting>
+    <Intellectual>2</Intellectual>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Childhood</slot>
+  <title>Astraltech Museum Curator's Child</title>
+  <defName>AST_MuseumCuratorsChild</defName>
+  <titleShort>Curator's Child</titleShort>
+  <baseDesc>Raised in an academic environment, [PAWN_nameDef]'s parent was a curator at a museum displaying historical technology, including artifacts believed to come from Astraltech.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Intellectual>4</Intellectual>
+    <Artistic>2</Artistic>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Childhood</slot>
+  <title>Astraltech Freelancer's Apprentice</title>
+  <defName>AST_FreelancersApprentice</defName>
+  <titleShort>Apprentice</titleShort>
+  <baseDesc>[PAWN_nameDef] was apprenticed to a freelancer who worked on projects involving tech inspired by Astraltech. [PAWN_nameDef] picked up practical skills and a love of tinkering.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Crafting>3</Crafting>
+    <Medicine>1</Medicine>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Childhood</slot>
+  <title>Astraltech Salvage Kid</title>
+  <defName>AST_SalvageKid</defName>
+  <titleShort>Salvage Kid</titleShort>
+  <baseDesc>[PAWN_nameDef] grew up in a salvage community where Astraltech debris was highly prized. [PAWN_nameDef] learned early on how to find value in scraps and became resourceful in survival.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Crafting>4</Crafting>
+    <Shooting>2</Shooting>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Childhood</slot>
+  <title>Astraltech Collector's Heir</title>
+  <defName>AST_CollectorsHeir</defName>
+  <titleShort>Collector's Heir</titleShort>
+  <baseDesc>[PAWN_nameDef] was born into wealth as the child of a collector obsessed with Astraltech relics. Their upbringing was filled with stories of legendary bionics and forbidden tech.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Social>3</Social>
+    <Intellectual>3</Intellectual>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Childhood</slot>
+  <title>Astraltech Robotics Enthusiast</title>
+  <defName>AST_RoboticsEnthusiast</defName>
+  <titleShort>Robotics Enthusiast</titleShort>
+  <baseDesc>[PAWN_nameDef] grew up fascinated by robots built with Astraltech parts. [PAWN_nameDef] spent hours tinkering with machines, learning as much as possible from old manuals and scavenged parts.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Crafting>3</Crafting>
+    <Intellectual>3</Intellectual>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Childhood</slot>
+  <title>Astraltech Street Urchin</title>
+  <defName>AST_StreetUrchin</defName>
+  <titleShort>Street Urchin</titleShort>
+  <baseDesc>[PAWN_nameDef] grew up on the streets, surviving by stealing and selling Astraltech scraps. [PAWN_nameDef] became adept at evading the law and using the tech to their advantage.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Social>2</Social>
+    <Melee>3</Melee>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Childhood</slot>
+  <title>Astraltech Experimental Subject</title>
+  <defName>AST_ExperimentalSubject</defName>
+  <titleShort>Experimental Subject</titleShort>
+  <baseDesc>[PAWN_nameDef] was taken in by an experimental lab as a child and subjected to minor tests involving Astraltech prototypes. The experience left [PAWN_nameDef] with a deep curiosity about technology and its limits.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Intellectual>3</Intellectual>
+    <Crafting>1</Crafting>
+  </skillGains>
+</BackstoryDef>
+
+<BackstoryDef>
+  <slot>Childhood</slot>
+  <title>Astraltech Bionic Prodigy</title>
+  <defName>AST_BionicProdigy</defName>
+  <titleShort>Bionic Prodigy</titleShort>
+  <baseDesc>[PAWN_nameDef] displayed an exceptional aptitude for understanding complex machines at a young age. [PAWN_nameDef] often helped older engineers with repairs and tinkered with basic bionic devices.</baseDesc>
+  <spawnCategories>
+    <li>Astraltech Impacted</li>
+  </spawnCategories>
+  <skillGains>
+    <Crafting>4</Crafting>
+    <Intellectual>3</Intellectual>
+  </skillGains>
+</BackstoryDef>
+
+</Defs>
