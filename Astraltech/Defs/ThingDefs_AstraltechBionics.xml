@@ -13,7 +13,7 @@ The Astraltech Skull is a highly advanced cranial implant designed to provide su
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>22000</MarketValue>
+    <MarketValue>20000</MarketValue>
     <Mass>6</Mass>
   </statBases>
   <techHediffsTags>
@@ -46,7 +46,7 @@ The Astraltech Brain is a pinnacle of neurotechnology, vastly expanding cognitiv
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>58000</MarketValue>
+    <MarketValue>56000</MarketValue>
     <Mass>2</Mass>
   </statBases>
   <techHediffsTags>

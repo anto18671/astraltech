@@ -210,7 +210,7 @@ The Astraltech Neck is a marvel of biomechanical engineering, offering superhuma
     <ThingDef>Astraltech_Neck</ThingDef>
   </descriptionHyperlinks>
   <spawnThingOnRemoved>Astraltech_Neck</spawnThingOnRemoved>
-  <hediffClass>Hediff_Implant</hediffClass>
+  <hediffClass>Hediff_AddedPart</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
     <partEfficiency>1.75</partEfficiency>
@@ -282,7 +282,7 @@ The Astraltech Spine is a revolutionary bionic implant that redefines human phys
     <ThingDef>Astraltech_Spine</ThingDef>
   </descriptionHyperlinks>
   <spawnThingOnRemoved>Astraltech_Spine</spawnThingOnRemoved>
-  <hediffClass>Hediff_Implant</hediffClass>
+  <hediffClass>Hediff_AddedPart</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
     <partEfficiency>2.5</partEfficiency>
@@ -350,7 +350,7 @@ The Astraltech Torso is a marvel of biotechnology that completely redefines huma
     <ThingDef>Astraltech_Torso</ThingDef>
   </descriptionHyperlinks>
   <spawnThingOnRemoved>Astraltech_Torso</spawnThingOnRemoved>
-  <hediffClass>Hediff_Implant</hediffClass>
+  <hediffClass>Hediff_AddedPart</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
     <partEfficiency>2.0</partEfficiency>
@@ -559,7 +559,7 @@ The Astraltech Pelvis is a groundbreaking implant that redefines human biomechan
     <ThingDef>Astraltech_Pelvis</ThingDef>
   </descriptionHyperlinks>
   <spawnThingOnRemoved>Astraltech_Pelvis</spawnThingOnRemoved>
-  <hediffClass>Hediff_Implant</hediffClass>
+  <hediffClass>Hediff_AddedPart</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
     <partEfficiency>2.5</partEfficiency>

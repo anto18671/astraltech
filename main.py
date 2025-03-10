@@ -317,7 +317,7 @@ bionics_list = [
             "This implant not only increases mental clarity but also elevates social standing, making it an ideal upgrade for individuals in combat, diplomacy, or high-stress environments."
         ),
         part_efficiency=2.0,
-        market_value=22000,
+        market_value=20000,
         mass=6,
         body_part="Skull",
         replace_part=False,
@@ -339,7 +339,7 @@ bionics_list = [
             "intelligence, rapid information processing, and enhanced decision-making capabilities."
         ),
         part_efficiency=2.5,
-        market_value=58000,
+        market_value=56000,
         mass=2,
         replace_part=False,
         body_part="Brain",
@@ -441,6 +441,7 @@ bionics_list = [
         market_value=15000,
         mass=1,
         body_part="Eye",
+        replace_part=True,
         additional_stats=[
             Stat("ShootingAccuracyPawn", 1.2, stat_type='stat', mod_type='offset'),
             Stat("Manipulation", 0.1, stat_type='capacity', mod_type='offset'),
@@ -487,6 +488,7 @@ bionics_list = [
         market_value=16000,
         mass=0.5,
         body_part="Ear",
+        replace_part=True,
         additional_stats=[
             Stat("ShootingAccuracyPawn", 0.2, stat_type='stat', mod_type='offset'),
             Stat("NegotiationAbility", 0.2, stat_type='stat', mod_type='offset'),
@@ -550,6 +552,7 @@ bionics_list = [
         market_value=11000,
         mass=0.3,
         body_part="Nose",
+        replace_part=True,
         additional_stats=[
             Stat("PawnBeauty", 1.0, stat_type='stat', mod_type='offset'),
             Stat("SocialImpact", 0.25, stat_type='stat', mod_type='offset'),
@@ -568,6 +571,7 @@ bionics_list = [
         market_value=17800,
         mass=0.8,
         body_part="Jaw",
+        replace_part=True,
         additional_stats=[
             Stat("PawnBeauty", 1.0, stat_type='stat', mod_type='offset'),
             Stat("SocialImpact", 0.25, stat_type='stat', mod_type='offset'),
@@ -586,8 +590,8 @@ bionics_list = [
         part_efficiency=1.75,
         market_value=19000,
         mass=2,
-        replace_part=False,
         body_part="Neck",
+        replace_part=True,
         additional_stats=[
             Stat("ArmorRating_Sharp", 0.1, stat_type='stat', mod_type='offset'),
             Stat("Manipulation", 0.1, stat_type='capacity', mod_type='offset'),
@@ -608,6 +612,7 @@ bionics_list = [
         mass=4,
         body_part="Shoulder",
         damage_multiplier=2.5,
+        replace_part=True,
         additional_stats=[
             Stat("Manipulation", 0.8, stat_type='capacity', mod_type='offset'),
             Stat("WorkSpeedGlobal", 0.2, stat_type='stat', mod_type='offset'),
@@ -647,8 +652,8 @@ bionics_list = [
         part_efficiency=2.5,
         market_value=31200,
         mass=6,
-        replace_part=False,
         body_part="Spine",
+        replace_part=True,
         additional_stats=[
             Stat("Moving", 0.4, stat_type='capacity', mod_type='offset'),
             Stat("Manipulation", 0.25, stat_type='capacity', mod_type='offset'),
@@ -709,6 +714,7 @@ bionics_list = [
         market_value=18600,
         mass=5,
         body_part="Ribcage",
+        replace_part=True,
         additional_stats=[
             Stat("ArmorRating_Blunt", 0.2, stat_type='stat', mod_type='offset'),
             Stat("Breathing", 0.25, stat_type='capacity', mod_type='offset'),
@@ -725,8 +731,8 @@ bionics_list = [
         part_efficiency=2.0,
         market_value=35500,
         mass=8,
-        replace_part=False,
         body_part="Torso",
+        replace_part=True,
         additional_stats=[
             Stat("ArmorRating_Sharp", 0.1, stat_type='stat', mod_type='offset'),
             Stat("ArmorRating_Blunt", 0.2, stat_type='stat', mod_type='offset'),
@@ -843,6 +849,7 @@ bionics_list = [
         market_value=40000,
         mass=2,
         body_part="Heart",
+        replace_part=True,
         additional_stats=[
             Stat("BloodPumping", 1.0, stat_type='capacity', mod_type='offset'),
             Stat("Moving", 0.2, stat_type='capacity', mod_type='offset'),
@@ -875,6 +882,7 @@ bionics_list = [
         market_value=30000,
         mass=2,
         body_part="Lung",
+        replace_part=True,
         additional_stats=[
             Stat("Breathing", 1.0, stat_type='capacity', mod_type='offset'),
             Stat("Moving", 0.25, stat_type='capacity', mod_type='offset'),
@@ -892,6 +900,7 @@ bionics_list = [
         market_value=18000,
         mass=1.5,
         body_part="Kidney",
+        replace_part=True,
         additional_stats=[
             Stat("BloodFiltration", 0.75, stat_type='capacity', mod_type='offset'),
             Stat("Consciousness", 0.1, stat_type='capacity', mod_type='offset'),
@@ -908,6 +917,7 @@ bionics_list = [
         market_value=24200,
         mass=3,
         body_part="Liver",
+        replace_part=True,
         additional_stats=[
             Stat("BloodFiltration", 1.0, stat_type='capacity', mod_type='offset'),
             Stat("Consciousness", 0.1, stat_type='capacity', mod_type='offset'),
@@ -924,6 +934,7 @@ bionics_list = [
         market_value=20600,
         mass=3,
         body_part="Stomach",
+        replace_part=True,
         additional_stats=[
             Stat("MaxNutrition", 0.5, stat_type='stat', mod_type='offset'),
             Stat("Consciousness", 0.1, stat_type='capacity', mod_type='offset'),
@@ -954,8 +965,8 @@ bionics_list = [
         part_efficiency=2.5,
         market_value=31400,
         mass=7,
-        replace_part=False,
         body_part="Pelvis",
+        replace_part=True,
         additional_stats=[
             Stat("Moving", 0.2, stat_type='capacity', mod_type='offset'),
             Stat("MeleeHitChance", 0.2, stat_type='stat', mod_type='offset'),
@@ -974,6 +985,7 @@ bionics_list = [
         market_value=32500,
         mass=5,
         body_part="Leg",
+        replace_part=True,
         additional_stats=[
             Stat("Moving", 0.5, stat_type='capacity', mod_type='offset'),
             Stat("MeleeDodgeChance", 0.2, stat_type='stat', mod_type='offset'),
@@ -996,8 +1008,8 @@ bionics_list = [
     ),
 ]
 
-# Creating multiple Bionic and Addon objects
-if __name__ == "__main__":
+# Main function
+def main():
     # Check if the folder exists, then delete it
     if os.path.exists("Astraltech/"):
         shutil.rmtree("Astraltech/")
@@ -1096,4 +1108,8 @@ if __name__ == "__main__":
 
     print(f"Astraltech Bionic Implants mod generated successfully with {bionics_count} bionics and {addons_count} addons.")
     print("Texture files and Steam assets copied successfully.")
+
+# Entry point for the script
+if __name__ == "__main__":
+    main()
     
