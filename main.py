@@ -591,7 +591,7 @@ bionics_list = [
         market_value=19000,
         mass=2,
         body_part="Neck",
-        replace_part=True,
+        replace_part=False,
         additional_stats=[
             Stat("ArmorRating_Sharp", 0.1, stat_type='stat', mod_type='offset'),
             Stat("Manipulation", 0.1, stat_type='capacity', mod_type='offset'),
@@ -732,7 +732,7 @@ bionics_list = [
         market_value=35500,
         mass=8,
         body_part="Torso",
-        replace_part=True,
+        replace_part=False,
         additional_stats=[
             Stat("ArmorRating_Sharp", 0.1, stat_type='stat', mod_type='offset'),
             Stat("ArmorRating_Blunt", 0.2, stat_type='stat', mod_type='offset'),

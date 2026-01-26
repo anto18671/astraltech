@@ -281,7 +281,7 @@
   <label>install astraltech neck</label>
   <description>Install a astraltech neck.</description>
   <jobString>Installing astraltech neck.</jobString>
-  <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+  <workerClass>Recipe_InstallImplant</workerClass>
   <anesthetize>true</anesthetize>
   <workAmount>6000</workAmount>
   <surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
@@ -465,7 +465,7 @@
   <label>install astraltech torso</label>
   <description>Install a astraltech torso.</description>
   <jobString>Installing astraltech torso.</jobString>
-  <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+  <workerClass>Recipe_InstallImplant</workerClass>
   <anesthetize>true</anesthetize>
   <workAmount>6000</workAmount>
   <surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>

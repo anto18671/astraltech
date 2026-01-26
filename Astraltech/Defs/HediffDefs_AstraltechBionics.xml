@@ -210,7 +210,7 @@ The Astraltech Neck is a marvel of biomechanical engineering, offering superhuma
     <ThingDef>Astraltech_Neck</ThingDef>
   </descriptionHyperlinks>
   <spawnThingOnRemoved>Astraltech_Neck</spawnThingOnRemoved>
-  <hediffClass>Hediff_AddedPart</hediffClass>
+  <hediffClass>Hediff_Implant</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
     <partEfficiency>1.75</partEfficiency>
@@ -350,7 +350,7 @@ The Astraltech Torso is a marvel of biotechnology that completely redefines huma
     <ThingDef>Astraltech_Torso</ThingDef>
   </descriptionHyperlinks>
   <spawnThingOnRemoved>Astraltech_Torso</spawnThingOnRemoved>
-  <hediffClass>Hediff_AddedPart</hediffClass>
+  <hediffClass>Hediff_Implant</hediffClass>
   <isBad>false</isBad>
   <addedPartProps>
     <partEfficiency>2.0</partEfficiency>
