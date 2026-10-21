@@ -328,7 +328,7 @@ Astraltech comes with a rich backstory that fits seamlessly into the RimWorld un
 
 ## Compatibility
 
-- Requires RimWorld 1.5
+- Supports RimWorld 1.5, 1.6, and 1.7
 - Should be compatible with most other mods, including:
   - Other bionic/prosthetics mods (Astraltech will appear as a separate, advanced tier)
   - Combat mods (enhances combat capabilities without breaking balance)

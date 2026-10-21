@@ -70,6 +70,7 @@ def generate_about_xml():
         "\t<supportedVersions>\n"
         "\t\t<li>1.5</li>\n"
         "\t\t<li>1.6</li>\n"
+        "\t\t<li>1.7</li>\n"
         "\t</supportedVersions>\n"
         "</ModMetaData>"
     )
