@@ -1,13 +1,14 @@
-from .utils import VALID_STATS, VALID_CAPACITIES, ASTRALTECH_LORE
+from .utils import (VALID_STATS, VALID_CAPACITIES, ASTRALTECH_LORE, ADDON_WORK_TO_MAKE,
+                    CRAFTING_SKILL_REQUIRED, RESEARCH_DEF_NAME, crafting_cost)
 import xml.etree.ElementTree as ET
 import xml.dom.minidom
 
 class Addon:
-    def __init__(self, addon_name, label, description, market_value, additional_stats=None, part_efficiency=1.0):
+    def __init__(self, addon_name, label, description, target_value, additional_stats=None, part_efficiency=1.0):
         self.addon_name = addon_name.replace(" ", "_")
         self.label = label
         self.description = ASTRALTECH_LORE.strip() + "\n\n" + description
-        self.market_value = market_value
+        self.target_value = target_value
         self.tex_path = "Things/Item/Health/AstralAddons"
         self.body_part = None
         self.additional_stats = additional_stats or []
@@ -56,12 +57,12 @@ class Addon:
         root.append(graphic_data)
 
         stat_bases = self.generate_xml_element("statBases")
-        stat_bases.append(self.generate_xml_element("MarketValue", str(self.market_value)))
+        # No MarketValue: the game derives it from costList + WorkToMake
+        stat_bases.append(self.generate_xml_element("WorkToMake", str(ADDON_WORK_TO_MAKE)))
         root.append(stat_bases)
 
-        tech_hediffs_tags = self.generate_xml_element("techHediffsTags")
-        tech_hediffs_tags.append(self.generate_xml_element("li", "Advanced"))
-        root.append(tech_hediffs_tags)
+        # Clear the inherited "Advanced" tag so spawned pawns (raiders, traders) never come with Astraltech parts
+        root.append(self.generate_xml_element("techHediffsTags", attrib={"Inherit": "False"}))
 
         thing_set_maker_tags = self.generate_xml_element("thingSetMakerTags")
         thing_set_maker_tags.append(self.generate_xml_element("li", "RewardStandardLowFreq"))
@@ -72,9 +73,17 @@ class Addon:
         root.append(description_hyperlinks)
 
         cost_list = self.generate_xml_element("costList")
-        cost_list.append(self.generate_xml_element("Plasteel", "10"))
-        cost_list.append(self.generate_xml_element("ComponentSpacer", "3"))
+        for thing, count in crafting_cost(self.target_value).items():
+            cost_list.append(self.generate_xml_element(thing, str(count)))
         root.append(cost_list)
+
+        # Merges into the recipeMaker inherited from BodyPartBionicBase (fabrication bench)
+        recipe_maker = self.generate_xml_element("recipeMaker")
+        recipe_maker.append(self.generate_xml_element("researchPrerequisite", RESEARCH_DEF_NAME))
+        skill_requirements = self.generate_xml_element("skillRequirements")
+        skill_requirements.append(self.generate_xml_element("Crafting", str(CRAFTING_SKILL_REQUIRED)))
+        recipe_maker.append(skill_requirements)
+        root.append(recipe_maker)
 
         comps = self.generate_xml_element("comps")
         comps.append(self.generate_xml_element("li", attrib={"Class": "CompProperties_Forbiddable"}))

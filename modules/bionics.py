@@ -1,9 +1,10 @@
-from .utils import BODY_PARTS, VALID_STATS, VALID_CAPACITIES, ASTRALTECH_LORE
+from .utils import (BODY_PARTS, VALID_STATS, VALID_CAPACITIES, ASTRALTECH_LORE, BIONIC_WORK_TO_MAKE,
+                    CRAFTING_SKILL_REQUIRED, RESEARCH_DEF_NAME, crafting_cost)
 import xml.etree.ElementTree as ET
 import xml.dom.minidom
 
 class Bionic:
-    def __init__(self, bionic_name, label, description, part_efficiency, market_value, mass,
+    def __init__(self, bionic_name, label, description, part_efficiency, target_value, mass,
                  body_part, damage_multiplier=1.0, additional_stats=None, replace_part=True, compatible_addons=None):
         if body_part not in BODY_PARTS:
             raise ValueError(f"Body part '{body_part}' not found in the list of valid parts.")
@@ -12,7 +13,7 @@ class Bionic:
         self.label = label
         self.description = ASTRALTECH_LORE.strip() + "\n\n" + description
         self.part_efficiency = part_efficiency
-        self.market_value = market_value
+        self.target_value = target_value
         self.mass = mass
         self.tex_path = "Things/Item/Health/AstralBionics"
         self.body_part = body_part
@@ -67,14 +68,13 @@ class Bionic:
         root.append(graphic_data)
 
         stat_bases = self.generate_xml_element("statBases")
-        stat_bases.append(self.generate_xml_element("MarketValue", str(self.market_value)))
+        # No MarketValue: the game derives it from costList + WorkToMake
+        stat_bases.append(self.generate_xml_element("WorkToMake", str(BIONIC_WORK_TO_MAKE)))
         stat_bases.append(self.generate_xml_element("Mass", str(self.mass)))
         root.append(stat_bases)
 
-        # Fix: Create the 'techHediffsTags' element, append 'li' to it, then append it to root
-        tech_hediffs_tags = self.generate_xml_element("techHediffsTags")
-        tech_hediffs_tags.append(self.generate_xml_element("li", "Advanced"))
-        root.append(tech_hediffs_tags)
+        # Clear the inherited "Advanced" tag so spawned pawns (raiders, traders) never come with Astraltech parts
+        root.append(self.generate_xml_element("techHediffsTags", attrib={"Inherit": "False"}))
 
         # Fix: Same logic for 'thingSetMakerTags'
         thing_set_maker_tags = self.generate_xml_element("thingSetMakerTags")
@@ -86,9 +86,17 @@ class Bionic:
         root.append(description_hyperlinks)
 
         cost_list = self.generate_xml_element("costList")
-        cost_list.append(self.generate_xml_element("Plasteel", "20"))
-        cost_list.append(self.generate_xml_element("ComponentSpacer", "5"))
+        for thing, count in crafting_cost(self.target_value).items():
+            cost_list.append(self.generate_xml_element(thing, str(count)))
         root.append(cost_list)
+
+        # Merges into the recipeMaker inherited from BodyPartBionicBase (fabrication bench)
+        recipe_maker = self.generate_xml_element("recipeMaker")
+        recipe_maker.append(self.generate_xml_element("researchPrerequisite", RESEARCH_DEF_NAME))
+        skill_requirements = self.generate_xml_element("skillRequirements")
+        skill_requirements.append(self.generate_xml_element("Crafting", str(CRAFTING_SKILL_REQUIRED)))
+        recipe_maker.append(skill_requirements)
+        root.append(recipe_maker)
 
         comps = self.generate_xml_element("comps")
         comps.append(self.generate_xml_element("li", attrib={"Class": "CompProperties_Forbiddable"}))

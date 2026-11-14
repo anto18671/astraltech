@@ -17,7 +17,7 @@ Astraltech Bionic Implants is an ambitious RimWorld mod that introduces a new ti
 - **Balanced Progression**: While incredibly powerful, Astraltech bionics are appropriately rare and expensive, maintaining game balance.
 - **Lore-Friendly**: Seamlessly integrates into the RimWorld universe, expanding on the existing bionic and archotech concepts.
 - **High-Quality Textures**: Each bionic part comes with its own unique, high-resolution texture (coming soon).
-- **Crafting System**: Fabricate Astraltech bionics and addons at the hi-tech research bench.
+- **Crafting System**: Research Astraltech Bionics (requires Bionics and Advanced Fabrication), then fabricate implants and addons at the fabrication bench (Crafting 10).
 
 ---
 

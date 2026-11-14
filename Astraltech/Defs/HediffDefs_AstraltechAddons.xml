@@ -120,8 +120,8 @@ The Astraltech Rapid Thought Accelerator boosts the brain’s processing speed, 
       <statOffsets>
         <GlobalLearningFactor>0.5</GlobalLearningFactor>
         <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
-        <MeleeHitChance>0.4</MeleeHitChance>
-        <ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+        <MeleeHitChance>2.0</MeleeHitChance>
+        <ShootingAccuracyPawn>1.25</ShootingAccuracyPawn>
       </statOffsets>
     </li>
   </stages>
@@ -151,7 +151,7 @@ The Astraltech Targeting Enhancer improves the user’s ability to focus on targ
         </li>
       </capMods>
       <statOffsets>
-        <ShootingAccuracyPawn>0.4</ShootingAccuracyPawn>
+        <ShootingAccuracyPawn>2.0</ShootingAccuracyPawn>
       </statOffsets>
     </li>
   </stages>
@@ -185,7 +185,7 @@ The Astraltech Motion Detection Module enhances the user’s ability to detect m
         </li>
       </capMods>
       <statOffsets>
-        <MeleeHitChance>0.8</MeleeHitChance>
+        <MeleeHitChance>4.0</MeleeHitChance>
       </statOffsets>
     </li>
   </stages>
@@ -215,8 +215,8 @@ The Astraltech Sound Amplifier grants its user the ability to hear sounds from i
         </li>
       </capMods>
       <statOffsets>
-        <ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
-        <MeleeHitChance>0.1</MeleeHitChance>
+        <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+        <MeleeHitChance>0.5</MeleeHitChance>
       </statOffsets>
     </li>
   </stages>
@@ -246,8 +246,8 @@ The Astraltech Noise Filter eliminates all unwanted background noise, allowing t
         </li>
       </capMods>
       <statOffsets>
-        <MeleeHitChance>0.1</MeleeHitChance>
-        <ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+        <MeleeHitChance>0.5</MeleeHitChance>
+        <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
       </statOffsets>
     </li>
   </stages>
@@ -281,7 +281,7 @@ The Astraltech Echo Locator utilizes impossible echolocation technology, grantin
         </li>
       </capMods>
       <statOffsets>
-        <MeleeDodgeChance>0.1</MeleeDodgeChance>
+        <MeleeDodgeChance>0.5</MeleeDodgeChance>
       </statOffsets>
     </li>
   </stages>
@@ -372,7 +372,7 @@ The Astraltech Stability Module grants supernatural core stability, allowing the
         </li>
       </capMods>
       <statOffsets>
-        <ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
+        <ShootingAccuracyPawn>3.0</ShootingAccuracyPawn>
       </statOffsets>
     </li>
   </stages>
@@ -402,7 +402,7 @@ The Astraltech Agility Booster elevates the user's agility to superhuman levels,
         </li>
       </capMods>
       <statOffsets>
-        <MeleeDodgeChance>0.4</MeleeDodgeChance>
+        <MeleeDodgeChance>2.0</MeleeDodgeChance>
       </statOffsets>
     </li>
   </stages>
@@ -683,7 +683,7 @@ The Astraltech Knee Enhancement integrates otherworldly technology to push the c
         </li>
       </capMods>
       <statOffsets>
-        <MeleeDodgeChance>0.1</MeleeDodgeChance>
+        <MeleeDodgeChance>0.5</MeleeDodgeChance>
       </statOffsets>
     </li>
   </stages>

@@ -1,4 +1,4 @@
-from modules.utils import write_xml_file, write_published_file_id, generate_about_xml, generate_language_keys
+from modules.utils import write_xml_file, write_published_file_id, generate_about_xml, generate_language_keys, generate_research_xml
 from modules.backstory import Backstory
 from modules.bionics import Bionic
 from modules.addons import Addon
@@ -14,7 +14,7 @@ adult_backstories = [
         def_name="AST_Salvager",
         title_short="Salvager",
         base_desc="[PAWN_nameDef] made a living salvaging parts from destroyed ships, many of which were rumored to contain traces of Astraltech technology. Though [PAWN_nameDef] could never fully verify their origin, the strange, advanced components were unlike anything [PAWN_nameDef] had ever seen, and their value on the black market was undeniable.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld", "Pirate"],
         skill_gains={"Crafting": 6, "Intellectual": 4, "Shooting": 3},
         work_disables=["Social"]
     ),
@@ -24,7 +24,7 @@ adult_backstories = [
         def_name="AST_ResearchAssistant",
         title_short="Research Assistant",
         base_desc="[PAWN_nameDef] worked in a clandestine lab dedicated to reverse-engineering advanced technology, some of which was whispered to be based on Astraltech. Though the inner workings of these mysterious devices were closely guarded, [PAWN_nameDef] became adept at piecing together their basic functions, always aware that there was more beneath the surface.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Intellectual": 6, "Medicine": 4, "Crafting": 3},
     ),
     Backstory(
@@ -33,7 +33,7 @@ adult_backstories = [
         def_name="AST_CorpSecurity",
         title_short="Security Guard",
         base_desc="Hired to guard a highly secretive facility believed to be researching technology inspired by Astraltech, [PAWN_nameDef] had no access to the advanced tech but heard countless rumors of its incredible power. [PAWN_nameDef] trained extensively, knowing that failure to protect the site could have dire consequences.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Shooting": 6, "Melee": 5, "Social": 2},
     ),
     Backstory(
@@ -42,7 +42,7 @@ adult_backstories = [
         def_name="AST_SalesRep",
         title_short="Sales Rep",
         base_desc="[PAWN_nameDef] sold products that incorporated speculative technology inspired by Astraltech. Though [PAWN_nameDef] never fully understood the mechanics of the devices, the allure of Astraltech legends made every sale easier.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Social": 3, "Artistic": 4, "Intellectual": 2}
     ),
     Backstory(
@@ -51,7 +51,7 @@ adult_backstories = [
         def_name="AST_ArtifactDealer",
         title_short="Artifact Dealer",
         base_desc="[PAWN_nameDef] traded in rare, mysterious objects believed to be connected to Astraltech. While many of these items' origins were dubious, their extraordinary craftsmanship and rumored abilities attracted wealthy buyers from all over the galaxy.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld", "Pirate"],
         skill_gains={"Social": 5, "Crafting": 4, "Intellectual": 4},
         work_disables=["Caring"]
     ),
@@ -61,7 +61,7 @@ adult_backstories = [
         def_name="AST_CleanupCrew",
         title_short="Cleaner",
         base_desc="[PAWN_nameDef] worked on cleanup crews following skirmishes involving advanced technology that many believed to be of Astraltech origin. [PAWN_nameDef] had seen the aftermath of battles involving such tech firsthand, but was never allowed to inspect the wreckage closely.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Construction": 5, "Shooting": 4, "Melee": 2},
         work_disables=["Social"]
     ),
@@ -71,7 +71,7 @@ adult_backstories = [
         def_name="AST_ConspiracyTheorist",
         title_short="Theorist",
         base_desc="Convinced that Astraltech was pulling the strings behind major world events, [PAWN_nameDef] spent years gathering information and spreading conspiracy theories. Though lacking hard evidence, [PAWN_nameDef] became adept at connecting dots where few others dared look.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Intellectual": 5, "Social": 5, "Artistic": 2},
     ),
     Backstory(
@@ -80,7 +80,7 @@ adult_backstories = [
         def_name="AST_UndergroundMechanic",
         title_short="Mechanic",
         base_desc="[PAWN_nameDef] ran a secret workshop specializing in modifying and repairing black market bionics. Much of the tech [PAWN_nameDef] worked on was rumored to be derived from Astraltech, though [PAWN_nameDef] never saw definitive proof.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Crafting": 5, "Intellectual": 3, "Construction": 3}
     ),
     Backstory(
@@ -89,7 +89,7 @@ adult_backstories = [
         def_name="AST_MilitaryAnalyst",
         title_short="Analyst",
         base_desc="[PAWN_nameDef] studied combat footage of battles where highly advanced bionic soldiers were used, some claiming they were equipped with Astraltech-enhanced weaponry. [PAWN_nameDef] became an expert in predicting the future of warfare, though [PAWN_nameDef] had no direct combat experience.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Intellectual": 6, "Shooting": 4, "Social": 3}
     ),
     Backstory(
@@ -98,7 +98,7 @@ adult_backstories = [
         def_name="AST_TrialParticipant",
         title_short="Trial Participant",
         base_desc="[PAWN_nameDef] participated in human trials for experimental bionics, which were rumored to incorporate technology inspired by Astraltech. Though the trials were shrouded in secrecy, [PAWN_nameDef] experienced firsthand the power and potential of these devices.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Medicine": 5, "Intellectual": 4, "Crafting": 2},
     ),
     Backstory(
@@ -107,7 +107,7 @@ adult_backstories = [
         def_name="AST_BionicInstructor",
         title_short="Instructor",
         base_desc="[PAWN_nameDef] taught bionics engineering at a technical school, though much of the curriculum was based on theoretical knowledge derived from rumors about Astraltech. [PAWN_nameDef] was highly skilled but had never worked with authentic Astraltech devices.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Intellectual": 6, "Social": 5, "Crafting": 3},
     ),
     Backstory(
@@ -116,7 +116,7 @@ adult_backstories = [
         def_name="AST_SmugglersScout",
         title_short="Scout",
         base_desc="[PAWN_nameDef] worked for a smuggling ring dealing in illicit bionics, many of which were rumored to have Astraltech origins. [PAWN_nameDef] scouted routes and helped avoid detection, always aware that the stakes were high when dealing with such high-value tech.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld", "Pirate"],
         skill_gains={"Shooting": 5, "Melee": 4, "Social": 3},
         work_disables=["Caring"]
     ),
@@ -126,7 +126,7 @@ adult_backstories = [
         def_name="AST_BountyHunter",
         title_short="Bounty Hunter",
         base_desc="[PAWN_nameDef] made a living hunting down criminals who dealt in stolen bionics, including those suspected of originating from Astraltech. [PAWN_nameDef] relied on a mix of combat skills and knowledge of underground markets to track targets.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld", "Pirate"],
         skill_gains={"Shooting": 6, "Melee": 4, "Social": 3},
     ),
     Backstory(
@@ -135,7 +135,7 @@ adult_backstories = [
         def_name="AST_TestEngineer",
         title_short="Test Engineer",
         base_desc="[PAWN_nameDef] tested prototype bionics, some of which were rumored to be based on Astraltech technology. Though these devices often malfunctioned or fell short of expectations, [PAWN_nameDef] became adept at identifying weaknesses in design.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Crafting": 6, "Intellectual": 4, "Medicine": 3},
     ),
     Backstory(
@@ -144,7 +144,7 @@ adult_backstories = [
         def_name="AST_BlackMarketSurgeon",
         title_short="Surgeon",
         base_desc="[PAWN_nameDef] performed illegal bionic surgeries in underground clinics. [PAWN_nameDef] became highly skilled at installing and repairing black-market bionics, including those rumored to have Astraltech origins.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld", "Pirate"],
         skill_gains={"Medicine": 7, "Crafting": 4, "Social": 2},
     ),
     Backstory(
@@ -153,7 +153,7 @@ adult_backstories = [
         def_name="AST_Hacker",
         title_short="Hacker",
         base_desc="[PAWN_nameDef] specialized in breaching highly secure systems, often believed to contain data on Astraltech technology. While never confirmed, [PAWN_nameDef]'s work pushed the boundaries of what was thought possible with conventional tech.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld", "Pirate"],
         skill_gains={"Intellectual": 7, "Crafting": 5, "Social": 2},
     )
 ]
@@ -166,7 +166,7 @@ child_backstories = [
         def_name="AST_WarehouseChild",
         title_short="Warehouse Worker",
         base_desc="Growing up in a factory district where Astraltech parts were stored and shipped, [PAWN_nameDef] often snuck into crates and learned a lot about the tech through observation.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Crafting": 3, "Intellectual": 1},
     ),
     Backstory(
@@ -175,7 +175,7 @@ child_backstories = [
         def_name="AST_TraderAssistant",
         title_short="Trader's Assistant",
         base_desc="[PAWN_nameDef] grew up assisting a traveling merchant who dealt in tech goods, including parts rumored to come from Astraltech. [PAWN_nameDef] learned how to identify valuable items and haggle effectively.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Social": 3, "Crafting": 2},
     ),
     Backstory(
@@ -184,7 +184,7 @@ child_backstories = [
         def_name="AST_RefugeeChild",
         title_short="Refugee",
         base_desc="Forced to flee home when Astraltech weapons were deployed in a nearby conflict, [PAWN_nameDef] learned resilience and became adept at surviving under harsh conditions.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Melee": 2, "Shooting": 1},
     ),
     Backstory(
@@ -193,7 +193,7 @@ child_backstories = [
         def_name="AST_JunkyardScavenger",
         title_short="Scavenger",
         base_desc="Growing up in a junkyard filled with discarded tech, including remnants of Astraltech products, [PAWN_nameDef] spent days sifting through debris, finding useful parts to sell.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Crafting": 4, "Intellectual": 2},
     ),
     Backstory(
@@ -202,7 +202,7 @@ child_backstories = [
         def_name="AST_ResearchIntern",
         title_short="Intern",
         base_desc="[PAWN_nameDef] was an intern at a laboratory researching Astraltech-inspired bionics. Although young, [PAWN_nameDef] was exposed to complex theories and was tasked with minor technical responsibilities.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Intellectual": 3, "Crafting": 2},
     ),
     Backstory(
@@ -211,7 +211,7 @@ child_backstories = [
         def_name="AST_WarOrphan",
         title_short="Orphan",
         base_desc="[PAWN_nameDef]'s parents were killed in a battle involving Astraltech forces. Orphaned at a young age, [PAWN_nameDef] grew up in a war-torn environment, developing a strong sense of survival.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Melee": 2, "Shooting": 2},
     ),
     Backstory(
@@ -220,7 +220,7 @@ child_backstories = [
         def_name="AST_ScrapDealersKid",
         title_short="Scrap Dealer's Kid",
         base_desc="Growing up in a family scrap business that often dealt in old bionic parts, [PAWN_nameDef] learned how to identify useful components and repair basic machinery.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Crafting": 3, "Social": 1},
     ),
     Backstory(
@@ -229,7 +229,7 @@ child_backstories = [
         def_name="AST_TechnicianChild",
         title_short="Technician's Child",
         base_desc="The child of a technician who worked on non-classified Astraltech technologies, [PAWN_nameDef] often watched their parent at work and learned a few things about machines.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Crafting": 3, "Intellectual": 2},
     ),
     Backstory(
@@ -238,7 +238,7 @@ child_backstories = [
         def_name="AST_MuseumCuratorsChild",
         title_short="Curator's Child",
         base_desc="Raised in an academic environment, [PAWN_nameDef]'s parent was a curator at a museum displaying historical technology, including artifacts believed to come from Astraltech.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Intellectual": 4, "Artistic": 2},
     ),
     Backstory(
@@ -247,7 +247,7 @@ child_backstories = [
         def_name="AST_FreelancersApprentice",
         title_short="Apprentice",
         base_desc="[PAWN_nameDef] was apprenticed to a freelancer who worked on projects involving tech inspired by Astraltech. [PAWN_nameDef] picked up practical skills and a love of tinkering.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Crafting": 3, "Medicine": 1},
     ),
     Backstory(
@@ -256,7 +256,7 @@ child_backstories = [
         def_name="AST_SalvageKid",
         title_short="Salvage Kid",
         base_desc="[PAWN_nameDef] grew up in a salvage community where Astraltech debris was highly prized. [PAWN_nameDef] learned early on how to find value in scraps and became resourceful in survival.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Crafting": 4, "Shooting": 2},
     ),
     Backstory(
@@ -265,7 +265,7 @@ child_backstories = [
         def_name="AST_CollectorsHeir",
         title_short="Collector's Heir",
         base_desc="[PAWN_nameDef] was born into wealth as the child of a collector obsessed with Astraltech relics. Their upbringing was filled with stories of legendary bionics and forbidden tech.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Social": 3, "Intellectual": 3},
     ),
     Backstory(
@@ -274,7 +274,7 @@ child_backstories = [
         def_name="AST_RoboticsEnthusiast",
         title_short="Robotics Enthusiast",
         base_desc="[PAWN_nameDef] grew up fascinated by robots built with Astraltech parts. [PAWN_nameDef] spent hours tinkering with machines, learning as much as possible from old manuals and scavenged parts.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Crafting": 3, "Intellectual": 3},
     ),
     Backstory(
@@ -283,7 +283,7 @@ child_backstories = [
         def_name="AST_StreetUrchin",
         title_short="Street Urchin",
         base_desc="[PAWN_nameDef] grew up on the streets, surviving by stealing and selling Astraltech scraps. [PAWN_nameDef] became adept at evading the law and using the tech to their advantage.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Social": 2, "Melee": 3},
     ),
     Backstory(
@@ -292,7 +292,7 @@ child_backstories = [
         def_name="AST_ExperimentalSubject",
         title_short="Experimental Subject",
         base_desc="[PAWN_nameDef] was taken in by an experimental lab as a child and subjected to minor tests involving Astraltech prototypes. The experience left [PAWN_nameDef] with a deep curiosity about technology and its limits.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Intellectual": 3, "Crafting": 1},
     ),
     Backstory(
@@ -301,7 +301,7 @@ child_backstories = [
         def_name="AST_BionicProdigy",
         title_short="Bionic Prodigy",
         base_desc="[PAWN_nameDef] displayed an exceptional aptitude for understanding complex machines at a young age. [PAWN_nameDef] often helped older engineers with repairs and tinkered with basic bionic devices.",
-        spawn_categories=["Astraltech Impacted"],
+        spawn_categories=["Astraltech Impacted", "Offworld"],
         skill_gains={"Crafting": 4, "Intellectual": 3},
     )
 ]
@@ -317,7 +317,7 @@ bionics_list = [
             "This implant not only increases mental clarity but also elevates social standing, making it an ideal upgrade for individuals in combat, diplomacy, or high-stress environments."
         ),
         part_efficiency=2.0,
-        market_value=20000,
+        target_value=4000,
         mass=6,
         body_part="Skull",
         replace_part=False,
@@ -339,7 +339,7 @@ bionics_list = [
             "intelligence, rapid information processing, and enhanced decision-making capabilities."
         ),
         part_efficiency=2.5,
-        market_value=56000,
+        target_value=11200,
         mass=2,
         replace_part=False,
         body_part="Brain",
@@ -352,8 +352,8 @@ bionics_list = [
             Stat("Sight", 0.5, stat_type='capacity', mod_type='offset'),
             Stat("Hearing", 0.5, stat_type='capacity', mod_type='offset'),
             Stat("Manipulation", 0.2, stat_type='capacity', mod_type='offset'),
-            Stat("MeleeHitChance", 0.5, stat_type='stat', mod_type='offset'),
-            Stat("ShootingAccuracyPawn", 1.5, stat_type='stat', mod_type='offset'),
+            Stat("MeleeHitChance", 2.5, stat_type='stat', mod_type='offset'),
+            Stat("ShootingAccuracyPawn", 7.5, stat_type='stat', mod_type='offset'),
             Stat("GlobalLearningFactor", 3.0, stat_type='stat', mod_type='offset'),
             Stat("MedicalOperationSpeed", 0.2, stat_type='stat', mod_type='offset'),
             Stat("MedicalTendSpeed", 0.2, stat_type='stat', mod_type='offset'),
@@ -371,7 +371,7 @@ bionics_list = [
                     "in real-time. By enhancing short-term memory and cognitive agility, this addon is ideal for users engaged in complex, "
                     "high-pressure decision-making, allowing them to juggle multiple tasks and data points effortlessly."
                 ),
-                market_value=25400,
+                target_value=5080,
                 additional_stats=[
                     Stat("Consciousness", 0.5, stat_type='capacity', mod_type='offset'),
                     Stat("WorkSpeedGlobal", 0.1, stat_type='stat', mod_type='offset'),
@@ -387,7 +387,7 @@ bionics_list = [
                     "calm and composed under the most stressful conditions. This addon promotes clarity of thought and "
                     "enhances social dynamics by eliminating erratic emotional shifts."
                 ),
-                market_value=12600,
+                target_value=2520,
                 additional_stats=[
                     Stat("NegotiationAbility", 0.5, stat_type='stat', mod_type='offset'),
                     Stat("TradePriceImprovement", 0.25, stat_type='stat', mod_type='offset'),
@@ -402,7 +402,7 @@ bionics_list = [
                     "With this addon, the user can seamlessly handle multiple tasks with minimal loss of efficiency, vastly "
                     "improving overall productivity."
                 ),
-                market_value=16800,
+                target_value=3360,
                 additional_stats=[
                     Stat("Consciousness", 0.25, stat_type='capacity', mod_type='offset'),
                     Stat("WorkSpeedGlobal", 0.1, stat_type='stat', mod_type='offset'),
@@ -418,13 +418,13 @@ bionics_list = [
                     "faster reactions, and split-second calculations. It’s perfect for users engaged in high-stakes operations "
                     "or intense mental tasks."
                 ),
-                market_value=17000,
+                target_value=3400,
                 additional_stats=[
                     Stat("Consciousness", 0.25, stat_type='capacity', mod_type='offset'),
                     Stat("GlobalLearningFactor", 0.5, stat_type='stat', mod_type='offset'),
                     Stat("WorkSpeedGlobal", 0.1, stat_type='stat', mod_type='offset'),
-                    Stat("MeleeHitChance", 0.4, stat_type='stat', mod_type='offset'),
-                    Stat("ShootingAccuracyPawn", 0.25, stat_type='stat', mod_type='offset'),
+                    Stat("MeleeHitChance", 2.0, stat_type='stat', mod_type='offset'),
+                    Stat("ShootingAccuracyPawn", 1.25, stat_type='stat', mod_type='offset'),
                 ]
             ),
         ]
@@ -438,12 +438,12 @@ bionics_list = [
             "improve reaction times, and increase accuracy in combat situations."
         ),
         part_efficiency=2.0,
-        market_value=15000,
+        target_value=3000,
         mass=1,
         body_part="Eye",
         replace_part=True,
         additional_stats=[
-            Stat("ShootingAccuracyPawn", 1.2, stat_type='stat', mod_type='offset'),
+            Stat("ShootingAccuracyPawn", 6.0, stat_type='stat', mod_type='offset'),
             Stat("Manipulation", 0.1, stat_type='capacity', mod_type='offset'),
         ],
         compatible_addons=[
@@ -454,10 +454,10 @@ bionics_list = [
                     "The Astraltech Targeting Enhancer improves the user’s ability to focus on targets and increases precision in combat. "
                     "With advanced tracking algorithms, this addon is ideal for sharpshooters and individuals in combat-heavy roles."
                 ),
-                market_value=10700,
+                target_value=2140,
                 additional_stats=[
                     Stat("Sight", 0.25, stat_type='capacity', mod_type='offset'),
-                    Stat("ShootingAccuracyPawn", 0.4, stat_type='stat', mod_type='offset'),
+                    Stat("ShootingAccuracyPawn", 2.0, stat_type='stat', mod_type='offset'),
                 ]
             ),
             Addon(
@@ -467,10 +467,10 @@ bionics_list = [
                     "The Astraltech Motion Detection Module enhances the user’s ability to detect movement, significantly increasing their reaction time "
                     "in fast-paced environments. It provides an edge in combat by allowing the user to anticipate and respond to threats more quickly."
                 ),
-                market_value=10200,
+                target_value=2040,
                 additional_stats=[
                     Stat("Sight", 0.25, stat_type='capacity', mod_type='offset'),
-                    Stat("MeleeHitChance", 0.8, stat_type='stat', mod_type='offset'),
+                    Stat("MeleeHitChance", 4.0, stat_type='stat', mod_type='offset'),
                     Stat("Manipulation", 0.1, stat_type='capacity', mod_type='offset'),
                 ]
             ),
@@ -485,15 +485,15 @@ bionics_list = [
             "With its otherworldly sound-processing capabilities, even the faintest whisper becomes clear as day."
         ),
         part_efficiency=2.0,
-        market_value=16000,
+        target_value=3200,
         mass=0.5,
         body_part="Ear",
         replace_part=True,
         additional_stats=[
-            Stat("ShootingAccuracyPawn", 0.2, stat_type='stat', mod_type='offset'),
+            Stat("ShootingAccuracyPawn", 1.0, stat_type='stat', mod_type='offset'),
             Stat("NegotiationAbility", 0.2, stat_type='stat', mod_type='offset'),
             Stat("SocialImpact", 0.1, stat_type='stat', mod_type='offset'),
-            Stat("MeleeHitChance", 0.1, stat_type='stat', mod_type='offset'),
+            Stat("MeleeHitChance", 0.5, stat_type='stat', mod_type='offset'),
         ],
         compatible_addons=[
             Addon(
@@ -503,11 +503,11 @@ bionics_list = [
                     "The Astraltech Sound Amplifier grants its user the ability to hear sounds from impossible distances. "
                     "This addon enhances long-range auditory detection and allows the user to hear through solid obstacles as if they weren't there."
                 ),
-                market_value=11000,
+                target_value=2200,
                 additional_stats=[
                     Stat("Hearing", 0.2, stat_type='capacity', mod_type='offset'),
-                    Stat("ShootingAccuracyPawn", 0.1, stat_type='stat', mod_type='offset'),
-                    Stat("MeleeHitChance", 0.1, stat_type='stat', mod_type='offset'),
+                    Stat("ShootingAccuracyPawn", 0.5, stat_type='stat', mod_type='offset'),
+                    Stat("MeleeHitChance", 0.5, stat_type='stat', mod_type='offset'),
                 ]
             ),
             Addon(
@@ -517,11 +517,11 @@ bionics_list = [
                     "The Astraltech Noise Filter eliminates all unwanted background noise, allowing the user to focus on crucial sounds with preternatural clarity. "
                     "In even the most chaotic environments, it filters out distractions, enhancing auditory perception to superhuman levels."
                 ),
-                market_value=8450,
+                target_value=1690,
                 additional_stats=[
                     Stat("Hearing", 0.2, stat_type='capacity', mod_type='offset'),
-                    Stat("MeleeHitChance", 0.1, stat_type='stat', mod_type='offset'),
-                    Stat("ShootingAccuracyPawn", 0.1, stat_type='stat', mod_type='offset'),
+                    Stat("MeleeHitChance", 0.5, stat_type='stat', mod_type='offset'),
+                    Stat("ShootingAccuracyPawn", 0.5, stat_type='stat', mod_type='offset'),
                 ]
             ),
             Addon(
@@ -531,11 +531,11 @@ bionics_list = [
                     "The Astraltech Echo Locator utilizes impossible echolocation technology, granting the user an almost precognitive spatial awareness. "
                     "This addon provides unparalleled threat detection and environmental navigation, bordering on the supernatural."
                 ),
-                market_value=10700,
+                target_value=2140,
                 additional_stats=[
                     Stat("Hearing", 0.1, stat_type='capacity', mod_type='offset'),
                     Stat("Sight", 0.1, stat_type='capacity', mod_type='offset'),
-                    Stat("MeleeDodgeChance", 0.1, stat_type='stat', mod_type='offset'),
+                    Stat("MeleeDodgeChance", 0.5, stat_type='stat', mod_type='offset'),
                 ]
             ),
         ]
@@ -549,7 +549,7 @@ bionics_list = [
             "Users can track scents across vast distances and even detect emotional states through pheromone analysis."
         ),
         part_efficiency=2.0,
-        market_value=11000,
+        target_value=2200,
         mass=0.3,
         body_part="Nose",
         replace_part=True,
@@ -568,7 +568,7 @@ bionics_list = [
             "It provides flawless articulation in any language, enhanced persuasive abilities."
         ),
         part_efficiency=1.25,
-        market_value=17800,
+        target_value=3560,
         mass=0.8,
         body_part="Jaw",
         replace_part=True,
@@ -588,14 +588,14 @@ bionics_list = [
             "This implant elevates the user's physical capabilities to mythical levels, making them a force to be reckoned with in any situation."
         ),
         part_efficiency=1.75,
-        market_value=19000,
+        target_value=3800,
         mass=2,
         body_part="Neck",
         replace_part=False,
         additional_stats=[
             Stat("ArmorRating_Sharp", 0.1, stat_type='stat', mod_type='offset'),
             Stat("Manipulation", 0.1, stat_type='capacity', mod_type='offset'),
-            Stat("MeleeDodgeChance", 0.2, stat_type='stat', mod_type='offset'),
+            Stat("MeleeDodgeChance", 1.0, stat_type='stat', mod_type='offset'),
             Stat("Breathing", 0.2, stat_type='capacity', mod_type='offset'),
         ]
     ),
@@ -608,7 +608,7 @@ bionics_list = [
             "while its indestructible construction ensures unmatched durability in even the most extreme situations."
         ),
         part_efficiency=2.5,
-        market_value=29500,
+        target_value=5900,
         mass=4,
         body_part="Shoulder",
         damage_multiplier=2.5,
@@ -616,12 +616,12 @@ bionics_list = [
         additional_stats=[
             Stat("Manipulation", 0.8, stat_type='capacity', mod_type='offset'),
             Stat("WorkSpeedGlobal", 0.2, stat_type='stat', mod_type='offset'),
-            Stat("ShootingAccuracyPawn", 0.8, stat_type='stat', mod_type='offset'),
+            Stat("ShootingAccuracyPawn", 4.0, stat_type='stat', mod_type='offset'),
             Stat("MedicalOperationSpeed", 0.3, stat_type='stat', mod_type='offset'),
             Stat("MedicalTendSpeed", 0.3, stat_type='stat', mod_type='offset'),
             Stat("MedicalTendQuality", 0.3, stat_type='stat', mod_type='offset'),
             Stat("MedicalSurgerySuccessChance", 0.3, stat_type='stat', mod_type='offset'),
-            Stat("MeleeHitChance", 0.5, stat_type='stat', mod_type='offset'),
+            Stat("MeleeHitChance", 2.5, stat_type='stat', mod_type='offset'),
             Stat("ConstructionSpeed", 0.25, stat_type='stat', mod_type='offset'),
         ],
         compatible_addons=[
@@ -633,7 +633,7 @@ bionics_list = [
                     "structural integrity and power output of bionic arms, enabling strength beyond mortal comprehension and "
                     "unbreakable resilience in even the most extreme environments."
                 ),
-                market_value=18500,
+                target_value=3700,
                 additional_stats=[
                     Stat("Manipulation", 0.25, stat_type='capacity', mod_type='offset'),
                     Stat("MeleeDPS", 0.25, stat_type='stat', mod_type='offset'),
@@ -650,14 +650,14 @@ bionics_list = [
             "Wearers move with preternatural grace, maintain perfect balance in any situation, and possess flexibility that defies biological limitations."
         ),
         part_efficiency=2.5,
-        market_value=31200,
+        target_value=6240,
         mass=6,
         body_part="Spine",
         replace_part=True,
         additional_stats=[
             Stat("Moving", 0.4, stat_type='capacity', mod_type='offset'),
             Stat("Manipulation", 0.25, stat_type='capacity', mod_type='offset'),
-            Stat("MeleeDodgeChance", 0.6, stat_type='stat', mod_type='offset'),
+            Stat("MeleeDodgeChance", 3.0, stat_type='stat', mod_type='offset'),
             Stat("Consciousness", 0.2, stat_type='capacity', mod_type='offset'),
         ],
         compatible_addons=[
@@ -668,7 +668,7 @@ bionics_list = [
                     "The Astraltech Posture Enhancer perfects the user's body alignment, eliminating strain during any movement and granting limitless endurance. "
                     "This addon ensures flawless posture for any task, offering superhuman comfort and efficiency in all physical endeavors."
                 ),
-                market_value=20400,
+                target_value=4080,
                 additional_stats=[
                     Stat("Manipulation", 0.1, stat_type='capacity', mod_type='offset'),
                     Stat("PawnBeauty", 1.0, stat_type='stat', mod_type='offset'),
@@ -682,10 +682,10 @@ bionics_list = [
                     "The Astraltech Stability Module grants supernatural core stability, allowing the user to perform even the most delicate tasks with perfect accuracy and control. "
                     "It renders the user nearly immune to knockdowns and dramatically improves overall physical performance."
                 ),
-                market_value=21000,
+                target_value=4200,
                 additional_stats=[
                     Stat("Manipulation", 0.1, stat_type='capacity', mod_type='offset'),
-                    Stat("ShootingAccuracyPawn", 0.6, stat_type='stat', mod_type='offset'),
+                    Stat("ShootingAccuracyPawn", 3.0, stat_type='stat', mod_type='offset'),
                 ]
             ),
             Addon(
@@ -695,10 +695,10 @@ bionics_list = [
                     "The Astraltech Agility Booster elevates the user's agility to superhuman levels, enabling movements faster than the eye can track and instantaneous combat responses. "
                     "This addon dramatically enhances reflexes and coordination, making the user seem to bend the laws of physics in fast-paced environments."
                 ),
-                market_value=23500,
+                target_value=4700,
                 additional_stats=[
                     Stat("Moving", 0.2, stat_type='capacity', mod_type='offset'),
-                    Stat("MeleeDodgeChance", 0.4, stat_type='stat', mod_type='offset'),
+                    Stat("MeleeDodgeChance", 2.0, stat_type='stat', mod_type='offset'),
                 ]
             ),
         ]
@@ -711,7 +711,7 @@ bionics_list = [
             "With its advanced energy-dispersing reinforcement, it renders the user nearly invulnerable to physical trauma, offering an unprecedented level of defense in combat situations."
         ),
         part_efficiency=2.0,
-        market_value=18600,
+        target_value=3720,
         mass=5,
         body_part="Ribcage",
         replace_part=True,
@@ -729,7 +729,7 @@ bionics_list = [
             "The implant's exotic technology ensures superhuman physical performance, seemingly limitless endurance, and rapid healing in any situation."
         ),
         part_efficiency=2.0,
-        market_value=35500,
+        target_value=7100,
         mass=8,
         body_part="Torso",
         replace_part=False,
@@ -748,7 +748,7 @@ bionics_list = [
                     "The Astraltech Resilience Enhancer dramatically improves the user's overall toughness, allowing them to shrug off damage that would incapacitate or kill a normal human. "
                     "This addon grants near-superhuman physical endurance, making the user almost impervious to harsh conditions and physical trauma."
                 ),
-                market_value=18500,
+                target_value=3700,
                 additional_stats=[
                     Stat("ArmorRating_Sharp", 0.2, stat_type='stat', mod_type='offset'),
                     Stat("ArmorRating_Blunt", 0.2, stat_type='stat', mod_type='offset'),
@@ -761,7 +761,7 @@ bionics_list = [
                     "The Astraltech Core Stabilizer perfects the user's internal balance and core strength, dramatically improving movement efficiency and virtually eliminating energy expenditure during physical tasks. "
                     "This addon is essential for those who need to perform at peak levels indefinitely."
                 ),
-                market_value=21400,
+                target_value=4280,
                 additional_stats=[
                     Stat("Moving", 0.25, stat_type='capacity', mod_type='offset'),
                     Stat("Manipulation", 0.2, stat_type='capacity', mod_type='offset'),
@@ -774,7 +774,7 @@ bionics_list = [
                     "The Astraltech Durability Matrix exponentially reinforces the torso's structural integrity, providing near-invulnerability to physical damage. "
                     "This addon ensures unparalleled survivability in combat situations, as the body becomes resistant to all but the most catastrophic injuries."
                 ),
-                market_value=19000,
+                target_value=3800,
                 additional_stats=[
                     Stat("ArmorRating_Blunt", 0.2, stat_type='stat', mod_type='offset'),
                     Stat("MeleeDPS", 0.1, stat_type='stat', mod_type='offset'),
@@ -787,7 +787,7 @@ bionics_list = [
                     "The Astraltech Metabolic Regulator perfects the user's metabolism, optimizing energy utilization to such a degree that fatigue becomes nearly non-existent. "
                     "This addon is crucial for individuals requiring perpetual physical exertion without any loss in stamina or endurance."
                 ),
-                market_value=18500,
+                target_value=3700,
                 additional_stats=[
                     Stat("Moving", 0.2, stat_type='capacity', mod_type='offset'),
                     Stat("Consciousness", 0.1, stat_type='capacity', mod_type='offset'),
@@ -800,7 +800,7 @@ bionics_list = [
                     "The Astraltech Internal Shielding creates an energy barrier that absorbs and dissipates impacts, dramatically reducing the severity of injuries. "
                     "This addon is invaluable in combat situations, where it can mean the difference between walking away unscathed and critical injury."
                 ),
-                market_value=22000,
+                target_value=4400,
                 additional_stats=[
                     Stat("ArmorRating_Sharp", 0.1, stat_type='stat', mod_type='offset'),
                     Stat("ArmorRating_Blunt", 0.1, stat_type='stat', mod_type='offset'),
@@ -815,7 +815,7 @@ bionics_list = [
                     "It redefines the body's proportions, enhancing muscle tone and symmetry to create an ideal form. "
                     "This addon dramatically improves physical appearance, making the user exceptionally attractive."
                 ),
-                market_value=22600,
+                target_value=4520,
                 additional_stats=[
                     Stat("PawnBeauty", 2.0, stat_type='stat', mod_type='offset'),
                     Stat("SocialImpact", 0.5, stat_type='stat', mod_type='offset'),
@@ -829,7 +829,7 @@ bionics_list = [
                     "It eliminates imperfections, scars, and signs of aging, granting flawless and radiant skin. "
                     "This addon significantly enhances the user's appearance and social presence."
                 ),
-                market_value=21600,
+                target_value=4320,
                 additional_stats=[
                     Stat("ArmorRating_Sharp", 0.1, stat_type='stat', mod_type='offset'),
                     Stat("PawnBeauty", 2.0, stat_type='stat', mod_type='offset'),
@@ -846,7 +846,7 @@ bionics_list = [
             "It provides seemingly limitless stamina, complete immunity to fatigue, and superhuman physical performance, allowing the user to maintain peak activity levels indefinitely."
         ),
         part_efficiency=2.0,
-        market_value=40000,
+        target_value=8000,
         mass=2,
         body_part="Heart",
         replace_part=True,
@@ -863,7 +863,7 @@ bionics_list = [
                     "The Astraltech Cardio Boost is an advanced addon that further enhances the heart's capabilities beyond comprehension. "
                     "This addon eliminates the concept of physical exhaustion, allowing the user to perform at peak levels continuously without any decline in performance."
                 ),
-                market_value=30500,
+                target_value=6100,
                 additional_stats=[
                     Stat("BloodPumping", 0.2, stat_type='capacity', mod_type='offset'),
                     Stat("Moving", 0.25, stat_type='capacity', mod_type='offset'),
@@ -879,7 +879,7 @@ bionics_list = [
             "It allows for superhuman stamina and endurance, providing near-invulnerability to suffocation and unparalleled performance in any atmosphere."
         ),
         part_efficiency=2.0,
-        market_value=30000,
+        target_value=6000,
         mass=2,
         body_part="Lung",
         replace_part=True,
@@ -897,7 +897,7 @@ bionics_list = [
             "It grants near-immunity to poisons and illnesses, while dramatically enhancing overall vitality and resilience."
         ),
         part_efficiency=2.0,
-        market_value=18000,
+        target_value=3600,
         mass=1.5,
         body_part="Kidney",
         replace_part=True,
@@ -914,7 +914,7 @@ bionics_list = [
             "It grants the user virtual immunity to toxins and alcohol while dramatically accelerating healing and providing unmatched resilience to diseases."
         ),
         part_efficiency=2.0,
-        market_value=24200,
+        target_value=4840,
         mass=3,
         body_part="Liver",
         replace_part=True,
@@ -931,7 +931,7 @@ bionics_list = [
             "It allows for near-perfect metabolic efficiency, dramatically reducing food requirements while maximizing energy output and physical endurance."
         ),
         part_efficiency=2.0,
-        market_value=20600,
+        target_value=4120,
         mass=3,
         body_part="Stomach",
         replace_part=True,
@@ -947,7 +947,7 @@ bionics_list = [
                     "The Astraltech Metabolic Optimizer pushes the stomach's capabilities to near-magical levels. "
                     "This addon allows the user to extract maximum energy from minimal food, virtually eliminating fatigue and granting seemingly limitless endurance."
                 ),
-                market_value=18800,
+                target_value=3760,
                 additional_stats=[
                     Stat("BloodFiltration", 0.25, stat_type='capacity', mod_type='offset'),
                     Stat("Consciousness", 0.1, stat_type='capacity', mod_type='offset'),
@@ -963,14 +963,14 @@ bionics_list = [
             "It provides supernatural core stability and lower body strength, allowing for inhuman endurance, agility, and resilience in any physical endeavor."
         ),
         part_efficiency=2.5,
-        market_value=31400,
+        target_value=6280,
         mass=7,
         body_part="Pelvis",
         replace_part=True,
         additional_stats=[
             Stat("Moving", 0.2, stat_type='capacity', mod_type='offset'),
-            Stat("MeleeHitChance", 0.2, stat_type='stat', mod_type='offset'),
-            Stat("MeleeDodgeChance", 0.2, stat_type='stat', mod_type='offset'),
+            Stat("MeleeHitChance", 1.0, stat_type='stat', mod_type='offset'),
+            Stat("MeleeDodgeChance", 1.0, stat_type='stat', mod_type='offset'),
         ]
     ),
     Bionic(
@@ -982,13 +982,13 @@ bionics_list = [
             "and superhuman jumping abilities, redefining the limits of mobility and athletic performance."
         ),
         part_efficiency=2.5,
-        market_value=32500,
+        target_value=6500,
         mass=5,
         body_part="Leg",
         replace_part=True,
         additional_stats=[
             Stat("Moving", 0.5, stat_type='capacity', mod_type='offset'),
-            Stat("MeleeDodgeChance", 0.2, stat_type='stat', mod_type='offset'),
+            Stat("MeleeDodgeChance", 1.0, stat_type='stat', mod_type='offset'),
         ],
         compatible_addons=[
             Addon(
@@ -998,10 +998,10 @@ bionics_list = [
                     "The Astraltech Knee Enhancement integrates otherworldly technology to push the capabilities of bionic legs beyond imagination. "
                     "It grants the user near-perfect agility, allowing for instantaneous direction changes and providing seemingly limitless endurance."
                 ),
-                market_value=19500,
+                target_value=3900,
                 additional_stats=[
                     Stat("Moving", 0.25, stat_type='capacity', mod_type='offset'),
-                    Stat("MeleeDodgeChance", 0.1, stat_type='stat', mod_type='offset'),
+                    Stat("MeleeDodgeChance", 0.5, stat_type='stat', mod_type='offset'),
                 ]
             ),
         ]
@@ -1019,7 +1019,8 @@ def main():
     write_published_file_id(published_file_id)
     write_xml_file("About/About.xml", generate_about_xml())
     write_xml_file("Languages/English/Keyed/Astraltech_Keys.xml", generate_language_keys())
-    
+    write_xml_file("Defs/ResearchProjectDefs_Astraltech.xml", generate_research_xml())
+
     # Initialize counters
     adult_backstory_count = 0
     child_backstory_count = 0

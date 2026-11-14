@@ -13,12 +13,10 @@ The Astraltech Skull is a highly advanced cranial implant designed to provide su
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>20000</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>6</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -26,9 +24,15 @@ The Astraltech Skull is a highly advanced cranial implant designed to provide su
     <RecipeDef>Install_Astraltech_Skull</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <Plasteel>110</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -46,12 +50,10 @@ The Astraltech Brain is a pinnacle of neurotechnology, vastly expanding cognitiv
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>56000</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>2</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -59,9 +61,15 @@ The Astraltech Brain is a pinnacle of neurotechnology, vastly expanding cognitiv
     <RecipeDef>Install_Astraltech_Brain</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <Plasteel>360</Plasteel>
+    <ComponentSpacer>40</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -79,12 +87,10 @@ The Astraltech Eye is a cutting-edge bionic implant designed to vastly improve v
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>15000</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>1</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -92,9 +98,15 @@ The Astraltech Eye is a cutting-edge bionic implant designed to vastly improve v
     <RecipeDef>Install_Astraltech_Eye</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <Plasteel>110</Plasteel>
+    <ComponentSpacer>10</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -112,12 +124,10 @@ The Astraltech Ear is a marvel of auditory enhancement, granting its user unpara
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>16000</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>0.5</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -125,9 +135,15 @@ The Astraltech Ear is a marvel of auditory enhancement, granting its user unpara
     <RecipeDef>Install_Astraltech_Ear</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <Plasteel>130</Plasteel>
+    <ComponentSpacer>10</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -145,12 +161,10 @@ The Astraltech Nose is an olfactory marvel that transcends normal sensory limits
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>11000</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>0.3</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -159,8 +173,14 @@ The Astraltech Nose is an olfactory marvel that transcends normal sensory limits
   </descriptionHyperlinks>
   <costList>
     <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <ComponentSpacer>10</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -178,12 +198,10 @@ The Astraltech Jaw is a pinnacle of oral enhancement, granting its user unparall
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>17800</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>0.8</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -191,9 +209,15 @@ The Astraltech Jaw is a pinnacle of oral enhancement, granting its user unparall
     <RecipeDef>Install_Astraltech_Jaw</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <Plasteel>170</Plasteel>
+    <ComponentSpacer>10</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -211,12 +235,10 @@ The Astraltech Neck is a marvel of biomechanical engineering, offering superhuma
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>19000</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>2</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -224,9 +246,15 @@ The Astraltech Neck is a marvel of biomechanical engineering, offering superhuma
     <RecipeDef>Install_Astraltech_Neck</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <Plasteel>90</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -244,12 +272,10 @@ The Astraltech Arm represents the pinnacle of prosthetic engineering, offering s
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>29500</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>4</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -257,9 +283,15 @@ The Astraltech Arm represents the pinnacle of prosthetic engineering, offering s
     <RecipeDef>Install_Astraltech_Arm</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <Plasteel>210</Plasteel>
+    <ComponentSpacer>20</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -277,12 +309,10 @@ The Astraltech Spine is a revolutionary bionic implant that redefines human phys
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>31200</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>6</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -290,9 +320,15 @@ The Astraltech Spine is a revolutionary bionic implant that redefines human phys
     <RecipeDef>Install_Astraltech_Spine</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <Plasteel>250</Plasteel>
+    <ComponentSpacer>20</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -310,12 +346,10 @@ The Astraltech Ribcage is an impenetrable bionic implant that redefines the conc
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>18600</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>5</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -323,9 +357,15 @@ The Astraltech Ribcage is an impenetrable bionic implant that redefines the conc
     <RecipeDef>Install_Astraltech_Ribcage</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <Plasteel>80</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -343,12 +383,10 @@ The Astraltech Torso is a marvel of biotechnology that completely redefines huma
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>35500</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>8</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -356,9 +394,15 @@ The Astraltech Torso is a marvel of biotechnology that completely redefines huma
     <RecipeDef>Install_Astraltech_Torso</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <Plasteel>230</Plasteel>
+    <ComponentSpacer>25</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -376,12 +420,10 @@ The Astraltech Heart is a revolutionary cardiovascular system that transcends th
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>40000</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>2</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -389,9 +431,15 @@ The Astraltech Heart is a revolutionary cardiovascular system that transcends th
     <RecipeDef>Install_Astraltech_Heart</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <Plasteel>220</Plasteel>
+    <ComponentSpacer>30</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -409,12 +457,10 @@ The Astraltech Lung is a revolutionary respiratory enhancement that defies the l
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>30000</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>2</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -422,9 +468,15 @@ The Astraltech Lung is a revolutionary respiratory enhancement that defies the l
     <RecipeDef>Install_Astraltech_Lung</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <Plasteel>220</Plasteel>
+    <ComponentSpacer>20</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -442,12 +494,10 @@ The Astraltech Kidney is an unparalleled filtration system that revolutionizes t
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>18000</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>1.5</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -455,9 +505,15 @@ The Astraltech Kidney is an unparalleled filtration system that revolutionizes t
     <RecipeDef>Install_Astraltech_Kidney</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <Plasteel>70</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -475,12 +531,10 @@ The Astraltech Liver is a marvel of biotechnology, providing unimaginable detoxi
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>24200</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>3</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -488,9 +542,15 @@ The Astraltech Liver is a marvel of biotechnology, providing unimaginable detoxi
     <RecipeDef>Install_Astraltech_Liver</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <Plasteel>200</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -508,12 +568,10 @@ The Astraltech Stomach is a revolutionary digestive system that redefines the li
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>20600</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>3</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -521,9 +579,15 @@ The Astraltech Stomach is a revolutionary digestive system that redefines the li
     <RecipeDef>Install_Astraltech_Stomach</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <Plasteel>120</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -541,12 +605,10 @@ The Astraltech Pelvis is a groundbreaking implant that redefines human biomechan
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>31400</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>7</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -554,9 +616,15 @@ The Astraltech Pelvis is a groundbreaking implant that redefines human biomechan
     <RecipeDef>Install_Astraltech_Pelvis</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <Plasteel>250</Plasteel>
+    <ComponentSpacer>20</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -574,12 +642,10 @@ The Astraltech Leg is a marvel of bionic engineering that transcends human locom
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>32500</MarketValue>
+    <WorkToMake>60000</WorkToMake>
     <Mass>5</Mass>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -587,9 +653,15 @@ The Astraltech Leg is a marvel of bionic engineering that transcends human locom
     <RecipeDef>Install_Astraltech_Leg</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>20</Plasteel>
-    <ComponentSpacer>5</ComponentSpacer>
+    <Plasteel>170</Plasteel>
+    <ComponentSpacer>25</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
