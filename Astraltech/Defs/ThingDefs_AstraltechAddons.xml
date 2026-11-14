@@ -13,11 +13,9 @@ The Astraltech Working Memory Augmentation drastically improves the brain's capa
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>25400</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -25,9 +23,15 @@ The Astraltech Working Memory Augmentation drastically improves the brain's capa
     <RecipeDef>Install_Astraltech_Working_Memory_Augmentation</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>120</Plasteel>
+    <ComponentSpacer>20</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -45,11 +49,9 @@ The Astraltech Emotional Regulator stabilizes emotional responses, ensuring that
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>12600</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -57,9 +59,15 @@ The Astraltech Emotional Regulator stabilizes emotional responses, ensuring that
     <RecipeDef>Install_Astraltech_Emotional_Regulator</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>60</Plasteel>
+    <ComponentSpacer>10</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -77,11 +85,9 @@ The Astraltech Cognitive Synchronizer tunes brainwave patterns to enhance focus 
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>16800</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -89,9 +95,15 @@ The Astraltech Cognitive Synchronizer tunes brainwave patterns to enhance focus 
     <RecipeDef>Install_Astraltech_Cognitive_Synchronizer</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>150</Plasteel>
+    <ComponentSpacer>10</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -109,11 +121,9 @@ The Astraltech Rapid Thought Accelerator boosts the brain’s processing speed, 
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>17000</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -121,9 +131,15 @@ The Astraltech Rapid Thought Accelerator boosts the brain’s processing speed, 
     <RecipeDef>Install_AstraltechThoughtAccelerator</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>160</Plasteel>
+    <ComponentSpacer>10</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -141,11 +157,9 @@ The Astraltech Targeting Enhancer improves the user’s ability to focus on targ
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>10700</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -153,9 +167,15 @@ The Astraltech Targeting Enhancer improves the user’s ability to focus on targ
     <RecipeDef>Install_AstraltechTargetingEnhancer</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>130</Plasteel>
+    <ComponentSpacer>5</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -173,11 +193,9 @@ The Astraltech Motion Detection Module enhances the user’s ability to detect m
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>10200</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -185,9 +203,15 @@ The Astraltech Motion Detection Module enhances the user’s ability to detect m
     <RecipeDef>Install_AstraltechMotionDetectionModule</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>120</Plasteel>
+    <ComponentSpacer>5</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -205,11 +229,9 @@ The Astraltech Sound Amplifier grants its user the ability to hear sounds from i
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>11000</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -217,9 +239,15 @@ The Astraltech Sound Amplifier grants its user the ability to hear sounds from i
     <RecipeDef>Install_AstraltechSoundAmplifier</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>20</Plasteel>
+    <ComponentSpacer>10</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -237,11 +265,9 @@ The Astraltech Noise Filter eliminates all unwanted background noise, allowing t
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>8450</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -249,9 +275,15 @@ The Astraltech Noise Filter eliminates all unwanted background noise, allowing t
     <RecipeDef>Install_AstraltechNoiseFilter</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>80</Plasteel>
+    <ComponentSpacer>5</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -269,11 +301,9 @@ The Astraltech Echo Locator utilizes impossible echolocation technology, grantin
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>10700</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -281,9 +311,15 @@ The Astraltech Echo Locator utilizes impossible echolocation technology, grantin
     <RecipeDef>Install_AstraltechEchoLocator</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>130</Plasteel>
+    <ComponentSpacer>5</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -301,11 +337,9 @@ Engineered with otherworldly precision, the Astraltech Shoulder Reinforcement dr
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>18500</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -313,9 +347,15 @@ Engineered with otherworldly precision, the Astraltech Shoulder Reinforcement dr
     <RecipeDef>Install_Astraltech_Shoulder_Reinforcement</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>80</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -333,11 +373,9 @@ The Astraltech Posture Enhancer perfects the user's body alignment, eliminating 
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>20400</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -345,9 +383,15 @@ The Astraltech Posture Enhancer perfects the user's body alignment, eliminating 
     <RecipeDef>Install_AstraltechPostureEnhancer</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>120</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -365,11 +409,9 @@ The Astraltech Stability Module grants supernatural core stability, allowing the
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>21000</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -377,9 +419,15 @@ The Astraltech Stability Module grants supernatural core stability, allowing the
     <RecipeDef>Install_AstraltechStabilityModule</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>130</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -397,11 +445,9 @@ The Astraltech Agility Booster elevates the user's agility to superhuman levels,
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>23500</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -409,9 +455,15 @@ The Astraltech Agility Booster elevates the user's agility to superhuman levels,
     <RecipeDef>Install_AstraltechAgilityBooster</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>190</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -429,11 +481,9 @@ The Astraltech Resilience Enhancer dramatically improves the user's overall toug
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>18500</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -441,9 +491,15 @@ The Astraltech Resilience Enhancer dramatically improves the user's overall toug
     <RecipeDef>Install_AstraltechResilienceEnhancer</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>80</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -461,11 +517,9 @@ The Astraltech Core Stabilizer perfects the user's internal balance and core str
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>21400</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -473,9 +527,15 @@ The Astraltech Core Stabilizer perfects the user's internal balance and core str
     <RecipeDef>Install_AstraltechCoreStabilizer</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>140</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -493,11 +553,9 @@ The Astraltech Durability Matrix exponentially reinforces the torso's structural
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>19000</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -505,9 +563,15 @@ The Astraltech Durability Matrix exponentially reinforces the torso's structural
     <RecipeDef>Install_AstraltechDurabilityMatrix</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>90</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -525,11 +589,9 @@ The Astraltech Metabolic Regulator perfects the user's metabolism, optimizing en
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>18500</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -537,9 +599,15 @@ The Astraltech Metabolic Regulator perfects the user's metabolism, optimizing en
     <RecipeDef>Install_AstraltechMetabolicRegulator</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>80</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -557,11 +625,9 @@ The Astraltech Internal Shielding creates an energy barrier that absorbs and dis
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>22000</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -569,9 +635,15 @@ The Astraltech Internal Shielding creates an energy barrier that absorbs and dis
     <RecipeDef>Install_AstraltechInternalShielding</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>160</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -589,11 +661,9 @@ The Astraltech Shaper is an advanced implant that sculpts the user's physique to
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>22600</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -601,9 +671,15 @@ The Astraltech Shaper is an advanced implant that sculpts the user's physique to
     <RecipeDef>Install_Astraltech_Shaper</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>170</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -621,11 +697,9 @@ The Astraltech Skin Enhancer rejuvenates and perfects the user's skin at the cel
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>21600</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -633,9 +707,15 @@ The Astraltech Skin Enhancer rejuvenates and perfects the user's skin at the cel
     <RecipeDef>Install_Astraltech_Skin_Enhancer</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>150</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -653,11 +733,9 @@ The Astraltech Cardio Boost is an advanced addon that further enhances the heart
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>30500</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -665,9 +743,15 @@ The Astraltech Cardio Boost is an advanced addon that further enhances the heart
     <RecipeDef>Install_AstraltechCardioBoost</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>230</Plasteel>
+    <ComponentSpacer>20</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -685,11 +769,9 @@ The Astraltech Metabolic Optimizer pushes the stomach's capabilities to near-mag
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>18800</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -697,9 +779,15 @@ The Astraltech Metabolic Optimizer pushes the stomach's capabilities to near-mag
     <RecipeDef>Install_AstraltechMetabolicOptimizer</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>80</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>
@@ -717,11 +805,9 @@ The Astraltech Knee Enhancement integrates otherworldly technology to push the c
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <statBases>
-    <MarketValue>19500</MarketValue>
+    <WorkToMake>40000</WorkToMake>
   </statBases>
-  <techHediffsTags>
-    <li>Advanced</li>
-  </techHediffsTags>
+  <techHediffsTags Inherit="False"/>
   <thingSetMakerTags>
     <li>RewardStandardLowFreq</li>
   </thingSetMakerTags>
@@ -729,9 +815,15 @@ The Astraltech Knee Enhancement integrates otherworldly technology to push the c
     <RecipeDef>Install_Astraltech_Knee_Enhancement</RecipeDef>
   </descriptionHyperlinks>
   <costList>
-    <Plasteel>10</Plasteel>
-    <ComponentSpacer>3</ComponentSpacer>
+    <Plasteel>100</Plasteel>
+    <ComponentSpacer>15</ComponentSpacer>
   </costList>
+  <recipeMaker>
+    <researchPrerequisite>AST_AstraltechBionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </recipeMaker>
   <comps>
     <li Class="CompProperties_Forbiddable"/>
   </comps>

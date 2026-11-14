@@ -52,8 +52,8 @@ The Astraltech Brain is a pinnacle of neurotechnology, vastly expanding cognitiv
         <SocialImpact>0.5</SocialImpact>
         <NegotiationAbility>0.25</NegotiationAbility>
         <TradePriceImprovement>0.25</TradePriceImprovement>
-        <MeleeHitChance>0.5</MeleeHitChance>
-        <ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
+        <MeleeHitChance>2.5</MeleeHitChance>
+        <ShootingAccuracyPawn>7.5</ShootingAccuracyPawn>
         <GlobalLearningFactor>3.0</GlobalLearningFactor>
         <MedicalOperationSpeed>0.2</MedicalOperationSpeed>
         <MedicalTendSpeed>0.2</MedicalTendSpeed>
@@ -102,7 +102,7 @@ The Astraltech Eye is a cutting-edge bionic implant designed to vastly improve v
   <stages>
     <li>
       <statOffsets>
-        <ShootingAccuracyPawn>1.2</ShootingAccuracyPawn>
+        <ShootingAccuracyPawn>6.0</ShootingAccuracyPawn>
       </statOffsets>
       <capMods>
         <li>
@@ -132,10 +132,10 @@ The Astraltech Ear is a marvel of auditory enhancement, granting its user unpara
   <stages>
     <li>
       <statOffsets>
-        <ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
+        <ShootingAccuracyPawn>1.0</ShootingAccuracyPawn>
         <NegotiationAbility>0.2</NegotiationAbility>
         <SocialImpact>0.1</SocialImpact>
-        <MeleeHitChance>0.1</MeleeHitChance>
+        <MeleeHitChance>0.5</MeleeHitChance>
       </statOffsets>
     </li>
   </stages>
@@ -219,7 +219,7 @@ The Astraltech Neck is a marvel of biomechanical engineering, offering superhuma
     <li>
       <statOffsets>
         <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-        <MeleeDodgeChance>0.2</MeleeDodgeChance>
+        <MeleeDodgeChance>1.0</MeleeDodgeChance>
       </statOffsets>
       <capMods>
         <li>
@@ -254,12 +254,12 @@ The Astraltech Arm represents the pinnacle of prosthetic engineering, offering s
     <li>
       <statOffsets>
         <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
-        <ShootingAccuracyPawn>0.8</ShootingAccuracyPawn>
+        <ShootingAccuracyPawn>4.0</ShootingAccuracyPawn>
         <MedicalOperationSpeed>0.3</MedicalOperationSpeed>
         <MedicalTendSpeed>0.3</MedicalTendSpeed>
         <MedicalTendQuality>0.3</MedicalTendQuality>
         <MedicalSurgerySuccessChance>0.3</MedicalSurgerySuccessChance>
-        <MeleeHitChance>0.5</MeleeHitChance>
+        <MeleeHitChance>2.5</MeleeHitChance>
         <ConstructionSpeed>0.25</ConstructionSpeed>
       </statOffsets>
       <capMods>
@@ -290,7 +290,7 @@ The Astraltech Spine is a revolutionary bionic implant that redefines human phys
   <stages>
     <li>
       <statOffsets>
-        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <MeleeDodgeChance>3.0</MeleeDodgeChance>
       </statOffsets>
       <capMods>
         <li>
@@ -567,8 +567,8 @@ The Astraltech Pelvis is a groundbreaking implant that redefines human biomechan
   <stages>
     <li>
       <statOffsets>
-        <MeleeHitChance>0.2</MeleeHitChance>
-        <MeleeDodgeChance>0.2</MeleeDodgeChance>
+        <MeleeHitChance>1.0</MeleeHitChance>
+        <MeleeDodgeChance>1.0</MeleeDodgeChance>
       </statOffsets>
       <capMods>
         <li>
@@ -598,7 +598,7 @@ The Astraltech Leg is a marvel of bionic engineering that transcends human locom
   <stages>
     <li>
       <statOffsets>
-        <MeleeDodgeChance>0.2</MeleeDodgeChance>
+        <MeleeDodgeChance>1.0</MeleeDodgeChance>
       </statOffsets>
       <capMods>
         <li>
